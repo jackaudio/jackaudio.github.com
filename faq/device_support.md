@@ -1,10 +1,11 @@
 ---
-layout: default
+layout: page
 title:  "Device Support"
 faq_entry: true
 ---
 
-# What audio devices are supported by JACK?
+# Which audio devices are supported by JACK?
+
 ## On OS X
 All devices with functioning CoreAudio drivers will work with JACK.
 
