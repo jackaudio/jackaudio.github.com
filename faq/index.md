@@ -9,7 +9,7 @@ menu_item: true
 {% for p in site.pages %}
   {% if p.faq_entry == true %}
   <li>
-  <a href="{{p.url}}"> {{ p.title }} </a>
+  <a href="{{site.baseurl}}{{p.url}}"> {{ p.title }} </a>
   </li>
   {% endif %}
 {% endfor %}
