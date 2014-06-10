@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta name="description" content="{{site.name}}|{{page.title}}" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl}}stylesheets/stylesheet.css">
+
+    <title>{{site.name}}|{{page.title}}</title>
+  </head>
+
+  <body>
+{% include header.html %}
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+
+        {{ content }}
+
+      </section>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+</html>
