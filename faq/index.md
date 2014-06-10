@@ -1,6 +1,7 @@
 ---
 layout: default
 title:  "FAQ"
+menu_item: true
 ---
 <ul>
 {% for p in site.pages %}

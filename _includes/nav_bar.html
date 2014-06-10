@@ -1,0 +1,7 @@
+<nav>
+  {% for p in site.pages %}
+  {%if p.menu_item == true%}
+  <a href="{{p.url}}"> {{ p.title }} </a>
+  {% endif %}
+  {% endfor %}
+</nav>
