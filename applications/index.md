@@ -106,7 +106,7 @@ menu_item: true
   * [**jack_mixer**](http://home.gna.org/jackmixer) is a GTK+JACK audio mixer app with a look similar to its hardware counterpart. It has lots of useful features, apart from being able to mix multiple JACKaudio streams. 
   * [**JackMaster**](http://69b.org/cms/jackmaster) is a Master Console. 
   * [**JackMiniMix**](http://www.aelius.com/njh/jackminimix) is a simple mixer with an [**OSC**](http://www.opensoundcontrol.org/) based control interface. 
-  * [**JackMix**](http://www.arnoldarts.de/drupal/?q=JackMix) is a Jack mixer. 
+  * [**JackMix**](http://www.arnoldarts.de/jackmix/) is a Jack mixer. 
   * [**The Non Mixer**](http://non-mixer.tuxfamily.org/) is a powerful, reliable and fast modular Digital Audio Mixer. 
 
 ## Multi-track sequencers and HDR systems
