@@ -4,8 +4,11 @@ title:  "Downloads"
 menu_item: true
 ---
 
-## Jack
-Source | Win64 | Win32
+## JACK1
+Source
 
-## Jack2
-Source | Win64 | Win32
+## JACK2
+Source | 
+OSX | 
+[Win32](https://dl.dropboxusercontent.com/u/28869550/Jack_v1.9.10_32_setup.exe) | 
+[Win64](https://dl.dropboxusercontent.com/u/28869550/Jack_v1.9.10_64_setup.exe)
