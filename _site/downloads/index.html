@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta name="description" content="JACK Audio Connection Kit|Downloads" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/stylesheet.css">
+
+    <title>JACK Audio Connection Kit|Downloads</title>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/jackaudio">View on GitHub</a>
+          <a href=""> <img src="/images/logo.png" alt="home" border =
+          "0"> </a>
+
+          <nav>
+  <a href="/"> Home </a> |
+  <a href="/applications"> Applications </a> |
+  <a href="/faq/"> FAQ </a> |
+  <a href="https://github.com/jackaudio/jackaudio.github.com/wiki"> WIKI </a> |
+  <a href="/api/"> API </a> |
+  <a href="/downloads/"> Downloads </a>
+</nav>
+
+          <!--
+          <h1 id="project_title">JACK Audio Connection Kit</h1>
+          <h2 id="project_tagline">TODO</h2>
+          -->
+
+        </header>
+
+
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+
+        <h1>Downloading JACK</h1>
+
+<h2>Linux</h2>
+
+<h3>JACK1:</h3>
+
+<ul>
+<li><strong>Binaries</strong>: please use your distribution&#39;s package manager (<code>apt-get, yum, synaptic</code> etc.) </li>
+<li><strong>Source (jackaudio.org)</strong>: <a href="http://jackaudio.org/downloads/jack-audio-connection-kit-0.121.3.tar.gz">JACK 0.121.3</a> source tarball. </li>
+</ul>
+
+<h3>JACK2:</h3>
+
+<ul>
+<li><strong>Binaries</strong>: please use your distribution&#39;s package manager (<code>apt-get, yum, synaptic</code> etc.) </li>
+<li>*<em>Source *</em>: <a href="http://jackaudio.org/downloads/jack-1.9.9.5.tar.bz2"> JACK 1.9.9 </a> source tarball. </li>
+</ul>
+
+<h2>OS X</h2>
+
+<h3>JACK1:</h3>
+
+<ul>
+<li><strong>Source (jackaudio.org)</strong>: <a href="http://jackaudio.org/downloads/jack-audio-connection-kit-0.121.3.tar.gz">JACK 0.121.3</a> source tarball. </li>
+</ul>
+
+<h3>JACK2:</h3>
+
+<ul>
+<li><strong>Binaries</strong>: <a href="http://sourceforge.net/projects/jackosx/files/JackOSX/0.89/JackOSX.0.89_64-32bits.zip/download">Mixed 64/32 bit, v0.89 of JackOSX (compatible with current JACK API to 0.120.1) for Snow Leopard</a></li>
+<li><strong>Binaries</strong>: <a href="http://sourceforge.net/projects/jackosx/files/JackOSX/0.89/JackOSX.0.89_32bits.zip/download">Legacy 32 bit, v0.89 of JackOSX (compatible with current JACK API to 0.120.1) for systems older than Snow Leopard</a></li>
+<li><strong>Source</strong>: <a href="http://jackaudio.org/downloads/jack-1.9.8.tgz"> JACK 1.9.8</a> source tarball. </li>
+</ul>
+
+<h2>Windows</h2>
+
+<h3>JACK2:</h3>
+
+<ul>
+<li><strong>Installer for 32 bit Windows(XP...)</strong>: <a href="https://dl.dropboxusercontent.com/u/28869550/Jack_v1.9.10_32_setup.exe"> JACK 1.9.10</a>. </li>
+<li><strong>Installer for Windows 64 bit (Vista, Windows 7)</strong>: <a href="https://dl.dropboxusercontent.com/u/28869550/Jack_v1.9.10_64_setup.exe"> JACK 1.9.10</a>. </li>
+</ul>
+
+<h2>Solaris/OpenSolaris</h2>
+
+<h3>JACK2:</h3>
+
+<ul>
+<li><strong>Source</strong>: <a href="http://jackaudio.org/downloads/jack-1.9.9.5.tar.bz2"> JACK 1.9.9</a> source tarball. </li>
+</ul>
+
+<p>Please note that although we bump the minor version rather frequently in the
+development repository, releases will not occur for every version number
+change.</p>
+
+<h2>JACK Source Code Repository</h2>
+
+<p>JACK uses Git as its source control system. Our central git repository is
+hosted by Github. We are currently working toward linking the repositories for
+Jack1 and Jack2 but this work is not complete, so for now the commands to get
+a copy of the source are a little different depending on which tree/version
+you want.</p>
+
+<h3>Jack1 Git Repository</h3>
+
+<p>Those without write access can access the repository with these commands:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">git clone git://github.com/jackaudio/jack1.git
+cd jack1
+git submodule init
+git submodule update
+</code></pre></div>
+<p>You can also point a web browser at</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">[https://github.com/jackaudio/jack1](https://github.com/jackaudio/jack1)
+</code></pre></div>
+<p>to be able to browse current source code and full history with all the usual
+Github goodies.</p>
+
+<h4>Write Access</h4>
+
+<p>Those who have been granted write access and have supplied a public key can
+clone the repository with the following commands:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">git clone git@github.com:jackaudio/jack1.git
+cd jack1
+git submodule init
+git submodule update
+</code></pre></div>
+<p>You must then edit the <code>.git/config</code> file within jack1 so that the submodule
+entries correctly reference the write-access URL. They should look like this:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">[submodule &quot;example-clients&quot;]
+    url = git://github.com/jackaudio/example-clients.git
+[submodule &quot;jack&quot;]
+    url = git://github.com/jackaudio/headers.git
+[submodule &quot;tools&quot;]
+    url = git://github.com/jackaudio/tools.git
+</code></pre></div>
+<h3>Jack2 Git Repository</h3>
+
+<p>Those without write access can access the repository with this command:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">git clone git://github.com/jackaudio/jack2.git
+</code></pre></div>
+<p>You can also point a web browser at</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">[https://github.com/jackaudio/jack2](https://github.com/jackaudio/jack2)
+</code></pre></div>
+<p>to be able to browse current source code and full history with all the usual
+Github goodies.</p>
+
+<h4>Write Access</h4>
+
+<p>Those who have been granted write access and have supplied a public key can
+get to the repository with the following command:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">git clone git@github.com:jackaudio/jack2.git
+</code></pre></div>
+<p>Eventually the same setup for the submodules will be required as for Jack1,
+but this is not true at this time.</p>
+
+
+      </section>
+    </div>
+
+        <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Slate theme maintained by <a href="https://github.com/jsncostello">Jason Costello</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+
+
+  </body>
+</html>
