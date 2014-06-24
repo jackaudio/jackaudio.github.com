@@ -1,3 +1,7 @@
+---
+layout: page
+title: "Routing GStreamer audio via JACK"
+---
 
 # Routing GStreamer audio via JACK
 

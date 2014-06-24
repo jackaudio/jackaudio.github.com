@@ -1,3 +1,7 @@
+---
+layout: page
+title: "How use PulseAudio and JACK?"
+---
 
 # How use PulseAudio and JACK?
 

@@ -1,3 +1,7 @@
+---
+layout: page
+title: "How do I make an application use JACK?"
+---
 
 # How do I make an application use JACK?
 

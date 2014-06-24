@@ -1,3 +1,8 @@
+---
+layout: page
+title: "How do I route audio from Flash to JACK?"
+---
+
 # How do I route audio from Flash to JACK?
 
 There are a couple of approaches here.

@@ -1,3 +1,7 @@
+---
+layout: page
+title: "JACK Documentation"
+---
 
 # JACK Documentation
 

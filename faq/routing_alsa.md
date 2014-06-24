@@ -1,3 +1,7 @@
+---
+layout: page
+title: "How do I route audio to/from generic ALSA-using applications?"
+---
 
 # How do I route audio to/from generic ALSA-using applications?
 

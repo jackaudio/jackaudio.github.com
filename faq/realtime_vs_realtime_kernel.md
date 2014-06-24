@@ -1,3 +1,7 @@
+---
+layout: page
+title: "Do I need a realtime kernel to use realtime scheduling?"
+---
 
 # Do I need a realtime kernel to use realtime scheduling?
 

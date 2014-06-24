@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta name="description" content="JACK Audio Connection Kit|How do I refer to a soundcard so that the name always works?" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/stylesheet.css">
+
+    <title>JACK Audio Connection Kit|How do I refer to a soundcard so that the name always works?</title>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/jackaudio">View on GitHub</a>
+          <a href=""> <img src="/images/logo.png" alt="home" border =
+          "0"> </a>
+
+          <nav>
+  <a href="/"> Home </a> |
+  <a href="/applications"> Applications </a> |
+  <a href="/faq/"> FAQ </a> |
+  <a href="https://github.com/jackaudio/jackaudio.github.com/wiki"> WIKI </a> |
+  <a href="/api/"> API </a> |
+  <a href="/downloads/"> Downloads </a>
+</nav>
+
+          <!--
+          <h1 id="project_title">JACK Audio Connection Kit</h1>
+          <h2 id="project_tagline">TODO</h2>
+          -->
+
+        </header>
+
+
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+
+        <h1>How do I refer to a soundcard so that the name always works?</h1>
+
+<p>The precise order in which a Linux system discovers any soundcards can vary
+each time the machine is rebooted. This is particularly true of USB devices.
+The device that used to be &quot;hw:0&quot; can become &quot;hw:1&quot; after a reboot, or vice
+versa. Fortunately, you don&#39;t need to use names like this, and can instead use
+a form that isn&#39;t dependent on the order that the Linux discovers your
+soundcards.</p>
+
+<p>First, in a terminal window, run this command: <code>cat /proc/asound/cards</code>.
+You&#39;ll see output a bit like this:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text"> 0 [SB             ]: HDA-Intel - HDA ATI SB
+                      HDA ATI SB at 0xfcef8000 irq 16
+ 1 [DSP            ]: H-DSP - Hammerfall DSP
+                      RME Hammerfall DSP + Digiface at 0xfcff0000, irq 20
+ 2 [NVidia         ]: HDA-Intel - HDA NVidia
+                      HDA NVidia at 0xfe57c000 irq 32
+</code></pre></div>
+<p>The &quot;name&quot; of each soundcard is in square brackets.</p>
+
+<p>With this information, you can now refer to a particular device as, for
+example <strong>hw:DSP</strong> (for the RME Hammerfall DSP in the above example. Even if
+the devices end up re-ordered for any reason, <strong>hw:DSP</strong> will still refer to
+the same device.</p>
+
+<p>The one case where this fails is if you have multiple instances of the same
+type of soundcard. This is a much trickier situation to deal with and is
+covered in detail <a href="http://web.archive.org/web/20140330105628/http://alsa%0A.opensrc.org/Udev#Identify_two_identical_audio_devices">here</a>.</p>
+
+<h3>Where do I use this name?</h3>
+
+<p>You can type it into the device name selector in the upper left of qjacktl&#39;s
+setup dialog. You can use it as the argument to the -d flag of JACK&#39;s ALSA
+backend (e.g. <code>jackd -d alsa -d hw:DSP</code>.</p>
+
+
+      </section>
+    </div>
+
+        <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Slate theme maintained by <a href="https://github.com/jsncostello">Jason Costello</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+
+
+  </body>
+</html>

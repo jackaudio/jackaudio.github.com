@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta name="description" content="JACK Audio Connection Kit|Routing GStreamer audio via JACK" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/stylesheet.css">
+
+    <title>JACK Audio Connection Kit|Routing GStreamer audio via JACK</title>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/jackaudio">View on GitHub</a>
+          <a href=""> <img src="/images/logo.png" alt="home" border =
+          "0"> </a>
+
+          <nav>
+  <a href="/"> Home </a> |
+  <a href="/applications"> Applications </a> |
+  <a href="/faq/"> FAQ </a> |
+  <a href="https://github.com/jackaudio/jackaudio.github.com/wiki"> WIKI </a> |
+  <a href="/api/"> API </a> |
+  <a href="/downloads/"> Downloads </a>
+</nav>
+
+          <!--
+          <h1 id="project_title">JACK Audio Connection Kit</h1>
+          <h2 id="project_tagline">TODO</h2>
+          -->
+
+        </header>
+
+
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+
+        <h1>Routing GStreamer audio via JACK</h1>
+
+<p>Its relatively easy to get audio from GStreamer to flow via JACK:</p>
+
+<ol>
+<li>You need the GStreamer JACK audio plugin, which is currently (Fall 2009) part of the &quot;bad&quot; plugins collection. Most Linux distributions make this available through their normal software install/update systems. The name of the package containing this plugin will vary from distribution to distribution: on Fedora its called &quot;gstreamer-plugins-bad-free-extra&quot;, on Ubuntu its called &quot;gst-plugins-bad&quot;, etc. etc. </li>
+<li>Next, you need to configure GStreamer to tell it to use this plugin for audio output. There are 3 methods available: 
+
+<ul>
+<li>Through the command line using gconf2 (you may need to install this first) </li>
+<li>Install/run gconf-editor, which is a general purpose utility for configuring many GNOME-centric applications </li>
+<li>Some systems may have the gstreamer-properties command available, which offers a graphical tool for configuring gstreamer </li>
+</ul></li>
+<li>Your goal is set the value of: 
+
+<ul>
+<li>/system/gstreamer/0.10/audio/default/musicaudiosink</li>
+<li>/system/gstreamer/0.10/audio/default/audiosink</li>
+</ul></li>
+</ol>
+
+<p>to this value: <code>jackaudiosink buffer-time=2000000</code>. The exact value of
+<code>buffer-time</code> doesn&#39;t matter too much, but higher values reduce the chance of
+glitches/drop-outs in the audio stream. You might also choose to set
+/system/gstreamer/0.10/audio/default/chataudiosink to the same value, but its
+less likely to be useful to you.</p>
+
+<p>The impact of this will vary depending on how much your system uses GStreamer.
+On modern GNOME-based systems, it will effectively divert all system sounds
+and all audio playback via JACK. On other systems (e.g. KDE-based systems) it
+will have less of an effect, though it will still impact specific applications
+that use GStreamer.</p>
+
+
+      </section>
+    </div>
+
+        <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Slate theme maintained by <a href="https://github.com/jsncostello">Jason Costello</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+
+
+  </body>
+</html>

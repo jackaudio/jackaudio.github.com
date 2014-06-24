@@ -1,3 +1,7 @@
+---
+layout: page
+title: "JACK Mailing Lists"
+---
 
 # JACK Mailing Lists
 

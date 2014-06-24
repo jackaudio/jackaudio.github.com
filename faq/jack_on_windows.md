@@ -1,3 +1,7 @@
+---
+layout: page
+title: "Using JACK on Windows"
+---
 
 # Using JACK on Windows
 

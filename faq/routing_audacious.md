@@ -1,3 +1,7 @@
+---
+layout: page
+title: "How can I route audio from xmms/audacious/beep to JACK?"
+---
 
 # How can I route audio from xmms/audacious/beep to JACK?
 

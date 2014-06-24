@@ -1,3 +1,7 @@
+---
+layout: page
+title: "How can I use multiple soundcards with JACK?"
+---
 
 # How can I use multiple soundcards with JACK?
 

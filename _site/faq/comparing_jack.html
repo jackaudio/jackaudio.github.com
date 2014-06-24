@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta name="description" content="JACK Audio Connection Kit|How does JACK compare to ..." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/stylesheet.css">
+
+    <title>JACK Audio Connection Kit|How does JACK compare to ...</title>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/jackaudio">View on GitHub</a>
+          <a href=""> <img src="/images/logo.png" alt="home" border =
+          "0"> </a>
+
+          <nav>
+  <a href="/"> Home </a> |
+  <a href="/applications"> Applications </a> |
+  <a href="/faq/"> FAQ </a> |
+  <a href="https://github.com/jackaudio/jackaudio.github.com/wiki"> WIKI </a> |
+  <a href="/api/"> API </a> |
+  <a href="/downloads/"> Downloads </a>
+</nav>
+
+          <!--
+          <h1 id="project_title">JACK Audio Connection Kit</h1>
+          <h2 id="project_tagline">TODO</h2>
+          -->
+
+        </header>
+
+
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+
+        <h1>How does JACK compare to ...</h1>
+
+<h2>How does JACK compare to...?</h2>
+
+<p>Please mail the jackit-devel mailing list if you have any concerns about the
+answers to these questions. Also, no disrespect to any effort is intended,
+only a recognition of different goals and design principles.</p>
+
+<h3>Other Linux-centered systems</h3>
+
+<ul>
+<li>ALSA: both a HAL and a user-space library for audio under Linux. ALSA is used to provide the default audio i/o driver for JACK. ALSA is a very powerful audio API, but it does not provide a callback-based API or offer any solutions for inter-application communication, though it has been discussed and is theoretically possible. </li>
+<li>aRts, a streaming media architecture: aRts was not designed from the ground up with low-latency in mind. Not a fault, but a design decision. A jack output element could be written for aRts, though, as far as I can tell. Note: aRts is not really used anymore by any Linux systems. </li>
+<li>GStreamer, another streaming media architecture: GStreamer is designed for in-process construction of media pipelines, and is not used to link applications. JACK elements for GStreamer are under available. </li>
+<li>LADSPA, LV2: LADSPA is an internal plugin API for DSP routines, not a way of linking external applications together. </li>
+<li>Phonon </li>
+<li>Canberra </li>
+</ul>
+
+<h3>Cross-platform systems</h3>
+
+<ul>
+<li>PortAudio: a &quot;cross platform, open-source, audio I/O library&quot; offering both callback- and blocking I/O-based APIs. PortAudio backends exist for various Windows, Mac, and Unix HALs. It is mainly focused on hardware I/O rather than a general concept of ports and connections. The callback-style API used by both projects makes it relatively easy to port between the two (no pun intended), and there is a JACK backend for PortAudio so porting is not always necessary. </li>
+<li>SDL: </li>
+<li>SFML: </li>
+<li>OpenAL: </li>
+</ul>
+
+<h3>MacOS- and/or Windows-centered systems</h3>
+
+<ul>
+<li>CoreAudio, the Mac OS X audio API: Very similar to JACK in some the sense of being centered on a synchronous-execution-via-callback API, but does not include inter-application audio routing. CoreAudio also includes a hardware-level abstraction layer, whereas JACK uses higher-level drivers for that purpose. The first JACK driver was based on ALSA, but others are available for the OSS and PortAudio interfaces. </li>
+<li>ASIO: a HAL for both Windows and MacOS that replaces the native device driver model with something much cleaner. It supports hardware-level latencies, but it does not connect applications to each other. Also, it is subject to license restrictions, and does not exist for Linux (though it would not be impossible to implement it on top of ALSA). </li>
+<li>ReWire, an inter-app communications API for Windows and MacOS from PropellerHeads and Steinberg, ReWire is similar in that it provides inter-application audio routing, but does not allow for fully independent processes, and has silly restrictions (&quot;up to 64 channels&quot;, etc). JACK also comes without silly license restrictions. </li>
+<li>VST, AudioUnits, DirectX, MAS, RTAS: these are all Windows/MacOS audio plugin APIs. None of them permit inter-application data sharing. Some plugin hosts can make this possible by using some other system such as ReWire. These APIs also require that the callback you write to process/generate data be executed in the context of the plugin host; JACK allows your callback to be executed within the context of your own application (if you wish to). </li>
+</ul>
+
+
+      </section>
+    </div>
+
+        <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Slate theme maintained by <a href="https://github.com/jsncostello">Jason Costello</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+
+
+  </body>
+</html>

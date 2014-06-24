@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta name="description" content="JACK Audio Connection Kit|How use PulseAudio and JACK?" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/stylesheet.css">
+
+    <title>JACK Audio Connection Kit|How use PulseAudio and JACK?</title>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/jackaudio">View on GitHub</a>
+          <a href=""> <img src="/images/logo.png" alt="home" border =
+          "0"> </a>
+
+          <nav>
+  <a href="/"> Home </a> |
+  <a href="/applications"> Applications </a> |
+  <a href="/faq/"> FAQ </a> |
+  <a href="https://github.com/jackaudio/jackaudio.github.com/wiki"> WIKI </a> |
+  <a href="/api/"> API </a> |
+  <a href="/downloads/"> Downloads </a>
+</nav>
+
+          <!--
+          <h1 id="project_title">JACK Audio Connection Kit</h1>
+          <h2 id="project_tagline">TODO</h2>
+          -->
+
+        </header>
+
+
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+
+        <h1>How use PulseAudio and JACK?</h1>
+
+<p>Many Linux systems now use PulseAudio as the default sound server, using it to
+handle all sound playback (media players, desktop alerts, web browsers and
+more). Here are a couple of basic observations about using JACK and PulseAudio
+together:</p>
+
+<ol>
+<li>While PulseAudio is running, JACK cannot access the same soundcard that Pulse is using. Even though in theory ALSA provides mechanisms for this to be possible (e.g. &quot;dmix&quot; device access), they do not work well enough to support both of these systems reliably. </li>
+<li>PulseAudio and JACK can appear to have similar goals to many people, and they wonder why its not possible to replace one with the other. However, beyond a very superficial similarity, they really do not have much in common: 
+
+<ul>
+<li>PulseAudio is focused on desktop and mobile audio needs. It doesn&#39;t try to address low latency usage, but does provide seamless device switching, network routing, global per-application volume control and lots more great stuff. </li>
+<li>JACK is focused on the needs of pro-audio and music creation users. It offers the lowest possible latency, complete routing flexibility between applications and audio hardware, and all audio is always sample synchronized - apps don&#39;t run ahead or behind of others. It doesn&#39;t provide the smooth desktop experience that PulseAudio is aiming at. </li>
+</ul></li>
+</ol>
+
+<p>Combining PulseAudio and JACK on the same machine can be problematic. There
+are several options, some of which leave PulseAudio and JACK as entirely
+separate systems with no audio flow between them. Others connect them so that
+audio from one of them can be heard via the other.</p>
+
+<h2>Option 1: don&#39;t use PulseAudio with JACK</h2>
+
+<p>The most experienced and demanding users of JACK do not attempt to link
+PulseAudio and JACK. Many of them will not run PulseAudio at all, having
+either never installed it, removed it from their systems, or disabled it. They
+will generally route audio from other apps to JACK without using PulseAudio,
+via the techniques described in the &quot;How do I route audio to/from ...&quot; section
+of the
+<a href="http://web.archive.org/web/20140330101337/http://jackaudio.org/faq">FAQ</a>.</p>
+
+<h2>Option 2: use two different soundcards</h2>
+
+<p>Many users of JACK have computer systems with more than 1 soundcard. Typically
+there is the builtin soundcard, which is a cheap consumer grade device, often
+with a variety of limitations that make it less suitable for use with JACK.
+The user has subsequently added another audio device, either as an internal
+(PCI) card or an external unit connected via FireWire or USB.</p>
+
+<h3>Two ALSA-supported soundcards</h3>
+
+<p>All that is necessary in this case is to define the device that PulseAudio and
+JACK will use. Run the following command in a terminal window: <code>cat
+/proc/asound/cards</code> You will some output like this:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text"> 0 [SB             ]: HDA-Intel - HDA ATI SB
+                      HDA ATI SB at 0xfcef8000 irq 16
+ 1 [DSP            ]: H-DSP - Hammerfall DSP
+                      RME Hammerfall DSP + Digiface at 0xfcff0000, irq 20
+ 2 [NVidia         ]: HDA-Intel - HDA NVidia
+                      HDA NVidia at 0xfe57c000 irq 32
+</code></pre></div>
+<p>(This is from a machine with 3 soundcards: a builtin device, an additional 26
+channel RME Hammerfall DSP device, and (unintentionally) an NVidia video
+adapter that also has an HDMI audio output.)</p>
+
+<p>Each of these cards can be accessed using its name, which is contained within
+the square brackets ([]). Generally, the name will simply be the conjunction
+of &quot;hw:&quot; and the card name. So for example, &quot;hw:DSP&quot; refers to the RME
+Hammerfall DSP in the above list, and &quot;hw:SB&quot; refers to the builtin soundcard.
+The names in your system will vary.</p>
+
+<h3>Telling JACK which device to use</h3>
+
+<p>To tell JACK to use the RME Hammerfall DSP, you would typically do this either
+via the upper right of QJackctl&#39;s setup dialog:</p>
+
+<p><img src="http://web.archive.org/web/2014033010%0A1337im_/http://jackaudio.org/files/qjackctl_setup.png" alt="screenshot of qjackctl&#39;s setup dialog"></p>
+
+<p>or on the command line, by passing <code>-d hw:DSP</code> to JACK&#39;s ALSA backend.</p>
+
+<h3>Telling PulseAudio which device to use</h3>
+
+<h2>Option 3: route PulseAudio to JACK while JACK is running</h2>
+
+<p>Please see <a href="http://web.archive.org/web/20140330101337/http://t%0Arac.jackaudio.org/wiki/WalkThrough/User/PulseOnJack">this wiki page</a>.</p>
+
+<h2>Option 4: suspend PulseAudio while JACK is running</h2>
+
+<p>If you start JACK using QJackctl, then you should go into its setup dialog and
+edit the field labelled &quot;Server path&quot;. Insert <code>pasuspsender --</code> in front of
+whatever is there (probably just something like <code>jackd</code>). So for example, if
+you had &quot;jackd&quot; in the &quot;Server path&quot; field already, it should now say:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">pasuspender -- jackd
+</code></pre></div>
+<p>This will cause PulseAudio to suspend itself while JACK runs, and restart when
+JACK exits (or crashes).</p>
+
+<p>If you start JACK any other way, you will need to figure out how to make your
+method use <code>pasuspender --</code> as the command that actually starts JACK.</p>
+
+
+      </section>
+    </div>
+
+        <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Slate theme maintained by <a href="https://github.com/jsncostello">Jason Costello</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+
+
+  </body>
+</html>

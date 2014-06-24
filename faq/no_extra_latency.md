@@ -1,3 +1,7 @@
+---
+layout: page
+title: "Does using JACK add latency?"
+---
 
 # Does using JACK add latency?
 

@@ -1,3 +1,7 @@
+---
+layout: page
+title: "How do I refer to a soundcard so that the name always works?"
+---
 
 # How do I refer to a soundcard so that the name always works?
 

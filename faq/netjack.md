@@ -1,3 +1,7 @@
+---
+layout: page
+title: "How do I use JACK over a network?"
+---
 
 # How do I use JACK over a network?
 

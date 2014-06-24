@@ -1,3 +1,7 @@
+---
+layout: page
+title: "What is the difference between JACK1 and JACK2"
+---
 
 # What is the difference between JACK1 and JACK2?
 

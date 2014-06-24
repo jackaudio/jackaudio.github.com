@@ -1,3 +1,7 @@
+---
+layout: page
+title: "How can I set up persistent connections?"
+---
 
 # How can I set up persistent connections?
 

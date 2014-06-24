@@ -1,3 +1,7 @@
+---
+layout: page
+title: "How does JACK compare to ..."
+---
 
 # How does JACK compare to ...
 

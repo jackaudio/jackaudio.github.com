@@ -1,3 +1,7 @@
+---
+layout: page
+title: "How does using Linux with RT_GROUP_SCHED enabled affect JACK?"
+---
 
 # How does using Linux with RT_GROUP_SCHED enabled affect JACK?
 

@@ -1,3 +1,7 @@
+---
+layout: page
+title: "How do I configure my linux system to allow JACK to use realtime scheduling?"
+---
 
 # How do I configure my linux system to allow JACK to use realtime scheduling?
 

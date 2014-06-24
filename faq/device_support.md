@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "What audio devices are supported by JACK?"
-menu_item: true
 ---
 
 # What audio devices are supported by JACK?

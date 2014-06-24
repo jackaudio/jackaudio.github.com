@@ -1,3 +1,7 @@
+---
+layout: page
+title: "How do I build JACK from the source code?"
+---
 
 # How do I build JACK from the source code?
 
