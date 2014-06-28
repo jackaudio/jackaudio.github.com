@@ -45,9 +45,8 @@ Jack O'Quin frequently acted as the primary maintainer of JACK for long
 periods, and has contributed many new interfaces and bug fixes.
 
 Stephane Letz ported JACK to OS X and wrote the new C++ SMP-aware
-implementation [jackdmp](http://web.archive.org/web/20140209043057/http://www.
-grame.fr/~letz/jackdmp.html). He and Johnny Petrantoni created
-[JackOSX](http://web.archive.org/web/20140209043057/http://jackosx.com/),
+implementation [jackdmp](http://www.grame.fr/~letz/jackdmp.html). He and Johnny Petrantoni created
+[JackOSX](http://jackosx.com/),
 including JACK and utilities for OS X.
 
 Taybin Rutkin manages our releases.
