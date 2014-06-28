@@ -28,7 +28,7 @@ either never installed it, removed it from their systems, or disabled it. They
 will generally route audio from other apps to JACK without using PulseAudio,
 via the techniques described in the "How do I route audio to/from ..." section
 of the
-[FAQ](http://web.archive.org/web/20140330101337/http://jackaudio.org/faq).
+[FAQ](/faq).
 
 ## Option 2: use two different soundcards
 
@@ -69,8 +69,7 @@ The names in your system will vary.
 To tell JACK to use the RME Hammerfall DSP, you would typically do this either
 via the upper right of QJackctl's setup dialog:
 
-![screenshot of qjackctl's setup dialog](http://web.archive.org/web/2014033010
-1337im_/http://jackaudio.org/files/qjackctl_setup.png)
+![screenshot of qjackctl's setup dialog](http://jackaudio.org/files/qjackctl_setup.png)
 
 or on the command line, by passing `-d hw:DSP` to JACK's ALSA backend.
 
@@ -78,8 +77,7 @@ or on the command line, by passing `-d hw:DSP` to JACK's ALSA backend.
 
 ## Option 3: route PulseAudio to JACK while JACK is running
 
-Please see [this wiki page](http://web.archive.org/web/20140330101337/http://t
-rac.jackaudio.org/wiki/WalkThrough/User/PulseOnJack).
+Please see [this wiki page](http://trac.jackaudio.org/wiki/WalkThrough/User/PulseOnJack).
 
 ## Option 4: suspend PulseAudio while JACK is running
 

@@ -9,8 +9,7 @@ Realtime (RT) scheduling is a feature of all Linux operating systems that
 enables an application to meet timing deadlines more reliably. Almost all
 Linux distributions consider RT scheduling to be a potential source of system
 abuse, and so access to it is limited to varying degrees. As mentioned in the 
-[FAQ](http://web.archive.org/web/20140330103313/http://jackaudio.org/realtime_
-vs_realtime_kernel), it is very important to understand that **you do NOT need
+[FAQ](realtime_vs_realtime_kernel.html), it is very important to understand that **you do NOT need
 an "RT kernel" to use RT scheduling** (this is a very common misconception.)
 
 JACK requires real time (RT) scheduling privileges for reliable, dropout-free
@@ -46,8 +45,7 @@ to run JACK with RT scheduling and see if it works.
 ## This may not work!
 
 If you follow all these steps carefully and they do not work, you should
-review the information over [here](http://web.archive.org/web/20140330103313/h
-ttp://jackaudio.org/linux_group_sched) and consider whether this may apply to
+review the information over [here](linux_group_sched.html) and consider whether this may apply to
 your system.
 
 ## Systems using PAM

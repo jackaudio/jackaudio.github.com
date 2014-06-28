@@ -5,9 +5,8 @@ title: "JACK Developer Information"
 
 # JACK Developer Information
 
-Want to use JACK in your software? Great, grab the [source](http://web.archive
-.org/web/20140209043057/http://jackaudio.org/download) and see the [docs](http
-://web.archive.org/web/20140209043057/http://jackaudio.org/documentation).
+Want to use JACK in your software? Great, grab the [source](/downloads) and see the
+[docs](/documentation).
 
 Want to get involved? How about getting on the lists. Paul Davis is the
 maintainer of this project.

@@ -7,9 +7,12 @@ title: "How do I route audio from Flash to JACK?"
 
 There are a couple of approaches here.
 
-  1. systems that route audio from the web browser via ALSA: [routing ALSA audio via JACK](http://web.archive.org/web/20140330103724/http://jackaudio.org/routing_alsa)
-  2. systems that route audio from the web browser via GStreamer: [routing GStreamer via JACK](http://web.archive.org/web/20140330103724/http://jackaudio.org/gstreamer_via_jack)
-  3. systems that route audio from the web browser via PulseAudio: [routing PulseAudio via JACK](http://web.archive.org/web/20140330103724/http://jackaudio.org/pulse_via_jack)
+  1. systems that route audio from the web browser via ALSA: [routing ALSA audio
+  via JACK](routing_alsa.html)
+  2. systems that route audio from the web browser via GStreamer: [routing
+  GStreamer via JACK](gstreamer_via_jack.html)
+  3. systems that route audio from the web browser via PulseAudio: [routing
+  PulseAudio via JACK](pulse_via_jack.html)
   4. use the libflashsupport-jack library from Torben Hohn 
 
 The first three solutions that are described via the linked pages. The final

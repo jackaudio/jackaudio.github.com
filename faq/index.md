@@ -36,5 +36,5 @@ menu_item: true
 ### Hardware Specific Questions
 
   * [Macbook w/Linux: audio played via JACK output is distorted, but direct ALSA output is fine](macbook_distortion.html)
-  * [How do I use an M-Audio Fast Track Pro?](http://web.archive.org/web/20140209045742/http://joegiampaoli.blogspot.mx/2011/06/m-audio-fast-track-pro-for-debian-linux.html)
+  * [How do I use an M-Audio Fast Track Pro?](http://joegiampaoli.blogspot.mx/2011/06/m-audio-fast-track-pro-for-debian-linux.html)
 

@@ -171,8 +171,8 @@ second installed card.
 ### "Slave" Device naming
 
 Note that you are likely better off using "hw:CARD" device names, rather than
-"hw:N" names, when defining a "multi" pseudo-device, as explained [here](http:
-//web.archive.org/web/20140330104607/http://jackaudio.org/device_naming). But
+"hw:N" names, when defining a "multi" pseudo-device, as explained
+[here](device_naming.html). But
 further note that if you are using multiple instances of the same type of
 audio hardware (say, 4 RME Multiface devices), you will have to use "hw:N"
 because every card will have the same "CARD" name. In fact, with such

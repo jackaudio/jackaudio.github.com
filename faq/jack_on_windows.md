@@ -30,13 +30,13 @@ device.
 
 Several applications have native Jack support:
 
-  * Harisson MixBus : [http://www.harrisonconsoles.com/mixbus/website/](http://web.archive.org/web/20140209042911/http://www.harrisonconsoles.com/mixbus/website/)
-  * MuseScore : [http://musescore.org/](http://web.archive.org/web/20140209042911/http://musescore.org/)
-  * foo-yc20 : [http://code.google.com/p/foo-yc20/](http://web.archive.org/web/20140209042911/http://code.google.com/p/foo-yc20/)
-  * SND-RT : [http://archive.notam02.no/arkiv/doc/snd-rt/](http://web.archive.org/web/20140209042911/http://archive.notam02.no/arkiv/doc/snd-rt/)
-  * Radium : [http://users.notam02.no/~kjetism/radium/](http://web.archive.org/web/20140209042911/http://users.notam02.no/~kjetism/radium/)
+  * Harisson MixBus : [http://www.harrisonconsoles.com/mixbus/website/](http://www.harrisonconsoles.com/mixbus/website/)
+  * MuseScore : [http://musescore.org/](http://musescore.org/)
+  * foo-yc20 : [http://code.google.com/p/foo-yc20/](http://code.google.com/p/foo-yc20/)
+  * SND-RT : [http://archive.notam02.no/arkiv/doc/snd-rt/](http://archive.notam02.no/arkiv/doc/snd-rt/)
+  * Radium : [http://users.notam02.no/~kjetism/radium/](http://users.notam02.no/~kjetism/radium/)
   * Fluidsynth for Windows (part of the jOrgan Windows packages). 
-  * JNAJack, Java bindings for JACK : [https://code.google.com/p/java-audio-utils/wiki/GettingStarted_JNAJack](http://web.archive.org/web/20140209042911/https://code.google.com/p/java-audio-utils/wiki/GettingStarted_JNAJack)
+  * JNAJack, Java bindings for JACK : [https://code.google.com/p/java-audio-utils/wiki/GettingStarted_JNAJack](https://code.google.com/p/java-audio-utils/wiki/GettingStarted_JNAJack)
 
 Native Jack applications can make use of the full power of the JACK audio and
 MIDI connection system (for instance, they can open or close Jack connections
@@ -72,7 +72,8 @@ the settings in the [IO] portion of the file.
 
 ## Installation and Configuration
 
-  1. Download the Jack Audio Connection installer for Windows from the [download page.](http://web.archive.org/web/20140209042911/http://jackaudio.org/download)
+  1. Download the Jack Audio Connection installer for Windows from the [download
+  page.](/downloads)
   2. Use the installer (either the 32 bit or the mixed 64/32 bit one). 
   3. From the Windows Start menu, locate the Jack folder and right click on Jack Portaudio icon, then select 'Send to Desktop' (this will place a shortcut on your desktop) 
   4. Now go to your desktop and right click on the Jack PortAudio shortcut, and then select 'Properties' (use right click to open 'Properties') 
@@ -91,9 +92,7 @@ window reports that Jack is starting and remains open), the JackRouter ASIO
 interface will be available to all ASIO capable applications.
 
 For an overview of the command line options supported by the Jack Audio Server
-please see: [http://ccrma.stanford.edu/planetccrma/man/man1/jackd.1.html](http
-://web.archive.org/web/20140209042911/http://ccrma.stanford.edu/planetccrma/ma
-n/man1/jackd.1.html)
+please see: [http://ccrma.stanford.edu/planetccrma/man/man1/jackd.1.html](http://ccrma.stanford.edu/planetccrma/man/man1/jackd.1.html)
 
 The Jack v 1.9.8/64bits/JackRouter.dll still has to be registered "manually"
 with regsvr32 - so please try the following command to register the 64-bit
