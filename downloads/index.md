@@ -10,7 +10,7 @@ menu_item: true
 ### JACK1:
 
   * **Binaries**: please use your distribution's package manager (`apt-get, yum, synaptic` etc.) 
-  * **Source (jackaudio.org)**: [JACK 0.121.3](http://jackaudio.org/downloads/jack-audio-connection-kit-0.121.3.tar.gz) source tarball. 
+  * **Source (jackaudio.org)**: [JACK 0.124.1](http://jackaudio.org/downloads/jack-audio-connection-kit-0.124.1.tar.gz) source tarball. 
 
 ### JACK2:
 
@@ -21,7 +21,7 @@ menu_item: true
 
 ### JACK1:
 
-  * **Source (jackaudio.org)**: [JACK 0.121.3](http://jackaudio.org/downloads/jack-audio-connection-kit-0.121.3.tar.gz) source tarball. 
+  * **Source (jackaudio.org)**: [JACK 0.124.1](http://jackaudio.org/downloads/jack-audio-connection-kit-0.124.1.tar.gz) source tarball. 
 
 ### JACK2:
 
