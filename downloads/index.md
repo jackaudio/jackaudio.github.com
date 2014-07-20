@@ -4,8 +4,8 @@ title:  "Downloads"
 menu_item: true
 jack1_source : "http://jackaudio.org/downloads/jack-audio-connection-kit-0.124.1.tar.gz"
 jack1_source_v: "0.124.1"
-jack2_source : "http://jackaudio.org/downloads/jack-1.9.9.5.tar.bz2"
-jack2_source_v: "1.9.9.5"
+jack2_source : "https://dl.dropboxusercontent.com/u/28869550/jack-1.9.10.tar.bz2"
+jack2_source_v: "1.9.10"
 ---
 # Downloading JACK
 
@@ -16,25 +16,25 @@ jack2_source_v: "1.9.9.5"
   * **Binaries**: please use your distribution's package manager  
    (`apt-get, yum, synaptic` etc.)
 
-  * **Source**: [JACK {{page.jack1_source_v}}]({{page.jack1_source}}) tarball. 
+  * **Source tarball**: [JACK {{page.jack1_source_v}}]({{page.jack1_source}}). 
 
 ### JACK2:
 
   * **Binaries**: please use your distribution's package manager  
   (`apt-get, yum, synaptic` etc.) 
-  * **Source**: [ JACK {{page.jack2_source_v}}]({{page.jack2_source}}) tarball. 
+  * **Source tarball**: [ JACK {{page.jack2_source_v}}]({{page.jack2_source}}). 
 
 ## OS X
 
 ### JACK1:
 
-  * **Source**: [JACK {{page.jack1_source_v}}]({{page.jack1_source}}) tarball. 
+  * **Source tarball**: [JACK {{page.jack1_source_v}}]({{page.jack1_source}}). 
 
 ### JACK2:
 
   * **Binaries**: [Mixed 64/32 bit, v0.89 of JackOSX (compatible with current JACK API to 0.120.1) for Snow Leopard](http://sourceforge.net/projects/jackosx/files/JackOSX/0.89/JackOSX.0.89_64-32bits.zip/download)
   * **Binaries**: [Legacy 32 bit, v0.89 of JackOSX (compatible with current JACK API to 0.120.1) for systems older than Snow Leopard](http://sourceforge.net/projects/jackosx/files/JackOSX/0.89/JackOSX.0.89_32bits.zip/download)
-  * **Source**: [ JACK {{page.jack2_source_v}}]({{page.jack2_source}}) tarball. 
+  * **Source tarball**: [ JACK {{page.jack2_source_v}}]({{page.jack2_source}}). 
 
 ## Windows
 
@@ -42,12 +42,13 @@ jack2_source_v: "1.9.9.5"
 
   * **Installer for 32 bit Windows(XP...)**: [ JACK 1.9.10](https://dl.dropboxusercontent.com/u/28869550/Jack_v1.9.10_32_setup.exe). 
   * **Installer for Windows 64 bit (Vista, Windows 7)**: [ JACK 1.9.10](https://dl.dropboxusercontent.com/u/28869550/Jack_v1.9.10_64_setup.exe). 
+  * **Source tarball**: [ JACK {{page.jack2_source_v}}]({{page.jack2_source}}). 
 
 ## Solaris/OpenSolaris
 
 ### JACK2:
 
-  * **Source**: [ JACK 1.9.9](http://jackaudio.org/downloads/jack-1.9.9.5.tar.bz2) source tarball. 
+  * **Source tarball**: [ JACK 1.9.9](http://jackaudio.org/downloads/jack-1.9.9.5.tar.bz2). 
 
 Please note that although we bump the minor version rather frequently in the
 development repository, releases will not occur for every version number
