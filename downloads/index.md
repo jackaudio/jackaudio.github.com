@@ -44,16 +44,6 @@ jack2_source_v: "1.9.10"
   * **Installer for Windows 64 bit (Vista, Windows 7)**: [ JACK 1.9.10](https://dl.dropboxusercontent.com/u/28869550/Jack_v1.9.10_64_setup.exe). 
   * **Source tarball**: [ JACK {{page.jack2_source_v}}]({{page.jack2_source}}). 
 
-## Solaris/OpenSolaris
-
-### JACK2:
-
-  * **Source tarball**: [ JACK 1.9.9](http://jackaudio.org/downloads/jack-1.9.9.5.tar.bz2). 
-
-Please note that although we bump the minor version rather frequently in the
-development repository, releases will not occur for every version number
-change.
-
 ## JACK Source Code Repository
 
 JACK uses Git as its source control system. Our central git repository is
