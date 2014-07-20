@@ -2,6 +2,10 @@
 layout: page
 title:  "Downloads"
 menu_item: true
+jack1_source : "http://jackaudio.org/downloads/jack-audio-connection-kit-0.124.1.tar.gz"
+jack1_source_v: "0.124.1"
+jack2_source : "http://jackaudio.org/downloads/jack-1.9.9.5.tar.bz2"
+jack2_source_v: "1.9.9.5"
 ---
 # Downloading JACK
 
@@ -9,25 +13,28 @@ menu_item: true
 
 ### JACK1:
 
-  * **Binaries**: please use your distribution's package manager (`apt-get, yum, synaptic` etc.) 
-  * **Source (jackaudio.org)**: [JACK 0.124.1](http://jackaudio.org/downloads/jack-audio-connection-kit-0.124.1.tar.gz) source tarball. 
+  * **Binaries**: please use your distribution's package manager  
+   (`apt-get, yum, synaptic` etc.)
+
+  * **Source**: [JACK {{page.jack1_source_v}}]({{page.jack1_source}}) tarball. 
 
 ### JACK2:
 
-  * **Binaries**: please use your distribution's package manager (`apt-get, yum, synaptic` etc.) 
-  * **Source **: [ JACK 1.9.9 ](http://jackaudio.org/downloads/jack-1.9.9.5.tar.bz2) source tarball. 
+  * **Binaries**: please use your distribution's package manager  
+  (`apt-get, yum, synaptic` etc.) 
+  * **Source**: [ JACK {{page.jack2_source_v}}]({{page.jack2_source}}) tarball. 
 
 ## OS X
 
 ### JACK1:
 
-  * **Source (jackaudio.org)**: [JACK 0.124.1](http://jackaudio.org/downloads/jack-audio-connection-kit-0.124.1.tar.gz) source tarball. 
+  * **Source**: [JACK {{page.jack1_source_v}}]({{page.jack1_source}}) tarball. 
 
 ### JACK2:
 
   * **Binaries**: [Mixed 64/32 bit, v0.89 of JackOSX (compatible with current JACK API to 0.120.1) for Snow Leopard](http://sourceforge.net/projects/jackosx/files/JackOSX/0.89/JackOSX.0.89_64-32bits.zip/download)
   * **Binaries**: [Legacy 32 bit, v0.89 of JackOSX (compatible with current JACK API to 0.120.1) for systems older than Snow Leopard](http://sourceforge.net/projects/jackosx/files/JackOSX/0.89/JackOSX.0.89_32bits.zip/download)
-  * **Source**: [ JACK 1.9.8](http://jackaudio.org/downloads/jack-1.9.8.tgz) source tarball. 
+  * **Source**: [ JACK {{page.jack2_source_v}}]({{page.jack2_source}}) tarball. 
 
 ## Windows
 
