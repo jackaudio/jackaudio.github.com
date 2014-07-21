@@ -71,7 +71,7 @@ Those without write access can access the repository with these commands:
 You can also point a web browser at
 
     
-    [https://github.com/jackaudio/jack1](https://github.com/jackaudio/jack1)
+    https://github.com/jackaudio/jack1
     
 
 to be able to browse current source code and full history with all the usual
@@ -112,7 +112,7 @@ Those without write access can access the repository with this command:
 You can also point a web browser at
 
     
-    [https://github.com/jackaudio/jack2](https://github.com/jackaudio/jack2)
+    https://github.com/jackaudio/jack2
     
 
 to be able to browse current source code and full history with all the usual
