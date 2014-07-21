@@ -6,6 +6,9 @@ jack1_source : "http://jackaudio.org/downloads/jack-audio-connection-kit-0.124.1
 jack1_source_v: "0.124.1"
 jack2_source : "https://dl.dropboxusercontent.com/u/28869550/jack-1.9.10.tar.bz2"
 jack2_source_v: "1.9.10"
+jack2_osx_version: "0.90"
+jack2_osx_x32: "https://dl.dropboxusercontent.com/u/28869550/JackOSX.0.90_32bits.zip"
+jack2_osx_mixed: "https://dl.dropboxusercontent.com/u/28869550/JackOSX.0.90.zip"
 ---
 # Downloading JACK
 
@@ -32,8 +35,10 @@ jack2_source_v: "1.9.10"
 
 ### JACK2:
 
-  * **Binaries**: [Mixed 64/32 bit, v0.89 of JackOSX (compatible with current JACK API to 0.120.1) for Snow Leopard](http://sourceforge.net/projects/jackosx/files/JackOSX/0.89/JackOSX.0.89_64-32bits.zip/download)
-  * **Binaries**: [Legacy 32 bit, v0.89 of JackOSX (compatible with current JACK API to 0.120.1) for systems older than Snow Leopard](http://sourceforge.net/projects/jackosx/files/JackOSX/0.89/JackOSX.0.89_32bits.zip/download)
+  * **Binaries**: [Mixed 64/32 bit, {{page.jack2_osx_version}} of JackOSX for Snow Leopard]
+  ({{page.jack2_osx_mixed}})
+  * **Binaries**: [Legacy 32 bit, {{page.jack2_osx_version}} of JackOSX for systems older than Snow Leopard]
+  ({{page.jack2_osx_x32}})
   * **Source tarball**: [ JACK {{page.jack2_source_v}}]({{page.jack2_source}}). 
 
 ## Windows
