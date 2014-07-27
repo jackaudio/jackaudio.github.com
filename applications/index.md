@@ -145,6 +145,7 @@ menu_item: true
   * [**libjackmm**](http://sourceforge.net/projects/libjackmm) is a C++ interface to the jack audio connection kit. 
   * [**Pure Data**](http://puredata.info/) is a real-time graphical programming environment for audio, video, and graphical processing. 
   * [**PyJack**](http://sourceforge.net/projects/py-jack/) a Python module which provides an interface to Jack. 
+  * [**JACK-connector**](https://github.com/unclechu/node-jack-connector) a Node.JS module which provides an interface to Jack. 
   * [**Qjack**](https://bitbucket.org/asiniscalchi/qjack) allows you to connect Jack to QT very easily. 
   * [**RtAudio**](http://www.music.mcgill.ca/~gary/rtaudio) is a set of C++ classes that provide a common API (Application Programming Interface) for realtime audio input/output. 
   * [**Wine**](http://www.winehq.com/) an application that lets you run and recompile Windows applications under Linux. 
