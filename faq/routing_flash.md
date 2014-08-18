@@ -12,7 +12,7 @@ There are a couple of approaches here.
   2. systems that route audio from the web browser via GStreamer: [routing
   GStreamer via JACK](gstreamer_via_jack.html)
   3. systems that route audio from the web browser via PulseAudio: [routing
-  PulseAudio via JACK](pulse_via_jack.html)
+  PulseAudio via JACK](pulseaudio_and_jack.html)
   4. use the libflashsupport-jack library from Torben Hohn 
 
 The first three solutions that are described via the linked pages. The final
