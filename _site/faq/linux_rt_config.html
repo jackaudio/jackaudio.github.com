@@ -20,7 +20,7 @@
 
           <nav>
   <a href="/"> Home </a> |
-  <a href="/applications"> Applications </a> |
+  <a href="/applications/"> Applications </a> |
   <a href="/faq/"> FAQ </a> |
   <a href="https://github.com/jackaudio/jackaudio.github.com/wiki"> WIKI </a> |
   <a href="/api/"> API </a> |
@@ -128,7 +128,7 @@ configured the &quot;limits&quot; file, you will need to determine the name of t
 (it is likely called &quot;audio&quot; or &quot;jackuser&quot;) and then you can just add yourself
 to the group with this command (run as the superuser inside a terminal
 window):</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">usermod -a G theGroupName yourUserId
+<div class="highlight"><pre><code class="language-text" data-lang="text">usermod -a -G theGroupName yourUserId
 </code></pre></div>
 <p>substituting the real names for <code>theGroupName</code> and <code>yourUserId</code></p>
 
