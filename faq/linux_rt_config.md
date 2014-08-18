@@ -103,7 +103,7 @@ window):
 
     
     
-    usermod -a G theGroupName yourUserId
+    usermod -a -G theGroupName yourUserId
     
 
 substituting the real names for `theGroupName` and `yourUserId`
