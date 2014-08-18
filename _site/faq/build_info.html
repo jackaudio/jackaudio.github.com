@@ -63,7 +63,7 @@ on your machine.</li>
 memory) file system for certain purposes. Specifically, it will try to use a
 tmpfs filesystem mounted on /dev/shm by default. You can test if you have this
 already by running the following command in a terminal:</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">mount | grep shm
+<div class="highlight"><pre><code class="language-text" data-lang="text">mount | grep shm
 </code></pre></div>
 <p>If it generates any output, you are all set. Most modern Linux systems will be
 this way. If yours is not then we are going to assume that you know what you
@@ -77,7 +77,7 @@ to add <code>--prefix /usr</code> or similar to the ./configure command, to ensu
 the install step will overwrite the existing version. By default these
 commands will install JACK to /usr/local/bin whereas any system-installed
 version will likely exist in /usr/bin.</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">./configure
+<div class="highlight"><pre><code class="language-text" data-lang="text">./configure
 make
 make install
 </code></pre></div>
@@ -91,7 +91,7 @@ to add <code>--prefix /usr</code> or similar to the ./waf configure command, to 
 that the install step will overwrite the existing version. By default these
 commands will install JACK to /usr/local/bin whereas any system-installed
 version will likely exist in /usr/bin.</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">./waf configure
+<div class="highlight"><pre><code class="language-text" data-lang="text">./waf configure
 ./waf
 ./waf install
 </code></pre></div>

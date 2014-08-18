@@ -85,7 +85,7 @@ The user has subsequently added another audio device, either as an internal
 <p>All that is necessary in this case is to define the device that PulseAudio and
 JACK will use. Run the following command in a terminal window: <code>cat
 /proc/asound/cards</code> You will some output like this:</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text"> 0 [SB             ]: HDA-Intel - HDA ATI SB
+<div class="highlight"><pre><code class="language-text" data-lang="text"> 0 [SB             ]: HDA-Intel - HDA ATI SB
                       HDA ATI SB at 0xfcef8000 irq 16
  1 [DSP            ]: H-DSP - Hammerfall DSP
                       RME Hammerfall DSP + Digiface at 0xfcff0000, irq 20
@@ -123,7 +123,7 @@ via the upper right of QJackctl&#39;s setup dialog:</p>
 edit the field labelled &quot;Server path&quot;. Insert <code>pasuspsender --</code> in front of
 whatever is there (probably just something like <code>jackd</code>). So for example, if
 you had &quot;jackd&quot; in the &quot;Server path&quot; field already, it should now say:</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">pasuspender -- jackd
+<div class="highlight"><pre><code class="language-text" data-lang="text">pasuspender -- jackd
 </code></pre></div>
 <p>This will cause PulseAudio to suspend itself while JACK runs, and restart when
 JACK exits (or crashes).</p>

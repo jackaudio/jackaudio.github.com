@@ -71,7 +71,7 @@ software install/update tool(s).</p>
 <p>Once you have it installed, you can use it by editing the file <code>~/.asoundrc</code>
 (this file may not exist when you start this, or it may already have some
 content). You need to add the following text to it:</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">pcm.rawjack {
+<div class="highlight"><pre><code class="language-text" data-lang="text">pcm.rawjack {
     type jack
     playback_ports {
         0 system:playback_1
@@ -111,7 +111,7 @@ things work is to use the ALSA <code>aplay</code> utility like this: <code>aplay
 <p>If you wanted to make all ALSA applications use this device by default (i.e.
 even when no explicit name is given) then your <code>~/.asoundrc</code> should also
 contain this text:</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">pcm.!default {
+<div class="highlight"><pre><code class="language-text" data-lang="text">pcm.!default {
     type plug
     slave { pcm &quot;rawjack&quot; }
 }

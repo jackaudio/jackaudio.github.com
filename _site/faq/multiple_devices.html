@@ -121,7 +121,7 @@ composed of 2 or more other devices. In our example, we&#39;ll just focus on 2
 devices being merged into 1, where both devices have just 2 channels in and
 out. This is the text you need to make sure is in ~/.asoundrc (below, we
 describe what this does):</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">pcm.merge {
+<div class="highlight"><pre><code class="language-text" data-lang="text">pcm.merge {
     type multi;
     slaves.a.pcm hw:0
     slaves.a.channels 2;
@@ -150,11 +150,11 @@ Note that numbering of devices and channels in ALSA starts at zero, not one.</li
 <p>The most important and complex part of the above definition is the channel
 mappings defined by the <code>bindings</code> lines. A full channel mapping definition
 consists of a pair of a lines of the following general form:</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">    bindings.CHANNEL_OF_PSEUDO_DEVICE.slave SLAVE_DEVICE_THAT_WILL_PROVIDE_THIS_CHANNEL
+<div class="highlight"><pre><code class="language-text" data-lang="text">    bindings.CHANNEL_OF_PSEUDO_DEVICE.slave SLAVE_DEVICE_THAT_WILL_PROVIDE_THIS_CHANNEL
     bindings.CHANNEL_OF_PSEUDO_DEVICE.channel CHANNEL_OF_SLAVE_DEVICE_THAT_WILL_PROVIDE_THIS_CHANNEL
 </code></pre></div>
 <p>So the specific pair of lines:</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">    bindings.0.slave a;
+<div class="highlight"><pre><code class="language-text" data-lang="text">    bindings.0.slave a;
     bindings.0.channel 0;
 </code></pre></div>
 <p>mean that &quot;channel 0 of the pseudo-device will correspond to channel 0 of the
@@ -174,7 +174,7 @@ out (and possibly control) various hardware parameters associated with the
 device. Unfortunately there is no way to merge these together in the same way,
 so we have to provide a &quot;dummy&quot; control device definition that will keep such
 applications happy. This definition looks like this:</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">ctl.merge {
+<div class="highlight"><pre><code class="language-text" data-lang="text">ctl.merge {
     type hw
     card 0
 }
