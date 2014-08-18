@@ -73,7 +73,7 @@ the settings in the [IO] portion of the file.
 ## Installation and Configuration
 
   1. Download the Jack Audio Connection installer for Windows from the [download
-  page.](/downloads)
+  page.](/downloads/)
   2. Use the installer (either the 32 bit or the mixed 64/32 bit one). 
   3. From the Windows Start menu, locate the Jack folder and right click on Jack Portaudio icon, then select 'Send to Desktop' (this will place a shortcut on your desktop) 
   4. Now go to your desktop and right click on the Jack PortAudio shortcut, and then select 'Properties' (use right click to open 'Properties') 

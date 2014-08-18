@@ -34,7 +34,7 @@ the same device.
 
 The one case where this fails is if you have multiple instances of the same
 type of soundcard. This is a much trickier situation to deal with and is
-covered in detail [here](http://alsa.opensrc.org/Udev#Identify_two_identical_audio_devices).
+covered in detail [here](http://alsa.opensrc.org/Udev).
 
 ### Where do I use this name?
 

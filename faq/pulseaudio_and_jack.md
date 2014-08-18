@@ -28,7 +28,7 @@ either never installed it, removed it from their systems, or disabled it. They
 will generally route audio from other apps to JACK without using PulseAudio,
 via the techniques described in the "How do I route audio to/from ..." section
 of the
-[FAQ](/faq).
+[FAQ](/faq/).
 
 ## Option 2: use two different soundcards
 
