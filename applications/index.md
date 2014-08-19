@@ -24,6 +24,9 @@ menu_item: true
     made between JACK and/or ALSA clients. It is also capable of running in the
     background, restoring connections while clients and ports appear. 
   * [**ALSA Patch Bay**](http://pkl.net/~node/software/alsa-patch-bay)
+    is a graphical patch bay for the ALSA sequencer API and the JACK audio API. It
+    can use FLTK or GTKmm for the interface and take advantage LASH session
+    management.
   * [**gjacktransport**](http://gjacktransport.sourceforge.net/)
     is a standalone application that provides access to the JACK transport 
     mechanism via a dynamic graphical slider. 
@@ -31,15 +34,15 @@ menu_item: true
     is a curses Jack connection manager, based on naconnect by
     [**Nedko Arnaudov**](http://nedko.arnaudov.name/). 
   * [**patchage**](http://drobilla.net/software/patchage/)
-    a modular patch bay for audio and MIDI systems based on Jack and Alsa.
+    is a modular patch bay for audio and MIDI systems based on Jack and Alsa.
   * [**pyjack**](http://sourceforge.net/projects/py-jack/)
 	  is a Python module which provides an interface to Jack. 
   * [**QJackConnect**](http://www.suse.de/~mana/jack.html)
-    Qt based patchbay for JACK
+    is a Qt based patchbay for JACK
   * [**QjackCtl**](http://qjackctl.sourceforge.net/)
-    a Qt based graphical control application for JACK.
+    is a Qt based graphical control application for JACK.
   * [**Cadence (KXStudio)**](http://kxstudio.sourceforge.net/Applications:Cadence)
-	  manages JACK, calls other tools and checks and tweaks the system.
+	  manages JACK, calls other tools and also checks and tweaks the system.
 
 ## DJ Software
 
