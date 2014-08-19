@@ -30,7 +30,8 @@ menu_item: true
   * [**njconnect**](http://sourceforge.net/projects/njconnect/)
     is a curses Jack connection manager, based on naconnect by
     [**Nedko Arnaudov**](http://nedko.arnaudov.name/). 
-  * [**patchage**](http://om-synth.nongnu.org/patchage.html)
+  * [**patchage**](http://drobilla.net/software/patchage/)
+    a modular patch bay for audio and MIDI systems based on Jack and Alsa.
   * [**pyjack**](http://sourceforge.net/projects/py-jack/)
 	  is a Python module which provides an interface to Jack. 
   * [**QJackConnect**](http://www.suse.de/~mana/jack.html)
