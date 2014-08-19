@@ -40,7 +40,8 @@ menu_item: true
   * [**QJackConnect**](http://www.suse.de/~mana/jack.html)
     is a Qt based patchbay for JACK
   * [**QjackCtl**](http://qjackctl.sourceforge.net/)
-    is a Qt based graphical control application for JACK.
+    is a Qt based graphical control application for JACK
+    with routing capabilities.
   * [**Cadence (KXStudio)**](http://kxstudio.sourceforge.net/Applications:Cadence)
 	  manages JACK, calls other tools and also checks and tweaks the system.
   * [**Catarina(KXStudio)**]
