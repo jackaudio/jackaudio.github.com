@@ -43,6 +43,13 @@ menu_item: true
     is a Qt based graphical control application for JACK.
   * [**Cadence (KXStudio)**](http://kxstudio.sourceforge.net/Applications:Cadence)
 	  manages JACK, calls other tools and also checks and tweaks the system.
+  * [**Catarina(KXStudio)**]
+    (http://kxstudio.sourceforge.net/Applications:Catarina)
+    is a JACK Patchbay similar to Patchage that supports JACK Transport.
+  * [**Claudia (KXStudio)**](http://kxstudio.sourceforge.net/Applications:Claudia)
+    is a LADISH frontend.
+  * [**Carla (KXStudio)**](http://kxstudio.sourceforge.net/Applications:Carla)
+    is an audio plugin host.
 
 ## DJ Software
 
