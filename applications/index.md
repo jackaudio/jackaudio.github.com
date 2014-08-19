@@ -19,14 +19,26 @@ menu_item: true
 
 ## Control Applications
 
-  * [**Aj-snapshot**](http://aj-snapshot.sourceforge.net/) is a small program that can be used to make snapshots of the connections made between JACK and/or ALSA clients. It is also capable of running in the background, restoring connections while clients and ports appear. 
+  * [**Aj-snapshot**](http://aj-snapshot.sourceforge.net/)
+    is a small program that can be used to make snapshots of the connections 
+    made between JACK and/or ALSA clients. It is also capable of running in the
+    background, restoring connections while clients and ports appear. 
   * [**ALSA Patch Bay**](http://pkl.net/~node/software/alsa-patch-bay)
-  * [**gjacktransport**](http://gjacktransport.sourceforge.net/) is a standalone application that provides access to the JACK transport mechanism via a dynamic graphical slider. 
-  * [**njconnect**](http://sourceforge.net/projects/njconnect/) is a curses Jack connection manager, based on naconnect by [**Nedko Arnaudov**](http://nedko.arnaudov.name/). 
+  * [**gjacktransport**](http://gjacktransport.sourceforge.net/)
+    is a standalone application that provides access to the JACK transport 
+    mechanism via a dynamic graphical slider. 
+  * [**njconnect**](http://sourceforge.net/projects/njconnect/)
+    is a curses Jack connection manager, based on naconnect by
+    [**Nedko Arnaudov**](http://nedko.arnaudov.name/). 
   * [**patchage**](http://om-synth.nongnu.org/patchage.html)
-  * [**pyjack**](http://sourceforge.net/projects/py-jack/) is a Python module which provides an interface to Jack. 
+  * [**pyjack**](http://sourceforge.net/projects/py-jack/)
+	  is a Python module which provides an interface to Jack. 
   * [**QJackConnect**](http://www.suse.de/~mana/jack.html)
-  * [**qjackctl**](http://qjackctl.sourceforge.net/) is the most popular graphical control application. 
+    Qt based patchbay for JACK
+  * [**QjackCtl**](http://qjackctl.sourceforge.net/)
+    a Qt based graphical control application for JACK.
+  * [**Cadence (KXStudio)**](http://kxstudio.sourceforge.net/Applications:Cadence)
+	  manages JACK, calls other tools and checks and tweaks the system.
 
 ## DJ Software
 
