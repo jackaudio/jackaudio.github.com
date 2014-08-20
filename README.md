@@ -22,10 +22,23 @@ formatting mistakes and file bugreports about them.
 If you feel comfortable fixing issues yourself, please file a pull request.
 
 If you want to help out on the style part, you are more than welcome to clone the
-repo and start hacking but please communicate about your vision, so there won't be 
+repo and start hacking but please communicate about your vision,
+so there won't be any drama.
 
 If you have any ideas or suggestions, please feel free to contact the authors via 
 jack-devel mailinglist or on github.
+
+## development notes
+* requires jekyll >= 2.2.0 (because of changes in the configuration file)
+
+A convenient way of working is, to check out the working copy and start jekyll
+with:
+    cd /path/to/working/copy
+    jekyll serve --watch
+
+that way, jekyll watches all source files for changes and regenerates the _site
+dir on changes. It also starts a local webserver on port 4000 where the result can
+be observed.
 
 ## site internal links
 ### relative to site root
