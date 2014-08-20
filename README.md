@@ -40,6 +40,8 @@ that way, jekyll watches all source files for changes and regenerates the _site
 dir on changes. It also starts a local webserver on port 4000 where the result can
 be observed.
 
+Desired line length maximum is 82 columns.
+
 ## site internal links
 ### relative to site root
     [name to display](/path/to/file)

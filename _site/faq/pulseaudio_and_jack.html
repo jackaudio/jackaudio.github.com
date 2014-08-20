@@ -48,12 +48,25 @@ more). Here are a couple of basic observations about using JACK and PulseAudio
 together:</p>
 
 <ol>
-<li>While PulseAudio is running, JACK cannot access the same soundcard that Pulse is using. Even though in theory ALSA provides mechanisms for this to be possible (e.g. &quot;dmix&quot; device access), they do not work well enough to support both of these systems reliably. </li>
-<li>PulseAudio and JACK can appear to have similar goals to many people, and they wonder why its not possible to replace one with the other. However, beyond a very superficial similarity, they really do not have much in common: 
+<li>While PulseAudio is running, JACK cannot access the same soundcard
+that Pulse is using. Even though in theory ALSA provides mechanisms
+for this to be possible (e.g. &quot;dmix&quot; device access),
+they do not work well enough to support both of these systems reliably. </li>
+<li>PulseAudio and JACK can appear to have similar goals to many people,
+and they wonder why its not possible to replace one with the other.
+However, beyond a very superficial similarity,
+they really do not have much in common: 
 
 <ul>
-<li>PulseAudio is focused on desktop and mobile audio needs. It doesn&#39;t try to address low latency usage, but does provide seamless device switching, network routing, global per-application volume control and lots more great stuff. </li>
-<li>JACK is focused on the needs of pro-audio and music creation users. It offers the lowest possible latency, complete routing flexibility between applications and audio hardware, and all audio is always sample synchronized - apps don&#39;t run ahead or behind of others. It doesn&#39;t provide the smooth desktop experience that PulseAudio is aiming at. </li>
+<li>PulseAudio is focused on desktop and mobile audio needs.
+It doesn&#39;t try to address low latency usage, but does provide
+seamless device switching, network routing,
+global per-application volume control and lots more great stuff. </li>
+<li>JACK is focused on the needs of pro-audio and music creation users.
+It offers the lowest possible latency, complete routing flexibility
+between applications and audio hardware, and all audio is always
+sample synchronized - apps don&#39;t run ahead or behind of others.
+It doesn&#39;t provide the smooth desktop experience that PulseAudio is aiming at. </li>
 </ul></li>
 </ol>
 

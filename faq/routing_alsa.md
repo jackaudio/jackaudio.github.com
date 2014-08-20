@@ -12,8 +12,8 @@ to route their audio to/from JACK. There are two ways of approaching this.
 ## Using an ALSA Loopback device and JACK alsa_in/alsa_out clients
 
 This more complex but probably more robust approach is well-documented in
-[this
-document](http://alsa.opensrc.org/Jack_and_Loopback_device_as_Alsa-to-Jack_bridge).
+[this document]
+(http://alsa.opensrc.org/Jack_and_Loopback_device_as_Alsa-to-Jack_bridge).
 
 ## Using the ALSA JACK PCM plugin
 

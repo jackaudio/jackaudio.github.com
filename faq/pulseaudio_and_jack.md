@@ -10,10 +10,23 @@ handle all sound playback (media players, desktop alerts, web browsers and
 more). Here are a couple of basic observations about using JACK and PulseAudio
 together:
 
-  1. While PulseAudio is running, JACK cannot access the same soundcard that Pulse is using. Even though in theory ALSA provides mechanisms for this to be possible (e.g. "dmix" device access), they do not work well enough to support both of these systems reliably. 
-  2. PulseAudio and JACK can appear to have similar goals to many people, and they wonder why its not possible to replace one with the other. However, beyond a very superficial similarity, they really do not have much in common: 
-    * PulseAudio is focused on desktop and mobile audio needs. It doesn't try to address low latency usage, but does provide seamless device switching, network routing, global per-application volume control and lots more great stuff. 
-    * JACK is focused on the needs of pro-audio and music creation users. It offers the lowest possible latency, complete routing flexibility between applications and audio hardware, and all audio is always sample synchronized - apps don't run ahead or behind of others. It doesn't provide the smooth desktop experience that PulseAudio is aiming at. 
+1. While PulseAudio is running, JACK cannot access the same soundcard
+  that Pulse is using. Even though in theory ALSA provides mechanisms
+  for this to be possible (e.g. "dmix" device access),
+  they do not work well enough to support both of these systems reliably. 
+2. PulseAudio and JACK can appear to have similar goals to many people,
+  and they wonder why its not possible to replace one with the other.
+  However, beyond a very superficial similarity,
+  they really do not have much in common: 
+  * PulseAudio is focused on desktop and mobile audio needs.
+    It doesn't try to address low latency usage, but does provide
+    seamless device switching, network routing,
+    global per-application volume control and lots more great stuff. 
+  * JACK is focused on the needs of pro-audio and music creation users.
+    It offers the lowest possible latency, complete routing flexibility
+    between applications and audio hardware, and all audio is always
+    sample synchronized - apps don't run ahead or behind of others.
+    It doesn't provide the smooth desktop experience that PulseAudio is aiming at. 
 
 Combining PulseAudio and JACK on the same machine can be problematic. There
 are several options, some of which leave PulseAudio and JACK as entirely
@@ -69,7 +82,8 @@ The names in your system will vary.
 To tell JACK to use the RME Hammerfall DSP, you would typically do this either
 via the upper right of QJackctl's setup dialog:
 
-![screenshot of qjackctl's setup dialog](http://jackaudio.org/files/qjackctl_setup.png)
+![screenshot of qjackctl's setup dialog]
+(http://jackaudio.org/files/qjackctl_setup.png)
 
 or on the command line, by passing `-d hw:DSP` to JACK's ALSA backend.
 
