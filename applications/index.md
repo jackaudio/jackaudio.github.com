@@ -639,7 +639,6 @@ menu_item: true
     Runs as a Jack client for Audio/MIDI, and with GTK GUI. 
   * [**jost**](http://www.anticore.org/jucetice/?page_id=4)
     is a host for native linux vst plugins (jack / alsa_seq). 
-  * [**Linux Vst Compatibility Page**](http://ladspavst.linuxaudio.org/)
 
 ## Wikipedia References
 
