@@ -33,6 +33,7 @@ jack-devel mailinglist or on github.
 
 A convenient way of working is, to check out the working copy and start jekyll
 with:
+
     cd /path/to/working/copy
     jekyll serve --watch
 
