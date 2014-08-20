@@ -5,8 +5,8 @@ title: "JACK Developer Information"
 
 # JACK Developer Information
 
-Want to use JACK in your software? Great, grab the [source](/downloads) and see the
-[docs](/documentation).
+Want to use JACK in your software? Great, grab the [source](/downloads)
+and see the [docs](/documentation/).
 
 Want to get involved? How about getting on the lists. Paul Davis is the
 maintainer of this project.
@@ -45,7 +45,8 @@ Jack O'Quin frequently acted as the primary maintainer of JACK for long
 periods, and has contributed many new interfaces and bug fixes.
 
 Stephane Letz ported JACK to OS X and wrote the new C++ SMP-aware
-implementation [jackdmp](http://www.grame.fr/~letz/jackdmp.html). He and Johnny Petrantoni created
+implementation [jackdmp](http://www.grame.fr/~letz/jackdmp.html).
+He and Johnny Petrantoni created
 [JackOSX](http://jackosx.com/),
 including JACK and utilities for OS X.
 

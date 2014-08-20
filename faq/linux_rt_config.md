@@ -9,8 +9,9 @@ Realtime (RT) scheduling is a feature of all Linux operating systems that
 enables an application to meet timing deadlines more reliably. Almost all
 Linux distributions consider RT scheduling to be a potential source of system
 abuse, and so access to it is limited to varying degrees. As mentioned in the 
-[FAQ](realtime_vs_realtime_kernel.html), it is very important to understand that **you do NOT need
-an "RT kernel" to use RT scheduling** (this is a very common misconception.)
+[FAQ](realtime_vs_realtime_kernel.html), it is very important to understand that
+**you do NOT need an "RT kernel" to use RT scheduling**
+(this is a very common misconception.)
 
 JACK requires real time (RT) scheduling privileges for reliable, dropout-free
 operation. Modern versions of JACK request RT scheduling by default, though it
@@ -33,11 +34,15 @@ case, some work is required.
 
 Distributions that are known to get this completely right include:
 
-  * AVLinux 
-  * 64Studio  These distributions have JACK packages that will create and configure a group with the required priviledges for RT scheduling, but will not add you to that group. 
-  * Debian Squeeze 
-  * Fedora 13 and later 
-  * Ubuntu 10.4 and later  Unfortunately, on these systems you will need to determine which group name is used, and then skip to step 2 (reading carefully). 
+* AVLinux 
+* 64Studio  These distributions have JACK packages that will
+  create and configure a group with the required priviledges for
+  RT scheduling, but will not add you to that group. 
+* Debian Squeeze 
+* Fedora 13 and later 
+* Ubuntu 10.4 and later  Unfortunately,
+  on these systems you will need to determine which group name is used,
+  and then skip to step 2 (reading carefully). 
 
 Ultimately, the only way to find out if your system is configured properly is
 to run JACK with RT scheduling and see if it works.
@@ -45,8 +50,8 @@ to run JACK with RT scheduling and see if it works.
 ## This may not work!
 
 If you follow all these steps carefully and they do not work, you should
-review the information over [here](linux_group_sched.html) and consider whether this may apply to
-your system.
+review the information over [here](linux_group_sched.html)
+and consider whether this may apply to your system.
 
 ## Systems using PAM
 

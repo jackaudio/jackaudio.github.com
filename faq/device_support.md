@@ -11,10 +11,10 @@ All devices with functioning CoreAudio drivers will work with JACK.
 
 ## On Linux
 
-All devices [supported by
-ALSA](http://www.alsa-project.org/main/index.php/Matrix:Main) (PCI, USB and Bluetooth) or
-[FFADO](http://ffado.org/)
-(FireWire) will work with JACK.
+All devices [supported by ALSA]
+(http://www.alsa-project.org/main/index.php/Matrix:Main)
+(PCI, USB and Bluetooth) or
+[FFADO](http://ffado.org/) (FireWire) will work with JACK.
 
 ## On other operating systems
 

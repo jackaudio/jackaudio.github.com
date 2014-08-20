@@ -99,7 +99,14 @@ and then start up JACK using that new &quot;pseudo&quot; device.</p>
 
 <h4>OS X</h4>
 
-<p><strong>You must perform these steps as a user with administrative priviledges</strong>. The first thing to do is to open up Applications -&gt; Utilities -&gt; Audio/MIDI Setup. Go to the main menu bar, click on Audio and then select Open aggregate device editor. Follow the simple instructions to add the each desired playback or capture device to your new aggregate device. Then pick a name for the new device. This is the name you will also use to choose the device for use with JACK. </p>
+<p><strong>You must perform these steps as a user with administrative priviledges</strong>.
+The first thing to do is to open up
+Applications -&gt; Utilities -&gt; Audio/MIDI Setup.
+Go to the main menu bar, click on Audio and then select
+Open aggregate device editor. Follow the simple instructions to
+add each desired playback or capture device to your new aggregate device.
+Then pick a name for the new device. This is the name you will also use
+to choose the device for use with JACK. </p>
 
 <p>Note that there are quite a few subtle bugs with Apple&#39;s &quot;aggregate device&quot;
 facilities. Various things can happen that will cause the device to lose all
@@ -140,12 +147,22 @@ describe what this does):</p>
 <p>Lets see what this does.</p>
 
 <ul>
-<li>It defines a new audio pseudo-device called &quot;merge&quot;. You can use this name anywhere you might use the name of an ALSA audio device, such as &quot;hw:0&quot; or &quot;hw:HDA&quot; or &quot;hw:DSP&quot; or &quot;plughw:1&quot;. </li>
-<li>It names &quot;hw:0&quot; as the first component (or &quot;slave&quot;) of this pseudo-device (slave.a.pcm) and &quot;hw:1&quot; as the second component (slave.b.pcm) </li>
-<li>It states that the pseudo-device will use 2 channels from the first component and 2 channels from the 2nd component. </li>
-<li>The lines contains <code>binding.</code> list, in order, which channel of which component will correspond to the 4 channels of the pseudo-device. In the mapping shown above, the first channel comes from the first component, then the 2nd channel from the 2nd component, the 3rd from the first component and the 4th from the second component. 
-Note that numbering of devices and channels in ALSA starts at zero, not one.</li>
+<li>It defines a new audio pseudo-device called &quot;merge&quot;.
+You can use this name anywhere you might use the name of an ALSA audio device,
+such as &quot;hw:0&quot; or &quot;hw:HDA&quot; or &quot;hw:DSP&quot; or &quot;plughw:1&quot;. </li>
+<li>It names &quot;hw:0&quot; as the first component (or &quot;slave&quot;) of this pseudo-device
+(slave.a.pcm) and &quot;hw:1&quot; as the second component (slave.b.pcm) </li>
+<li>It states that the pseudo-device will use 2 channels from the first component
+and 2 channels from the 2nd component. </li>
+<li>The lines contains <code>binding.</code> list, in order,
+which channel of which component will correspond to
+the 4 channels of the pseudo-device. In the mapping shown above,
+the first channel comes from the first component,
+then the 2nd channel from the 2nd component,
+the 3rd from the first component and the 4th from the second component. </li>
 </ul>
+
+<p>Note that numbering of devices and channels in ALSA starts at zero, not one.</p>
 
 <p>The most important and complex part of the above definition is the channel
 mappings defined by the <code>bindings</code> lines. A full channel mapping definition

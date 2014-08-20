@@ -46,8 +46,9 @@
 enables an application to meet timing deadlines more reliably. Almost all
 Linux distributions consider RT scheduling to be a potential source of system
 abuse, and so access to it is limited to varying degrees. As mentioned in the 
-<a href="realtime_vs_realtime_kernel.html">FAQ</a>, it is very important to understand that <strong>you do NOT need
-an &quot;RT kernel&quot; to use RT scheduling</strong> (this is a very common misconception.)</p>
+<a href="realtime_vs_realtime_kernel.html">FAQ</a>, it is very important to understand that
+<strong>you do NOT need an &quot;RT kernel&quot; to use RT scheduling</strong>
+(this is a very common misconception.)</p>
 
 <p>JACK requires real time (RT) scheduling privileges for reliable, dropout-free
 operation. Modern versions of JACK request RT scheduling by default, though it
@@ -68,10 +69,14 @@ case, some work is required.</p>
 
 <ul>
 <li>AVLinux </li>
-<li>64Studio  These distributions have JACK packages that will create and configure a group with the required priviledges for RT scheduling, but will not add you to that group. </li>
+<li>64Studio  These distributions have JACK packages that will
+create and configure a group with the required priviledges for
+RT scheduling, but will not add you to that group. </li>
 <li>Debian Squeeze </li>
 <li>Fedora 13 and later </li>
-<li>Ubuntu 10.4 and later  Unfortunately, on these systems you will need to determine which group name is used, and then skip to step 2 (reading carefully). </li>
+<li>Ubuntu 10.4 and later  Unfortunately,
+on these systems you will need to determine which group name is used,
+and then skip to step 2 (reading carefully). </li>
 </ul>
 
 <p>Ultimately, the only way to find out if your system is configured properly is
@@ -80,8 +85,8 @@ to run JACK with RT scheduling and see if it works.</p>
 <h2>This may not work!</h2>
 
 <p>If you follow all these steps carefully and they do not work, you should
-review the information over <a href="linux_group_sched.html">here</a> and consider whether this may apply to
-your system.</p>
+review the information over <a href="linux_group_sched.html">here</a>
+and consider whether this may apply to your system.</p>
 
 <h2>Systems using PAM</h2>
 

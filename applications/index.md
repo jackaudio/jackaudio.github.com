@@ -643,4 +643,5 @@ menu_item: true
 ## Wikipedia References
 
   * [**Ardour**](http://en.wikipedia.org/wiki/Ardour_%28audio_processor%29)
-  * [**Jack Audio Connection Kit**](http://en.wikipedia.org/wiki/JACK_Audio_Connection_Kit)
+  * [**Jack Audio Connection Kit**]
+    (http://en.wikipedia.org/wiki/JACK_Audio_Connection_Kit)
