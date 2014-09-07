@@ -1,12 +1,12 @@
 ---
 layout: page
-title: "JACK Mailing Lists"
+title: "Community"
+url: "/community"
 ---
 
 # JACK Mailing Lists
 
-## jack-devel@jackaudio.org
-
+**jack-devel@jackaudio.org**
 [ [sign up](http://lists.jackaudio.org/listinfo.cgi/jack-devel-jackaudio.org) |
 [Nabblearchives](http://jack-audio.10948.n7.nabble.com/Jackit-f3.html) ]
 
