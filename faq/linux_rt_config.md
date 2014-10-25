@@ -40,9 +40,8 @@ Distributions that are known to get this completely right include:
   RT scheduling, but will not add you to that group. 
 * Debian Squeeze 
 * Fedora 13 and later 
-* Ubuntu 10.4 and later  Unfortunately,
-  on these systems you will need to determine which group name is used,
-  and then skip to step 2 (reading carefully). 
+* Ubuntu Studio
+* Ubuntu - However, the user needs to be added to "audio" group.
 
 Ultimately, the only way to find out if your system is configured properly is
 to run JACK with RT scheduling and see if it works.
