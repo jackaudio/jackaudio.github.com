@@ -304,6 +304,29 @@ menu_item: true
     lets you notate and compose music easily with your keyboard,
     your mouse, or a MIDI keyboard. 
 
+## Plugin Hosts
+
+  * [**Carla (KXStudio)**](http://kxstudio.sourceforge.net/Applications:Carla)
+    is an audio plugin host.
+  * [**FSTHOST**](http://sourceforge.net/projects/fsthost/)
+    is a linux VST host - hybrid using winelib.
+    Runs as a Jack client for Audio/MIDI, and with GTK GUI. 
+  * [**JACK Rack**](http://jack-rack.sourceforge.net/)
+    a LADSPA effects rack for jack. 
+  * [**jackspa**](http://code.google.com/p/jackspa/)
+    is a small utility which will host a LADSPA plugin,
+    providing JACK ports for its audio inputs and outputs. 
+  * [**jost**](http://www.anticore.org/jucetice/?page_id=4)
+    is a host for native linux vst plugins (jack / alsa_seq). 
+  * [**ng-jackspa**](https://gna.org/projects/ngjackspa)
+    is a set of simple user interfaces that host a LADSPA plugin,
+    providing JACK ports for its audio inputs and outputs,
+    and dynamic setting of its control inputs.
+    Additionally, the plugin controls can be exported to or controlled by
+    control voltages on standard JACK audio ports. 
+  * [**Soundtank**](http://sourceforge.net/projects/soundtank)
+    a midi controlled host for softsynths made out of LADSPA plugins. 
+
 ## Programming Libraries
 
   * [**Allegro**](http://alleg.sourceforge.net/)
