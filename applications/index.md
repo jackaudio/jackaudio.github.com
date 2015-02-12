@@ -66,8 +66,6 @@ menu_item: true
     is a JACK Patchbay similar to Patchage that supports JACK Transport.
   * [**Claudia (KXStudio)**](http://kxstudio.sourceforge.net/Applications:Claudia)
     is a LADISH frontend.
-  * [**Carla (KXStudio)**](http://kxstudio.sourceforge.net/Applications:Carla)
-    is an audio plugin host.
 
 ## DJ Software
 
@@ -103,30 +101,17 @@ menu_item: true
   * [**jackEQ**](http://jackeq.sourceforge.net/)
     a tool for routing and manipulating audio from/to multiple input/output
     sources. 
-  * [**JACK Rack**](http://jack-rack.sourceforge.net/)
-    a LADSPA effects rack for jack. 
-  * [**jackspa**](http://code.google.com/p/jackspa/)
-    is a small utility which will host a LADSPA plugin,
-    providing JACK ports for its audio inputs and outputs. 
   * [**JAMin**](http://jamin.sourceforge.net/)
     the state-of-the-art realtime mastering processor. 
   * [**linuxDSP**](http://www.linuxdsp.co.uk/)
     provides 'plugin' audio processing software for linux. 
   * [**Louderbox**](http://nixbit.com/cat/multimedia/audio/louderbox/)
     an 8 band audio processor. 
-  * [**ng-jackspa**](https://gna.org/projects/ngjackspa)
-    is a set of simple user interfaces that host a LADSPA plugin,
-    providing JACK ports for its audio inputs and outputs,
-    and dynamic setting of its control inputs.
-    Additionally, the plugin controls can be exported to or controlled by
-    control voltages on standard JACK audio ports. 
   * [**Rakarrack**](http://rakarrack.sourceforge.net/)
     is a guitar effects processor that is easy to use,
     but it contains features that make it unique in this field of applications. 
   * [**RedFX**](http://sourceforge.net/projects/astylredfx)
     is an effects processor mainly for guitars. 
-  * [**Soundtank**](http://sourceforge.net/projects/soundtank)
-    is a program that hosts musical instruments for you to play. 
   * [**tapiir**](http://www.resorama.com/maarten/files)
     is an audio effects processor inspired by
     the classical magnetic tape delay systems.
@@ -508,8 +493,6 @@ menu_item: true
     s free music education software.
     Use it to train your rhythm, interval, scale and chord skills.
     Solfege - Smarten your ears! 
-  * [**Soundtank**](http://sourceforge.net/projects/soundtank)
-    a midi controlled host for softsynths made out of LADSPA plugins. 
   * [**Soundtracker**](http://www.soundtracker.org/)
     a music tracker similar to FastTracker and ProTracker.
     Version 0.6.7pre1 or above. 
@@ -657,11 +640,6 @@ menu_item: true
     is a program by which uses Wine, Jack and
     Steinberg's VST Audio Plug-Ins SDK to
     enable the use of many VST audio plugins under Gnu/Linux. 
-  * [**FSTHOST**](http://sourceforge.net/projects/fsthost/)
-    is a linux VST host - hybrid using winelib.
-    Runs as a Jack client for Audio/MIDI, and with GTK GUI. 
-  * [**jost**](http://www.anticore.org/jucetice/?page_id=4)
-    is a host for native linux vst plugins (jack / alsa_seq). 
 
 ## Wikipedia References
 
