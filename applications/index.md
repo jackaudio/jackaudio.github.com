@@ -66,6 +66,8 @@ menu_item: true
     is a JACK Patchbay similar to Patchage that supports JACK Transport.
   * [**Claudia (KXStudio)**](http://kxstudio.sourceforge.net/Applications:Claudia)
     is a LADISH frontend.
+  * [**Jack Sanity**](https://github.com/psychoticmeow/jack-sanity)
+    is a scriptable environment for controlling jackdbus clients.
 
 ## DJ Software
 
