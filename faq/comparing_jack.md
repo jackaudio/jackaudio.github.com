@@ -74,5 +74,10 @@ only a recognition of different goals and design principles.
   the callback you write to process/generate data be executed
   in the context of the plugin host;
   JACK allows your callback to be executed within the context
-  of your own application (if you wish to). 
+  of your own application (if you wish to).
+* Virtual Audio Cable, VAC (Windows only):
+  Creates a set of virtual audio devices named "Virtual Cables", each
+  consisting of a pair of the waveform input/output devices. Applications
+  can send audio stream to an output side of a cable, and any other 
+  application can receive this stream from an input side.  ASIO-compatible.
 
