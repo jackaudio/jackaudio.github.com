@@ -4,19 +4,14 @@
 
 [this repository(preview on github pages)](https://jackaudio.github.io)
 
-## install
-just clone the repository and point your webserver to the '_site' dir
+## about
+This repository contains the sources for the homepage of [jackaudio.org](http://jackaudio.org).
 
-## Adding FAQ Pages
-1.  create a new *.md file in the faq directory
-2.  insert a header as in the other files in the faq dir, they are required for
-    jekyll to process the file
-3. Add your content in markdown format
-4. link to your new FAQ page in the /faq/index.md page, please note, that all FAQ
-   pages currently need '.html' appended, since they share the same directory.
+To report bugs and issues with JACK, please use the corresponding bugtrackers of
+[jack1](https://github.com/jackaudio/jack1) and [jack2](https://github.com/jackaudio/jack2)
 
 ## contribute
-You can currently contribute by checking the page for dead/wrong links and
+You can currently contribute to the homepage by checking the page for dead/wrong links and
 formatting mistakes and file bugreports about them.
 
 If you feel comfortable fixing issues yourself, please file a pull request.
@@ -27,6 +22,18 @@ so there won't be any drama.
 
 If you have any ideas or suggestions, please feel free to contact the authors via 
 jack-devel mailinglist or on github.
+
+## install
+just clone the repository and point your webserver to the '_site' dir
+
+
+## adding FAQ Pages
+1.  create a new *.md file in the faq directory
+2.  insert a header as in the other files in the faq dir, they are required for
+    jekyll to process the file
+3. Add your content in markdown format
+4. link to your new FAQ page in the /faq/index.md page, please note, that all FAQ
+   pages currently need '.html' appended, since they share the same directory.
 
 ## development notes
 * requires jekyll >= 2.2.0 (because of changes in the configuration file)
@@ -52,7 +59,7 @@ Desired line length maximum is 82 columns.
     [name to display](/faq/file.html)
 
 
-## Open considderations
+## open considderations
 *  The downloadable files will have to be placed in the 'downloads' dir after
    cloning the repo. That's a hassle, but including them in this repo would just
    bloat the repo more and more with each release.
