@@ -280,6 +280,9 @@ menu_item: true
     who needs a robust and solid DAW. 
   * [**Wired**](http://wired.sourceforge.net/)
     a music production and creation software. 
+  * [**Bitwig Studio**](http://www.bitwig.com/)
+    Bitwig Studio is dynamic software for creation and performance of your musical ideas on stage or in the studio. 
+
 
 ## Music Notation Editors
 
