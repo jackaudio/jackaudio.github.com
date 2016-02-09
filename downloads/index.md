@@ -35,9 +35,11 @@ jack2_osx_mixed: "https://dl.dropboxusercontent.com/u/28869550/JackOSX.0.90.zip"
 
 ### JACK2:
 
-  * **Binaries**: [Mixed 64/32 bit, {{page.jack2_osx_version}} of JackOSX for Snow Leopard]
+  * **Binaries**: [Mixed 64/32 bit, {{page.jack2_osx_version}}
+  of JackOSX for Snow Leopard and later]
   ({{page.jack2_osx_mixed}})
-  * **Binaries**: [Legacy 32 bit, {{page.jack2_osx_version}} of JackOSX for systems older than Snow Leopard]
+  * **Binaries**: [Legacy 32 bit, {{page.jack2_osx_version}}
+  of JackOSX for systems older than Snow Leopard]
   ({{page.jack2_osx_x32}})
   * **Source tarball**: [ JACK {{page.jack2_source_v}}]({{page.jack2_source}}). 
 
