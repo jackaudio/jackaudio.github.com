@@ -1,6 +1,6 @@
 name: JACK Audio Connection Kit
 markdown: redcarpet
-highlighter: true
+highlighter: rouge
 baseurl: ""
 
 exclude: [README.md]
