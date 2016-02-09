@@ -42,15 +42,15 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
 
-        <h1>How can I use multiple soundcards with JACK?</h1>
+        <h1 id="how-can-i-use-multiple-soundcards-with-jack">How can I use multiple soundcards with JACK?</h1>
 
 <p>JACK is fundamentally designed to be a component in a pro-audio/music creation
 environment and standard operating practice for such setups involves using
-only a single digital sample &quot;clock&quot; (something counting off the time between
+only a single digital sample “clock” (something counting off the time between
 audio samples). This means that trying to use multiple independent soundcards
 is problematic, because each soundcard has its own sample clock, running
 independently from the others. Over time, these different clocks drift out of
-sync with each other, and cause glitches in the audio. You can&#39;t stop this
+sync with each other, and cause glitches in the audio. You can’t stop this
 drift, although in some cases the effects may be insignificant enough that
 some people might not care about them.</p>
 
@@ -58,48 +58,48 @@ some people might not care about them.</p>
 instead use a single device with a single clock and all the inputs, outputs
 and other features that you need.</p>
 
-<p>Of course, a lot of people don&#39;t live in an ideal world, and believe that
+<p>Of course, a lot of people don’t live in an ideal world, and believe that
 software should make up for this. Accordingly, JACK offers several ways for
 you to use more than 1 device at a time.</p>
 
-<h3>1. Use the alsa<em>in and alsa</em>out clients (Linux &amp; ALSA only)</h3>
+<h3 id="use-the-alsain-and-alsaout-clients-linux--alsa-only">1. Use the alsa_in and alsa_out clients (Linux &amp; ALSA only)</h3>
 
 <p>If you are using JACK on Linux and want to use additional devices that have
 ALSA driver support (i.e. most PCI, USB and Bluetooth devices), then this is
 the best option.</p>
 
-<p><code>alsa_in</code> and <code>alsa_out</code> are two clients written by Torben Hohn that make a
+<p><code class="highlighter-rouge">alsa_in</code> and <code class="highlighter-rouge">alsa_out</code> are two clients written by Torben Hohn that make a
 single specified ALSA device appear as a set of JACK ports. They both use Erik
-de Castro Lopo&#39;s libsamplerate library to do any resampling required to keep
+de Castro Lopo’s libsamplerate library to do any resampling required to keep
 the audio in sync as the clocks of each device drift over time.</p>
 
-<p>To use them, you start JACK as normal. Then you start an instance of alsa<em>in
-or alsa</em>out for each additional device (and &quot;direction&quot;) that you want to use.
-<code>alsa_out</code> will create a set of ports representing the playback capabilities
-of the device, and <code>alsa_in</code> will represent the capture/recording
+<p>To use them, you start JACK as normal. Then you start an instance of alsa_in
+or alsa_out for each additional device (and “direction”) that you want to use.
+<code class="highlighter-rouge">alsa_out</code> will create a set of ports representing the playback capabilities
+of the device, and <code class="highlighter-rouge">alsa_in</code> will represent the capture/recording
 capabilities. These two clients must be run inside a terminal window - there
 is no GUI for either of them. They both take arguments very much like those of
 the JACK ALSA backend, with some additional controls that affect the way that
 resampling is done. Full details are available in the man pages for each
-client, which you can read in a terminal window with the command <code>man alsa_in</code>
+client, which you can read in a terminal window with the command <code class="highlighter-rouge">man alsa_in</code>
 (this page covers both clients, since their arguments are identical).</p>
 
 <p>Note that you can use these clients even if you are running JACK with a FFADO-
 supported device. The requirement for ALSA support only applies to the extra
 devices you want to use, not the one that JACK itself is using.</p>
 
-<h3>2. Use the JACK2 audio adapter(s) (Jack2 only)</h3>
+<h3 id="use-the-jack2-audio-adapters-jack2-only">2. Use the JACK2 audio adapter(s) (Jack2 only)</h3>
 
 <p><em>More information is needed on this option</em></p>
 
-<h3>3. Using OS facilities to merge devices into a single pseudo-device</h3>
+<h3 id="using-os-facilities-to-merge-devices-into-a-single-pseudo-device">3. Using OS facilities to merge devices into a single pseudo-device</h3>
 
 <p>Both OS X and Linux provide ways to configure your machine so that it appears
 to have a new audio device that is actually a combination of one or more real
 devices. You can use this approach to create the configuration you want to use
-and then start up JACK using that new &quot;pseudo&quot; device.</p>
+and then start up JACK using that new “pseudo” device.</p>
 
-<h4>OS X</h4>
+<h4 id="os-x">OS X</h4>
 
 <p><strong>You must perform these steps as a user with administrative priviledges</strong>.
 The first thing to do is to open up
@@ -108,29 +108,30 @@ Go to the main menu bar, click on Audio and then select
 Open aggregate device editor. Follow the simple instructions to
 add each desired playback or capture device to your new aggregate device.
 Then pick a name for the new device. This is the name you will also use
-to choose the device for use with JACK. </p>
+to choose the device for use with JACK.</p>
 
-<p>Note that there are quite a few subtle bugs with Apple&#39;s &quot;aggregate device&quot;
+<p>Note that there are quite a few subtle bugs with Apple’s “aggregate device”
 facilities. Various things can happen that will cause the device to lose all
 of its playback channels or all of its capture channels, for example. If this
 happens, it is generally necessary to close all applications that are using
 any audio devices, and quite often a reboot is required.</p>
 
 <p>Starting with JACK2 version 1.9.6, the CoreAudio backend can now dynamically
-create &quot;aggregate devices&quot; when needed (like when the -C and -P arguments are
+create “aggregate devices” when needed (like when the -C and -P arguments are
 used to specify the separated input and output devices).</p>
 
-<h4>Linux</h4>
+<h4 id="linux">Linux</h4>
 
 <p>You will need to use a text editor to create or add to your ~/.asoundrc file.
 This file is read by any ALSA application (including JACK, if its using the
 ALSA backend) and can be used to define pseudo-devices of many different
-kinds. The key idea here is that you&#39;re going to define a new pseudo-device
-composed of 2 or more other devices. In our example, we&#39;ll just focus on 2
+kinds. The key idea here is that you’re going to define a new pseudo-device
+composed of 2 or more other devices. In our example, we’ll just focus on 2
 devices being merged into 1, where both devices have just 2 channels in and
 out. This is the text you need to make sure is in ~/.asoundrc (below, we
 describe what this does):</p>
-<figure class="highlight"><pre><code class="language-text" data-lang="text">pcm.merge {
+
+<div class="highlighter-rouge"><pre class="highlight"><code>pcm.merge {
     type multi;
     slaves.a.pcm hw:0
     slaves.a.channels 2;
@@ -145,64 +146,75 @@ describe what this does):</p>
     bindings.3.slave b;
     bindings.3.channel 1;
 }
-</code></pre></figure>
+</code></pre>
+</div>
+
 <p>Lets see what this does.</p>
 
 <ul>
-<li>It defines a new audio pseudo-device called &quot;merge&quot;.
+  <li>It defines a new audio pseudo-device called “merge”.
 You can use this name anywhere you might use the name of an ALSA audio device,
-such as &quot;hw:0&quot; or &quot;hw:HDA&quot; or &quot;hw:DSP&quot; or &quot;plughw:1&quot;. </li>
-<li>It names &quot;hw:0&quot; as the first component (or &quot;slave&quot;) of this pseudo-device
-(slave.a.pcm) and &quot;hw:1&quot; as the second component (slave.b.pcm) </li>
-<li>It states that the pseudo-device will use 2 channels from the first component
-and 2 channels from the 2nd component. </li>
-<li>The lines contains <code>binding.</code> list, in order,
+such as “hw:0” or “hw:HDA” or “hw:DSP” or “plughw:1”.</li>
+  <li>It names “hw:0” as the first component (or “slave”) of this pseudo-device
+(slave.a.pcm) and “hw:1” as the second component (slave.b.pcm)</li>
+  <li>It states that the pseudo-device will use 2 channels from the first component
+and 2 channels from the 2nd component.</li>
+  <li>The lines contains <code class="highlighter-rouge">binding.</code> list, in order,
 which channel of which component will correspond to
 the 4 channels of the pseudo-device. In the mapping shown above,
 the first channel comes from the first component,
 then the 2nd channel from the 2nd component,
-the 3rd from the first component and the 4th from the second component. </li>
+the 3rd from the first component and the 4th from the second component.</li>
 </ul>
 
 <p>Note that numbering of devices and channels in ALSA starts at zero, not one.</p>
 
 <p>The most important and complex part of the above definition is the channel
-mappings defined by the <code>bindings</code> lines. A full channel mapping definition
+mappings defined by the <code class="highlighter-rouge">bindings</code> lines. A full channel mapping definition
 consists of a pair of a lines of the following general form:</p>
-<figure class="highlight"><pre><code class="language-text" data-lang="text">    bindings.CHANNEL_OF_PSEUDO_DEVICE.slave SLAVE_DEVICE_THAT_WILL_PROVIDE_THIS_CHANNEL
-    bindings.CHANNEL_OF_PSEUDO_DEVICE.channel CHANNEL_OF_SLAVE_DEVICE_THAT_WILL_PROVIDE_THIS_CHANNEL
-</code></pre></figure>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>	bindings.CHANNEL_OF_PSEUDO_DEVICE.slave SLAVE_DEVICE_THAT_WILL_PROVIDE_THIS_CHANNEL
+	bindings.CHANNEL_OF_PSEUDO_DEVICE.channel CHANNEL_OF_SLAVE_DEVICE_THAT_WILL_PROVIDE_THIS_CHANNEL
+</code></pre>
+</div>
+
 <p>So the specific pair of lines:</p>
-<figure class="highlight"><pre><code class="language-text" data-lang="text">    bindings.0.slave a;
+
+<div class="highlighter-rouge"><pre class="highlight"><code>    bindings.0.slave a;
     bindings.0.channel 0;
-</code></pre></figure>
-<p>mean that &quot;channel 0 of the pseudo-device will correspond to channel 0 of the
-first slave device&quot;. Obviously by playing with this definition you can create
+</code></pre>
+</div>
+
+<p>mean that “channel 0 of the pseudo-device will correspond to channel 0 of the
+first slave device”. Obviously by playing with this definition you can create
 all sorts of wierd and wonderful mappings from the real physical device
-channels to the pseudo-device channels. You probably don&#39;t want to do that,
+channels to the pseudo-device channels. You probably don’t want to do that,
 though. The example above shows the most common example: take the first N
 channels from the first device, and the second M channels from the second
 device.</p>
 
-<h3>The Control Pseudo-device</h3>
+<h3 id="the-control-pseudo-device">The Control Pseudo-device</h3>
 
 <p>In theory, the above is enough to define a new pseudo-device, but many
-applications, including JACK&#39;s ALSA backend, also want to open a &quot;control
-device&quot; associated with the audio playback device. This is where they can find
+applications, including JACK’s ALSA backend, also want to open a “control
+device” associated with the audio playback device. This is where they can find
 out (and possibly control) various hardware parameters associated with the
 device. Unfortunately there is no way to merge these together in the same way,
-so we have to provide a &quot;dummy&quot; control device definition that will keep such
+so we have to provide a “dummy” control device definition that will keep such
 applications happy. This definition looks like this:</p>
-<figure class="highlight"><pre><code class="language-text" data-lang="text">ctl.merge {
+
+<div class="highlighter-rouge"><pre class="highlight"><code>ctl.merge {
     type hw
     card 0
 }
-</code></pre></figure>
-<p>Notice that name following the <code>ctl.</code> text <strong>must</strong> be the same as the name
-following <code>pcm.</code> in the device definition above. The control device definition
-we&#39;ve given here effectively means &quot;if you want to open the control device
-associated with &quot;merge&quot;, open the control device associated with the first
-installed audio/MIDI device&quot;. This probably isn&#39;t right of course - &quot;merge&quot;
+</code></pre>
+</div>
+
+<p>Notice that name following the <code class="highlighter-rouge">ctl.</code> text <strong>must</strong> be the same as the name
+following <code class="highlighter-rouge">pcm.</code> in the device definition above. The control device definition
+we’ve given here effectively means “if you want to open the control device
+associated with “merge”, open the control device associated with the first
+installed audio/MIDI device”. This probably isn’t right of course - “merge”
 involves two cards - but it will generally work just fine.</p>
 
 <p>You can use this same approach to merge more than 2 devices - the resulting
@@ -210,15 +222,15 @@ pcm.<em>DEVICE-NAME</em> specification will obviously include more lines. You ca
 also use different devices than we did above, where we just used the first and
 second installed card.</p>
 
-<h3>&quot;Slave&quot; Device naming</h3>
+<h3 id="slave-device-naming">“Slave” Device naming</h3>
 
-<p>Note that you are likely better off using &quot;hw:CARD&quot; device names, rather than
-&quot;hw:N&quot; names, when defining a &quot;multi&quot; pseudo-device, as explained
+<p>Note that you are likely better off using “hw:CARD” device names, rather than
+“hw:N” names, when defining a “multi” pseudo-device, as explained
 <a href="device_naming.html">here</a>. But
 further note that if you are using multiple instances of the same type of
-audio hardware (say, 4 RME Multiface devices), you will have to use &quot;hw:N&quot;
-because every card will have the same &quot;CARD&quot; name. In fact, with such
-hardware, it may be very difficult to ensure that &quot;hw:0&quot; always refers to the
+audio hardware (say, 4 RME Multiface devices), you will have to use “hw:N”
+because every card will have the same “CARD” name. In fact, with such
+hardware, it may be very difficult to ensure that “hw:0” always refers to the
 same audio interface, because there is no ALSA name that uniquely defines a
 particular PCI slot. This is currently an unsolved problem when using multiple
 identical devices. If you use PCI (or PCIe or PCIx or other derivatives of
@@ -226,7 +238,7 @@ PCI) devices, the chances are that the first card will always be the same one,
 and so forth, so its not likely to be an issue. If you use several identical
 USB devices, it may be a more significant problem.</p>
 
-<h3>4. Using the -P and -C arguments to a JACK backend</h3>
+<h3 id="using-the--p-and--c-arguments-to-a-jack-backend">4. Using the -P and -C arguments to a JACK backend</h3>
 
 <p>Several JACK backends, including the ALSA, FFADO and CoreAudio versions,
 support the -P and -C arguments that can be used to specify two different
@@ -240,6 +252,7 @@ plays back via a builtin audio device.</p>
 <p>When using -P or -C to specify different devices, do not use the -d argument
 (which specifies a single device) and do not use the -D argument (which tells
 JACK to configure a device for playback &amp; capture).</p>
+
 
 
       </section>

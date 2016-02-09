@@ -42,25 +42,28 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
 
-        <h1>How do I refer to a soundcard so that the name always works?</h1>
+        <h1 id="how-do-i-refer-to-a-soundcard-so-that-the-name-always-works">How do I refer to a soundcard so that the name always works?</h1>
 
 <p>The precise order in which a Linux system discovers any soundcards can vary
 each time the machine is rebooted. This is particularly true of USB devices.
-The device that used to be &quot;hw:0&quot; can become &quot;hw:1&quot; after a reboot, or vice
-versa. Fortunately, you don&#39;t need to use names like this, and can instead use
-a form that isn&#39;t dependent on the order that the Linux discovers your
+The device that used to be “hw:0” can become “hw:1” after a reboot, or vice
+versa. Fortunately, you don’t need to use names like this, and can instead use
+a form that isn’t dependent on the order that the Linux discovers your
 soundcards.</p>
 
-<p>First, in a terminal window, run this command: <code>cat /proc/asound/cards</code>.
-You&#39;ll see output a bit like this:</p>
-<figure class="highlight"><pre><code class="language-text" data-lang="text"> 0 [SB             ]: HDA-Intel - HDA ATI SB
+<p>First, in a terminal window, run this command: <code class="highlighter-rouge">cat /proc/asound/cards</code>.
+You’ll see output a bit like this:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code> 0 [SB             ]: HDA-Intel - HDA ATI SB
                       HDA ATI SB at 0xfcef8000 irq 16
  1 [DSP            ]: H-DSP - Hammerfall DSP
                       RME Hammerfall DSP + Digiface at 0xfcff0000, irq 20
  2 [NVidia         ]: HDA-Intel - HDA NVidia
                       HDA NVidia at 0xfe57c000 irq 32
-</code></pre></figure>
-<p>The &quot;name&quot; of each soundcard is in square brackets.</p>
+</code></pre>
+</div>
+
+<p>The “name” of each soundcard is in square brackets.</p>
 
 <p>With this information, you can now refer to a particular device as, for
 example <strong>hw:DSP</strong> (for the RME Hammerfall DSP in the above example. Even if
@@ -71,11 +74,12 @@ the same device.</p>
 type of soundcard. This is a much trickier situation to deal with and is
 covered in detail <a href="http://alsa.opensrc.org/Udev">here</a>.</p>
 
-<h3>Where do I use this name?</h3>
+<h3 id="where-do-i-use-this-name">Where do I use this name?</h3>
 
-<p>You can type it into the device name selector in the upper left of qjacktl&#39;s
-setup dialog. You can use it as the argument to the -d flag of JACK&#39;s ALSA
-backend (e.g. <code>jackd -d alsa -d hw:DSP</code>.</p>
+<p>You can type it into the device name selector in the upper left of qjacktl’s
+setup dialog. You can use it as the argument to the -d flag of JACK’s ALSA
+backend (e.g. <code class="highlighter-rouge">jackd -d alsa -d hw:DSP</code>.</p>
+
 
 
       </section>

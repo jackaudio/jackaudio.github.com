@@ -42,18 +42,18 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
 
-        <h1>How do I route audio from Flash to JACK?</h1>
+        <h1 id="how-do-i-route-audio-from-flash-to-jack">How do I route audio from Flash to JACK?</h1>
 
 <p>There are a couple of approaches here.</p>
 
 <ol>
-<li>systems that route audio from the web browser via ALSA:
-<a href="routing_alsa.html">routing ALSA audio via JACK</a></li>
-<li>systems that route audio from the web browser via GStreamer:
-<a href="gstreamer_via_jack.html">routing GStreamer via JACK</a></li>
-<li>systems that route audio from the web browser via PulseAudio:
-<a href="pulseaudio_and_jack.html">routing PulseAudio via JACK</a></li>
-<li>use the libflashsupport-jack library from Torben Hohn </li>
+  <li>systems that route audio from the web browser via ALSA:
+  <a href="routing_alsa.html">routing ALSA audio via JACK</a></li>
+  <li>systems that route audio from the web browser via GStreamer:
+  <a href="gstreamer_via_jack.html">routing GStreamer via JACK</a></li>
+  <li>systems that route audio from the web browser via PulseAudio:
+  <a href="pulseaudio_and_jack.html">routing PulseAudio via JACK</a></li>
+  <li>use the libflashsupport-jack library from Torben Hohn</li>
 </ol>
 
 <p>The first three solutions that are described via the linked pages. The final
@@ -66,40 +66,49 @@ way to get audio out of Flash and into JACK.</p>
 
 <p>Unfortunately, at this point in time (Fall 2010), most Linux distributions do
 not package this library, so if you want to use it you will need to build it
-yourself. This is not that hard if you&#39;ve used the command line a few times:</p>
-<figure class="highlight"><pre><code class="language-text" data-lang="text">git clone git://repo.or.cz/libflashsupport-jack.git
+yourself. This is not that hard if you’ve used the command line a few times:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git clone git://repo.or.cz/libflashsupport-jack.git
 cd libflashsupport
 sh bootstrap.sh
 make
 sudo make install
-</code></pre></figure>
+</code></pre>
+</div>
+
 <p>You need some tools installed for this build process to work:</p>
 
 <ul>
-<li>ALSA development libraries </li>
-<li>JACK development libraries </li>
-<li>libsamplerate development libraries </li>
-<li>libssl development libraries </li>
-<li>basic software development package </li>
-<li>git-core </li>
-<li>autoconf </li>
-<li>automake </li>
-<li><p>libtool 
+  <li>ALSA development libraries</li>
+  <li>JACK development libraries</li>
+  <li>libsamplerate development libraries</li>
+  <li>libssl development libraries</li>
+  <li>basic software development package</li>
+  <li>git-core</li>
+  <li>autoconf</li>
+  <li>automake</li>
+  <li>
+    <p>libtool 
 If you are on a 64-bit distribution that uses /usr/lib64, you may also need to
 arrange a symbolic link:</p>
 
-<p>sudo ln -s /usr/local/lib/flashsupport.so /usr/lib64</p></li>
+    <p>sudo ln -s /usr/local/lib/flashsupport.so /usr/lib64</p>
+  </li>
 </ul>
 
 <p>On some versions of Linux that use a web browser that looks for things in
 slightly different locations (Ubuntu Lucid is one example), you may also need
 a command somewhat like this:</p>
-<figure class="highlight"><pre><code class="language-text" data-lang="text">sudo ln -s /usr/local/lib/libflashsupport.so /usr/lib/firefox-3.6.3/
-</code></pre></figure>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>sudo ln -s /usr/local/lib/libflashsupport.so /usr/lib/firefox-3.6.3/
+</code></pre>
+</div>
+
 <p>After installation, quit any existing browser and then start a browser,
 visiting some Flash-using URL. Assuming that JACK is running, things should
 just work. Latency (the video/audio lag) is a little high - work might be done
 in the future to address this.</p>
+
 
 
       </section>

@@ -42,15 +42,15 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
 
-        <h1>How does using Linux with RT<em>GROUP</em>SCHED enabled affect JACK?</h1>
+        <h1 id="how-does-using-linux-with-rtgroupsched-enabled-affect-jack">How does using Linux with RT_GROUP_SCHED enabled affect JACK?</h1>
 
 <p>Recently, Linux distributions have been released that use a kernel that has
-the option RT<em>GROUP</em>SCHED enabled. This has the potential to wreak havoc on
+the option RT_GROUP_SCHED enabled. This has the potential to wreak havoc on
 applications that want to use realtime scheduling, but need not do so. If you
 have followed the <a href="linux_rt_config.html">instructions on setting up RT scheduling
 access</a> and you
 still cannot start JACK with realtime scheduling, you should read this
-<a href="http://trac.jackaudio.org/wiki/Cgroups">detailed page on RT<em>GROUP</em>SCHED</a>.
+<a href="http://trac.jackaudio.org/wiki/Cgroups">detailed page on RT_GROUP_SCHED</a>.
 We are leaving the page in the Wiki for now, because the situation
 may be fluid and its easier for people with the relevant knowledge
 to update it there.</p>
@@ -59,6 +59,7 @@ to update it there.</p>
 intend that individual users should need to grapple with CGroup configuration,
 but distributions should try to take care of this so as not to make using JACK
 with realtime scheduling effectively impossible for their users.</p>
+
 
 
       </section>

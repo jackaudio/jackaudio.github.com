@@ -42,37 +42,38 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
 
-        <h1>How do I route audio to/from generic ALSA-using applications?</h1>
+        <h1 id="how-do-i-route-audio-tofrom-generic-alsa-using-applications">How do I route audio to/from generic ALSA-using applications?</h1>
 
 <p>If you use applications that use the ALSA API for audio I/O and not some
 intermediate such as GStreamer or PulseAudio, you can still force most of them
 to route their audio to/from JACK. There are two ways of approaching this.</p>
 
-<h2>Using an ALSA Loopback device and JACK alsa<em>in/alsa</em>out clients</h2>
+<h2 id="using-an-alsa-loopback-device-and-jack-alsainalsaout-clients">Using an ALSA Loopback device and JACK alsa_in/alsa_out clients</h2>
 
 <p>This more complex but probably more robust approach is well-documented in
 <a href="http://alsa.opensrc.org/Jack_and_Loopback_device_as_Alsa-to-Jack_bridge">this document</a>.</p>
 
-<h2>Using the ALSA JACK PCM plugin</h2>
+<h2 id="using-the-alsa-jack-pcm-plugin">Using the ALSA JACK PCM plugin</h2>
 
 <p>The simpler approach has its drawbacks: if an application stops playing audio,
 it will disappear from the JACK world, which can be quite inconvenient. Some
 people have also found it quite buggy or unstable in some situations. For
 basic audio playback, it works quite well but when used with a more demanding
-application or one with more of its own &quot;quirks&quot; (e.g. VirtualBox), this
-approach isn&#39;t recommended.</p>
+application or one with more of its own “quirks” (e.g. VirtualBox), this
+approach isn’t recommended.</p>
 
-<p>It requires an ALSA &quot;plugin&quot; that is <strong>not</strong> installed by default on many
+<p>It requires an ALSA “plugin” that is <strong>not</strong> installed by default on many
 Linux distributions, and the name of the package containing it will vary from
-distribution to distribution. On Fedora, the package is called &quot;alsa-plugins-
-jack&quot;; on some Debian-related systems, it can be found in
-&quot;libasound2-plugins&quot;. You should install this using your system&#39;s normal
+distribution to distribution. On Fedora, the package is called “alsa-plugins-
+jack”; on some Debian-related systems, it can be found in
+“libasound2-plugins”. You should install this using your system’s normal
 software install/update tool(s).</p>
 
-<p>Once you have it installed, you can use it by editing the file <code>~/.asoundrc</code>
+<p>Once you have it installed, you can use it by editing the file <code class="highlighter-rouge">~/.asoundrc</code>
 (this file may not exist when you start this, or it may already have some
 content). You need to add the following text to it:</p>
-<figure class="highlight"><pre><code class="language-text" data-lang="text">pcm.rawjack {
+
+<div class="highlighter-rouge"><pre class="highlight"><code>pcm.rawjack {
     type jack
     playback_ports {
         0 system:playback_1
@@ -86,44 +87,50 @@ content). You need to add the following text to it:</p>
 
 pcm.jack {
     type plug
-    slave { pcm &quot;rawjack&quot; }
+    slave { pcm "rawjack" }
     hint {
-    description &quot;JACK Audio Connection Kit&quot;
+ 	description "JACK Audio Connection Kit"
     }
 }
-</code></pre></figure>
+</code></pre>
+</div>
+
 <p>This first PCM definition above example defines a virtual audio device called
-&quot;pcm.rawjack&quot; that has 2 input channels and two output channels. Each channel
+“pcm.rawjack” that has 2 input channels and two output channels. Each channel
 definition consists of a number (starting from zero), and a named JACK port
 that it will be connected to (it is not possible to create a disconnected
-channel). We have called the device &quot;rawjack&quot; because it reflects only the
+channel). We have called the device “rawjack” because it reflects only the
 capabilities of JACK itself - the sample rate, sample format and so forth must
-all match JACK&#39;s. This is not normally very useful, so we add a second PCM
-definition for a device called &quot;pcm.jack&quot;. This has the same configuration but
+all match JACK’s. This is not normally very useful, so we add a second PCM
+definition for a device called “pcm.jack”. This has the same configuration but
 when an application uses this device, ALSA will do whatever is needed to
 convert between audio data formats.</p>
 
-<p>Having done this, you can now use the name &quot;pcm.jack&quot; when using any
+<p>Having done this, you can now use the name “pcm.jack” when using any
 application that allows you to specify a device name (which in theory all ALSA
 applications are supposed to do). The simplest test case to make sure that
-things work is to use the ALSA <code>aplay</code> utility like this: <code>aplay -D pcm.jack
+things work is to use the ALSA <code class="highlighter-rouge">aplay</code> utility like this: <code class="highlighter-rouge">aplay -D pcm.jack
 /path/to/some/non-compressed/audio/file</code></p>
 
 <p>If you wanted to make all ALSA applications use this device by default (i.e.
-even when no explicit name is given) then your <code>~/.asoundrc</code> should also
+even when no explicit name is given) then your <code class="highlighter-rouge">~/.asoundrc</code> should also
 contain this text:</p>
-<figure class="highlight"><pre><code class="language-text" data-lang="text">pcm.!default {
+
+<div class="highlighter-rouge"><pre class="highlight"><code>pcm.!default {
     type plug
-    slave { pcm &quot;rawjack&quot; }
+    slave { pcm "rawjack" }
 }
-</code></pre></figure>
-<p>You should check the rest of the file for other definitions of &quot;pcm.!default&quot;
+</code></pre>
+</div>
+
+<p>You should check the rest of the file for other definitions of “pcm.!default”
 - only the last one will have any effect and there should be preferably only
 be one.</p>
 
 <p>Note that this solution will create some latency: the ALSA JACK plugin has to
 use a buffer between the data being sent by the application and JACK itself to
 avoid clicks and dropouts.</p>
+
 
 
       </section>

@@ -42,9 +42,9 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
 
-        <h1>How do I build JACK from the source code?</h1>
+        <h1 id="how-do-i-build-jack-from-the-source-code">How do I build JACK from the source code?</h1>
 
-<h3>Important Caveats</h3>
+<h3 id="important-caveats">Important Caveats</h3>
 
 <p>There can be a variety of reasons to want to build, install and use a source
 code version of JACK. However, it is <strong>vitally important</strong> that you <strong>NEVER
@@ -53,50 +53,60 @@ you have an existing installation of JACK (for example, from a Linux
 distribution) then you must either</p>
 
 <ul>
-<li>remove it (this may not be possible) </li>
-<li>install the source version &quot;on top&quot; of the existing one 
+  <li>remove it (this may not be possible)</li>
+  <li>install the source version “on top” of the existing one 
 Failure to do this will more or less guarantee that JACK will no longer work
 on your machine.</li>
 </ul>
 
-<h3>(For Linux only) tmpfs file system</h3>
+<h3 id="for-linux-only-tmpfs-file-system">(For Linux only) tmpfs file system</h3>
 
-<p>JACK&#39;s performance on Linux is much improved if it can use a &quot;tmpfs&quot; (shared
+<p>JACK’s performance on Linux is much improved if it can use a “tmpfs” (shared
 memory) file system for certain purposes. Specifically, it will try to use a
 tmpfs filesystem mounted on /dev/shm by default. You can test if you have this
 already by running the following command in a terminal:</p>
-<figure class="highlight"><pre><code class="language-text" data-lang="text">mount | grep shm
-</code></pre></figure>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>mount | grep shm
+</code></pre>
+</div>
+
 <p>If it generates any output, you are all set. Most modern Linux systems will be
 this way. If yours is not then we are going to assume that you know what you
 are doing and understand how to set up a new tmpfs filesystem and how to tell
 JACK to use it.</p>
 
-<h3>For JACK1</h3>
+<h3 id="for-jack1">For JACK1</h3>
 
-<p>Note that if you are installing JACK &quot;on top&quot; of an existing version, you need
-to add <code>--prefix /usr</code> or similar to the ./configure command, to ensure that
+<p>Note that if you are installing JACK “on top” of an existing version, you need
+to add <code class="highlighter-rouge">--prefix /usr</code> or similar to the ./configure command, to ensure that
 the install step will overwrite the existing version. By default these
 commands will install JACK to /usr/local/bin whereas any system-installed
 version will likely exist in /usr/bin.</p>
-<figure class="highlight"><pre><code class="language-text" data-lang="text">./configure
+
+<div class="highlighter-rouge"><pre class="highlight"><code>./configure
 make
 make install
-</code></pre></figure>
-<p>If you are using JACK from svn, you will need to run <code>sh ./autogen.sh</code> before
+</code></pre>
+</div>
+
+<p>If you are using JACK from svn, you will need to run <code class="highlighter-rouge">sh ./autogen.sh</code> before
 the configure step.</p>
 
-<h3>For JACK2</h3>
+<h3 id="for-jack2">For JACK2</h3>
 
-<p>Note that if you are installing JACK &quot;on top&quot; of an existing version, you need
-to add <code>--prefix /usr</code> or similar to the ./waf configure command, to ensure
+<p>Note that if you are installing JACK “on top” of an existing version, you need
+to add <code class="highlighter-rouge">--prefix /usr</code> or similar to the ./waf configure command, to ensure
 that the install step will overwrite the existing version. By default these
 commands will install JACK to /usr/local/bin whereas any system-installed
 version will likely exist in /usr/bin.</p>
-<figure class="highlight"><pre><code class="language-text" data-lang="text">./waf configure
+
+<div class="highlighter-rouge"><pre class="highlight"><code>./waf configure
 ./waf
 ./waf install
-</code></pre></figure>
+</code></pre>
+</div>
+
+
 
       </section>
     </div>

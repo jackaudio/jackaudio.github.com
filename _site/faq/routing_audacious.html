@@ -42,7 +42,7 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
 
-        <h1>How can I route audio from xmms/audacious/beep to JACK?</h1>
+        <h1 id="how-can-i-route-audio-from-xmmsaudaciousbeep-to-jack">How can I route audio from xmms/audacious/beep to JACK?</h1>
 
 <p>The xmms family of audio players is one of the oldest on the Linux platform,
 and is still a rather nice program to use for certain purposes. xmms evolved
@@ -52,22 +52,23 @@ connect it to JACK. The instructions below refer to audacious but the steps
 are the same for any version of xmms/beep/audacious.</p>
 
 <ol>
-<li>Install the audacious plugin for JACK. The name of the package
-that contains this will vary depending on which Linux distribution
-you are using. On Fedora, its called <code>audacious-plugins-jack</code>.
-On Ubuntu, its called <code>audacious-plugins</code>.
-It might already be installed on your system. </li>
-<li>Start audacious. Click on the upper-right button to
-bring up the &quot;main menu&quot; and then click on &quot;Preferences&quot; </li>
-<li>Make sure you are looking at the &quot;Audio&quot; tab </li>
-<li>Select &quot;JACK Output Plugin &quot; from the &quot;Current Output Selector&quot; at the top. </li>
-<li>The default operation of the plugin is to connect its two outputs
-to the first two physical JACK outputs it can find.
-If you would prefer that it remain disconnected by default,
-or connect to all available ports (!), click on the
-&quot;Output Plugin Preferences&quot; button just below to make your choice. </li>
-<li>That&#39;s it! </li>
+  <li>Install the audacious plugin for JACK. The name of the package
+  that contains this will vary depending on which Linux distribution
+  you are using. On Fedora, its called <code class="highlighter-rouge">audacious-plugins-jack</code>.
+  On Ubuntu, its called <code class="highlighter-rouge">audacious-plugins</code>.
+  It might already be installed on your system.</li>
+  <li>Start audacious. Click on the upper-right button to
+  bring up the “main menu” and then click on “Preferences”</li>
+  <li>Make sure you are looking at the “Audio” tab</li>
+  <li>Select “JACK Output Plugin “ from the “Current Output Selector” at the top.</li>
+  <li>The default operation of the plugin is to connect its two outputs
+  to the first two physical JACK outputs it can find.
+  If you would prefer that it remain disconnected by default,
+  or connect to all available ports (!), click on the
+  “Output Plugin Preferences” button just below to make your choice.</li>
+  <li>That’s it!</li>
 </ol>
+
 
 
       </section>
