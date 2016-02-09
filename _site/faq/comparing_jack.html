@@ -118,7 +118,12 @@ by using some other system such as ReWire. These APIs also require that
 the callback you write to process/generate data be executed
 in the context of the plugin host;
 JACK allows your callback to be executed within the context
-of your own application (if you wish to). </li>
+of your own application (if you wish to).</li>
+<li>Virtual Audio Cable, VAC (Windows only):
+Creates a set of virtual audio devices named &quot;Virtual Cables&quot;, each
+consisting of a pair of the waveform input/output devices. Applications
+can send audio stream to an output side of a cable, and any other 
+application can receive this stream from an input side.  ASIO-compatible.</li>
 </ul>
 
 
@@ -128,7 +133,7 @@ of your own application (if you wish to). </li>
         <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">Slate theme maintained by <a href="https://github.com/jsncostello">Jason Costello</a></p>
+        <p class="copyright">Slate theme maintained by <a href="https://github.com/jasoncostello">Jason Costello</a></p>
       </footer>
     </div>
 

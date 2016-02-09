@@ -130,7 +130,7 @@ composed of 2 or more other devices. In our example, we&#39;ll just focus on 2
 devices being merged into 1, where both devices have just 2 channels in and
 out. This is the text you need to make sure is in ~/.asoundrc (below, we
 describe what this does):</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">pcm.merge {
+<figure class="highlight"><pre><code class="language-text" data-lang="text">pcm.merge {
     type multi;
     slaves.a.pcm hw:0
     slaves.a.channels 2;
@@ -145,7 +145,7 @@ describe what this does):</p>
     bindings.3.slave b;
     bindings.3.channel 1;
 }
-</code></pre></div>
+</code></pre></figure>
 <p>Lets see what this does.</p>
 
 <ul>
@@ -169,13 +169,13 @@ the 3rd from the first component and the 4th from the second component. </li>
 <p>The most important and complex part of the above definition is the channel
 mappings defined by the <code>bindings</code> lines. A full channel mapping definition
 consists of a pair of a lines of the following general form:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">    bindings.CHANNEL_OF_PSEUDO_DEVICE.slave SLAVE_DEVICE_THAT_WILL_PROVIDE_THIS_CHANNEL
+<figure class="highlight"><pre><code class="language-text" data-lang="text">    bindings.CHANNEL_OF_PSEUDO_DEVICE.slave SLAVE_DEVICE_THAT_WILL_PROVIDE_THIS_CHANNEL
     bindings.CHANNEL_OF_PSEUDO_DEVICE.channel CHANNEL_OF_SLAVE_DEVICE_THAT_WILL_PROVIDE_THIS_CHANNEL
-</code></pre></div>
+</code></pre></figure>
 <p>So the specific pair of lines:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">    bindings.0.slave a;
+<figure class="highlight"><pre><code class="language-text" data-lang="text">    bindings.0.slave a;
     bindings.0.channel 0;
-</code></pre></div>
+</code></pre></figure>
 <p>mean that &quot;channel 0 of the pseudo-device will correspond to channel 0 of the
 first slave device&quot;. Obviously by playing with this definition you can create
 all sorts of wierd and wonderful mappings from the real physical device
@@ -193,11 +193,11 @@ out (and possibly control) various hardware parameters associated with the
 device. Unfortunately there is no way to merge these together in the same way,
 so we have to provide a &quot;dummy&quot; control device definition that will keep such
 applications happy. This definition looks like this:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">ctl.merge {
+<figure class="highlight"><pre><code class="language-text" data-lang="text">ctl.merge {
     type hw
     card 0
 }
-</code></pre></div>
+</code></pre></figure>
 <p>Notice that name following the <code>ctl.</code> text <strong>must</strong> be the same as the name
 following <code>pcm.</code> in the device definition above. The control device definition
 we&#39;ve given here effectively means &quot;if you want to open the control device
@@ -248,7 +248,7 @@ JACK to configure a device for playback &amp; capture).</p>
         <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">Slate theme maintained by <a href="https://github.com/jsncostello">Jason Costello</a></p>
+        <p class="copyright">Slate theme maintained by <a href="https://github.com/jasoncostello">Jason Costello</a></p>
       </footer>
     </div>
 

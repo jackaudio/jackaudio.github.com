@@ -72,7 +72,7 @@ software install/update tool(s).</p>
 <p>Once you have it installed, you can use it by editing the file <code>~/.asoundrc</code>
 (this file may not exist when you start this, or it may already have some
 content). You need to add the following text to it:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">pcm.rawjack {
+<figure class="highlight"><pre><code class="language-text" data-lang="text">pcm.rawjack {
     type jack
     playback_ports {
         0 system:playback_1
@@ -91,7 +91,7 @@ pcm.jack {
     description &quot;JACK Audio Connection Kit&quot;
     }
 }
-</code></pre></div>
+</code></pre></figure>
 <p>This first PCM definition above example defines a virtual audio device called
 &quot;pcm.rawjack&quot; that has 2 input channels and two output channels. Each channel
 definition consists of a number (starting from zero), and a named JACK port
@@ -112,11 +112,11 @@ things work is to use the ALSA <code>aplay</code> utility like this: <code>aplay
 <p>If you wanted to make all ALSA applications use this device by default (i.e.
 even when no explicit name is given) then your <code>~/.asoundrc</code> should also
 contain this text:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">pcm.!default {
+<figure class="highlight"><pre><code class="language-text" data-lang="text">pcm.!default {
     type plug
     slave { pcm &quot;rawjack&quot; }
 }
-</code></pre></div>
+</code></pre></figure>
 <p>You should check the rest of the file for other definitions of &quot;pcm.!default&quot;
 - only the last one will have any effect and there should be preferably only
 be one.</p>
@@ -132,7 +132,7 @@ avoid clicks and dropouts.</p>
         <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">Slate theme maintained by <a href="https://github.com/jsncostello">Jason Costello</a></p>
+        <p class="copyright">Slate theme maintained by <a href="https://github.com/jasoncostello">Jason Costello</a></p>
       </footer>
     </div>
 

@@ -67,12 +67,12 @@ way to get audio out of Flash and into JACK.</p>
 <p>Unfortunately, at this point in time (Fall 2010), most Linux distributions do
 not package this library, so if you want to use it you will need to build it
 yourself. This is not that hard if you&#39;ve used the command line a few times:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">git clone git://repo.or.cz/libflashsupport-jack.git
+<figure class="highlight"><pre><code class="language-text" data-lang="text">git clone git://repo.or.cz/libflashsupport-jack.git
 cd libflashsupport
 sh bootstrap.sh
 make
 sudo make install
-</code></pre></div>
+</code></pre></figure>
 <p>You need some tools installed for this build process to work:</p>
 
 <ul>
@@ -94,8 +94,8 @@ arrange a symbolic link:</p>
 <p>On some versions of Linux that use a web browser that looks for things in
 slightly different locations (Ubuntu Lucid is one example), you may also need
 a command somewhat like this:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">sudo ln -s /usr/local/lib/libflashsupport.so /usr/lib/firefox-3.6.3/
-</code></pre></div>
+<figure class="highlight"><pre><code class="language-text" data-lang="text">sudo ln -s /usr/local/lib/libflashsupport.so /usr/lib/firefox-3.6.3/
+</code></pre></figure>
 <p>After installation, quit any existing browser and then start a browser,
 visiting some Flash-using URL. Assuming that JACK is running, things should
 just work. Latency (the video/audio lag) is a little high - work might be done
@@ -108,7 +108,7 @@ in the future to address this.</p>
         <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">Slate theme maintained by <a href="https://github.com/jsncostello">Jason Costello</a></p>
+        <p class="copyright">Slate theme maintained by <a href="https://github.com/jasoncostello">Jason Costello</a></p>
       </footer>
     </div>
 

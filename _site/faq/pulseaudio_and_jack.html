@@ -100,13 +100,13 @@ The user has subsequently added another audio device, either as an internal
 <p>All that is necessary in this case is to define the device that PulseAudio and
 JACK will use. Run the following command in a terminal window: <code>cat
 /proc/asound/cards</code> You will some output like this:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text"> 0 [SB             ]: HDA-Intel - HDA ATI SB
+<figure class="highlight"><pre><code class="language-text" data-lang="text"> 0 [SB             ]: HDA-Intel - HDA ATI SB
                       HDA ATI SB at 0xfcef8000 irq 16
  1 [DSP            ]: H-DSP - Hammerfall DSP
                       RME Hammerfall DSP + Digiface at 0xfcff0000, irq 20
  2 [NVidia         ]: HDA-Intel - HDA NVidia
                       HDA NVidia at 0xfe57c000 irq 32
-</code></pre></div>
+</code></pre></figure>
 <p>(This is from a machine with 3 soundcards: a builtin device, an additional 26
 channel RME Hammerfall DSP device, and (unintentionally) an NVidia video
 adapter that also has an HDMI audio output.)</p>
@@ -138,8 +138,8 @@ via the upper right of QJackctl&#39;s setup dialog:</p>
 edit the field labelled &quot;Server path&quot;. Insert <code>pasuspsender --</code> in front of
 whatever is there (probably just something like <code>jackd</code>). So for example, if
 you had &quot;jackd&quot; in the &quot;Server path&quot; field already, it should now say:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">pasuspender -- jackd
-</code></pre></div>
+<figure class="highlight"><pre><code class="language-text" data-lang="text">pasuspender -- jackd
+</code></pre></figure>
 <p>This will cause PulseAudio to suspend itself while JACK runs, and restart when
 JACK exits (or crashes).</p>
 
@@ -153,7 +153,7 @@ method use <code>pasuspender --</code> as the command that actually starts JACK.
         <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">Slate theme maintained by <a href="https://github.com/jsncostello">Jason Costello</a></p>
+        <p class="copyright">Slate theme maintained by <a href="https://github.com/jasoncostello">Jason Costello</a></p>
       </footer>
     </div>
 
