@@ -6,7 +6,7 @@ menu_item: true
 
 # JACK FAQ
 
-* [What is the difference between JACK1 and JACK2?](jack12n.html)
+* [What is the difference between JACK1 and JACK2?](https://github.com/jackaudio/jackaudio.github.com/wiki/Q_difference_jack1_jack2)
 * [What audio devices are supported by JACK?](device_support.html)
 * [How do I refer to a soundcard
   so that the name always works?](device_naming.html)
