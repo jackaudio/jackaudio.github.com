@@ -7,8 +7,8 @@ menu_item: true
 ## Audio File Editors
 
   * [**Audacity**](http://audacity.sourceforge.net/)
-    is a cross-platform multitrack audio editor. Please read [this post]
-    (http://music.columbia.edu/pipermail/linux-audio-user/2005-July/024519.html)
+    is a cross-platform multitrack audio editor. Please read
+    [this post](http://music.columbia.edu/pipermail/linux-audio-user/2005-July/024519.html)
     for instructions on how to get Jackaudio and Audacity working together. 
   * [**gi_editor**](https://github.com/kmtaylor/gi_editor)
     is a software editor for the
@@ -61,8 +61,7 @@ menu_item: true
     with routing capabilities.
   * [**Cadence (KXStudio)**](http://kxstudio.sourceforge.net/Applications:Cadence)
 	  manages JACK, calls other tools and also checks and tweaks the system.
-  * [**Catarina(KXStudio)**]
-    (http://kxstudio.sourceforge.net/Applications:Catarina)
+  * [**Catarina(KXStudio)**](http://kxstudio.sourceforge.net/Applications:Catarina)
     is a JACK Patchbay similar to Patchage that supports JACK Transport.
   * [**Claudia (KXStudio)**](http://kxstudio.sourceforge.net/Applications:Claudia)
     is a LADISH frontend.
@@ -157,12 +156,12 @@ menu_item: true
     Can play mp3s, oggs, cds, among other audio file formats.
     Thanks go to Andy Lo-A-Foe for releasing the first application
     with support for Jack! 
-  * [Aqualung](http://aqualung.sourceforge.net/)
+  * [**Aqualung**](http://aqualung.sourceforge.net/)
     It plays audio files from your filesystem and has the feature of
     inserting no gaps between adjacent tracks 
-  * [Audacious](http://audacious-media-player.org/)
+  * [**Audacious**](http://audacious-media-player.org/)
     is a fork of beep-media-player 0.9.7.1 
-  * [Data Jockey](http://x37v.info/datajockey)
+  * [**Data Jockey**](http://x37v.info/datajockey)
     is a digital disc jockey tool which leverages audio meta-data
     (both computed and manually added by the user) in order to allow
     for new approaches in content selection and juxtaposition. 
@@ -210,8 +209,8 @@ menu_item: true
   * [**Loudspeaker Frequency Allocator**](http://www.thuneau.com/allocator.htm)
     is a 4-way, stereo DSP loudspeaker crossover
     that works with ASIO compatible multichannel sound cards
-    on a Windows XP computer. Jack4win [instructions can be found here.]
-    (http://www.thuneau.com/forum/viewtopic.php?t=168)
+    on a Windows XP computer. Jack4win
+    [instructions can be found here.](http://www.thuneau.com/forum/viewtopic.php?t=168)
   * [**meterbridge**](http://plugin.org.uk/meterbridge)
     a nice VU-style meter to watch signal levels on arbitrary JACK ports. 
   * [**Sonic Visualiser**](http://www.sonicvisualiser.org/)
@@ -551,11 +550,9 @@ menu_item: true
     recording and playback of sound through JACK. 
   * [**GLASHCtl**](http://dino.nongnu.org/glashctl)
     is a simple applet for controlling the LASH Audio Session Handler. 
-  * [**jack_convolve**]
-    (http://sourceforge.net/projects/heaven/files/Audio%20Applications/Jack%20Related/jack_convolve/)
+  * [**jack_convolve**](http://sourceforge.net/projects/heaven/files/Audio%20Applications/Jack%20Related/jack_convolve/)
     is a simple command line based, convolution engine for JACK. 
-  * [**jack_snapshot**]
-    (https://sourceforge.net/projects/heaven/files/Audio%20Applications/Jack%20Related/jack_snapshot/)
+  * [**jack_snapshot**](https://sourceforge.net/projects/heaven/files/Audio%20Applications/Jack%20Related/jack_snapshot/)
     is a little tool for storing/restoring jack connection states.
     Version 0.0.4 will compile with gcc-4.3+ 
   * [**Jack-smf-utils**](http://sourceforge.net/projects/jack-smf-utils/)
@@ -584,8 +581,7 @@ menu_item: true
   * [**QLoud**](http://gaydenko.com/qloud)
     a tool to measure loudspeaker frequency and
     step responses and distortions. 
-  * [**QOscC**]
-    (https://sourceforge.net/projects/heaven/files/Audio%20Applications/Jack%20Related/QOscC/)
+  * [**QOscC**](https://sourceforge.net/projects/heaven/files/Audio%20Applications/Jack%20Related/QOscC/)
     is a highly flexible and configurable software Oscilloscope. 
   * [**sauditor**](http://dis-dot-dat.net/index.cgi?item=/code/sauditor/)
     is a sample auditor that is intended to be simple and quick to use. 
@@ -649,5 +645,4 @@ menu_item: true
 ## Wikipedia References
 
   * [**Ardour**](http://en.wikipedia.org/wiki/Ardour_%28audio_processor%29)
-  * [**Jack Audio Connection Kit**]
-    (http://en.wikipedia.org/wiki/JACK_Audio_Connection_Kit)
+  * [**Jack Audio Connection Kit**](http://en.wikipedia.org/wiki/JACK_Audio_Connection_Kit)

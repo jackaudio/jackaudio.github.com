@@ -12,7 +12,7 @@ title: "JACK Documentation"
 ## Programming with JACK
 
 * The JACK API Reference Manual   
-[ [html](/api) | [pdf](http://jackaudio.org/files/refman.pdf) ] 
+[ [html](/api) | [pdf](http://jackaudio.org/files/refman.pdf) ]
 * A handy [tutorial/walk-through]
 (http://dis-dot-dat.net/index.cgi?item=/jacktuts/starting/)
 for programming with JACK, including some simple clients 
@@ -29,7 +29,7 @@ for programming with JACK, including some simple clients
 * JACK Schematic diagram. Tarball includes dia and eps versions.    
   [ [small](http://jackaudio.org/files/JACK-Diagram-screensize.png) |
   [large](http://jackaudio.org/files/JACK-Diagram.png) |
-  [tarball](http://jackaudio.org/files/JACK-Diagram.tar.gz) ] 
+  [tarball](http://jackaudio.org/files/JACK-Diagram.tar.gz) ]
 * [Porting JACK to OS X]
   (http://www.soundonsound.com/sos/Oct04/articles/applenotes.htm)
 * [Jackdmp](http://lac.zkm.de/2005/proceedings.shtml#letz_et_al)

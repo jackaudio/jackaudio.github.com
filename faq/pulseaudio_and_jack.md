@@ -91,8 +91,8 @@ or on the command line, by passing `-d hw:DSP` to JACK's ALSA backend.
 
 ## Option 3: route PulseAudio to JACK while JACK is running
 
-Please see [this wikipage] 
-(https://github.com/jackaudio/jackaudio.github.com/wiki/WalkThrough_User_PulseOnJack).
+Please see
+[this wikipage](https://github.com/jackaudio/jackaudio.github.com/wiki/WalkThrough_User_PulseOnJack).
 
 ## Option 4: suspend PulseAudio while JACK is running
 

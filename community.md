@@ -30,8 +30,8 @@ The official JACK implementation for Mac OSX
 # Communities
 
 ## linuxaudio.org
-[ [WIKI] (http://wiki.linuxaudio.org) |
-[site] (http://www.linuxaudio.org) ]
+[ [WIKI](http://wiki.linuxaudio.org) |
+[site](http://www.linuxaudio.org) ]
 
 A general ressource for linux Audio related questions. The wiki also contains
 information about JACK and related topics.

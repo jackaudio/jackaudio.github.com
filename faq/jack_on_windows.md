@@ -30,25 +30,13 @@ device.
 
 Several applications have native Jack support:
 
-  * Harisson MixBus :
-  [http://www.harrisonconsoles.com/mixbus/website/]
-  (http://www.harrisonconsoles.com/mixbus/website/)
-  * MuseScore :
-  [http://musescore.org/]
-  (http://musescore.org/)
-  * foo-yc20 :
-  [http://code.google.com/p/foo-yc20/]
-  (http://code.google.com/p/foo-yc20/)
-  * SND-RT :
-  [http://archive.notam02.no/arkiv/doc/snd-rt/]
-  (http://archive.notam02.no/arkiv/doc/snd-rt/)
-  * Radium :
-  [http://users.notam02.no/~kjetism/radium/]
-  (http://users.notam02.no/~kjetism/radium/)
+  * [Harisson MixBus :](http://www.harrisonconsoles.com/mixbus/website/)
+  * [MuseScore :](http://musescore.org/)
+  * [foo-yc20 :](http://code.google.com/p/foo-yc20/)
+  * [SND-RT :](http://archive.notam02.no/arkiv/doc/snd-rt/)
+  * [Radium :](http://users.notam02.no/~kjetism/radium/)
   * Fluidsynth for Windows (part of the jOrgan Windows packages). 
-  * JNAJack, Java bindings for JACK :
-  [https://code.google.com/p/java-audio-utils/wiki/GettingStarted_JNAJack]
-  (https://code.google.com/p/java-audio-utils/wiki/GettingStarted_JNAJack)
+  * [JNAJack, Java bindings for JACK :](https://code.google.com/p/java-audio-utils/wiki/GettingStarted_JNAJack)
 
 Native Jack applications can make use of the full power of the JACK audio and
 MIDI connection system (for instance, they can open or close Jack connections
@@ -120,8 +108,7 @@ interface will be available to all ASIO capable applications.
 
 For an overview of the command line options supported by the Jack Audio Server
 please see:
-[http://ccrma.stanford.edu/planetccrma/man/man1/jackd.1.html]
-(http://ccrma.stanford.edu/planetccrma/man/man1/jackd.1.html)
+[manpage](http://ccrma.stanford.edu/planetccrma/man/man1/jackd.1.html)
 
 The Jack v 1.9.8/64bits/JackRouter.dll still has to be registered "manually"
 with regsvr32 - so please try the following command to register the 64-bit

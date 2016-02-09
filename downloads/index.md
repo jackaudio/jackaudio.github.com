@@ -25,7 +25,7 @@ jack2_osx_mixed: "https://dl.dropboxusercontent.com/u/28869550/JackOSX.0.90.zip"
 
   * **Binaries**: please use your distribution's package manager  
   (`apt-get, yum, synaptic` etc.) 
-  * **Source tarball**: [ JACK {{page.jack2_source_v}}]({{page.jack2_source}}). 
+  * **Source tarball**: [JACK {{page.jack2_source_v}}]({{page.jack2_source}}). 
 
 ## OS X
 
@@ -36,20 +36,20 @@ jack2_osx_mixed: "https://dl.dropboxusercontent.com/u/28869550/JackOSX.0.90.zip"
 ### JACK2:
 
   * **Binaries**: [Mixed 64/32 bit, {{page.jack2_osx_version}}
-  of JackOSX for Snow Leopard and later]
-  ({{page.jack2_osx_mixed}})
+  of JackOSX for Snow Leopard and later]({{page.jack2_osx_mixed}})
   * **Binaries**: [Legacy 32 bit, {{page.jack2_osx_version}}
-  of JackOSX for systems older than Snow Leopard]
-  ({{page.jack2_osx_x32}})
-  * **Source tarball**: [ JACK {{page.jack2_source_v}}]({{page.jack2_source}}). 
+  of JackOSX for systems older than Snow Leopard]({{page.jack2_osx_x32}})
+  * **Source tarball**: [JACK {{page.jack2_source_v}}]({{page.jack2_source}}). 
 
 ## Windows
 
 ### JACK2:
 
-  * **Installer for 32 bit Windows(XP...)**: [ JACK 1.9.10](https://dl.dropboxusercontent.com/u/28869550/Jack_v1.9.10_32_setup.exe). 
-  * **Installer for Windows 64 bit (Vista, Windows 7)**: [ JACK 1.9.10](https://dl.dropboxusercontent.com/u/28869550/Jack_v1.9.10_64_setup.exe). 
-  * **Source tarball**: [ JACK {{page.jack2_source_v}}]({{page.jack2_source}}). 
+  * **Installer for 32 bit Windows(XP...)**: 
+  [JACK 1.9.10](https://dl.dropboxusercontent.com/u/28869550/Jack_v1.9.10_32_setup.exe). 
+  * **Installer for Windows 64 bit (Vista, Windows 7)**: 
+  [JACK 1.9.10](https://dl.dropboxusercontent.com/u/28869550/Jack_v1.9.10_64_setup.exe). 
+  * **Source tarball**: [JACK {{page.jack2_source_v}}]({{page.jack2_source}}). 
 
 ## JACK Source Code Repository
 
