@@ -6,7 +6,7 @@ title: "JACK Developer Information"
 # JACK Developer Information
 
 Want to use JACK in your software? Great, grab the [source](/downloads)
-and see the [docs](/documentation/).
+and see the [docs](/api).
 
 Want to get involved? How about getting on the lists. Paul Davis is the
 maintainer of this project.
@@ -54,8 +54,17 @@ Taybin Rutkin manages our releases.
 
 Rui Nuno Capela wrote the fantastic JACK control application "qjackctl".
 
-Others who have contributed to JACK in ways large and small: Andy Wingo,
-Fernando Pablo Lopez-Lezcano, Jeremy Hall, Steve Harris, Martin Boer, Melanie
-Thielker, Jussi Laako, Tilman Linneweh, Karsten Weise, Lee Revell, Jesse
-Chappel
+Others who have contributed to JACK in ways large and small:
+
+* Andy Wingo,
+* Fernando Pablo Lopez-Lezcano,
+* Jeremy Hall,
+* Steve Harris,
+* Martin Boer,
+* Melanie Thielker,
+* Jussi Laako,
+* Tilman Linneweh,
+* Karsten Weise,
+* Lee Revell,
+* Jesse Chappel
 
