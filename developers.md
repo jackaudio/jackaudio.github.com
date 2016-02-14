@@ -15,12 +15,10 @@ project.
 
 ## Found a bug?
 
-Send your report to the respective bugtrackers of
+Send your report to the respective bug-trackers of
 [jack1](https://github.com/jackaudio/jack1) or
 [jack2](https://github.com/jackaudio/jack2) or send your report to the
 [mailing list](/community).
-
-Starting to develop? Don't forget to read README.developers.
 
 Is there an error in this web site? General comments? Send the webmaster an
 email.
