@@ -15,7 +15,10 @@ project.
 
 ## Found a bug?
 
-Use the bugtracker or send your report to the mailing lists.
+Send your report to the respective bugtrackers of
+[jack1](https://github.com/jackaudio/jack1) or
+[jack2](https://github.com/jackaudio/jack2) or send your report to the
+[mailing list](/community).
 
 Starting to develop? Don't forget to read README.developers.
 
