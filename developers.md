@@ -10,8 +10,8 @@ and see the [docs](/api).
 
 ## Want to get involved?
 
-How about getting on the lists. Paul Davis is the maintainer of this
-project.
+How about getting on the [mailing lists](/community). Paul Davis is the
+maintainer of this project.
 
 ## Found a bug?
 
@@ -20,14 +20,17 @@ Send your report to the respective bug-trackers of
 [jack2](https://github.com/jackaudio/jack2) or send your report to the
 [mailing list](/community).
 
-Is there an error in this web site? General comments? Send the webmaster an
-email.
+This homepage is maintained as a community effort and has it's own
+bugtracker.
+
+For anything else send a mail to the [mailing list](/community) people
+are friendly and will respond if they can.
 
 ## contributors
 
-Jack was inspired by and partially designed during discussions on the Linux
-Audio Developers mailing list. Particularly significant contributions to those
-discussions came from (in alphabetical order):
+Jack was inspired by and partially designed during discussions on the
+Linux Audio Developers mailing list. Particularly significant
+contributions to those discussions came from (in alphabetical order):
 
   * Paul Davis
   * Richard Günther
@@ -51,8 +54,7 @@ periods, and has contributed many new interfaces and bug fixes.
 
 Stephane Letz ported JACK to OS X and wrote the new C++ SMP-aware
 implementation [jackdmp](http://www.grame.fr/~letz/jackdmp.html).
-He and Johnny Petrantoni created
-[JackOSX](http://jackosx.com/),
+He and Johnny Petrantoni created [JackOSX](http://jackosx.com/),
 including JACK and utilities for OS X.
 
 Taybin Rutkin manages our releases.
