@@ -8,10 +8,14 @@ title: "JACK Developer Information"
 Want to use JACK in your software? Great, grab the [source](/downloads)
 and see the [docs](/api).
 
-Want to get involved? How about getting on the lists. Paul Davis is the
-maintainer of this project.
+## Want to get involved?
 
-Found a bug? Use the bugtracker or send your report to the mailing lists.
+How about getting on the lists. Paul Davis is the maintainer of this
+project.
+
+## Found a bug?
+
+Use the bugtracker or send your report to the mailing lists.
 
 Starting to develop? Don't forget to read README.developers.
 
