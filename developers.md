@@ -24,22 +24,22 @@ Jack was inspired by and partially designed during discussions on the Linux
 Audio Developers mailing list. Particularly significant contributions to those
 discussions came from (in alphabetical order):
 
-  * Paul Davis 
-  * Richard Günther 
-  * David Olofson 
-  * Benno Sennoner 
-  * Kai Vehmanen 
+  * Paul Davis
+  * Richard Günther
+  * David Olofson
+  * Benno Sennoner
+  * Kai Vehmanen
 
 Paul Davis was the principal author of the Jack API and of its sample
 implementation. Very significant contributions have been made by:
 
-  * Kai Vehmanen 
-  * Jack O'Quin 
-  * Bob Ham 
-  * Steve Harris 
-  * Stephane Letz 
-  * Taybin Rutkin 
-  * Ian Esten 
+  * Kai Vehmanen
+  * Jack O'Quin
+  * Bob Ham
+  * Steve Harris
+  * Stephane Letz
+  * Taybin Rutkin
+  * Ian Esten
 
 Jack O'Quin frequently acted as the primary maintainer of JACK for long
 periods, and has contributed many new interfaces and bug fixes.
