@@ -11,7 +11,7 @@ applications that want to use realtime scheduling, but need not do so. If you
 have followed the [instructions on setting up RT scheduling
 access](linux_rt_config.html) and you
 still cannot start JACK with realtime scheduling, you should read this
-[detailed page on RT_GROUP_SCHED](http://trac.jackaudio.org/wiki/Cgroups).
+[detailed page on RT_GROUP_SCHED](https://github.com/jackaudio/jackaudio.github.com/wiki/Cgroups).
 We are leaving the page in the Wiki for now, because the situation
 may be fluid and its easier for people with the relevant knowledge
 to update it there.
