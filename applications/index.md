@@ -193,7 +193,9 @@ menu_item: true
 
   * [**Baudline**](http://www.baudline.com/)
     is a time-frequency browser designed for scientific visualization
-    of the spectral domain. 
+    of the spectral domain.
+  * [**Brianalyze**](http://humanleg.org.uk/code/brianalyze/)
+    is a pretty simple JACK-connected spectrum analyzer
   * [**BRP-PACU**](http://sourceforge.net/projects/brp-pacu)
     is a dual channel FFT based acoustic analysis tool to help engineers
     configure professional sound systems by using the transfer function. 
