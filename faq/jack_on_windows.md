@@ -30,13 +30,13 @@ device.
 
 Several applications have native Jack support:
 
-  * [Harisson MixBus :](http://www.harrisonconsoles.com/mixbus/website/)
-  * [MuseScore :](http://musescore.org/)
-  * [foo-yc20 :](http://code.google.com/p/foo-yc20/)
-  * [SND-RT :](http://archive.notam02.no/arkiv/doc/snd-rt/)
-  * [Radium :](http://users.notam02.no/~kjetism/radium/)
+  * [Harisson MixBus](http://www.harrisonconsoles.com/mixbus/website/)
+  * [MuseScore](http://musescore.org/)
+  * [foo-yc20](http://code.google.com/p/foo-yc20/)
+  * [SND-RT](http://archive.notam02.no/arkiv/doc/snd-rt/)
+  * [Radium](http://users.notam02.no/~kjetism/radium/)
   * Fluidsynth for Windows (part of the jOrgan Windows packages). 
-  * [JNAJack, Java bindings for JACK :](https://code.google.com/p/java-audio-utils/wiki/GettingStarted_JNAJack)
+  * [JNAJack, Java bindings for JACK](https://code.google.com/p/java-audio-utils/wiki/GettingStarted_JNAJack)
 
 Native Jack applications can make use of the full power of the JACK audio and
 MIDI connection system (for instance, they can open or close Jack connections
@@ -66,23 +66,29 @@ Starting from 1.9.8 version, the installer exists in two versions:
 
 By default, JackRouter is set to provide 4 Input and 4 Output connections.
 This setting can be customized to suite your needs by editing the
-JackRouter.ini file within your C:\Program Files\Jack\32bits (or C:\Program
-Files\Jack\64bits folder depending of the JackRouter 32 or 64 bit version). In
-Windows Explorer, right click on the file and choose the 'Edit' option. Change
-the settings in the [IO] portion of the file.
+JackRouter.ini file within your    
+`C:\Program Files\Jack\32bits` (or `C:\Program Files\Jack\64bits`
+folder depending of the JackRouter 32 or 64 bit version). In
+Windows Explorer, right click on the file and choose the 'Edit' option.
+Change the settings in the [IO] portion of the file.
 
 ## Installation and Configuration
 
 1. Download the Jack Audio Connection installer for Windows from the
   [download page.](/downloads/)
-2. Use the installer (either the 32 bit or the mixed 64/32 bit one). 
+
+2. Use the installer (either the 32 bit or the mixed 64/32 bit one).
+
 3. From the Windows Start menu, locate the Jack folder and right click
   on Jack Portaudio icon, then select 'Send to Desktop'
-  (this will place a shortcut on your desktop) 
+  (this will place a shortcut on your desktop)
+
 4. Now go to your desktop and right click on the Jack PortAudio shortcut,
   and then select 'Properties' (use right click to open 'Properties') 
-5. Add the following information to the 'Target' property:
-  "C:\Program Files\Jack\jackd.exe" -R -S -d portaudio -d "ASIO::ASIO4ALL v2"
+
+5. Add the following information to the 'Target' property:   
+  `"C:\Program Files\Jack\jackd.exe" -R -S -d portaudio -d
+  "ASIO::ASIO4ALL v2"`
   [This configures Jack to use the ASIO4ALL v2 driver,
   if you have another ASIO device then configure the 'Target' property
   with that device name. For a list of all the audio devices
@@ -114,15 +120,16 @@ The Jack v 1.9.8/64bits/JackRouter.dll still has to be registered "manually"
 with regsvr32 - so please try the following command to register the 64-bit
 JackRouter:
 
-regsvr32 "C:\Program Files (x86)\Jack v1.9.8\64bits\JackRouter.dll"
+`regsvr32 "C:\Program Files (x86)\Jack v1.9.8\64bits\JackRouter.dll"`
 
 Be sure to unregister previous versions before installing the new one.
 
-Troubleshooting Tip. If you are unable to register the 64-bit JackRouter,
-while in Windows Explorer navigate to \windows\system32, and right click on
-"cmd.exe" and chose "Run As Administrator" from the context menu. The open a
-command prompt, navigated to \Program Files (x86)\Jack v1.9.8\64bits, and then
-enter regsvr32 JackRouter.dll at the prompt.
+Troubleshooting Tip. If you are unable to register the 64-bit
+JackRouter, while in Windows Explorer navigate to `\windows\system32`,
+and right click on "cmd.exe" and chose "Run As Administrator" from the
+context menu. The open a command prompt, navigated to `\Program Files
+(x86)\Jack v1.9.8\64bits`, and then enter regsvr32 JackRouter.dll at the
+prompt.
 
 ## Uninstalling JACK
 
@@ -131,24 +138,25 @@ because the 64-bit JackRouter had to be manually registered as described
 before, you'll have to unregister it as well. Use the following command to
 unregister the 64-bit JackRouter:
 
-regsvr32 /u "C:\Program Files (x86)\Jack v1.9.8\64bits\JackRouter.dll"
+`regsvr32 /u "C:\Program Files (x86)\Jack v1.9.8\64bits\JackRouter.dll"`
 
 ## Connecting Audio Applications
 
 1. Start Jack PortAudio 
 2. Make sure that the Jack Audio Server is running by checking
-  the command prompt window for the report that will say something like this: 
-  
-  
-      jackdmp 1.9.8
-      Copyright 2001-2005 Paul Davis and others.
-      Copyright 2004-2011 Grame.
-      jackdmp comes with ABSOLUTELY NO WARRANTY
-      This is free software, and you are welcome to redistribute it
-      under certain conditions; see the file COPYING for details
-      JACK server starting in realtime mode with priority 10
-      Cannot lock down memory area (No error)
-      
+  the command prompt window for the report that will say
+  something like this:
+
+~~~~~~
+jackdmp 1.9.8
+Copyright 2001-2005 Paul Davis and others.
+Copyright 2004-2011 Grame.
+jackdmp comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; see the file COPYING for details
+JACK server starting in realtime mode with priority 10
+Cannot lock down memory area (No error)
+~~~~~~
 
 3. With the Jack Audio Server started, the JackRouter ASIO driver
   will be available for your ASIO supported applications. 
@@ -178,7 +186,7 @@ than the simple setup described here.
 ## Using MIDI
 
 A slave backend using the Windows MME MIDI API can be used. You will need to
-add "-X winmme" in the JACK command line, like for example: "jackd -S -X
-winmme -d portaudio". This can be done if starting JACK in a terminal, or by
-adding the "-X winmme" in the "Server Path" in QJackCtl setup.
+add `-X winmme` in the JACK command line, like for example:    
+`jackd -S -X winmme -d portaudio`. This can be done if starting JACK in a terminal, or by
+adding the `-X winmme` in the "Server Path" in QJackCtl setup.
 
