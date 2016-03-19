@@ -72,9 +72,9 @@ channel RME Hammerfall DSP device, and (unintentionally) an NVidia video
 adapter that also has an HDMI audio output.)
 
 Each of these cards can be accessed using its name, which is contained within
-the square brackets ([]). Generally, the name will simply be the conjunction
-of "hw:" and the card name. So for example, "hw:DSP" refers to the RME
-Hammerfall DSP in the above list, and "hw:SB" refers to the builtin soundcard.
+the square brackets `[]`. Generally, the name will simply be the conjunction
+of "hw:" and the card name. So for example, `"hw:DSP"` refers to the RME
+Hammerfall DSP in the above list, and `"hw:SB"` refers to the builtin soundcard.
 The names in your system will vary.
 
 ### Telling JACK which device to use
@@ -82,8 +82,7 @@ The names in your system will vary.
 To tell JACK to use the RME Hammerfall DSP, you would typically do this either
 via the upper right of QJackctl's setup dialog:
 
-![screenshot of qjackctl's setup dialog]
-(http://jackaudio.org/files/qjackctl_setup.png)
+[screenshot of qjackctl's setup dialog](http://jackaudio.org/files/qjackctl_setup.png)
 
 or on the command line, by passing `-d hw:DSP` to JACK's ALSA backend.
 
