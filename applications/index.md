@@ -325,9 +325,9 @@ menu_item: true
   * [**Clam**](http://clam-project.org/)
     is a multiplatform software framework for
     research and application development for the Audio and Music domains. 
-  * [**FAUST **](http://faust.grame.fr/)
+  * [**FAUST**](http://faust.grame.fr/)
     is a compiled language for real-time audio signal processing. 
-  * [GTKIOStream](http://sourceforge.net/projects/gtkiostream/)
+  * [**GTKIOStream**](http://sourceforge.net/projects/gtkiostream/)
     provides allows easy use of JACK within GTK apps and has many other tools
     for DSP, Audio Masking, FFTs and plotting data.
   * [**jackcpp**](http://x37v.info/projects/jackcpp)
@@ -459,8 +459,8 @@ menu_item: true
     a software audio sampler. 
   * [**Midi Player Pro**](http://www.selasky.org/hans_petter/midistudio)
     is the software you need to be able to play any kind of music
-    in seconds with your fingertips. It uses [**libumidi20**]
-    (http://www.freebsd.org/cgi/ports.cgi?query=libumidi&stype=all&sektion=all),
+    in seconds with your fingertips. It uses
+    [**libumidi20**](http://www.freebsd.org/cgi/ports.cgi?query=libumidi&stype=all&sektion=all),
     which also uses Jack. 
   * [**Mx44**](http://web.comhem.se/luna/)
     is a polyphonic multichannel midi realtime software synthesizer. 
