@@ -47,43 +47,45 @@
 <p>Its relatively easy to get audio from GStreamer to flow via JACK:</p>
 
 <ol>
-  <li>You need the GStreamer JACK audio plugin, which is currently (Fall 2009)
+  <li>
+    <p>You need the GStreamer JACK audio plugin, which is currently (Fall 2009)
   part of the “bad” plugins collection. Most Linux distributions
   make this available through their normal software install/update systems.
   The name of the package containing this plugin will vary
   from distribution to distribution:
   on Fedora its called “gstreamer-plugins-bad-free-extra”,
-  on Ubuntu its called “gst-plugins-bad”, etc. etc.</li>
+  on Ubuntu its called “gst-plugins-bad”, etc. etc.</p>
+  </li>
   <li>Next, you need to configure GStreamer to tell it to use this plugin
   for audio output. There are 3 methods available:
     <ul>
-      <li>Through the command line using gconf2 (you may need to install this first)</li>
+      <li>Through the command line using gconf2 (you may need to install this
+ first)</li>
       <li>Install/run gconf-editor, which is a general purpose utility
- for configuring many GNOME-centric applications</li>
+ for configuring many GNOME-centric applications.</li>
       <li>Some systems may have the gstreamer-properties command available,
- which offers a graphical tool for configuring gstreamer</li>
+ which offers a graphical tool for configuring gstreamer.</li>
     </ul>
   </li>
   <li>Your goal is set the value of:
     <ul>
-      <li>/system/gstreamer/0.10/audio/default/musicaudiosink</li>
-      <li>/system/gstreamer/0.10/audio/default/audiosink</li>
+      <li><code class="highlighter-rouge">/system/gstreamer/0.10/audio/default/musicaudiosink</code></li>
+      <li><code class="highlighter-rouge">/system/gstreamer/0.10/audio/default/audiosink</code></li>
     </ul>
   </li>
 </ol>
 
 <p>to this value: <code class="highlighter-rouge">jackaudiosink buffer-time=2000000</code>. The exact value of
-<code class="highlighter-rouge">buffer-time</code> doesn’t matter too much, but higher values reduce the chance of
-glitches/drop-outs in the audio stream. You might also choose to set
-/system/gstreamer/0.10/audio/default/chataudiosink to the same value, but its
-less likely to be useful to you.</p>
+<code class="highlighter-rouge">buffer-time</code> doesn’t matter too much, but higher values reduce
+the chance of glitches/drop-outs in the audio stream. You might also
+choose to set <code class="highlighter-rouge">/system/gstreamer/0.10/audio/default/chataudiosink</code> to
+the same value, but its less likely to be useful to you.</p>
 
-<p>The impact of this will vary depending on how much your system uses GStreamer.
-On modern GNOME-based systems, it will effectively divert all system sounds
-and all audio playback via JACK. On other systems (e.g. KDE-based systems) it
-will have less of an effect, though it will still impact specific applications
-that use GStreamer.</p>
-
+<p>The impact of this will vary depending on how much your system uses
+GStreamer.  On modern GNOME-based systems, it will effectively divert
+all system sounds and all audio playback via JACK. On other systems
+(e.g. KDE-based systems) it will have less of an effect, though it will
+still impact specific applications that use GStreamer.</p>
 
 
       </section>
