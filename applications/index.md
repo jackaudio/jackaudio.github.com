@@ -199,8 +199,13 @@ menu_item: true
   * [**BRP-PACU**](http://sourceforge.net/projects/brp-pacu)
     is a dual channel FFT based acoustic analysis tool to help engineers
     configure professional sound systems by using the transfer function. 
+  * [**Ebumeter**](http://kokkinizita.linuxaudio.org/linuxaudio/ebumeter-doc/quickguide.html)
+    provides level metering according to the EBU
+    R-128 recommendation. The current release implements all features
+    required by the EBU document except the oversampled peak level
+    monitoring. This will be added in a future release.
   * [**Jaaa**](http://users.skynet.be/solaris/linuxaudio/)
-    an audio signal generator and spectrum analyser. 
+    an audio signal generator and spectrum analyser.
   * [**JACK demolition**](http://plugin.org.uk/releases/jack-demolition)
     a very simple jack client that connects to every input port
     and squirts undesirable numbers (denomals, HUGE, NaN, Inf etc.) to it. 
