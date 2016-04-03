@@ -67,6 +67,8 @@ menu_item: true
     is a LADISH frontend.
   * [**Jack Sanity**](https://github.com/psychoticmeow/jack-sanity)
     is a scriptable environment for controlling jackdbus clients.
+  * [**PatchMatrix**](https://github.com/OpenMusicKontrollers/patchmatrix)
+    is a standalone JACK patch bay with metadata support in matrix layout.
 
 ## DJ Software
 
@@ -322,6 +324,8 @@ menu_item: true
     control voltages on standard JACK audio ports. 
   * [**Soundtank**](http://sourceforge.net/projects/soundtank)
     a midi controlled host for softsynths made out of LADSPA plugins. 
+  * [**Synthpod**](http://open-music-kontrollers.ch/lv2/synthpod)
+    is a lightweight non-linear plugin container.
 
 ## Programming Libraries
 
