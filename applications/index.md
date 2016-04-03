@@ -204,14 +204,14 @@ menu_item: true
     R-128 recommendation. The current release implements all features
     required by the EBU document except the oversampled peak level
     monitoring. This will be added in a future release.
-  * [**Jaaa**](http://users.skynet.be/solaris/linuxaudio/)
+  * [**Jaaa**](http://kokkinizita.linuxaudio.org/linuxaudio/index.html)
     an audio signal generator and spectrum analyser.
   * [**JACK demolition**](http://plugin.org.uk/releases/jack-demolition)
     a very simple jack client that connects to every input port
     and squirts undesirable numbers (denomals, HUGE, NaN, Inf etc.) to it. 
   * [**Jack Meter**](http://www.aelius.com/njh/jackmeter/)
     is a basic console based DPM (Digital Peak Meter). 
-  * [**japa**](http://users.skynet.be/solaris/linuxaudio/)
+  * [**japa**](http://kokkinizita.linuxaudio.org/linuxaudio/index.html)
     is a 'perceptual' or 'psychoacoustic' audio spectrum analyser. 
   * [**Loudspeaker Frequency Allocator**](http://www.thuneau.com/allocator.htm)
     is a 4-way, stereo DSP loudspeaker crossover
