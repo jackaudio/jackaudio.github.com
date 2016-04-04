@@ -343,7 +343,7 @@ menu_item: true
     is a C++ class wrapping most of the jack client functionality,
     a "blocking" interface for jack and a template class wrapping
     the jack ring buffer. 
-  * [**JackSharp**](https://www.nuget.org/packages/JackSharp/)
+  * [**JackSharp**](https://github.com/residuum/JackSharp)
     is a .NET and Mono API for JACK. 
   * [**JJack**](http://jjack.berlios.de/)
     Java bridge API for JACK. 
@@ -356,7 +356,7 @@ menu_item: true
     in asynchronous mode. 
   * [**libjackmm**](http://sourceforge.net/projects/libjackmm)
     is a C++ interface to the jack audio connection kit. 
-  * [**NAudio.Jack**](https://www.nuget.org/packages/Naudio.Jack/)
+  * [**NAudio.Jack**](https://github.com/residuum/JackSharp)
     is a binding of JackSharp for NAudio, a .NET audio library.
   * [**Pure Data**](http://puredata.info/)
     is a real-time graphical programming environment for
