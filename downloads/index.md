@@ -2,8 +2,8 @@
 layout: page
 title:  "Downloads"
 menu_item: true
-jack1_source : "http://jackaudio.org/downloads/jack-audio-connection-kit-0.124.1.tar.gz"
-jack1_source_v: "0.124.1"
+jack1_source : "http://jackaudio.org/downloads/jack-audio-connection-kit-0.125.0.tar.gz"
+jack1_source_v: "0.125.0"
 jack2_source : "https://dl.dropboxusercontent.com/u/28869550/jack-1.9.10.tar.bz2"
 jack2_source_v: "1.9.10"
 jack2_osx_version: "0.90"
