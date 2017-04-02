@@ -1,6 +1,6 @@
 name: JACK Audio Connection Kit
 markdown: Kramdown
 highlighter: rouge
-baseurl: ""
+baseurl: ''
 
 exclude: [README.md]
