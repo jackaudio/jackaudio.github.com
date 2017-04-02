@@ -4,10 +4,16 @@ title:  "Downloads"
 menu_item: true
 jack1_source : "http://jackaudio.org/downloads/jack-audio-connection-kit-0.125.0.tar.gz"
 jack1_source_v: "0.125.0"
+
 jack2_source : "https://dl.dropboxusercontent.com/u/28869550/jack-1.9.10.tar.bz2"
 jack2_source_v: "1.9.10"
-jack2_osx_version: "0.92_b3"
+
+jack2_win_bin_32 : "https://github.com/jackaudio/jackaudio.github.com/releases/download/1.9.11/Jack_v1.9.11_32_setup.exe"
+jack2_win_bin_64 : "https://github.com/jackaudio/jackaudio.github.com/releases/download/1.9.11/Jack_v1.9.11_64_setup.exe"
+jack2_win_bin_version : "1.9.11"
 jack2_osx_bin: "https://github.com/jackaudio/jackaudio.github.com/releases/download/1.9.11/JackOSX.0.92_b3.zip"
+jack2_osx_version: "0.92_b3"
+
 ---
 # Downloading JACK
 
@@ -37,15 +43,14 @@ jack2_osx_bin: "https://github.com/jackaudio/jackaudio.github.com/releases/downl
   * **Binaries**: [jackOSX Version {{page.jack2_osx_version}}]({{page.jack2_osx_bin}})
   * **Source tarball**: [JACK {{page.jack2_source_v}}]({{page.jack2_source}}). 
 
-
 ## Windows
 
 ### JACK2:
 
-  * **Installer for 32 bit Windows(XP...)**: 
-  [JACK 1.9.10](https://dl.dropboxusercontent.com/u/28869550/Jack_v1.9.10_32_setup.exe). 
-  * **Installer for Windows 64 bit (Vista, Windows 7)**: 
-  [JACK 1.9.10](https://dl.dropboxusercontent.com/u/28869550/Jack_v1.9.10_64_setup.exe). 
+  * **32 bit installer**: 
+  [JACK {{page.jack2_win_bin_version}}]({{page.jack2_win_bin_32}}). 
+  * **64 bit installer**: 
+  [JACK {{page.jack2_win_bin_version}}]({{page.jack2_win_bin_64}}). 
   * **Source tarball**: [JACK {{page.jack2_source_v}}]({{page.jack2_source}}). 
 
 ## JACK Source Code Repository
