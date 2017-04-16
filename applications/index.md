@@ -343,26 +343,14 @@ menu_item: true
     is a C++ class wrapping most of the jack client functionality,
     a "blocking" interface for jack and a template class wrapping
     the jack ring buffer. 
-  * [**JackSharp**](https://github.com/residuum/JackSharp)
-    is a .NET and Mono API for JACK. 
-  * [**JJack**](http://jjack.berlios.de/)
-    Java bridge API for JACK. 
-  * [**JNAJack**](http://code.google.com/p/java-audio-utils)
-    an alternative Java bridge API for JACK.
-    Provides a more direct mapping of JACK functions,
-    and supports all platforms that JACK runs on. 
   * [**libjackasyn**](http://packages.debian.org/source/stable/libjackasyn)
     is a library that allows to access the jack audio server
-    in asynchronous mode. 
+    in asynchronous mode.
   * [**libjackmm**](http://sourceforge.net/projects/libjackmm)
     is a C++ interface to the jack audio connection kit. 
-  * [**NAudio.Jack**](https://github.com/residuum/JackSharp)
-    is a binding of JackSharp for NAudio, a .NET audio library.
   * [**Pure Data**](http://puredata.info/)
     is a real-time graphical programming environment for
-    audio, video, and graphical processing. 
-  * [**PyJack**](http://sourceforge.net/projects/py-jack/)
-    a Python module which provides an interface to Jack. 
+    audio, video, and graphical processing.  
   * [**JACK-connector**](https://github.com/unclechu/node-jack-connector)
     a Node.JS module which provides an interface to Jack. 
   * [**Qjack**](https://bitbucket.org/asiniscalchi/qjack)
@@ -372,7 +360,44 @@ menu_item: true
     (Application Programming Interface) for realtime audio input/output. 
   * [**Wine**](http://www.winehq.com/)
     an application that lets you run and
-    recompile Windows applications under Linux. 
+    recompile Windows applications under Linux.
+
+## Language Bindings
+
+### C&#35;
+
+  * [**JackSharp**](https://github.com/residuum/JackSharp)
+    is a .NET and Mono API for JACK. 
+  * [**NAudio.Jack**](https://github.com/residuum/JackSharp)
+    is a binding of JackSharp for NAudio, a .NET audio library.
+
+### Go
+
+  * [**go-jack**](https://github.com/xthexder/go-jack)
+  
+### haskell
+
+  * [**jack**](http://hackage.haskell.org/package/jack)
+
+### Java
+  
+  * [**JJack**](http://jjack.berlios.de/)
+    Java bridge API for JACK.
+  * [**JNAJack**](http://code.google.com/p/java-audio-utils)
+    an alternative Java bridge API for JACK.
+    Provides a more direct mapping of JACK functions,
+    and supports all platforms that JACK runs on.
+
+### Python
+
+  * [**jackclient-python**](https://jackclient-python.readthedocs.io/)
+  * [**PyJack**](http://sourceforge.net/projects/py-jack/)
+    a Python module which provides an interface to Jack.
+  
+### Rust
+
+  * [**nicklan/rust-jack**](https://github.com/nicklan/rust-jack)
+  * [**RustAudio/rust-jack**](https://github.com/RustAudio/rust-jack)
 
 ## Radio
 
