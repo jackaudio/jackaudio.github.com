@@ -381,8 +381,6 @@ menu_item: true
 
 ### Java
   
-  * [**JJack**](http://jjack.berlios.de/)
-    Java bridge API for JACK.
   * [**JNAJack**](http://code.google.com/p/java-audio-utils)
     an alternative Java bridge API for JACK.
     Provides a more direct mapping of JACK functions,
@@ -402,6 +400,7 @@ menu_item: true
 ## Radio
 
   * [**admin-srb**](https://github.com/srb-fm/admin-srb)
+    Administration and radioautomation of public radiostations
   * [**ARAS**](http://aras.sourceforge.net/)
     is an open source radio automation system,
     it has been designed to be highly configurable and easy to manage.
