@@ -401,6 +401,7 @@ menu_item: true
 
 ## Radio
 
+  * [**admin-srb**](https://github.com/srb-fm/admin-srb)
   * [**ARAS**](http://aras.sourceforge.net/)
     is an open source radio automation system,
     it has been designed to be highly configurable and easy to manage.
