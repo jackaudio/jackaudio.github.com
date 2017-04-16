@@ -42,12 +42,13 @@ A convenient way of working is, to check out the working copy and start jekyll
 with:
 
     cd /path/to/working/copy
-    jekyll serve --watch
+    jekyll serve --watch --baseurl ''
 
 that way, jekyll watches all source files for changes and regenerates the _site
 dir on changes. It also starts a local webserver on port 4000 where the result can
 be observed.
 
+Note: please provide the `--baseurl ''` argument when generatigng the site.
 Desired line length maximum is 82 columns.
 
 ## site internal links

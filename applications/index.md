@@ -655,7 +655,13 @@ menu_item: true
   * [**fst**](http://joebutton.co.uk/fst/)
     is a program by which uses Wine, Jack and
     Steinberg's VST Audio Plug-Ins SDK to
-    enable the use of many VST audio plugins under Gnu/Linux. 
+    enable the use of many VST audio plugins under Gnu/Linux.
+
+
+## Other
+  * [**Mozilla Firefox**](https://www.mozilla.org/en-US/firefox/new/)
+    provides JACK support when compiled with custom [build flags](https://bugzilla.mozilla.org/show_bug.cgi?id=783733#c81)
+
 
 ## Wikipedia References
 
