@@ -5,8 +5,8 @@ menu_item: true
 jack1_source : "http://jackaudio.org/downloads/jack-audio-connection-kit-0.125.0.tar.gz"
 jack1_source_v: "0.125.0"
 
-jack2_source : "https://dl.dropboxusercontent.com/u/28869550/jack-1.9.10.tar.bz2"
-jack2_source_v: "1.9.10"
+jack2_source : "https://github.com/jackaudio/jack2/releases/download/v1.9.11-RC1/jack2-1.9.11-RC1.tar.gz"
+jack2_source_v: "1.9.11-RC1"
 
 jack2_win_bin_32 : "https://github.com/jackaudio/jackaudio.github.com/releases/download/1.9.11/Jack_v1.9.11_32_setup.exe"
 jack2_win_bin_64 : "https://github.com/jackaudio/jackaudio.github.com/releases/download/1.9.11/Jack_v1.9.11_64_setup.exe"
