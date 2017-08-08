@@ -47,7 +47,7 @@
 intermediate such as GStreamer or PulseAudio, you can still force most of them
 to route their audio to/from JACK. There are two ways of approaching this.</p>
 
-<h2 id="using-an-alsa-loopback-device-and-jack-alsa_inalsa_out-clients">Using an ALSA Loopback device and JACK alsa_in/alsa_out clients</h2>
+<h2 id="using-an-alsa-loopback-device-and-jack-alsainalsaout-clients">Using an ALSA Loopback device and JACK alsa_in/alsa_out clients</h2>
 
 <p>This more complex but probably more robust approach is well-documented in
 <a href="http://alsa.opensrc.org/Jack_and_Loopback_device_as_Alsa-to-Jack_bridge">this document</a>.</p>
@@ -122,11 +122,9 @@ contain this text:</p>
 </code></pre>
 </div>
 
-<p>You should check the rest of the file for other definitions of “pcm.!default”</p>
-<ul>
-  <li>only the last one will have any effect and there should be preferably only
-be one.</li>
-</ul>
+<p>You should check the rest of the file for other definitions of “pcm.!default”
+- only the last one will have any effect and there should be preferably only
+be one.</p>
 
 <p>Note that this solution will create some latency: the ALSA JACK plugin has to
 use a buffer between the data being sent by the application and JACK itself to
