@@ -96,7 +96,7 @@ Please see
 ## Option 4: suspend PulseAudio while JACK is running
 
 If you start JACK using QJackctl, then you should go into its setup dialog and
-edit the field labelled "Server path". Insert `pasuspsender --` in front of
+edit the field labelled "Server path". Insert `pasuspender --` in front of
 whatever is there (probably just something like `jackd`). So for example, if
 you had "jackd" in the "Server path" field already, it should now say:
 
