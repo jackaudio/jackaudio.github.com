@@ -269,6 +269,8 @@ menu_item: true
   * [**Qtractor**](http://qtractor.sourceforge.net/qtractor-index.html)
     is an Audio/MIDI multi-track sequencer application written in C++
     around the Qt4 toolkit. 
+  * [**quincer**](http://very.busted.systems/quincer)
+    is a sequencer for composed music with text-editable input.
   * [**Renoise**](http://www.renoise.com/)
     is a contemporary digital audio workstation (DAW)
     based upon the heritage and development of tracker software.
