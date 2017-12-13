@@ -67,5 +67,5 @@ Desired line length maximum is 82 columns.
 *  a news/releases section
 * how to handle the '_site' dir? it needs to be included for easy deployment
   without running jekyll on the webserver side, on the other hand it holds a full
-  copy of the images and all binary files. AFAIK you cannot safely place thouse
+  copy of the images and all binary files. AFAIK you cannot safely place those
   files only in the '_site' dir, since this dir gets cleaned by jekyll.
