@@ -32,8 +32,8 @@ just clone the repository and point your webserver to the '_site' dir
 2.  insert a header as in the other files in the faq dir, they are required for
     jekyll to process the file
 3. Add your content in markdown format
-4. link to your new FAQ page in the /faq/index.md page, please note, that all FAQ
-   pages currently need '.html' appended, since they share the same directory.
+4. link to your new FAQ page in the `/faq/index.md` page, please note, that all FAQ
+   pages currently need `.html` appended, since they share the same directory.
 
 ## development notes
 * requires jekyll >= 2.2.0 (because of changes in the configuration file)
@@ -48,7 +48,7 @@ that way, jekyll watches all source files for changes and regenerates the _site
 dir on changes. It also starts a local webserver on port 4000 where the result can
 be observed.
 
-Note: please provide the `--baseurl ''` argument when generatigng the site.
+Note: please provide the `--baseurl ''` argument when generating the site.
 Desired line length maximum is 82 columns.
 
 ## site internal links
@@ -61,7 +61,7 @@ Desired line length maximum is 82 columns.
 
 
 ## open considderations
-*  The downloadable files will have to be placed in the 'downloads' dir after
+*  The downloadable files will have to be placed in the `downloads` dir after
    cloning the repo. That's a hassle, but including them in this repo would just
    bloat the repo more and more with each release.
 *  a news/releases section
