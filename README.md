@@ -60,7 +60,7 @@ Desired line length maximum is 82 columns.
     [name to display](/faq/file.html)
 
 
-## open considderations
+## open considerations
 *  The downloadable files will have to be placed in the `downloads` dir after
    cloning the repo. That's a hassle, but including them in this repo would just
    bloat the repo more and more with each release.
