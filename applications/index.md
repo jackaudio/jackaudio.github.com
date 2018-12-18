@@ -372,6 +372,8 @@ menu_item: true
     is a .NET and Mono API for JACK. 
   * [**NAudio.Jack**](https://github.com/residuum/JackSharp)
     is a binding of JackSharp for NAudio, a .NET audio library.
+  * [**luajack**](https://github.com/stetre/luajack)
+    is a Lua bindings for JACK.
 
 ### Go
 
