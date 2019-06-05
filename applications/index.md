@@ -584,6 +584,8 @@ menu_item: true
 
 ## Utilities
 
+  * [**aubio**](https://aubio.org/)
+    a tool designed for the extraction of annotations from audio signals.
   * [**bio2jack**](http://bio2jack.sourceforge.net/)
     a library that allows for simple porting of
     blocked io OSS/ALSA audio applications to Jack. 
