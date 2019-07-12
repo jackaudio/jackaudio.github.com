@@ -61,9 +61,9 @@ also have a file called `/etc/security/limits.conf` and/or a directory called
 `/etc/security/limits.d.
 
 You need to carry out 3 steps to be able to run JACK with RT scheduling. In
-what follows, several references are made to the "realtime" group. If this
+what follows, several references are made to the "audio" group. If this
 group name already exists, pick a different name and use it instead of
-"realtime" when following the rest of these instructions. The actual name of
+"audio" when following the rest of these instructions. The actual name of
 the group is completely irrelevant.
 
 ### 1. Editing the configuration file
@@ -71,26 +71,26 @@ the group is completely irrelevant.
 If your system has no directory called `/etc/security/limits.d` then you will
 need to edit `/etc/security/limits.conf`. If `/etc/security/limits.d` does
 exist on your machine, then you will need to create and edit a file called
-`/etc/security/limits.d/99-realtime.conf`. The file must contain (at least)
+`/etc/security/limits.d/audio.conf`. The file must contain (at least)
 the following two lines:
 
     
     
-    @realtime   -  rtprio     99
-    @realtime   -  memlock    unlimited
+    @audio   -  rtprio     95
+    @audio   -  memlock    unlimited
     
 
 Contrary to a lot of misinformation on the web, there is no reason to include
 a line here that provides enhanced "niceness" control, which is completely
 irrelevant for realtime scheduling and low latency audio applications.
 
-### 2. Creating a "realtime" group
+### 2. Creating an "audio" group
 
 **As the super-user ("root")** run the following commands from a terminal window: 
     
     
-    groupadd realtime
-    usermod -a -G realtime yourUserID
+    groupadd audio
+    usermod -a -G audio yourUserID
     
 
 You should substitute your actual user id or "login" for "yourUserID".
