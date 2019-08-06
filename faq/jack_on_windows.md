@@ -79,6 +79,14 @@ Change the settings in the [IO] portion of the file.
 
 2. Use the installer (either the 32 bit or the mixed 64/32 bit one).
 
+3. Open an elevated command prompt, and run the following command to register
+   the JackRouter: 
+   `regsvr32 "C:\Program Files (x86)\Jack v1.9.8\64bits\JackRouter.dll"`
+
+   Be sure to unregister previous versions before installing the new one.
+   (The Jack v 1.9.8/64bits/JackRouter.dll still has to be registered "manually")
+
+
 3. From the Windows Start menu, locate the Jack folder and right click
   on Jack Portaudio icon, then select 'Send to Desktop'
   (this will place a shortcut on your desktop)
@@ -115,14 +123,6 @@ interface will be available to all ASIO capable applications.
 For an overview of the command line options supported by the Jack Audio Server
 please see:
 [manpage](http://ccrma.stanford.edu/planetccrma/man/man1/jackd.1.html)
-
-The Jack v 1.9.8/64bits/JackRouter.dll still has to be registered "manually"
-with regsvr32 - so please try the following command to register the 64-bit
-JackRouter:
-
-`regsvr32 "C:\Program Files (x86)\Jack v1.9.8\64bits\JackRouter.dll"`
-
-Be sure to unregister previous versions before installing the new one.
 
 Troubleshooting Tip. If you are unable to register the 64-bit
 JackRouter, while in Windows Explorer navigate to `\windows\system32`,
