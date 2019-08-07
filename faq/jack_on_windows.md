@@ -84,17 +84,18 @@ Change the settings in the [IO] portion of the file.
    `regsvr32 "C:\Program Files (x86)\Jack v1.9.8\64bits\JackRouter.dll"`
 
    Be sure to unregister previous versions before installing the new one.
-   (The Jack v 1.9.8/64bits/JackRouter.dll still has to be registered "manually")
+   (The Jack v 1.9.8/64bits/JackRouter.dll still has to be registered "manually",
+   see "Troubleshooting Tip" bellow)
 
 
-3. From the Windows Start menu, locate the Jack folder and right click
+4. From the Windows Start menu, locate the Jack folder and right click
   on Jack Portaudio icon, then select 'Send to Desktop'
   (this will place a shortcut on your desktop)
 
-4. Now go to your desktop and right click on the Jack PortAudio shortcut,
+5. Now go to your desktop and right click on the Jack PortAudio shortcut,
   and then select 'Properties' (use right click to open 'Properties') 
 
-5. Add the following information to the 'Target' property:   
+6. Add the following information to the 'Target' property:   
   `"C:\Program Files\Jack\jackd.exe" -R -S -d portaudio -d
   "ASIO::ASIO4ALL v2"`
   [This configures Jack to use the ASIO4ALL v2 driver,
@@ -105,8 +106,8 @@ Change the settings in the [IO] portion of the file.
   then run this command: jackd -d portaudio -l
   (that's an 'ell' for List, not a 'one'),
   this will present you with the list of supported devices.] 
-6. Click on OK. 
-7. Again, from the Windows Start menu, locate the Jack folder and right click
+7. Click on OK. 
+8. Again, from the Windows Start menu, locate the Jack folder and right click
   on the Jack Control icon, then select 'Send to Desktop'
   (placing a Jack Control shortcut on your desktop) 
 
