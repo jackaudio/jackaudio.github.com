@@ -240,7 +240,7 @@ menu_item: true
     is a Jack mixer. 
   * [**The Non Mixer**](http://non-mixer.tuxfamily.org/)
     is a powerful, reliable and fast modular Digital Audio Mixer. 
-### Legacy
+##### Legacy
   * [**JackMaster**](http://69b.org/cms/jackmaster)
     was a Master Console. 
 
