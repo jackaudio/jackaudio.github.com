@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Jack2: Session API for clients.</title>
+<title>JACK-AUDIO-CONNECTION-KIT: Session API for clients.</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,8 +18,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Jack2
-   &#160;<span id="projectnumber">1.9.13</span>
+   <div id="projectname">JACK-AUDIO-CONNECTION-KIT
+   &#160;<span id="projectnumber">0.125.0rc1</span>
    </div>
   </td>
  </tr>
@@ -39,7 +39,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
@@ -49,56 +49,74 @@ $(function() {
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
+Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__jack__session__event.html">_jack_session_event</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:gadaa6c819c4e14eb162b5d3f462866dfc"><td class="memItemLeft" align="right" valign="top"><a id="gadaa6c819c4e14eb162b5d3f462866dfc"></a>
-typedef enum <a class="el" href="group__SessionClientFunctions.html#ga5616b829095cc341cee4610aba992a4d">JackSessionEventType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>jack_session_event_type_t</b></td></tr>
+<tr class="memitem:gadaa6c819c4e14eb162b5d3f462866dfc"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="group__SessionClientFunctions.html#ga5616b829095cc341cee4610aba992a4d">JackSessionEventType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SessionClientFunctions.html#gadaa6c819c4e14eb162b5d3f462866dfc">jack_session_event_type_t</a></td></tr>
 <tr class="separator:gadaa6c819c4e14eb162b5d3f462866dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaff8d9b1766409d50565aabd2a5b9ab4f"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="group__SessionClientFunctions.html#ga596a05b8e9be60e04ee3f8d434c5d8f8">JackSessionFlags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SessionClientFunctions.html#gaff8d9b1766409d50565aabd2a5b9ab4f">jack_session_flags_t</a></td></tr>
 <tr class="separator:gaff8d9b1766409d50565aabd2a5b9ab4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafbf49270fbcf5cfce2abd26d7ee212b9"><td class="memItemLeft" align="right" valign="top"><a id="gafbf49270fbcf5cfce2abd26d7ee212b9"></a>
-typedef struct <a class="el" href="struct__jack__session__event.html">_jack_session_event</a>&#160;</td><td class="memItemRight" valign="bottom"><b>jack_session_event_t</b></td></tr>
+<tr class="memitem:gafbf49270fbcf5cfce2abd26d7ee212b9"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__jack__session__event.html">_jack_session_event</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SessionClientFunctions.html#gafbf49270fbcf5cfce2abd26d7ee212b9">jack_session_event_t</a></td></tr>
 <tr class="separator:gafbf49270fbcf5cfce2abd26d7ee212b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2c0dc123dd2c1a2d0e8c9ce90d25b89c"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SessionClientFunctions.html#ga2c0dc123dd2c1a2d0e8c9ce90d25b89c">JackSessionCallback</a>) (<a class="el" href="struct__jack__session__event.html">jack_session_event_t</a> *event, void *arg)</td></tr>
+<tr class="memitem:ga2c0dc123dd2c1a2d0e8c9ce90d25b89c"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SessionClientFunctions.html#ga2c0dc123dd2c1a2d0e8c9ce90d25b89c">JackSessionCallback</a>) (<a class="el" href="group__SessionClientFunctions.html#gafbf49270fbcf5cfce2abd26d7ee212b9">jack_session_event_t</a> *event, void *arg)</td></tr>
 <tr class="separator:ga2c0dc123dd2c1a2d0e8c9ce90d25b89c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ga5616b829095cc341cee4610aba992a4d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SessionClientFunctions.html#ga5616b829095cc341cee4610aba992a4d">JackSessionEventType</a> { <br />
-&#160;&#160;<b>JackSessionSave</b> = 1, 
-<b>JackSessionSaveAndQuit</b> = 2, 
-<b>JackSessionSaveTemplate</b> = 3, 
-<a class="el" href="group__SessionClientFunctions.html#gga5616b829095cc341cee4610aba992a4da01d1ac5a741784533361414c7c7cdbfc">JackSessionSave</a> = 1, 
-<br />
-&#160;&#160;<a class="el" href="group__SessionClientFunctions.html#gga5616b829095cc341cee4610aba992a4da67c5f9e521e4448ba3d4b5f24e91e129">JackSessionSaveAndQuit</a> = 2, 
+<tr class="memitem:ga5616b829095cc341cee4610aba992a4d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SessionClientFunctions.html#ga5616b829095cc341cee4610aba992a4d">JackSessionEventType</a> { <a class="el" href="group__SessionClientFunctions.html#gga5616b829095cc341cee4610aba992a4da01d1ac5a741784533361414c7c7cdbfc">JackSessionSave</a> = 1, 
+<a class="el" href="group__SessionClientFunctions.html#gga5616b829095cc341cee4610aba992a4da67c5f9e521e4448ba3d4b5f24e91e129">JackSessionSaveAndQuit</a> = 2, 
 <a class="el" href="group__SessionClientFunctions.html#gga5616b829095cc341cee4610aba992a4da8137dfcdaf5969bf1032117157d4015f">JackSessionSaveTemplate</a> = 3
-<br />
  }</td></tr>
 <tr class="separator:ga5616b829095cc341cee4610aba992a4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga596a05b8e9be60e04ee3f8d434c5d8f8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SessionClientFunctions.html#ga596a05b8e9be60e04ee3f8d434c5d8f8">JackSessionFlags</a> { <b>JackSessionSaveError</b> = 0x01, 
-<b>JackSessionNeedTerminal</b> = 0x02, 
-<a class="el" href="group__SessionClientFunctions.html#gga596a05b8e9be60e04ee3f8d434c5d8f8aa7888ab24ad3a832b7314a366f543bbd">JackSessionSaveError</a> = 0x01, 
+<tr class="memitem:ga596a05b8e9be60e04ee3f8d434c5d8f8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SessionClientFunctions.html#ga596a05b8e9be60e04ee3f8d434c5d8f8">JackSessionFlags</a> { <a class="el" href="group__SessionClientFunctions.html#gga596a05b8e9be60e04ee3f8d434c5d8f8aa7888ab24ad3a832b7314a366f543bbd">JackSessionSaveError</a> = 0x01, 
 <a class="el" href="group__SessionClientFunctions.html#gga596a05b8e9be60e04ee3f8d434c5d8f8a5364c2667fc5fa44cf84dfde4786d775">JackSessionNeedTerminal</a> = 0x02
  }</td></tr>
 <tr class="separator:ga596a05b8e9be60e04ee3f8d434c5d8f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga00a3018cfeb064c94362e913934e6936"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SessionClientFunctions.html#ga00a3018cfeb064c94362e913934e6936">jack_set_session_callback</a> (jack_client_t *client, <a class="el" href="group__SessionClientFunctions.html#ga2c0dc123dd2c1a2d0e8c9ce90d25b89c">JackSessionCallback</a> session_callback, void *arg) JACK_WEAK_EXPORT</td></tr>
+<tr class="memitem:ga00a3018cfeb064c94362e913934e6936"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SessionClientFunctions.html#ga00a3018cfeb064c94362e913934e6936">jack_set_session_callback</a> (<a class="el" href="types_8h.html#a96cf103940d2ee71b141d4b9d0c116bf">jack_client_t</a> *<a class="el" href="simple__client_8c.html#afed7053cd7bdd1cce33dec7213f340ea">client</a>, <a class="el" href="group__SessionClientFunctions.html#ga2c0dc123dd2c1a2d0e8c9ce90d25b89c">JackSessionCallback</a> session_callback, void *arg) JACK_WEAK_EXPORT</td></tr>
 <tr class="separator:ga00a3018cfeb064c94362e913934e6936"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabd998f61f7f36a140fca41384c579e3d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SessionClientFunctions.html#gabd998f61f7f36a140fca41384c579e3d">jack_session_reply</a> (jack_client_t *client, <a class="el" href="struct__jack__session__event.html">jack_session_event_t</a> *event) JACK_WEAK_EXPORT</td></tr>
+<tr class="memitem:gabd998f61f7f36a140fca41384c579e3d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SessionClientFunctions.html#gabd998f61f7f36a140fca41384c579e3d">jack_session_reply</a> (<a class="el" href="types_8h.html#a96cf103940d2ee71b141d4b9d0c116bf">jack_client_t</a> *<a class="el" href="simple__client_8c.html#afed7053cd7bdd1cce33dec7213f340ea">client</a>, <a class="el" href="group__SessionClientFunctions.html#gafbf49270fbcf5cfce2abd26d7ee212b9">jack_session_event_t</a> *event) JACK_WEAK_EXPORT</td></tr>
 <tr class="separator:gabd998f61f7f36a140fca41384c579e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac334b89bf983744f8c7ae4006d18fb58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SessionClientFunctions.html#gac334b89bf983744f8c7ae4006d18fb58">jack_session_event_free</a> (<a class="el" href="struct__jack__session__event.html">jack_session_event_t</a> *event) JACK_WEAK_EXPORT</td></tr>
+<tr class="memitem:gac334b89bf983744f8c7ae4006d18fb58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SessionClientFunctions.html#gac334b89bf983744f8c7ae4006d18fb58">jack_session_event_free</a> (<a class="el" href="group__SessionClientFunctions.html#gafbf49270fbcf5cfce2abd26d7ee212b9">jack_session_event_t</a> *event) JACK_WEAK_EXPORT</td></tr>
 <tr class="separator:gac334b89bf983744f8c7ae4006d18fb58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac45ae7c26843f51d27be729b902c7dbe"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SessionClientFunctions.html#gac45ae7c26843f51d27be729b902c7dbe">jack_client_get_uuid</a> (jack_client_t *client) JACK_WEAK_EXPORT</td></tr>
+<tr class="memitem:gac45ae7c26843f51d27be729b902c7dbe"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SessionClientFunctions.html#gac45ae7c26843f51d27be729b902c7dbe">jack_client_get_uuid</a> (<a class="el" href="types_8h.html#a96cf103940d2ee71b141d4b9d0c116bf">jack_client_t</a> *<a class="el" href="simple__client_8c.html#afed7053cd7bdd1cce33dec7213f340ea">client</a>) JACK_WEAK_EXPORT</td></tr>
 <tr class="separator:gac45ae7c26843f51d27be729b902c7dbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a id="gafbf49270fbcf5cfce2abd26d7ee212b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafbf49270fbcf5cfce2abd26d7ee212b9">&#9670;&nbsp;</a></span>jack_session_event_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct__jack__session__event.html">_jack_session_event</a> <a class="el" href="group__SessionClientFunctions.html#gafbf49270fbcf5cfce2abd26d7ee212b9">jack_session_event_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gadaa6c819c4e14eb162b5d3f462866dfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadaa6c819c4e14eb162b5d3f462866dfc">&#9670;&nbsp;</a></span>jack_session_event_type_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="group__SessionClientFunctions.html#ga5616b829095cc341cee4610aba992a4d">JackSessionEventType</a> <a class="el" href="group__SessionClientFunctions.html#gadaa6c819c4e14eb162b5d3f462866dfc">jack_session_event_type_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="gaff8d9b1766409d50565aabd2a5b9ab4f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaff8d9b1766409d50565aabd2a5b9ab4f">&#9670;&nbsp;</a></span>jack_session_flags_t</h2>
 
@@ -106,13 +124,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef enum <a class="el" href="group__SessionClientFunctions.html#ga596a05b8e9be60e04ee3f8d434c5d8f8">JackSessionFlags</a> jack_session_flags_t</td>
+          <td class="memname">typedef enum <a class="el" href="group__SessionClientFunctions.html#ga596a05b8e9be60e04ee3f8d434c5d8f8">JackSessionFlags</a> <a class="el" href="group__SessionClientFunctions.html#gaff8d9b1766409d50565aabd2a5b9ab4f">jack_session_flags_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Session flags. </p>
-
-<p class="definition">Definition at line <a class="el" href="session_8h_source.html#l00098">98</a> of file <a class="el" href="session_8h_source.html">session.h</a>.</p>
 
 </div>
 </div>
@@ -123,7 +139,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* JackSessionCallback) (<a class="el" href="struct__jack__session__event.html">jack_session_event_t</a> *event, void *arg)</td>
+          <td class="memname">typedef void(* JackSessionCallback) (<a class="el" href="group__SessionClientFunctions.html#gafbf49270fbcf5cfce2abd26d7ee212b9">jack_session_event_t</a> *event, void *arg)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -138,8 +154,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="session_8h_source.html#l00162">162</a> of file <a class="el" href="session_8h_source.html">session.h</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
@@ -150,26 +164,24 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum JackSessionEventType</td>
+          <td class="memname">enum <a class="el" href="group__SessionClientFunctions.html#ga5616b829095cc341cee4610aba992a4d">JackSessionEventType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Session event type.</p>
-<p>If a client can't save templates, i might just do a normal save.</p>
+<p>if a client cant save templates, i might just do a normal save.</p>
 <p>There is no "quit without saving" event because a client might refuse to quit when it has unsaved data, but other clients may have already quit. This results in too much confusion, so it is unsupported. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga5616b829095cc341cee4610aba992a4da01d1ac5a741784533361414c7c7cdbfc"></a>JackSessionSave&#160;</td><td class="fielddoc"><p>Save the session completely.</p>
 <p>The client may save references to data outside the provided directory, but it must do so by creating a link inside the provided directory and referring to that in any save files. The client must not refer to data files outside the provided directory directly in save files, because this makes it impossible for the session manager to create a session archive for distribution or archival. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga5616b829095cc341cee4610aba992a4da67c5f9e521e4448ba3d4b5f24e91e129"></a>JackSessionSaveAndQuit&#160;</td><td class="fielddoc"><p>Save the session completely, then quit.</p>
+<tr><td class="fieldname"><a id="gga5616b829095cc341cee4610aba992a4da67c5f9e521e4448ba3d4b5f24e91e129"></a>JackSessionSaveAndQuit&#160;</td><td class="fielddoc"><p>Save the session completly, then quit.</p>
 <p>The rules for saving are exactly the same as for JackSessionSave. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga5616b829095cc341cee4610aba992a4da8137dfcdaf5969bf1032117157d4015f"></a>JackSessionSaveTemplate&#160;</td><td class="fielddoc"><p>Save a session template.</p>
 <p>A session template is a "skeleton" of the session, but without any data. Clients must save a session that, when restored, will create the same ports as a full save would have. However, the actual data contained in the session may not be saved (e.g. a DAW would create the necessary tracks, but not save the actual recorded data). </p>
 </td></tr>
 </table>
-
-<p class="definition">Definition at line <a class="el" href="session_8h_source.html#l00046">46</a> of file <a class="el" href="session_8h_source.html">session.h</a>.</p>
 
 </div>
 </div>
@@ -180,23 +192,90 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum JackSessionFlags</td>
+          <td class="memname">enum <a class="el" href="group__SessionClientFunctions.html#ga596a05b8e9be60e04ee3f8d434c5d8f8">JackSessionFlags</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p><a class="el" href="group__SessionClientFunctions.html#gaff8d9b1766409d50565aabd2a5b9ab4f">jack_session_flags_t</a> bits </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga596a05b8e9be60e04ee3f8d434c5d8f8aa7888ab24ad3a832b7314a366f543bbd"></a>JackSessionSaveError&#160;</td><td class="fielddoc"><p>An error occurred while saving. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga596a05b8e9be60e04ee3f8d434c5d8f8aa7888ab24ad3a832b7314a366f543bbd"></a>JackSessionSaveError&#160;</td><td class="fielddoc"><p>An error occured while saving. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga596a05b8e9be60e04ee3f8d434c5d8f8a5364c2667fc5fa44cf84dfde4786d775"></a>JackSessionNeedTerminal&#160;</td><td class="fielddoc"><p>Client needs to be run in a terminal. </p>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="session_8h_source.html#l00083">83</a> of file <a class="el" href="session_8h_source.html">session.h</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="gac45ae7c26843f51d27be729b902c7dbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac45ae7c26843f51d27be729b902c7dbe">&#9670;&nbsp;</a></span>jack_client_get_uuid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* jack_client_get_uuid </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a96cf103940d2ee71b141d4b9d0c116bf">jack_client_t</a> *&#160;</td>
+          <td class="paramname"><em>client</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>get the assigned uuid for client. safe to call from callback and all other threads. memory needs to be freed. </p>
+
+</div>
+</div>
+<a id="gac334b89bf983744f8c7ae4006d18fb58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac334b89bf983744f8c7ae4006d18fb58">&#9670;&nbsp;</a></span>jack_session_event_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void jack_session_event_free </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SessionClientFunctions.html#gafbf49270fbcf5cfce2abd26d7ee212b9">jack_session_event_t</a> *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>free memory used by a jack_session_event_t this also frees the memory used by the command_line pointer. if its non NULL. </p>
+
+</div>
+</div>
+<a id="gabd998f61f7f36a140fca41384c579e3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabd998f61f7f36a140fca41384c579e3d">&#9670;&nbsp;</a></span>jack_session_reply()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jack_session_reply </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a96cf103940d2ee71b141d4b9d0c116bf">jack_client_t</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SessionClientFunctions.html#gafbf49270fbcf5cfce2abd26d7ee212b9">jack_session_event_t</a> *&#160;</td>
+          <td class="paramname"><em>event</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Reply to a session event.</p>
+<p>This can either be called directly from the callback, or later from a different thread. For example, it is possible to push the event through a queue and execute the save code from the GUI thread.</p>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, otherwise a non-zero error code </dd></dl>
+
+</div>
+</div>
 <a id="ga00a3018cfeb064c94362e913934e6936"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga00a3018cfeb064c94362e913934e6936">&#9670;&nbsp;</a></span>jack_set_session_callback()</h2>
 
@@ -206,7 +285,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int jack_set_session_callback </td>
           <td>(</td>
-          <td class="paramtype">jack_client_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a96cf103940d2ee71b141d4b9d0c116bf">jack_client_t</a> *&#160;</td>
           <td class="paramname"><em>client</em>, </td>
         </tr>
         <tr>
@@ -231,85 +310,6 @@ Functions</h2></td></tr>
 <p>Tell the JACK server to call <em>session_callback</em> when a session event is to be delivered.</p>
 <p>setting more than one session_callback per process is probably a design error. if you have a multiclient application its more sensible to create a jack_client with only a session callback set.</p>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, otherwise a non-zero error code </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="JackAPI_8cpp_source.html#l01919">1919</a> of file <a class="el" href="JackAPI_8cpp_source.html">JackAPI.cpp</a>.</p>
-
-</div>
-</div>
-<a id="gabd998f61f7f36a140fca41384c579e3d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabd998f61f7f36a140fca41384c579e3d">&#9670;&nbsp;</a></span>jack_session_reply()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int jack_session_reply </td>
-          <td>(</td>
-          <td class="paramtype">jack_client_t *&#160;</td>
-          <td class="paramname"><em>client</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct__jack__session__event.html">jack_session_event_t</a> *&#160;</td>
-          <td class="paramname"><em>event</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Reply to a session event.</p>
-<p>This can either be called directly from the callback, or later from a different thread. For example, it is possible to push the event through a queue and execute the save code from the GUI thread.</p>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, otherwise a non-zero error code </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="JackAPI_8cpp_source.html#l01947">1947</a> of file <a class="el" href="JackAPI_8cpp_source.html">JackAPI.cpp</a>.</p>
-
-</div>
-</div>
-<a id="gac334b89bf983744f8c7ae4006d18fb58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac334b89bf983744f8c7ae4006d18fb58">&#9670;&nbsp;</a></span>jack_session_event_free()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void jack_session_event_free </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct__jack__session__event.html">jack_session_event_t</a> *&#160;</td>
-          <td class="paramname"><em>event</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Free memory used by a jack_session_event_t.</p>
-<p>This also frees the memory used by the command_line pointer, if its non NULL. </p>
-
-<p class="definition">Definition at line <a class="el" href="JackAPI_8cpp_source.html#l01961">1961</a> of file <a class="el" href="JackAPI_8cpp_source.html">JackAPI.cpp</a>.</p>
-
-</div>
-</div>
-<a id="gac45ae7c26843f51d27be729b902c7dbe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac45ae7c26843f51d27be729b902c7dbe">&#9670;&nbsp;</a></span>jack_client_get_uuid()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char* jack_client_get_uuid </td>
-          <td>(</td>
-          <td class="paramtype">jack_client_t *&#160;</td>
-          <td class="paramname"><em>client</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Get the assigned uuid for client. Safe to call from callback and all other threads.</p>
-<p>The caller is responsible for calling jack_free(3) on any non-NULL returned value. </p>
-
-<p class="definition">Definition at line <a class="el" href="JackAPI_8cpp_source.html#l01976">1976</a> of file <a class="el" href="JackAPI_8cpp_source.html">JackAPI.cpp</a>.</p>
 
 </div>
 </div>
