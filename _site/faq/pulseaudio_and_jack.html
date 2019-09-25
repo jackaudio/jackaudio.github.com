@@ -100,14 +100,13 @@ The user has subsequently added another audio device, either as an internal
 JACK will use. Run the following command in a terminal window: <code class="highlighter-rouge">cat
 /proc/asound/cards</code> You will some output like this:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code> 0 [SB             ]: HDA-Intel - HDA ATI SB
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 0 [SB             ]: HDA-Intel - HDA ATI SB
                       HDA ATI SB at 0xfcef8000 irq 16
  1 [DSP            ]: H-DSP - Hammerfall DSP
                       RME Hammerfall DSP + Digiface at 0xfcff0000, irq 20
  2 [NVidia         ]: HDA-Intel - HDA NVidia
                       HDA NVidia at 0xfe57c000 irq 32
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>(This is from a machine with 3 soundcards: a builtin device, an additional 26
 channel RME Hammerfall DSP device, and (unintentionally) an NVidia video
@@ -138,13 +137,12 @@ via the upper right of QJackctl’s setup dialog:</p>
 <h2 id="option-4-suspend-pulseaudio-while-jack-is-running">Option 4: suspend PulseAudio while JACK is running</h2>
 
 <p>If you start JACK using QJackctl, then you should go into its setup dialog and
-edit the field labelled “Server path”. Insert <code class="highlighter-rouge">pasuspsender --</code> in front of
+edit the field labelled “Server path”. Insert <code class="highlighter-rouge">pasuspender --</code> in front of
 whatever is there (probably just something like <code class="highlighter-rouge">jackd</code>). So for example, if
 you had “jackd” in the “Server path” field already, it should now say:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>pasuspender -- jackd
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pasuspender -- jackd
+</code></pre></div></div>
 
 <p>This will cause PulseAudio to suspend itself while JACK runs, and restart when
 JACK exits (or crashes).</p>

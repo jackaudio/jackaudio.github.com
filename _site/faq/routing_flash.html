@@ -67,13 +67,12 @@ way to get audio out of Flash and into JACK.</p>
 not package this library, so if you want to use it you will need to build it
 yourself. This is not that hard if you’ve used the command line a few times:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>git clone git://repo.or.cz/libflashsupport-jack.git
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone git://repo.or.cz/libflashsupport-jack.git
 cd libflashsupport
 sh bootstrap.sh
 make
 sudo make install
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>You need some tools installed for this build process to work:</p>
 
@@ -99,9 +98,8 @@ arrange a symbolic link:</p>
 slightly different locations (Ubuntu Lucid is one example), you may also need
 a command somewhat like this:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>sudo ln -s /usr/local/lib/libflashsupport.so /usr/lib/firefox-3.6.3/
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo ln -s /usr/local/lib/libflashsupport.so /usr/lib/firefox-3.6.3/
+</code></pre></div></div>
 
 <p>After installation, quit any existing browser and then start a browser,
 visiting some Flash-using URL. Assuming that JACK is running, things should

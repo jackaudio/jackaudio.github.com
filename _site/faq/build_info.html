@@ -65,9 +65,8 @@ memory) file system for certain purposes. Specifically, it will try to use a
 tmpfs filesystem mounted on /dev/shm by default. You can test if you have this
 already by running the following command in a terminal:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>mount | grep shm
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mount | grep shm
+</code></pre></div></div>
 
 <p>If it generates any output, you are all set. Most modern Linux systems will be
 this way. If yours is not then we are going to assume that you know what you
@@ -82,11 +81,10 @@ the install step will overwrite the existing version. By default these
 commands will install JACK to /usr/local/bin whereas any system-installed
 version will likely exist in /usr/bin.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>./configure
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./configure
 make
 make install
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>If you are using JACK from svn, you will need to run <code class="highlighter-rouge">sh ./autogen.sh</code> before
 the configure step.</p>
@@ -99,11 +97,10 @@ that the install step will overwrite the existing version. By default these
 commands will install JACK to /usr/local/bin whereas any system-installed
 version will likely exist in /usr/bin.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>./waf configure
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./waf configure
 ./waf
 ./waf install
-</code></pre>
-</div>
+</code></pre></div></div>
 
 
 

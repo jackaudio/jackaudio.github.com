@@ -125,6 +125,15 @@ Change the settings in the [IO] portion of the file.</p>
     <p>Use the installer (either the 32 bit or the mixed 64/32 bit one).</p>
   </li>
   <li>
+    <p>Open an elevated command prompt, and run the following command to register
+the JackRouter: 
+<code class="highlighter-rouge">regsvr32 "C:\Program Files (x86)\Jack v1.9.8\64bits\JackRouter.dll"</code></p>
+
+    <p>Be sure to unregister previous versions before installing the new one.
+(The Jack v 1.9.8/64bits/JackRouter.dll still has to be registered “manually”,
+see “Troubleshooting Tip” bellow)</p>
+  </li>
+  <li>
     <p>From the Windows Start menu, locate the Jack folder and right click
   on Jack Portaudio icon, then select ‘Send to Desktop’
   (this will place a shortcut on your desktop)</p>
@@ -164,14 +173,6 @@ interface will be available to all ASIO capable applications.</p>
 please see:
 <a href="http://ccrma.stanford.edu/planetccrma/man/man1/jackd.1.html">manpage</a></p>
 
-<p>The Jack v 1.9.8/64bits/JackRouter.dll still has to be registered “manually”
-with regsvr32 - so please try the following command to register the 64-bit
-JackRouter:</p>
-
-<p><code class="highlighter-rouge">regsvr32 "C:\Program Files (x86)\Jack v1.9.8\64bits\JackRouter.dll"</code></p>
-
-<p>Be sure to unregister previous versions before installing the new one.</p>
-
 <p>Troubleshooting Tip. If you are unable to register the 64-bit
 JackRouter, while in Windows Explorer navigate to <code class="highlighter-rouge">\windows\system32</code>,
 and right click on “cmd.exe” and chose “Run As Administrator” from the
@@ -197,7 +198,7 @@ unregister the 64-bit JackRouter:</p>
   something like this:</li>
 </ol>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>jackdmp 1.9.8
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jackdmp 1.9.8
 Copyright 2001-2005 Paul Davis and others.
 Copyright 2004-2011 Grame.
 jackdmp comes with ABSOLUTELY NO WARRANTY
@@ -205,8 +206,7 @@ This is free software, and you are welcome to redistribute it
 under certain conditions; see the file COPYING for details
 JACK server starting in realtime mode with priority 10
 Cannot lock down memory area (No error)
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <ol>
   <li>With the Jack Audio Server started, the JackRouter ASIO driver

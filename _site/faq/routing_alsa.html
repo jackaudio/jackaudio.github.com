@@ -47,7 +47,7 @@
 intermediate such as GStreamer or PulseAudio, you can still force most of them
 to route their audio to/from JACK. There are two ways of approaching this.</p>
 
-<h2 id="using-an-alsa-loopback-device-and-jack-alsainalsaout-clients">Using an ALSA Loopback device and JACK alsa_in/alsa_out clients</h2>
+<h2 id="using-an-alsa-loopback-device-and-jack-alsa_inalsa_out-clients">Using an ALSA Loopback device and JACK alsa_in/alsa_out clients</h2>
 
 <p>This more complex but probably more robust approach is well-documented in
 <a href="http://alsa.opensrc.org/Jack_and_Loopback_device_as_Alsa-to-Jack_bridge">this document</a>.</p>
@@ -72,7 +72,7 @@ software install/update tool(s).</p>
 (this file may not exist when you start this, or it may already have some
 content). You need to add the following text to it:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>pcm.rawjack {
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pcm.rawjack {
     type jack
     playback_ports {
         0 system:playback_1
@@ -91,8 +91,7 @@ pcm.jack {
  	description "JACK Audio Connection Kit"
     }
 }
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>This first PCM definition above example defines a virtual audio device called
 “pcm.rawjack” that has 2 input channels and two output channels. Each channel
@@ -115,16 +114,17 @@ things work is to use the ALSA <code class="highlighter-rouge">aplay</code> util
 even when no explicit name is given) then your <code class="highlighter-rouge">~/.asoundrc</code> should also
 contain this text:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>pcm.!default {
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pcm.!default {
     type plug
     slave { pcm "rawjack" }
 }
-</code></pre>
-</div>
+</code></pre></div></div>
 
-<p>You should check the rest of the file for other definitions of “pcm.!default”
-- only the last one will have any effect and there should be preferably only
-be one.</p>
+<p>You should check the rest of the file for other definitions of “pcm.!default”</p>
+<ul>
+  <li>only the last one will have any effect and there should be preferably only
+be one.</li>
+</ul>
 
 <p>Note that this solution will create some latency: the ALSA JACK plugin has to
 use a buffer between the data being sent by the application and JACK itself to
