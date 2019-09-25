@@ -72,23 +72,28 @@ JACK Overview</h1>
 <p>There is a lot more that you can do with JACK's interfaces, but for many applications, this is all that is needed. The <a class="el" href="simple__client_8c.html">simple_client.c</a> example demonstrates a complete (simple!) JACK application that just copies the signal arriving at its input port to its output port. Similarly, <a class="el" href="inprocess_8c.html">inprocess.c</a> shows how to write an internal client "plugin" that runs within the JACK server process.</p>
 <h1><a class="anchor" id="reference"></a>
 Reference</h1>
-<p>The JACK programming interfaces are described in several header files. We present them here broken into useful categories to make the API a little clearer: </p><pre class="fragment">- @ref ClientFunctions
-- @ref ClientCallbacks
-- @ref ClientThreads
-- @ref ServerControl
-- @ref PortFunctions
-- @ref PortSearching
-- @ref LatencyFunctions
-- @ref TimeFunctions
-- @ref TransportControl
-- @ref ErrorOutput
-- @ref NonCallbackAPI
-- @ref MIDIAPI
-- @ref SessionClientFunctions
-- @ref WeakLinkage
-- @ref ControlAPI
-- @ref Metadata
-</pre><p>The full API is described in:</p>
+<p>The JACK programming interfaces are described in several header files. We present them here broken into useful categories to make the API a little clearer:</p>
+<ul>
+<li><a class="el" href="group__ClientFunctions.html">Creating &amp; manipulating clients</a></li>
+<li><a class="el" href="group__ClientCallbacks.html">Setting Client Callbacks</a></li>
+<li><a class="el" href="group__ClientThreads.html">Creating and managing client threads</a><ul>
+<li><a class="el" href="group__ServerControl.html">Controlling &amp; querying JACK server operation</a></li>
+<li><a class="el" href="group__PortFunctions.html">Creating &amp; manipulating ports</a></li>
+<li><a class="el" href="group__PortSearching.html">Looking up ports</a></li>
+<li><a class="el" href="group__LatencyFunctions.html">Managing and determining latency</a></li>
+<li><a class="el" href="group__TimeFunctions.html">Handling time</a></li>
+<li><a class="el" href="group__TransportControl.html">Transport and Timebase control</a></li>
+<li><a class="el" href="group__ErrorOutput.html">Controlling error/information output</a></li>
+<li><a class="el" href="group__NonCallbackAPI.html">The non-callback API</a></li>
+<li><a class="el" href="group__MIDIAPI.html">Reading and writing MIDI data</a></li>
+<li><a class="el" href="group__SessionClientFunctions.html">Session API for clients.</a></li>
+<li><a class="el" href="group__WeakLinkage.html">managing support for newer/older versions of JACK</a></li>
+<li><a class="el" href="group__ControlAPI.html">the API for starting and controlling a JACK server</a></li>
+<li><a class="el" href="group__Metadata.html">Metadata API.</a></li>
+</ul>
+</li>
+</ul>
+<p>The full API is described in:</p>
 <ul>
 <li><a class="el" href="jack_8h.html">&lt;jack/jack.h&gt;</a> is the main JACK interface.</li>
 <li><a class="el" href="statistics_8h.html">&lt;jack/statistics.h&gt;</a> provides interfaces for monitoring the performance of a running JACK server.</li>
