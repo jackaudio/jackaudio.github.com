@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Jack2: Setting Client Callbacks</title>
+<title>JACK-AUDIO-CONNECTION-KIT: Setting Client Callbacks</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,8 +18,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Jack2
-   &#160;<span id="projectnumber">1.9.13</span>
+   <div id="projectname">JACK-AUDIO-CONNECTION-KIT
+   &#160;<span id="projectnumber">0.125.0rc1</span>
    </div>
   </td>
  </tr>
@@ -47,92 +47,54 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gad5a6904292f5c9790223c18aeab202bf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ClientCallbacks.html#gad5a6904292f5c9790223c18aeab202bf">jack_set_thread_init_callback</a> (jack_client_t *client, JackThreadInitCallback thread_init_callback, void *arg) JACK_OPTIONAL_WEAK_EXPORT</td></tr>
+<tr class="memitem:gad5a6904292f5c9790223c18aeab202bf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ClientCallbacks.html#gad5a6904292f5c9790223c18aeab202bf">jack_set_thread_init_callback</a> (<a class="el" href="types_8h.html#a96cf103940d2ee71b141d4b9d0c116bf">jack_client_t</a> *<a class="el" href="simple__client_8c.html#afed7053cd7bdd1cce33dec7213f340ea">client</a>, <a class="el" href="types_8h.html#a36a615301840e4edcfc3f61456c43020">JackThreadInitCallback</a> thread_init_callback, void *arg) JACK_OPTIONAL_WEAK_EXPORT</td></tr>
 <tr class="separator:gad5a6904292f5c9790223c18aeab202bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab3e5bc09f4d165c898f7279c5b0db036"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ClientCallbacks.html#gab3e5bc09f4d165c898f7279c5b0db036">jack_on_shutdown</a> (jack_client_t *client, JackShutdownCallback shutdown_callback, void *arg) JACK_OPTIONAL_WEAK_EXPORT</td></tr>
-<tr class="separator:gab3e5bc09f4d165c898f7279c5b0db036"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga80f0c0caab134b85ba876a5a4fd532ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ClientCallbacks.html#ga80f0c0caab134b85ba876a5a4fd532ec">jack_on_info_shutdown</a> (jack_client_t *client, JackInfoShutdownCallback shutdown_callback, void *arg) JACK_WEAK_EXPORT</td></tr>
-<tr class="separator:ga80f0c0caab134b85ba876a5a4fd532ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafb5ec9fb4b736606d676c135fb97888b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ClientCallbacks.html#gafb5ec9fb4b736606d676c135fb97888b">jack_set_process_callback</a> (jack_client_t *client, JackProcessCallback process_callback, void *arg) JACK_OPTIONAL_WEAK_EXPORT</td></tr>
+<tr class="memitem:ga417b907ee02efbe00f5e9a2f4d202599"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ClientCallbacks.html#ga417b907ee02efbe00f5e9a2f4d202599">jack_on_shutdown</a> (<a class="el" href="types_8h.html#a96cf103940d2ee71b141d4b9d0c116bf">jack_client_t</a> *<a class="el" href="simple__client_8c.html#afed7053cd7bdd1cce33dec7213f340ea">client</a>, <a class="el" href="types_8h.html#a1f461fe99711af7edcb1b73b1315fbb3">JackShutdownCallback</a> function, void *arg) JACK_OPTIONAL_WEAK_EXPORT</td></tr>
+<tr class="separator:ga417b907ee02efbe00f5e9a2f4d202599"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf54d9f133267170ef1e6ce5219d24dd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ClientCallbacks.html#gaf54d9f133267170ef1e6ce5219d24dd4">jack_on_info_shutdown</a> (<a class="el" href="types_8h.html#a96cf103940d2ee71b141d4b9d0c116bf">jack_client_t</a> *<a class="el" href="simple__client_8c.html#afed7053cd7bdd1cce33dec7213f340ea">client</a>, <a class="el" href="types_8h.html#ad30b9f6d5898ba8954bd51c4bc428a9e">JackInfoShutdownCallback</a> function, void *arg) JACK_WEAK_EXPORT</td></tr>
+<tr class="separator:gaf54d9f133267170ef1e6ce5219d24dd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafb5ec9fb4b736606d676c135fb97888b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ClientCallbacks.html#gafb5ec9fb4b736606d676c135fb97888b">jack_set_process_callback</a> (<a class="el" href="types_8h.html#a96cf103940d2ee71b141d4b9d0c116bf">jack_client_t</a> *<a class="el" href="simple__client_8c.html#afed7053cd7bdd1cce33dec7213f340ea">client</a>, <a class="el" href="types_8h.html#ab94e71df11ce055f9a278f55a6e476bc">JackProcessCallback</a> process_callback, void *arg) JACK_OPTIONAL_WEAK_EXPORT</td></tr>
 <tr class="separator:gafb5ec9fb4b736606d676c135fb97888b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae797e2cde20faecb9be510c8873fbdd6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ClientCallbacks.html#gae797e2cde20faecb9be510c8873fbdd6">jack_set_freewheel_callback</a> (jack_client_t *client, JackFreewheelCallback freewheel_callback, void *arg) JACK_OPTIONAL_WEAK_EXPORT</td></tr>
+<tr class="memitem:gae797e2cde20faecb9be510c8873fbdd6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ClientCallbacks.html#gae797e2cde20faecb9be510c8873fbdd6">jack_set_freewheel_callback</a> (<a class="el" href="types_8h.html#a96cf103940d2ee71b141d4b9d0c116bf">jack_client_t</a> *<a class="el" href="simple__client_8c.html#afed7053cd7bdd1cce33dec7213f340ea">client</a>, <a class="el" href="types_8h.html#a2a9a8af9ac8206a0c67cef6a27e88be7">JackFreewheelCallback</a> freewheel_callback, void *arg) JACK_OPTIONAL_WEAK_EXPORT</td></tr>
 <tr class="separator:gae797e2cde20faecb9be510c8873fbdd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga030cc371acb19abe52861492acb960ad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ClientCallbacks.html#ga030cc371acb19abe52861492acb960ad">jack_set_buffer_size_callback</a> (jack_client_t *client, JackBufferSizeCallback bufsize_callback, void *arg) JACK_OPTIONAL_WEAK_EXPORT</td></tr>
+<tr class="memitem:ga030cc371acb19abe52861492acb960ad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ClientCallbacks.html#ga030cc371acb19abe52861492acb960ad">jack_set_buffer_size_callback</a> (<a class="el" href="types_8h.html#a96cf103940d2ee71b141d4b9d0c116bf">jack_client_t</a> *<a class="el" href="simple__client_8c.html#afed7053cd7bdd1cce33dec7213f340ea">client</a>, <a class="el" href="types_8h.html#aae24422729bb05aa0731a2d9545d278c">JackBufferSizeCallback</a> bufsize_callback, void *arg) JACK_OPTIONAL_WEAK_EXPORT</td></tr>
 <tr class="separator:ga030cc371acb19abe52861492acb960ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac1b3eb298cfa2869b8773c6cecf7f4b3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ClientCallbacks.html#gac1b3eb298cfa2869b8773c6cecf7f4b3">jack_set_sample_rate_callback</a> (jack_client_t *client, JackSampleRateCallback srate_callback, void *arg) JACK_OPTIONAL_WEAK_EXPORT</td></tr>
+<tr class="memitem:gac1b3eb298cfa2869b8773c6cecf7f4b3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ClientCallbacks.html#gac1b3eb298cfa2869b8773c6cecf7f4b3">jack_set_sample_rate_callback</a> (<a class="el" href="types_8h.html#a96cf103940d2ee71b141d4b9d0c116bf">jack_client_t</a> *<a class="el" href="simple__client_8c.html#afed7053cd7bdd1cce33dec7213f340ea">client</a>, <a class="el" href="types_8h.html#a0735e21ddb96029d46bf35f14fc7e895">JackSampleRateCallback</a> srate_callback, void *arg) JACK_OPTIONAL_WEAK_EXPORT</td></tr>
 <tr class="separator:gac1b3eb298cfa2869b8773c6cecf7f4b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad7cd85299575d461bdc884d8f7d34d46"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ClientCallbacks.html#gad7cd85299575d461bdc884d8f7d34d46">jack_set_client_registration_callback</a> (jack_client_t *client, JackClientRegistrationCallback registration_callback, void *arg) JACK_OPTIONAL_WEAK_EXPORT</td></tr>
-<tr class="separator:gad7cd85299575d461bdc884d8f7d34d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gace7e88f221bb600db024f5fe2f9ae2e7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ClientCallbacks.html#gace7e88f221bb600db024f5fe2f9ae2e7">jack_set_port_registration_callback</a> (jack_client_t *client, JackPortRegistrationCallback registration_callback, void *arg) JACK_OPTIONAL_WEAK_EXPORT</td></tr>
-<tr class="separator:gace7e88f221bb600db024f5fe2f9ae2e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf256100c19fd636c915a3bb5f636622e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ClientCallbacks.html#gaf256100c19fd636c915a3bb5f636622e">jack_set_port_connect_callback</a> (jack_client_t *client, JackPortConnectCallback connect_callback, void *arg) JACK_OPTIONAL_WEAK_EXPORT</td></tr>
-<tr class="separator:gaf256100c19fd636c915a3bb5f636622e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga469024a9a19c4cd0b702e5d84d146592"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ClientCallbacks.html#ga469024a9a19c4cd0b702e5d84d146592">jack_set_port_rename_callback</a> (jack_client_t *client, JackPortRenameCallback rename_callback, void *arg) JACK_OPTIONAL_WEAK_EXPORT</td></tr>
-<tr class="separator:ga469024a9a19c4cd0b702e5d84d146592"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga771ab60efe3031b5483cf2bc228ab558"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ClientCallbacks.html#ga771ab60efe3031b5483cf2bc228ab558">jack_set_graph_order_callback</a> (jack_client_t *client, JackGraphOrderCallback graph_callback, void *) JACK_OPTIONAL_WEAK_EXPORT</td></tr>
-<tr class="separator:ga771ab60efe3031b5483cf2bc228ab558"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga33596737ca31d78b174e442063ef451a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ClientCallbacks.html#ga33596737ca31d78b174e442063ef451a">jack_set_xrun_callback</a> (jack_client_t *client, JackXRunCallback xrun_callback, void *arg) JACK_OPTIONAL_WEAK_EXPORT</td></tr>
-<tr class="separator:ga33596737ca31d78b174e442063ef451a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga51b01a31e56c92f4e2788a94840f0f37"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ClientCallbacks.html#ga51b01a31e56c92f4e2788a94840f0f37">jack_set_client_registration_callback</a> (<a class="el" href="types_8h.html#a96cf103940d2ee71b141d4b9d0c116bf">jack_client_t</a> *, <a class="el" href="types_8h.html#a3fec7c8cb92f4a9878473ae85d4f76ef">JackClientRegistrationCallback</a> registration_callback, void *arg) JACK_OPTIONAL_WEAK_EXPORT</td></tr>
+<tr class="separator:ga51b01a31e56c92f4e2788a94840f0f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga30983a0478551a3cd20b71d692b24007"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ClientCallbacks.html#ga30983a0478551a3cd20b71d692b24007">jack_set_port_registration_callback</a> (<a class="el" href="types_8h.html#a96cf103940d2ee71b141d4b9d0c116bf">jack_client_t</a> *, <a class="el" href="types_8h.html#a7123cf6f63a0882ed8ecf6bf6e69fe8f">JackPortRegistrationCallback</a> registration_callback, void *arg) JACK_OPTIONAL_WEAK_EXPORT</td></tr>
+<tr class="separator:ga30983a0478551a3cd20b71d692b24007"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0c73095c1d8ebba413de6834bd7757b9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ClientCallbacks.html#ga0c73095c1d8ebba413de6834bd7757b9">jack_set_port_rename_callback</a> (<a class="el" href="types_8h.html#a96cf103940d2ee71b141d4b9d0c116bf">jack_client_t</a> *, <a class="el" href="types_8h.html#ab5e21db10d45f938ec0fa688230c2c24">JackPortRenameCallback</a> rename_callback, void *arg) JACK_OPTIONAL_WEAK_EXPORT</td></tr>
+<tr class="separator:ga0c73095c1d8ebba413de6834bd7757b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5312576d779c0664a7c703c87a9dba89"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ClientCallbacks.html#ga5312576d779c0664a7c703c87a9dba89">jack_set_port_connect_callback</a> (<a class="el" href="types_8h.html#a96cf103940d2ee71b141d4b9d0c116bf">jack_client_t</a> *, <a class="el" href="types_8h.html#a351e09441e88b3013db37d3eb8e0a2b3">JackPortConnectCallback</a> connect_callback, void *arg) JACK_OPTIONAL_WEAK_EXPORT</td></tr>
+<tr class="separator:ga5312576d779c0664a7c703c87a9dba89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacd0804ccef7c6891d8265bd88e7429ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ClientCallbacks.html#gacd0804ccef7c6891d8265bd88e7429ee">jack_set_graph_order_callback</a> (<a class="el" href="types_8h.html#a96cf103940d2ee71b141d4b9d0c116bf">jack_client_t</a> *, <a class="el" href="types_8h.html#ac3336628b231d38cfb07a94fd29067b3">JackGraphOrderCallback</a> graph_callback, void *) JACK_OPTIONAL_WEAK_EXPORT</td></tr>
+<tr class="separator:gacd0804ccef7c6891d8265bd88e7429ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga08196c75f06d9e68f9a3570dfcb1e323"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ClientCallbacks.html#ga08196c75f06d9e68f9a3570dfcb1e323">jack_set_xrun_callback</a> (<a class="el" href="types_8h.html#a96cf103940d2ee71b141d4b9d0c116bf">jack_client_t</a> *, <a class="el" href="types_8h.html#ac19798b331fa11b864f874408d26a0b0">JackXRunCallback</a> xrun_callback, void *arg) JACK_OPTIONAL_WEAK_EXPORT</td></tr>
+<tr class="separator:ga08196c75f06d9e68f9a3570dfcb1e323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga70a38fb1e74c5e9df9f1305c695c58bf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ClientCallbacks.html#ga70a38fb1e74c5e9df9f1305c695c58bf">jack_set_latency_callback</a> (<a class="el" href="types_8h.html#a96cf103940d2ee71b141d4b9d0c116bf">jack_client_t</a> *, <a class="el" href="types_8h.html#abbf969808e55bf3302079c2f57fae8c1">JackLatencyCallback</a> latency_callback, void *) JACK_WEAK_EXPORT</td></tr>
+<tr class="separator:ga70a38fb1e74c5e9df9f1305c695c58bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gad5a6904292f5c9790223c18aeab202bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad5a6904292f5c9790223c18aeab202bf">&#9670;&nbsp;</a></span>jack_set_thread_init_callback()</h2>
+<a id="gaf54d9f133267170ef1e6ce5219d24dd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf54d9f133267170ef1e6ce5219d24dd4">&#9670;&nbsp;</a></span>jack_on_info_shutdown()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int jack_set_thread_init_callback </td>
+          <td class="memname">void jack_on_info_shutdown </td>
           <td>(</td>
-          <td class="paramtype">jack_client_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a96cf103940d2ee71b141d4b9d0c116bf">jack_client_t</a> *&#160;</td>
           <td class="paramname"><em>client</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">JackThreadInitCallback&#160;</td>
-          <td class="paramname"><em>thread_init_callback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>arg</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Tell JACK to call <em>thread_init_callback</em> once just after the creation of the thread in which all other callbacks will be handled.</p>
-<p>The code in the supplied function does not need to be suitable for real-time execution.</p>
-<p>NOTE: this function cannot be called while the client is activated (after jack_activate has been called.)</p>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, otherwise a non-zero error code, causing JACK to remove that client from the process() graph. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="JackAPI_8cpp_source.html#l01046">1046</a> of file <a class="el" href="JackAPI_8cpp_source.html">JackAPI.cpp</a>.</p>
-
-</div>
-</div>
-<a id="gab3e5bc09f4d165c898f7279c5b0db036"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab3e5bc09f4d165c898f7279c5b0db036">&#9670;&nbsp;</a></span>jack_on_shutdown()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void jack_on_shutdown </td>
-          <td>(</td>
-          <td class="paramtype">jack_client_t *&#160;</td>
-          <td class="paramname"><em>client</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">JackShutdownCallback&#160;</td>
-          <td class="paramname"><em>shutdown_callback</em>, </td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ad30b9f6d5898ba8954bd51c4bc428a9e">JackInfoShutdownCallback</a>&#160;</td>
+          <td class="paramname"><em>function</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -157,30 +119,27 @@ Functions</h2></td></tr>
 </dl>
 <p>Register a function (and argument) to be called if and when the JACK server shuts down the client thread. The function must be written as if it were an asynchonrous POSIX signal handler &mdash; use only async-safe functions, and remember that it is executed from another thread. A typical function might set a flag or write to a pipe so that the rest of the application knows that the JACK client thread has shut down.</p>
 <p>NOTE: clients do not need to call this. It exists only to help more complex clients understand what is going on. It should be called before jack_client_activate().</p>
-<p>NOTE: if a client calls this AND <a class="el" href="group__ClientCallbacks.html#ga80f0c0caab134b85ba876a5a4fd532ec">jack_on_info_shutdown()</a>, then in case of a client thread shutdown, the callback passed to this function will not be called, and the one passed to <a class="el" href="group__ClientCallbacks.html#ga80f0c0caab134b85ba876a5a4fd532ec">jack_on_info_shutdown()</a> will.</p>
-<p>NOTE: application should typically signal another thread to correctly finish cleanup, that is by calling "jack_client_close" (since "jack_client_close" cannot be called directly in the context of the thread that calls the shutdown callback). </p>
-
-<p class="definition">Definition at line <a class="el" href="JackAPI_8cpp_source.html#l00798">798</a> of file <a class="el" href="JackAPI_8cpp_source.html">JackAPI.cpp</a>.</p>
+<p>NOTE: if a client calls this AND <a class="el" href="group__ClientCallbacks.html#ga417b907ee02efbe00f5e9a2f4d202599">jack_on_shutdown()</a>, then in the event of a client thread shutdown, the callback passed to this function will be called, and the one passed to <a class="el" href="group__ClientCallbacks.html#ga417b907ee02efbe00f5e9a2f4d202599">jack_on_shutdown()</a> will not. </p>
 
 </div>
 </div>
-<a id="ga80f0c0caab134b85ba876a5a4fd532ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga80f0c0caab134b85ba876a5a4fd532ec">&#9670;&nbsp;</a></span>jack_on_info_shutdown()</h2>
+<a id="ga417b907ee02efbe00f5e9a2f4d202599"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga417b907ee02efbe00f5e9a2f4d202599">&#9670;&nbsp;</a></span>jack_on_shutdown()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void jack_on_info_shutdown </td>
+          <td class="memname">void jack_on_shutdown </td>
           <td>(</td>
-          <td class="paramtype">jack_client_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a96cf103940d2ee71b141d4b9d0c116bf">jack_client_t</a> *&#160;</td>
           <td class="paramname"><em>client</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">JackInfoShutdownCallback&#160;</td>
-          <td class="paramname"><em>shutdown_callback</em>, </td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a1f461fe99711af7edcb1b73b1315fbb3">JackShutdownCallback</a>&#160;</td>
+          <td class="paramname"><em>function</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -198,97 +157,16 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">client</td><td>pointer to JACK client structure. </td></tr>
-    <tr><td class="paramname">function</td><td>The jack_info_shutdown function pointer. </td></tr>
-    <tr><td class="paramname">arg</td><td>The arguments for the jack_info_shutdown function.</td></tr>
+    <tr><td class="paramname">function</td><td>The jack_shutdown function pointer. </td></tr>
+    <tr><td class="paramname">arg</td><td>The arguments for the jack_shutdown function.</td></tr>
   </table>
   </dd>
 </dl>
 <p>Register a function (and argument) to be called if and when the JACK server shuts down the client thread. The function must be written as if it were an asynchonrous POSIX signal handler &mdash; use only async-safe functions, and remember that it is executed from another thread. A typical function might set a flag or write to a pipe so that the rest of the application knows that the JACK client thread has shut down.</p>
 <p>NOTE: clients do not need to call this. It exists only to help more complex clients understand what is going on. It should be called before jack_client_activate().</p>
-<p>NOTE: if a client calls this AND <a class="el" href="group__ClientCallbacks.html#gab3e5bc09f4d165c898f7279c5b0db036">jack_on_shutdown()</a>, then in case of a client thread shutdown, the callback passed to <a class="el" href="group__ClientCallbacks.html#ga80f0c0caab134b85ba876a5a4fd532ec">jack_on_info_shutdown()</a> will be called.</p>
-<p>NOTE: application should typically signal another thread to correctly finish cleanup, that is by calling "jack_client_close" (since "jack_client_close" cannot be called directly in the context of the thread that calls the shutdown callback). </p>
+<p>NOTE: if a client calls this AND <a class="el" href="group__ClientCallbacks.html#gaf54d9f133267170ef1e6ce5219d24dd4">jack_on_info_shutdown()</a>, then the event of a client thread shutdown, the callback passed to this function will not be called, and the one passed to <a class="el" href="group__ClientCallbacks.html#gaf54d9f133267170ef1e6ce5219d24dd4">jack_on_info_shutdown()</a> will. </p>
 
-<p class="definition">Definition at line <a class="el" href="JackAPI_8cpp_source.html#l00810">810</a> of file <a class="el" href="JackAPI_8cpp_source.html">JackAPI.cpp</a>.</p>
-
-</div>
-</div>
-<a id="gafb5ec9fb4b736606d676c135fb97888b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafb5ec9fb4b736606d676c135fb97888b">&#9670;&nbsp;</a></span>jack_set_process_callback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int jack_set_process_callback </td>
-          <td>(</td>
-          <td class="paramtype">jack_client_t *&#160;</td>
-          <td class="paramname"><em>client</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">JackProcessCallback&#160;</td>
-          <td class="paramname"><em>process_callback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>arg</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Tell the Jack server to call <em>process_callback</em> whenever there is work be done, passing <em>arg</em> as the second argument.</p>
-<p>The code in the supplied function must be suitable for real-time execution. That means that it cannot call functions that might block for a long time. This includes malloc, free, printf, pthread_mutex_lock, sleep, wait, poll, select, pthread_join, pthread_cond_wait, etc, etc. See <a href="http://jackit.sourceforge.net/docs/design/design.html#SECTION00411000000000000000">http://jackit.sourceforge.net/docs/design/design.html#SECTION00411000000000000000</a> for more information.</p>
-<p>NOTE: this function cannot be called while the client is activated (after jack_activate has been called.)</p>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, otherwise a non-zero error code. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="JackAPI_8cpp_source.html#l00822">822</a> of file <a class="el" href="JackAPI_8cpp_source.html">JackAPI.cpp</a>.</p>
-
-</div>
-</div>
-<a id="gae797e2cde20faecb9be510c8873fbdd6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae797e2cde20faecb9be510c8873fbdd6">&#9670;&nbsp;</a></span>jack_set_freewheel_callback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int jack_set_freewheel_callback </td>
-          <td>(</td>
-          <td class="paramtype">jack_client_t *&#160;</td>
-          <td class="paramname"><em>client</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">JackFreewheelCallback&#160;</td>
-          <td class="paramname"><em>freewheel_callback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>arg</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Tell the Jack server to call <em>freewheel_callback</em> whenever we enter or leave "freewheel" mode, passing <em>arg</em> as the second argument. The first argument to the callback will be non-zero if JACK is entering freewheel mode, and zero otherwise.</p>
-<p>All "notification events" are received in a separated non RT thread, the code in the supplied function does not need to be suitable for real-time execution.</p>
-<p>NOTE: this function cannot be called while the client is activated (after jack_activate has been called.)</p>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, otherwise a non-zero error code. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="JackAPI_8cpp_source.html#l00887">887</a> of file <a class="el" href="JackAPI_8cpp_source.html">JackAPI.cpp</a>.</p>
+<p class="reference">Referenced by <a class="el" href="simple__client_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main()</a>.</p>
 
 </div>
 </div>
@@ -301,13 +179,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int jack_set_buffer_size_callback </td>
           <td>(</td>
-          <td class="paramtype">jack_client_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a96cf103940d2ee71b141d4b9d0c116bf">jack_client_t</a> *&#160;</td>
           <td class="paramname"><em>client</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">JackBufferSizeCallback&#160;</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#aae24422729bb05aa0731a2d9545d278c">JackBufferSizeCallback</a>&#160;</td>
           <td class="paramname"><em>bufsize_callback</em>, </td>
         </tr>
         <tr>
@@ -324,8 +202,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Tell JACK to call <em>bufsize_callback</em> whenever the size of the the buffer that will be passed to the <em>process_callback</em> is about to change. Clients that depend on knowing the buffer size must supply a <em>bufsize_callback</em> before activating themselves.</p>
-<p>All "notification events" are received in a separated non RT thread, the code in the supplied function does not need to be suitable for real-time execution.</p>
-<p>NOTE: this function cannot be called while the client is activated (after jack_activate has been called.)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">client</td><td>pointer to JACK client structure. </td></tr>
@@ -336,52 +212,10 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, otherwise a non-zero error code </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="JackAPI_8cpp_source.html#l00928">928</a> of file <a class="el" href="JackAPI_8cpp_source.html">JackAPI.cpp</a>.</p>
-
 </div>
 </div>
-<a id="gac1b3eb298cfa2869b8773c6cecf7f4b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac1b3eb298cfa2869b8773c6cecf7f4b3">&#9670;&nbsp;</a></span>jack_set_sample_rate_callback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int jack_set_sample_rate_callback </td>
-          <td>(</td>
-          <td class="paramtype">jack_client_t *&#160;</td>
-          <td class="paramname"><em>client</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">JackSampleRateCallback&#160;</td>
-          <td class="paramname"><em>srate_callback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>arg</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Tell the Jack server to call <em>srate_callback</em> whenever the system sample rate changes.</p>
-<p>All "notification events" are received in a separated non RT thread, the code in the supplied function does not need to be suitable for real-time execution.</p>
-<p>NOTE: this function cannot be called while the client is activated (after jack_activate has been called.)</p>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, otherwise a non-zero error code </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="JackAPI_8cpp_source.html#l00941">941</a> of file <a class="el" href="JackAPI_8cpp_source.html">JackAPI.cpp</a>.</p>
-
-</div>
-</div>
-<a id="gad7cd85299575d461bdc884d8f7d34d46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad7cd85299575d461bdc884d8f7d34d46">&#9670;&nbsp;</a></span>jack_set_client_registration_callback()</h2>
+<a id="ga51b01a31e56c92f4e2788a94840f0f37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga51b01a31e56c92f4e2788a94840f0f37">&#9670;&nbsp;</a></span>jack_set_client_registration_callback()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -389,53 +223,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int jack_set_client_registration_callback </td>
           <td>(</td>
-          <td class="paramtype">jack_client_t *&#160;</td>
-          <td class="paramname"><em>client</em>, </td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a96cf103940d2ee71b141d4b9d0c116bf">jack_client_t</a> *&#160;</td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">JackClientRegistrationCallback&#160;</td>
-          <td class="paramname"><em>registration_callback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>arg</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Tell the JACK server to call <em>client_registration_callback</em> whenever a client is registered or unregistered, passing <em>arg</em> as a parameter.</p>
-<p>All "notification events" are received in a separated non RT thread, the code in the supplied function does not need to be suitable for real-time execution.</p>
-<p>NOTE: this function cannot be called while the client is activated (after jack_activate has been called.)</p>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, otherwise a non-zero error code </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="JackAPI_8cpp_source.html#l00954">954</a> of file <a class="el" href="JackAPI_8cpp_source.html">JackAPI.cpp</a>.</p>
-
-</div>
-</div>
-<a id="gace7e88f221bb600db024f5fe2f9ae2e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gace7e88f221bb600db024f5fe2f9ae2e7">&#9670;&nbsp;</a></span>jack_set_port_registration_callback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int jack_set_port_registration_callback </td>
-          <td>(</td>
-          <td class="paramtype">jack_client_t *&#160;</td>
-          <td class="paramname"><em>client</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">JackPortRegistrationCallback&#160;</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a3fec7c8cb92f4a9878473ae85d4f76ef">JackClientRegistrationCallback</a>&#160;</td>
           <td class="paramname"><em>registration_callback</em>, </td>
         </tr>
         <tr>
@@ -452,31 +246,27 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Tell the JACK server to call <em>registration_callback</em> whenever a port is registered or unregistered, passing <em>arg</em> as a parameter.</p>
-<p>All "notification events" are received in a separated non RT thread, the code in the supplied function does not need to be suitable for real-time execution.</p>
-<p>NOTE: this function cannot be called while the client is activated (after jack_activate has been called.)</p>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, otherwise a non-zero error code </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="JackAPI_8cpp_source.html#l00967">967</a> of file <a class="el" href="JackAPI_8cpp_source.html">JackAPI.cpp</a>.</p>
-
 </div>
 </div>
-<a id="gaf256100c19fd636c915a3bb5f636622e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf256100c19fd636c915a3bb5f636622e">&#9670;&nbsp;</a></span>jack_set_port_connect_callback()</h2>
+<a id="gae797e2cde20faecb9be510c8873fbdd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae797e2cde20faecb9be510c8873fbdd6">&#9670;&nbsp;</a></span>jack_set_freewheel_callback()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int jack_set_port_connect_callback </td>
+          <td class="memname">int jack_set_freewheel_callback </td>
           <td>(</td>
-          <td class="paramtype">jack_client_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a96cf103940d2ee71b141d4b9d0c116bf">jack_client_t</a> *&#160;</td>
           <td class="paramname"><em>client</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">JackPortConnectCallback&#160;</td>
-          <td class="paramname"><em>connect_callback</em>, </td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2a9a8af9ac8206a0c67cef6a27e88be7">JackFreewheelCallback</a>&#160;</td>
+          <td class="paramname"><em>freewheel_callback</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -491,57 +281,13 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Tell the JACK server to call <em>connect_callback</em> whenever a port is connected or disconnected, passing <em>arg</em> as a parameter.</p>
-<p>All "notification events" are received in a separated non RT thread, the code in the supplied function does not need to be suitable for real-time execution.</p>
-<p>NOTE: this function cannot be called while the client is activated (after jack_activate has been called.)</p>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, otherwise a non-zero error code </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="JackAPI_8cpp_source.html#l00980">980</a> of file <a class="el" href="JackAPI_8cpp_source.html">JackAPI.cpp</a>.</p>
+<p>Tell the Jack server to call <em>freewheel_callback</em> whenever we enter or leave "freewheel" mode, passing <em>arg</em> as the second argument. The first argument to the callback will be non-zero if JACK is entering freewheel mode, and zero otherwise.</p>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, otherwise a non-zero error code. </dd></dl>
 
 </div>
 </div>
-<a id="ga469024a9a19c4cd0b702e5d84d146592"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga469024a9a19c4cd0b702e5d84d146592">&#9670;&nbsp;</a></span>jack_set_port_rename_callback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int jack_set_port_rename_callback </td>
-          <td>(</td>
-          <td class="paramtype">jack_client_t *&#160;</td>
-          <td class="paramname"><em>client</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">JackPortRenameCallback&#160;</td>
-          <td class="paramname"><em>rename_callback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>arg</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Tell the JACK server to call <em>rename_callback</em> whenever a port is renamed, passing <em>arg</em> as a parameter.</p>
-<p>All "notification events" are received in a separated non RT thread, the code in the supplied function does not need to be suitable for real-time execution.</p>
-<p>NOTE: this function cannot be called while the client is activated (after jack_activate has been called.)</p>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, otherwise a non-zero error code </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="JackAPI_8cpp_source.html#l00993">993</a> of file <a class="el" href="JackAPI_8cpp_source.html">JackAPI.cpp</a>.</p>
-
-</div>
-</div>
-<a id="ga771ab60efe3031b5483cf2bc228ab558"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga771ab60efe3031b5483cf2bc228ab558">&#9670;&nbsp;</a></span>jack_set_graph_order_callback()</h2>
+<a id="gacd0804ccef7c6891d8265bd88e7429ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacd0804ccef7c6891d8265bd88e7429ee">&#9670;&nbsp;</a></span>jack_set_graph_order_callback()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -549,13 +295,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int jack_set_graph_order_callback </td>
           <td>(</td>
-          <td class="paramtype">jack_client_t *&#160;</td>
-          <td class="paramname"><em>client</em>, </td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a96cf103940d2ee71b141d4b9d0c116bf">jack_client_t</a> *&#160;</td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">JackGraphOrderCallback&#160;</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ac3336628b231d38cfb07a94fd29067b3">JackGraphOrderCallback</a>&#160;</td>
           <td class="paramname"><em>graph_callback</em>, </td>
         </tr>
         <tr>
@@ -572,16 +318,285 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Tell the JACK server to call <em>graph_callback</em> whenever the processing graph is reordered, passing <em>arg</em> as a parameter.</p>
-<p>All "notification events" are received in a separated non RT thread, the code in the supplied function does not need to be suitable for real-time execution.</p>
-<p>NOTE: this function cannot be called while the client is activated (after jack_activate has been called.)</p>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, otherwise a non-zero error code </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="JackAPI_8cpp_source.html#l01006">1006</a> of file <a class="el" href="JackAPI_8cpp_source.html">JackAPI.cpp</a>.</p>
+</div>
+</div>
+<a id="ga70a38fb1e74c5e9df9f1305c695c58bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga70a38fb1e74c5e9df9f1305c695c58bf">&#9670;&nbsp;</a></span>jack_set_latency_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jack_set_latency_callback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a96cf103940d2ee71b141d4b9d0c116bf">jack_client_t</a> *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#abbf969808e55bf3302079c2f57fae8c1">JackLatencyCallback</a>&#160;</td>
+          <td class="paramname"><em>latency_callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Tell the Jack server to call <em>latency_callback</em> whenever it is necessary to recompute the latencies for some or all Jack ports.</p>
+<p><em>latency_callback</em> will be called twice each time it is needed, once being passed JackCaptureLatency and once JackPlaybackLatency. See <a class="el" href="group__LatencyFunctions.html">Managing and determining latency</a> for the definition of each type of latency and related functions.</p>
+<p><b>IMPORTANT: Most JACK clients do NOT need to register a latency callback.</b></p>
+<p>Clients that meet any of the following conditions do NOT need to register a latency callback:</p>
+<ul>
+<li>have only input ports</li>
+<li>have only output ports</li>
+<li>their output is totally unrelated to their input</li>
+<li>their output is not delayed relative to their input (i.e. data that arrives in a given <a class="el" href="simple__client_8c.html#a01271cc6cf692278ae35d0062935d7ae">process()</a> callback is processed and output again in the same callback)</li>
+</ul>
+<p>Clients NOT registering a latency callback MUST also satisfy this condition:</p>
+<ul>
+<li>have no multiple distinct internal signal pathways</li>
+</ul>
+<p>This means that if your client has more than 1 input and output port, and considers them always "correlated" (e.g. as a stereo pair), then there is only 1 (e.g. stereo) signal pathway through the client. This would be true, for example, of a stereo FX rack client that has a left/right input pair and a left/right output pair.</p>
+<p>However, this is somewhat a matter of perspective. The same FX rack client could be connected so that its two input ports were connected to entirely separate sources. Under these conditions, the fact that the client does not register a latency callback MAY result in port latency values being incorrect.</p>
+<p>Clients that do not meet any of those conditions SHOULD register a latency callback.</p>
+<p>See the documentation for <a class="el" href="group__LatencyFunctions.html#ga7a8f181fcec32945db7b8e06ee1ca94b">jack_port_set_latency_range()</a> on how the callback should operate. Remember that the <em>mode</em> argument given to the latency callback will need to be passed into <a class="el" href="group__LatencyFunctions.html#ga7a8f181fcec32945db7b8e06ee1ca94b">jack_port_set_latency_range()</a></p>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, otherwise a non-zero error code </dd></dl>
 
 </div>
 </div>
-<a id="ga33596737ca31d78b174e442063ef451a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga33596737ca31d78b174e442063ef451a">&#9670;&nbsp;</a></span>jack_set_xrun_callback()</h2>
+<a id="ga5312576d779c0664a7c703c87a9dba89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5312576d779c0664a7c703c87a9dba89">&#9670;&nbsp;</a></span>jack_set_port_connect_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jack_set_port_connect_callback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a96cf103940d2ee71b141d4b9d0c116bf">jack_client_t</a> *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a351e09441e88b3013db37d3eb8e0a2b3">JackPortConnectCallback</a>&#160;</td>
+          <td class="paramname"><em>connect_callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Tell the JACK server to call <em>connect_callback</em> whenever a port is connected or disconnected, passing <em>arg</em> as a parameter.</p>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, otherwise a non-zero error code </dd></dl>
+
+</div>
+</div>
+<a id="ga30983a0478551a3cd20b71d692b24007"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga30983a0478551a3cd20b71d692b24007">&#9670;&nbsp;</a></span>jack_set_port_registration_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jack_set_port_registration_callback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a96cf103940d2ee71b141d4b9d0c116bf">jack_client_t</a> *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a7123cf6f63a0882ed8ecf6bf6e69fe8f">JackPortRegistrationCallback</a>&#160;</td>
+          <td class="paramname"><em>registration_callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Tell the JACK server to call <em>registration_callback</em> whenever a port is registered or unregistered, passing <em>arg</em> as a parameter.</p>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, otherwise a non-zero error code </dd></dl>
+
+</div>
+</div>
+<a id="ga0c73095c1d8ebba413de6834bd7757b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0c73095c1d8ebba413de6834bd7757b9">&#9670;&nbsp;</a></span>jack_set_port_rename_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jack_set_port_rename_callback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a96cf103940d2ee71b141d4b9d0c116bf">jack_client_t</a> *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ab5e21db10d45f938ec0fa688230c2c24">JackPortRenameCallback</a>&#160;</td>
+          <td class="paramname"><em>rename_callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Tell the JACK server to call <em>registration_callback</em> whenever a port is registered or unregistered, passing <em>arg</em> as a parameter.</p>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, otherwise a non-zero error code </dd></dl>
+
+</div>
+</div>
+<a id="gafb5ec9fb4b736606d676c135fb97888b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafb5ec9fb4b736606d676c135fb97888b">&#9670;&nbsp;</a></span>jack_set_process_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jack_set_process_callback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a96cf103940d2ee71b141d4b9d0c116bf">jack_client_t</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ab94e71df11ce055f9a278f55a6e476bc">JackProcessCallback</a>&#160;</td>
+          <td class="paramname"><em>process_callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Tell the Jack server to call <em>process_callback</em> whenever there is work be done, passing <em>arg</em> as the second argument.</p>
+<p>The code in the supplied function must be suitable for real-time execution. That means that it cannot call functions that might block for a long time. This includes all I/O functions (disk, TTY, network), malloc, free, printf, pthread_mutex_lock, sleep, wait, poll, select, pthread_join, pthread_cond_wait, etc, etc.</p>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, otherwise a non-zero error code, causing JACK to remove that client from the <a class="el" href="simple__client_8c.html#a01271cc6cf692278ae35d0062935d7ae">process()</a> graph. </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="inprocess_8c.html#a872c1ad15ec7ba35574b0bafc91212c9">jack_initialize()</a>, and <a class="el" href="simple__client_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main()</a>.</p>
+
+</div>
+</div>
+<a id="gac1b3eb298cfa2869b8773c6cecf7f4b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac1b3eb298cfa2869b8773c6cecf7f4b3">&#9670;&nbsp;</a></span>jack_set_sample_rate_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jack_set_sample_rate_callback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a96cf103940d2ee71b141d4b9d0c116bf">jack_client_t</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a0735e21ddb96029d46bf35f14fc7e895">JackSampleRateCallback</a>&#160;</td>
+          <td class="paramname"><em>srate_callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Tell the Jack server to call <em>srate_callback</em> whenever the system sample rate changes.</p>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, otherwise a non-zero error code </dd></dl>
+
+</div>
+</div>
+<a id="gad5a6904292f5c9790223c18aeab202bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad5a6904292f5c9790223c18aeab202bf">&#9670;&nbsp;</a></span>jack_set_thread_init_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jack_set_thread_init_callback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a96cf103940d2ee71b141d4b9d0c116bf">jack_client_t</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a36a615301840e4edcfc3f61456c43020">JackThreadInitCallback</a>&#160;</td>
+          <td class="paramname"><em>thread_init_callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Tell JACK to call <em>thread_init_callback</em> once just after the creation of the thread in which all other callbacks will be handled.</p>
+<p>The code in the supplied function does not need to be suitable for real-time execution.</p>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, otherwise a non-zero error code, causing JACK to remove that client from the <a class="el" href="simple__client_8c.html#a01271cc6cf692278ae35d0062935d7ae">process()</a> graph. </dd></dl>
+
+</div>
+</div>
+<a id="ga08196c75f06d9e68f9a3570dfcb1e323"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga08196c75f06d9e68f9a3570dfcb1e323">&#9670;&nbsp;</a></span>jack_set_xrun_callback()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -589,13 +604,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int jack_set_xrun_callback </td>
           <td>(</td>
-          <td class="paramtype">jack_client_t *&#160;</td>
-          <td class="paramname"><em>client</em>, </td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a96cf103940d2ee71b141d4b9d0c116bf">jack_client_t</a> *&#160;</td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">JackXRunCallback&#160;</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ac19798b331fa11b864f874408d26a0b0">JackXRunCallback</a>&#160;</td>
           <td class="paramname"><em>xrun_callback</em>, </td>
         </tr>
         <tr>
@@ -612,11 +627,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Tell the JACK server to call <em>xrun_callback</em> whenever there is a xrun, passing <em>arg</em> as a parameter.</p>
-<p>All "notification events" are received in a separated non RT thread, the code in the supplied function does not need to be suitable for real-time execution.</p>
-<p>NOTE: this function cannot be called while the client is activated (after jack_activate has been called.)</p>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, otherwise a non-zero error code </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="JackAPI_8cpp_source.html#l01020">1020</a> of file <a class="el" href="JackAPI_8cpp_source.html">JackAPI.cpp</a>.</p>
 
 </div>
 </div>

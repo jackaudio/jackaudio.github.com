@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Jack2: control.h File Reference</title>
+<title>JACK-AUDIO-CONNECTION-KIT: control.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,8 +18,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Jack2
-   &#160;<span id="projectnumber">1.9.13</span>
+   <div id="projectname">JACK-AUDIO-CONNECTION-KIT
+   &#160;<span id="projectnumber">0.125.0rc1</span>
    </div>
   </td>
  </tr>
@@ -38,12 +38,12 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_bdd9a5d540de89e9fe90efdfc6973a4f.html">common</a></li><li class="navelem"><a class="el" href="dir_53ce5aad08e69f28222d538bfd477ab2.html">jack</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_3e6ff996e0a05d442d13220a8cf7408f.html">jack</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
@@ -55,151 +55,123 @@ $(function() {
 
 <p>JACK control API.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;jack/types.h&gt;</code><br />
-<code>#include &lt;jack/jslist.h&gt;</code><br />
-<code>#include &lt;jack/systemdeps.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;jack/jslist.h&gt;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
 </div>
 <p><a href="control_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
+Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionjackctl__parameter__value.html">jackctl_parameter_value</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for parameter value.  <a href="unionjackctl__parameter__value.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a38aa16c0a62708eb58c893657f4fb5ff"><td class="memItemLeft" align="right" valign="top"><a id="a38aa16c0a62708eb58c893657f4fb5ff"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8h.html#a38aa16c0a62708eb58c893657f4fb5ff">JACK_PARAM_MAX</a>&#160;&#160;&#160;(<a class="el" href="control_8h.html#ac71832cf5445a694a178d15345d67840a766feed3831809abe9b67872086f241f">JackParamBool</a> + 1)</td></tr>
-<tr class="memdesc:a38aa16c0a62708eb58c893657f4fb5ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Max value that jackctl_param_type_t type can have. <br /></td></tr>
+<tr class="memitem:a38aa16c0a62708eb58c893657f4fb5ff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8h.html#a38aa16c0a62708eb58c893657f4fb5ff">JACK_PARAM_MAX</a>&#160;&#160;&#160;(<a class="el" href="control_8h.html#ac71832cf5445a694a178d15345d67840a766feed3831809abe9b67872086f241f">JackParamBool</a> + 1)</td></tr>
+<tr class="memdesc:a38aa16c0a62708eb58c893657f4fb5ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Max value that jackctl_param_type_t type can have.  <a href="#a38aa16c0a62708eb58c893657f4fb5ff">More...</a><br /></td></tr>
 <tr class="separator:a38aa16c0a62708eb58c893657f4fb5ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a582463bb97200e584edaa215180e16d4"><td class="memItemLeft" align="right" valign="top"><a id="a582463bb97200e584edaa215180e16d4"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8h.html#a582463bb97200e584edaa215180e16d4">JACK_PARAM_STRING_MAX</a>&#160;&#160;&#160;127</td></tr>
-<tr class="memdesc:a582463bb97200e584edaa215180e16d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Max length of string parameter value, excluding terminating null char. <br /></td></tr>
+<tr class="memitem:a582463bb97200e584edaa215180e16d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8h.html#a582463bb97200e584edaa215180e16d4">JACK_PARAM_STRING_MAX</a>&#160;&#160;&#160;127</td></tr>
+<tr class="memdesc:a582463bb97200e584edaa215180e16d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Max length of string parameter value, excluding terminating null char.  <a href="#a582463bb97200e584edaa215180e16d4">More...</a><br /></td></tr>
 <tr class="separator:a582463bb97200e584edaa215180e16d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a2e03fca6dadec562d64424718be84c7b"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structjackctl__server.html">jackctl_server</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8h.html#a2e03fca6dadec562d64424718be84c7b">jackctl_server_t</a></td></tr>
+<tr class="memitem:a2e03fca6dadec562d64424718be84c7b"><td class="memItemLeft" align="right" valign="top">typedef struct jackctl_server&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8h.html#a2e03fca6dadec562d64424718be84c7b">jackctl_server_t</a></td></tr>
 <tr class="separator:a2e03fca6dadec562d64424718be84c7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae09575159bc77124db69a4588c3b24cb"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structjackctl__driver.html">jackctl_driver</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8h.html#ae09575159bc77124db69a4588c3b24cb">jackctl_driver_t</a></td></tr>
+<tr class="memitem:ae09575159bc77124db69a4588c3b24cb"><td class="memItemLeft" align="right" valign="top">typedef struct jackctl_driver&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8h.html#ae09575159bc77124db69a4588c3b24cb">jackctl_driver_t</a></td></tr>
 <tr class="separator:ae09575159bc77124db69a4588c3b24cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf199d364b087e8951cf4fbd2986e3b7"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structjackctl__internal.html">jackctl_internal</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8h.html#abf199d364b087e8951cf4fbd2986e3b7">jackctl_internal_t</a></td></tr>
+<tr class="memitem:abf199d364b087e8951cf4fbd2986e3b7"><td class="memItemLeft" align="right" valign="top">typedef struct jackctl_internal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8h.html#abf199d364b087e8951cf4fbd2986e3b7">jackctl_internal_t</a></td></tr>
 <tr class="separator:abf199d364b087e8951cf4fbd2986e3b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94a2a730b099fcbd1576c3ac73c296c4"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structjackctl__parameter.html">jackctl_parameter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8h.html#a94a2a730b099fcbd1576c3ac73c296c4">jackctl_parameter_t</a></td></tr>
+<tr class="memitem:a94a2a730b099fcbd1576c3ac73c296c4"><td class="memItemLeft" align="right" valign="top">typedef struct jackctl_parameter&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8h.html#a94a2a730b099fcbd1576c3ac73c296c4">jackctl_parameter_t</a></td></tr>
 <tr class="separator:a94a2a730b099fcbd1576c3ac73c296c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba06c83231cec2627ce1cfebd0c3dbd3"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structjackctl__sigmask.html">jackctl_sigmask</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8h.html#aba06c83231cec2627ce1cfebd0c3dbd3">jackctl_sigmask_t</a></td></tr>
-<tr class="separator:aba06c83231cec2627ce1cfebd0c3dbd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:ac71832cf5445a694a178d15345d67840"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8h.html#ac71832cf5445a694a178d15345d67840">jackctl_param_type_t</a> { <br />
-&#160;&#160;<b>JackParamInt</b> = 1, 
-<b>JackParamUInt</b>, 
-<b>JackParamChar</b>, 
-<b>JackParamString</b>, 
-<br />
-&#160;&#160;<b>JackParamBool</b>, 
-<a class="el" href="control_8h.html#ac71832cf5445a694a178d15345d67840a257077c62b40f8c7c6b253c21fcaa5e6">JackParamInt</a> = 1, 
+&#160;&#160;<a class="el" href="control_8h.html#ac71832cf5445a694a178d15345d67840a257077c62b40f8c7c6b253c21fcaa5e6">JackParamInt</a> = 1, 
 <a class="el" href="control_8h.html#ac71832cf5445a694a178d15345d67840a574c962072518406c2aebf6b3d6ddc71">JackParamUInt</a>, 
 <a class="el" href="control_8h.html#ac71832cf5445a694a178d15345d67840aab44adbfbb163aa6b6ad52eac90b2bfb">JackParamChar</a>, 
+<a class="el" href="control_8h.html#ac71832cf5445a694a178d15345d67840aabd8d7557b32d28d8bc7c22449a74b0b">JackParamString</a>, 
 <br />
-&#160;&#160;<a class="el" href="control_8h.html#ac71832cf5445a694a178d15345d67840aabd8d7557b32d28d8bc7c22449a74b0b">JackParamString</a>, 
-<a class="el" href="control_8h.html#ac71832cf5445a694a178d15345d67840a766feed3831809abe9b67872086f241f">JackParamBool</a>
+&#160;&#160;<a class="el" href="control_8h.html#ac71832cf5445a694a178d15345d67840a766feed3831809abe9b67872086f241f">JackParamBool</a>
 <br />
  }</td></tr>
 <tr class="separator:ac71832cf5445a694a178d15345d67840"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a160c9609a226c2f769fe27f59ca642"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8h.html#a3a160c9609a226c2f769fe27f59ca642">jackctl_driver_type_t</a> { <b>JackMaster</b> = 1, 
-<b>JackSlave</b>, 
-<a class="el" href="control_8h.html#a3a160c9609a226c2f769fe27f59ca642a6672d74a3e6333d0dceeadd13a1ce427">JackMaster</a> = 1, 
-<a class="el" href="control_8h.html#a3a160c9609a226c2f769fe27f59ca642a4ade59a5e7e45e7a094443b79e96ea50">JackSlave</a>
- }</td></tr>
-<tr class="separator:a3a160c9609a226c2f769fe27f59ca642"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga428c1a82215cf214573a6d0f46dad661"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structjackctl__sigmask.html">jackctl_sigmask_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#ga428c1a82215cf214573a6d0f46dad661">jackctl_setup_signals</a> (unsigned int flags)</td></tr>
-<tr class="separator:ga428c1a82215cf214573a6d0f46dad661"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2d6df048067ab60b1265270405826f07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#ga2d6df048067ab60b1265270405826f07">jackctl_wait_signals</a> (<a class="el" href="structjackctl__sigmask.html">jackctl_sigmask_t</a> *signals)</td></tr>
-<tr class="separator:ga2d6df048067ab60b1265270405826f07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8b8c36f1be47c0d582e36ee2ea21e7bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structjackctl__server.html">jackctl_server_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#ga8b8c36f1be47c0d582e36ee2ea21e7bb">jackctl_server_create</a> (bool(*on_device_acquire)(const char *device_name), void(*on_device_release)(const char *device_name))</td></tr>
+<tr class="memitem:gaaf1bee06690f756a6ffb463580590518"><td class="memItemLeft" align="right" valign="top">sigset_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#gaaf1bee06690f756a6ffb463580590518">jackctl_setup_signals</a> (unsigned int flags)</td></tr>
+<tr class="separator:gaaf1bee06690f756a6ffb463580590518"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga90d8e0221779a24483fe4f4cce775d51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#ga90d8e0221779a24483fe4f4cce775d51">jackctl_wait_signals</a> (sigset_t signals)</td></tr>
+<tr class="separator:ga90d8e0221779a24483fe4f4cce775d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8b8c36f1be47c0d582e36ee2ea21e7bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="control_8h.html#a2e03fca6dadec562d64424718be84c7b">jackctl_server_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#ga8b8c36f1be47c0d582e36ee2ea21e7bb">jackctl_server_create</a> (bool(*on_device_acquire)(const char *device_name), void(*on_device_release)(const char *device_name))</td></tr>
 <tr class="separator:ga8b8c36f1be47c0d582e36ee2ea21e7bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab6f848f11e9853f49d82f253c1df1121"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#gab6f848f11e9853f49d82f253c1df1121">jackctl_server_destroy</a> (<a class="el" href="structjackctl__server.html">jackctl_server_t</a> *server)</td></tr>
+<tr class="memitem:gab6f848f11e9853f49d82f253c1df1121"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#gab6f848f11e9853f49d82f253c1df1121">jackctl_server_destroy</a> (<a class="el" href="control_8h.html#a2e03fca6dadec562d64424718be84c7b">jackctl_server_t</a> *server)</td></tr>
 <tr class="separator:gab6f848f11e9853f49d82f253c1df1121"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad2b438d61acdadc96368ff2dd4e9e62f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#gad2b438d61acdadc96368ff2dd4e9e62f">jackctl_server_open</a> (<a class="el" href="structjackctl__server.html">jackctl_server_t</a> *server, <a class="el" href="structjackctl__driver.html">jackctl_driver_t</a> *driver)</td></tr>
-<tr class="separator:gad2b438d61acdadc96368ff2dd4e9e62f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa573e4c5e35e853d199cf5b7368700b5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#gaa573e4c5e35e853d199cf5b7368700b5">jackctl_server_start</a> (<a class="el" href="structjackctl__server.html">jackctl_server_t</a> *server)</td></tr>
-<tr class="separator:gaa573e4c5e35e853d199cf5b7368700b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf71c3fbc808e15305277e667ca6cfac4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#gaf71c3fbc808e15305277e667ca6cfac4">jackctl_server_stop</a> (<a class="el" href="structjackctl__server.html">jackctl_server_t</a> *server)</td></tr>
+<tr class="memitem:ga0ee7d8a3386503ce677f1adbd206e971"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#ga0ee7d8a3386503ce677f1adbd206e971">jackctl_server_start</a> (<a class="el" href="control_8h.html#a2e03fca6dadec562d64424718be84c7b">jackctl_server_t</a> *server, <a class="el" href="control_8h.html#ae09575159bc77124db69a4588c3b24cb">jackctl_driver_t</a> *driver)</td></tr>
+<tr class="separator:ga0ee7d8a3386503ce677f1adbd206e971"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf71c3fbc808e15305277e667ca6cfac4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#gaf71c3fbc808e15305277e667ca6cfac4">jackctl_server_stop</a> (<a class="el" href="control_8h.html#a2e03fca6dadec562d64424718be84c7b">jackctl_server_t</a> *server)</td></tr>
 <tr class="separator:gaf71c3fbc808e15305277e667ca6cfac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab09dea0a3ffc38e439cbceaa33951a2c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#gab09dea0a3ffc38e439cbceaa33951a2c">jackctl_server_close</a> (<a class="el" href="structjackctl__server.html">jackctl_server_t</a> *server)</td></tr>
-<tr class="separator:gab09dea0a3ffc38e439cbceaa33951a2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3edd82a413260dc1f4de2862f0a6a669"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct__JSList.html">JSList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#ga3edd82a413260dc1f4de2862f0a6a669">jackctl_server_get_drivers_list</a> (<a class="el" href="structjackctl__server.html">jackctl_server_t</a> *server)</td></tr>
+<tr class="memitem:ga3edd82a413260dc1f4de2862f0a6a669"><td class="memItemLeft" align="right" valign="top">const JSList *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#ga3edd82a413260dc1f4de2862f0a6a669">jackctl_server_get_drivers_list</a> (<a class="el" href="control_8h.html#a2e03fca6dadec562d64424718be84c7b">jackctl_server_t</a> *server)</td></tr>
 <tr class="separator:ga3edd82a413260dc1f4de2862f0a6a669"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaeaefa3144a6a9d843467d4951ca71f70"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct__JSList.html">JSList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#gaeaefa3144a6a9d843467d4951ca71f70">jackctl_server_get_parameters</a> (<a class="el" href="structjackctl__server.html">jackctl_server_t</a> *server)</td></tr>
+<tr class="memitem:gaeaefa3144a6a9d843467d4951ca71f70"><td class="memItemLeft" align="right" valign="top">const JSList *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#gaeaefa3144a6a9d843467d4951ca71f70">jackctl_server_get_parameters</a> (<a class="el" href="control_8h.html#a2e03fca6dadec562d64424718be84c7b">jackctl_server_t</a> *server)</td></tr>
 <tr class="separator:gaeaefa3144a6a9d843467d4951ca71f70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacf1e2a650fec3f019bb36e49ffacde4f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct__JSList.html">JSList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#gacf1e2a650fec3f019bb36e49ffacde4f">jackctl_server_get_internals_list</a> (<a class="el" href="structjackctl__server.html">jackctl_server_t</a> *server)</td></tr>
+<tr class="memitem:gacf1e2a650fec3f019bb36e49ffacde4f"><td class="memItemLeft" align="right" valign="top">const JSList *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#gacf1e2a650fec3f019bb36e49ffacde4f">jackctl_server_get_internals_list</a> (<a class="el" href="control_8h.html#a2e03fca6dadec562d64424718be84c7b">jackctl_server_t</a> *server)</td></tr>
 <tr class="separator:gacf1e2a650fec3f019bb36e49ffacde4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga338effc099ff0cf03648971df51f9086"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#ga338effc099ff0cf03648971df51f9086">jackctl_server_load_internal</a> (<a class="el" href="structjackctl__server.html">jackctl_server_t</a> *server, <a class="el" href="structjackctl__internal.html">jackctl_internal_t</a> *internal)</td></tr>
+<tr class="memitem:ga338effc099ff0cf03648971df51f9086"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#ga338effc099ff0cf03648971df51f9086">jackctl_server_load_internal</a> (<a class="el" href="control_8h.html#a2e03fca6dadec562d64424718be84c7b">jackctl_server_t</a> *server, <a class="el" href="control_8h.html#abf199d364b087e8951cf4fbd2986e3b7">jackctl_internal_t</a> *internal)</td></tr>
 <tr class="separator:ga338effc099ff0cf03648971df51f9086"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac0d0b9b2c5323da9193db9a0aa84bdf9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#gac0d0b9b2c5323da9193db9a0aa84bdf9">jackctl_server_unload_internal</a> (<a class="el" href="structjackctl__server.html">jackctl_server_t</a> *server, <a class="el" href="structjackctl__internal.html">jackctl_internal_t</a> *internal)</td></tr>
+<tr class="memitem:gac0d0b9b2c5323da9193db9a0aa84bdf9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#gac0d0b9b2c5323da9193db9a0aa84bdf9">jackctl_server_unload_internal</a> (<a class="el" href="control_8h.html#a2e03fca6dadec562d64424718be84c7b">jackctl_server_t</a> *server, <a class="el" href="control_8h.html#abf199d364b087e8951cf4fbd2986e3b7">jackctl_internal_t</a> *internal)</td></tr>
 <tr class="separator:gac0d0b9b2c5323da9193db9a0aa84bdf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga209813df6db86a25be6f48e3a953154a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#ga209813df6db86a25be6f48e3a953154a">jackctl_server_load_session_file</a> (<a class="el" href="structjackctl__server.html">jackctl_server_t</a> *server_ptr, const char *file)</td></tr>
-<tr class="separator:ga209813df6db86a25be6f48e3a953154a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadacbb19d2f9e614ce33c8aedaa04fda1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#gadacbb19d2f9e614ce33c8aedaa04fda1">jackctl_server_add_slave</a> (<a class="el" href="structjackctl__server.html">jackctl_server_t</a> *server, <a class="el" href="structjackctl__driver.html">jackctl_driver_t</a> *driver)</td></tr>
+<tr class="memitem:gadacbb19d2f9e614ce33c8aedaa04fda1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#gadacbb19d2f9e614ce33c8aedaa04fda1">jackctl_server_add_slave</a> (<a class="el" href="control_8h.html#a2e03fca6dadec562d64424718be84c7b">jackctl_server_t</a> *server, <a class="el" href="control_8h.html#ae09575159bc77124db69a4588c3b24cb">jackctl_driver_t</a> *driver)</td></tr>
 <tr class="separator:gadacbb19d2f9e614ce33c8aedaa04fda1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac71a7c5d85e891a51a57f2575aea627c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#gac71a7c5d85e891a51a57f2575aea627c">jackctl_server_remove_slave</a> (<a class="el" href="structjackctl__server.html">jackctl_server_t</a> *server, <a class="el" href="structjackctl__driver.html">jackctl_driver_t</a> *driver)</td></tr>
+<tr class="memitem:gac71a7c5d85e891a51a57f2575aea627c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#gac71a7c5d85e891a51a57f2575aea627c">jackctl_server_remove_slave</a> (<a class="el" href="control_8h.html#a2e03fca6dadec562d64424718be84c7b">jackctl_server_t</a> *server, <a class="el" href="control_8h.html#ae09575159bc77124db69a4588c3b24cb">jackctl_driver_t</a> *driver)</td></tr>
 <tr class="separator:gac71a7c5d85e891a51a57f2575aea627c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3bfe5d4befb9d9bab8f05e13d37ca7b3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#ga3bfe5d4befb9d9bab8f05e13d37ca7b3">jackctl_server_switch_master</a> (<a class="el" href="structjackctl__server.html">jackctl_server_t</a> *server, <a class="el" href="structjackctl__driver.html">jackctl_driver_t</a> *driver)</td></tr>
+<tr class="memitem:ga3bfe5d4befb9d9bab8f05e13d37ca7b3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#ga3bfe5d4befb9d9bab8f05e13d37ca7b3">jackctl_server_switch_master</a> (<a class="el" href="control_8h.html#a2e03fca6dadec562d64424718be84c7b">jackctl_server_t</a> *server, <a class="el" href="control_8h.html#ae09575159bc77124db69a4588c3b24cb">jackctl_driver_t</a> *driver)</td></tr>
 <tr class="separator:ga3bfe5d4befb9d9bab8f05e13d37ca7b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9e28945c015f343e7a82c4e76e9cb1b4"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#ga9e28945c015f343e7a82c4e76e9cb1b4">jackctl_driver_get_name</a> (<a class="el" href="structjackctl__driver.html">jackctl_driver_t</a> *driver)</td></tr>
+<tr class="memitem:ga9e28945c015f343e7a82c4e76e9cb1b4"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#ga9e28945c015f343e7a82c4e76e9cb1b4">jackctl_driver_get_name</a> (<a class="el" href="control_8h.html#ae09575159bc77124db69a4588c3b24cb">jackctl_driver_t</a> *driver)</td></tr>
 <tr class="separator:ga9e28945c015f343e7a82c4e76e9cb1b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga72cc3f0d732b920a75b6279c76187343"><td class="memItemLeft" align="right" valign="top"><a class="el" href="control_8h.html#a3a160c9609a226c2f769fe27f59ca642">jackctl_driver_type_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#ga72cc3f0d732b920a75b6279c76187343">jackctl_driver_get_type</a> (<a class="el" href="structjackctl__driver.html">jackctl_driver_t</a> *driver)</td></tr>
-<tr class="separator:ga72cc3f0d732b920a75b6279c76187343"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0f73cfb0c40a401ca6aa617073303e72"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct__JSList.html">JSList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#ga0f73cfb0c40a401ca6aa617073303e72">jackctl_driver_get_parameters</a> (<a class="el" href="structjackctl__driver.html">jackctl_driver_t</a> *driver)</td></tr>
+<tr class="memitem:ga0f73cfb0c40a401ca6aa617073303e72"><td class="memItemLeft" align="right" valign="top">const JSList *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#ga0f73cfb0c40a401ca6aa617073303e72">jackctl_driver_get_parameters</a> (<a class="el" href="control_8h.html#ae09575159bc77124db69a4588c3b24cb">jackctl_driver_t</a> *driver)</td></tr>
 <tr class="separator:ga0f73cfb0c40a401ca6aa617073303e72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1d9e5244a6cba6e305279b54416ee385"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#ga1d9e5244a6cba6e305279b54416ee385">jackctl_driver_params_parse</a> (<a class="el" href="structjackctl__driver.html">jackctl_driver_t</a> *driver, int argc, char *argv[])</td></tr>
-<tr class="separator:ga1d9e5244a6cba6e305279b54416ee385"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4d14a6526174de9d085b203a7b7d632a"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#ga4d14a6526174de9d085b203a7b7d632a">jackctl_internal_get_name</a> (<a class="el" href="structjackctl__internal.html">jackctl_internal_t</a> *internal)</td></tr>
+<tr class="memitem:ga4d14a6526174de9d085b203a7b7d632a"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#ga4d14a6526174de9d085b203a7b7d632a">jackctl_internal_get_name</a> (<a class="el" href="control_8h.html#abf199d364b087e8951cf4fbd2986e3b7">jackctl_internal_t</a> *internal)</td></tr>
 <tr class="separator:ga4d14a6526174de9d085b203a7b7d632a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gade591618ee972b92724be7ee87a3943a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct__JSList.html">JSList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#gade591618ee972b92724be7ee87a3943a">jackctl_internal_get_parameters</a> (<a class="el" href="structjackctl__internal.html">jackctl_internal_t</a> *internal)</td></tr>
+<tr class="memitem:gade591618ee972b92724be7ee87a3943a"><td class="memItemLeft" align="right" valign="top">const JSList *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#gade591618ee972b92724be7ee87a3943a">jackctl_internal_get_parameters</a> (<a class="el" href="control_8h.html#abf199d364b087e8951cf4fbd2986e3b7">jackctl_internal_t</a> *internal)</td></tr>
 <tr class="separator:gade591618ee972b92724be7ee87a3943a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3a123ee66e7605b1f17db88d4f5b8ac8"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#ga3a123ee66e7605b1f17db88d4f5b8ac8">jackctl_parameter_get_name</a> (<a class="el" href="structjackctl__parameter.html">jackctl_parameter_t</a> *parameter)</td></tr>
+<tr class="memitem:ga3a123ee66e7605b1f17db88d4f5b8ac8"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#ga3a123ee66e7605b1f17db88d4f5b8ac8">jackctl_parameter_get_name</a> (<a class="el" href="control_8h.html#a94a2a730b099fcbd1576c3ac73c296c4">jackctl_parameter_t</a> *parameter)</td></tr>
 <tr class="separator:ga3a123ee66e7605b1f17db88d4f5b8ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaac9fe5577753455308a53f5569fe3106"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#gaac9fe5577753455308a53f5569fe3106">jackctl_parameter_get_short_description</a> (<a class="el" href="structjackctl__parameter.html">jackctl_parameter_t</a> *parameter)</td></tr>
+<tr class="memitem:gaac9fe5577753455308a53f5569fe3106"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#gaac9fe5577753455308a53f5569fe3106">jackctl_parameter_get_short_description</a> (<a class="el" href="control_8h.html#a94a2a730b099fcbd1576c3ac73c296c4">jackctl_parameter_t</a> *parameter)</td></tr>
 <tr class="separator:gaac9fe5577753455308a53f5569fe3106"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga97aae5c29e16539b71bc7dc2bddafc4b"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#ga97aae5c29e16539b71bc7dc2bddafc4b">jackctl_parameter_get_long_description</a> (<a class="el" href="structjackctl__parameter.html">jackctl_parameter_t</a> *parameter)</td></tr>
+<tr class="memitem:ga97aae5c29e16539b71bc7dc2bddafc4b"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#ga97aae5c29e16539b71bc7dc2bddafc4b">jackctl_parameter_get_long_description</a> (<a class="el" href="control_8h.html#a94a2a730b099fcbd1576c3ac73c296c4">jackctl_parameter_t</a> *parameter)</td></tr>
 <tr class="separator:ga97aae5c29e16539b71bc7dc2bddafc4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga37fe25ce3d3fdbc631a12cab91c460bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="control_8h.html#ac71832cf5445a694a178d15345d67840">jackctl_param_type_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#ga37fe25ce3d3fdbc631a12cab91c460bb">jackctl_parameter_get_type</a> (<a class="el" href="structjackctl__parameter.html">jackctl_parameter_t</a> *parameter)</td></tr>
+<tr class="memitem:ga37fe25ce3d3fdbc631a12cab91c460bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="control_8h.html#ac71832cf5445a694a178d15345d67840">jackctl_param_type_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#ga37fe25ce3d3fdbc631a12cab91c460bb">jackctl_parameter_get_type</a> (<a class="el" href="control_8h.html#a94a2a730b099fcbd1576c3ac73c296c4">jackctl_parameter_t</a> *parameter)</td></tr>
 <tr class="separator:ga37fe25ce3d3fdbc631a12cab91c460bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga864ee9036a98736910f264b1a62f0fe9"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#ga864ee9036a98736910f264b1a62f0fe9">jackctl_parameter_get_id</a> (<a class="el" href="structjackctl__parameter.html">jackctl_parameter_t</a> *parameter)</td></tr>
+<tr class="memitem:ga864ee9036a98736910f264b1a62f0fe9"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#ga864ee9036a98736910f264b1a62f0fe9">jackctl_parameter_get_id</a> (<a class="el" href="control_8h.html#a94a2a730b099fcbd1576c3ac73c296c4">jackctl_parameter_t</a> *parameter)</td></tr>
 <tr class="separator:ga864ee9036a98736910f264b1a62f0fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga439234cd9c8cb1ff35a8bffef526f04b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#ga439234cd9c8cb1ff35a8bffef526f04b">jackctl_parameter_is_set</a> (<a class="el" href="structjackctl__parameter.html">jackctl_parameter_t</a> *parameter)</td></tr>
+<tr class="memitem:ga439234cd9c8cb1ff35a8bffef526f04b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#ga439234cd9c8cb1ff35a8bffef526f04b">jackctl_parameter_is_set</a> (<a class="el" href="control_8h.html#a94a2a730b099fcbd1576c3ac73c296c4">jackctl_parameter_t</a> *parameter)</td></tr>
 <tr class="separator:ga439234cd9c8cb1ff35a8bffef526f04b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac75904b4d63158841b6f4667a7928788"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#gac75904b4d63158841b6f4667a7928788">jackctl_parameter_reset</a> (<a class="el" href="structjackctl__parameter.html">jackctl_parameter_t</a> *parameter)</td></tr>
+<tr class="memitem:gac75904b4d63158841b6f4667a7928788"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#gac75904b4d63158841b6f4667a7928788">jackctl_parameter_reset</a> (<a class="el" href="control_8h.html#a94a2a730b099fcbd1576c3ac73c296c4">jackctl_parameter_t</a> *parameter)</td></tr>
 <tr class="separator:gac75904b4d63158841b6f4667a7928788"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9881e66c9c235484e5b8879ce27bc9f2"><td class="memItemLeft" align="right" valign="top">union <a class="el" href="unionjackctl__parameter__value.html">jackctl_parameter_value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#ga9881e66c9c235484e5b8879ce27bc9f2">jackctl_parameter_get_value</a> (<a class="el" href="structjackctl__parameter.html">jackctl_parameter_t</a> *parameter)</td></tr>
+<tr class="memitem:ga9881e66c9c235484e5b8879ce27bc9f2"><td class="memItemLeft" align="right" valign="top">union <a class="el" href="unionjackctl__parameter__value.html">jackctl_parameter_value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#ga9881e66c9c235484e5b8879ce27bc9f2">jackctl_parameter_get_value</a> (<a class="el" href="control_8h.html#a94a2a730b099fcbd1576c3ac73c296c4">jackctl_parameter_t</a> *parameter)</td></tr>
 <tr class="separator:ga9881e66c9c235484e5b8879ce27bc9f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab769622731339e7d35e3b7093db347e6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#gab769622731339e7d35e3b7093db347e6">jackctl_parameter_set_value</a> (<a class="el" href="structjackctl__parameter.html">jackctl_parameter_t</a> *parameter, const union <a class="el" href="unionjackctl__parameter__value.html">jackctl_parameter_value</a> *value_ptr)</td></tr>
+<tr class="memitem:gab769622731339e7d35e3b7093db347e6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#gab769622731339e7d35e3b7093db347e6">jackctl_parameter_set_value</a> (<a class="el" href="control_8h.html#a94a2a730b099fcbd1576c3ac73c296c4">jackctl_parameter_t</a> *parameter, const union <a class="el" href="unionjackctl__parameter__value.html">jackctl_parameter_value</a> *value_ptr)</td></tr>
 <tr class="separator:gab769622731339e7d35e3b7093db347e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa71bfc637794e50ccd5c39d0449b982a"><td class="memItemLeft" align="right" valign="top">union <a class="el" href="unionjackctl__parameter__value.html">jackctl_parameter_value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#gaa71bfc637794e50ccd5c39d0449b982a">jackctl_parameter_get_default_value</a> (<a class="el" href="structjackctl__parameter.html">jackctl_parameter_t</a> *parameter)</td></tr>
+<tr class="memitem:gaa71bfc637794e50ccd5c39d0449b982a"><td class="memItemLeft" align="right" valign="top">union <a class="el" href="unionjackctl__parameter__value.html">jackctl_parameter_value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#gaa71bfc637794e50ccd5c39d0449b982a">jackctl_parameter_get_default_value</a> (<a class="el" href="control_8h.html#a94a2a730b099fcbd1576c3ac73c296c4">jackctl_parameter_t</a> *parameter)</td></tr>
 <tr class="separator:gaa71bfc637794e50ccd5c39d0449b982a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae7228c1726b5ecaae6458134bf4ab4d7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#gae7228c1726b5ecaae6458134bf4ab4d7">jackctl_parameter_has_range_constraint</a> (<a class="el" href="structjackctl__parameter.html">jackctl_parameter_t</a> *parameter)</td></tr>
+<tr class="memitem:gae7228c1726b5ecaae6458134bf4ab4d7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#gae7228c1726b5ecaae6458134bf4ab4d7">jackctl_parameter_has_range_constraint</a> (<a class="el" href="control_8h.html#a94a2a730b099fcbd1576c3ac73c296c4">jackctl_parameter_t</a> *parameter)</td></tr>
 <tr class="separator:gae7228c1726b5ecaae6458134bf4ab4d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga823ae164d023267b57002226444fe708"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#ga823ae164d023267b57002226444fe708">jackctl_parameter_has_enum_constraint</a> (<a class="el" href="structjackctl__parameter.html">jackctl_parameter_t</a> *parameter)</td></tr>
+<tr class="memitem:ga823ae164d023267b57002226444fe708"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#ga823ae164d023267b57002226444fe708">jackctl_parameter_has_enum_constraint</a> (<a class="el" href="control_8h.html#a94a2a730b099fcbd1576c3ac73c296c4">jackctl_parameter_t</a> *parameter)</td></tr>
 <tr class="separator:ga823ae164d023267b57002226444fe708"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1578b61842cf7a7cfb0d8fe54cf286ff"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#ga1578b61842cf7a7cfb0d8fe54cf286ff">jackctl_parameter_get_enum_constraints_count</a> (<a class="el" href="structjackctl__parameter.html">jackctl_parameter_t</a> *parameter)</td></tr>
+<tr class="memitem:ga1578b61842cf7a7cfb0d8fe54cf286ff"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#ga1578b61842cf7a7cfb0d8fe54cf286ff">jackctl_parameter_get_enum_constraints_count</a> (<a class="el" href="control_8h.html#a94a2a730b099fcbd1576c3ac73c296c4">jackctl_parameter_t</a> *parameter)</td></tr>
 <tr class="separator:ga1578b61842cf7a7cfb0d8fe54cf286ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga12fbe98c92f84dcfbd2de23421181567"><td class="memItemLeft" align="right" valign="top">union <a class="el" href="unionjackctl__parameter__value.html">jackctl_parameter_value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#ga12fbe98c92f84dcfbd2de23421181567">jackctl_parameter_get_enum_constraint_value</a> (<a class="el" href="structjackctl__parameter.html">jackctl_parameter_t</a> *parameter, uint32_t index)</td></tr>
+<tr class="memitem:ga12fbe98c92f84dcfbd2de23421181567"><td class="memItemLeft" align="right" valign="top">union <a class="el" href="unionjackctl__parameter__value.html">jackctl_parameter_value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#ga12fbe98c92f84dcfbd2de23421181567">jackctl_parameter_get_enum_constraint_value</a> (<a class="el" href="control_8h.html#a94a2a730b099fcbd1576c3ac73c296c4">jackctl_parameter_t</a> *parameter, uint32_t index)</td></tr>
 <tr class="separator:ga12fbe98c92f84dcfbd2de23421181567"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadbaa1566bcd829aa4233aac9234125ed"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#gadbaa1566bcd829aa4233aac9234125ed">jackctl_parameter_get_enum_constraint_description</a> (<a class="el" href="structjackctl__parameter.html">jackctl_parameter_t</a> *parameter, uint32_t index)</td></tr>
+<tr class="memitem:gadbaa1566bcd829aa4233aac9234125ed"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#gadbaa1566bcd829aa4233aac9234125ed">jackctl_parameter_get_enum_constraint_description</a> (<a class="el" href="control_8h.html#a94a2a730b099fcbd1576c3ac73c296c4">jackctl_parameter_t</a> *parameter, uint32_t index)</td></tr>
 <tr class="separator:gadbaa1566bcd829aa4233aac9234125ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga132d53b3fe319e84baf5a2381bd50fc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#ga132d53b3fe319e84baf5a2381bd50fc6">jackctl_parameter_get_range_constraint</a> (<a class="el" href="structjackctl__parameter.html">jackctl_parameter_t</a> *parameter, union <a class="el" href="unionjackctl__parameter__value.html">jackctl_parameter_value</a> *min_ptr, union <a class="el" href="unionjackctl__parameter__value.html">jackctl_parameter_value</a> *max_ptr)</td></tr>
+<tr class="memitem:ga132d53b3fe319e84baf5a2381bd50fc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#ga132d53b3fe319e84baf5a2381bd50fc6">jackctl_parameter_get_range_constraint</a> (<a class="el" href="control_8h.html#a94a2a730b099fcbd1576c3ac73c296c4">jackctl_parameter_t</a> *parameter, union <a class="el" href="unionjackctl__parameter__value.html">jackctl_parameter_value</a> *min_ptr, union <a class="el" href="unionjackctl__parameter__value.html">jackctl_parameter_value</a> *max_ptr)</td></tr>
 <tr class="separator:ga132d53b3fe319e84baf5a2381bd50fc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac1d74fdcc7125293b7c2d329c0b09e9a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#gac1d74fdcc7125293b7c2d329c0b09e9a">jackctl_parameter_constraint_is_strict</a> (<a class="el" href="structjackctl__parameter.html">jackctl_parameter_t</a> *parameter)</td></tr>
+<tr class="memitem:gac1d74fdcc7125293b7c2d329c0b09e9a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#gac1d74fdcc7125293b7c2d329c0b09e9a">jackctl_parameter_constraint_is_strict</a> (<a class="el" href="control_8h.html#a94a2a730b099fcbd1576c3ac73c296c4">jackctl_parameter_t</a> *parameter)</td></tr>
 <tr class="separator:gac1d74fdcc7125293b7c2d329c0b09e9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafd1b5bc48305a978135692997abc8996"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#gafd1b5bc48305a978135692997abc8996">jackctl_parameter_constraint_is_fake_value</a> (<a class="el" href="structjackctl__parameter.html">jackctl_parameter_t</a> *parameter)</td></tr>
+<tr class="memitem:gafd1b5bc48305a978135692997abc8996"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#gafd1b5bc48305a978135692997abc8996">jackctl_parameter_constraint_is_fake_value</a> (<a class="el" href="control_8h.html#a94a2a730b099fcbd1576c3ac73c296c4">jackctl_parameter_t</a> *parameter)</td></tr>
 <tr class="separator:gafd1b5bc48305a978135692997abc8996"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac6448626e0b75fc6d9da1ccbdca0355e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ControlAPI.html#gac6448626e0b75fc6d9da1ccbdca0355e">jack_error</a> (const char *format,...)</td></tr>
 <tr class="separator:gac6448626e0b75fc6d9da1ccbdca0355e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -210,26 +182,40 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>JACK control API. </p>
-
-<p class="definition">Definition in file <a class="el" href="control_8h_source.html">control.h</a>.</p>
-</div><h2 class="groupheader">Typedef Documentation</h2>
-<a id="a2e03fca6dadec562d64424718be84c7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e03fca6dadec562d64424718be84c7b">&#9670;&nbsp;</a></span>jackctl_server_t</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a38aa16c0a62708eb58c893657f4fb5ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38aa16c0a62708eb58c893657f4fb5ff">&#9670;&nbsp;</a></span>JACK_PARAM_MAX</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct <a class="el" href="structjackctl__server.html">jackctl_server</a> <a class="el" href="structjackctl__server.html">jackctl_server_t</a></td>
+          <td class="memname">#define JACK_PARAM_MAX&#160;&#160;&#160;(<a class="el" href="control_8h.html#ac71832cf5445a694a178d15345d67840a766feed3831809abe9b67872086f241f">JackParamBool</a> + 1)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>opaque type for server object </p>
 
-<p class="definition">Definition at line <a class="el" href="control_8h_source.html#l00074">74</a> of file <a class="el" href="control_8h_source.html">control.h</a>.</p>
+<p>Max value that jackctl_param_type_t type can have. </p>
 
 </div>
 </div>
+<a id="a582463bb97200e584edaa215180e16d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a582463bb97200e584edaa215180e16d4">&#9670;&nbsp;</a></span>JACK_PARAM_STRING_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JACK_PARAM_STRING_MAX&#160;&#160;&#160;127</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Max length of string parameter value, excluding terminating null char. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
 <a id="ae09575159bc77124db69a4588c3b24cb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae09575159bc77124db69a4588c3b24cb">&#9670;&nbsp;</a></span>jackctl_driver_t</h2>
 
@@ -237,13 +223,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct <a class="el" href="structjackctl__driver.html">jackctl_driver</a> <a class="el" href="structjackctl__driver.html">jackctl_driver_t</a></td>
+          <td class="memname">typedef struct jackctl_driver <a class="el" href="control_8h.html#ae09575159bc77124db69a4588c3b24cb">jackctl_driver_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>opaque type for driver object </p>
-
-<p class="definition">Definition at line <a class="el" href="control_8h_source.html#l00077">77</a> of file <a class="el" href="control_8h_source.html">control.h</a>.</p>
 
 </div>
 </div>
@@ -254,13 +238,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct <a class="el" href="structjackctl__internal.html">jackctl_internal</a> <a class="el" href="structjackctl__internal.html">jackctl_internal_t</a></td>
+          <td class="memname">typedef struct jackctl_internal <a class="el" href="control_8h.html#abf199d364b087e8951cf4fbd2986e3b7">jackctl_internal_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>opaque type for internal client object </p>
-
-<p class="definition">Definition at line <a class="el" href="control_8h_source.html#l00080">80</a> of file <a class="el" href="control_8h_source.html">control.h</a>.</p>
 
 </div>
 </div>
@@ -271,30 +253,26 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct <a class="el" href="structjackctl__parameter.html">jackctl_parameter</a> <a class="el" href="structjackctl__parameter.html">jackctl_parameter_t</a></td>
+          <td class="memname">typedef struct jackctl_parameter <a class="el" href="control_8h.html#a94a2a730b099fcbd1576c3ac73c296c4">jackctl_parameter_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>opaque type for parameter object </p>
 
-<p class="definition">Definition at line <a class="el" href="control_8h_source.html#l00083">83</a> of file <a class="el" href="control_8h_source.html">control.h</a>.</p>
-
 </div>
 </div>
-<a id="aba06c83231cec2627ce1cfebd0c3dbd3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba06c83231cec2627ce1cfebd0c3dbd3">&#9670;&nbsp;</a></span>jackctl_sigmask_t</h2>
+<a id="a2e03fca6dadec562d64424718be84c7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e03fca6dadec562d64424718be84c7b">&#9670;&nbsp;</a></span>jackctl_server_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct <a class="el" href="structjackctl__sigmask.html">jackctl_sigmask</a> <a class="el" href="structjackctl__sigmask.html">jackctl_sigmask_t</a></td>
+          <td class="memname">typedef struct jackctl_server <a class="el" href="control_8h.html#a2e03fca6dadec562d64424718be84c7b">jackctl_server_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>opaque type for sigmask object </p>
-
-<p class="definition">Definition at line <a class="el" href="control_8h_source.html#l00086">86</a> of file <a class="el" href="control_8h_source.html">control.h</a>.</p>
+<p>opaque type for server object </p>
 
 </div>
 </div>
@@ -306,7 +284,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum jackctl_param_type_t</td>
+          <td class="memname">enum <a class="el" href="control_8h.html#ac71832cf5445a694a178d15345d67840">jackctl_param_type_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -323,31 +301,6 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="ac71832cf5445a694a178d15345d67840a766feed3831809abe9b67872086f241f"></a>JackParamBool&#160;</td><td class="fielddoc"><p>value type is a boolean </p>
 </td></tr>
 </table>
-
-<p class="definition">Definition at line <a class="el" href="control_8h_source.html#l00040">40</a> of file <a class="el" href="control_8h_source.html">control.h</a>.</p>
-
-</div>
-</div>
-<a id="a3a160c9609a226c2f769fe27f59ca642"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a160c9609a226c2f769fe27f59ca642">&#9670;&nbsp;</a></span>jackctl_driver_type_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum jackctl_driver_type_t</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Driver types </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3a160c9609a226c2f769fe27f59ca642a6672d74a3e6333d0dceeadd13a1ce427"></a>JackMaster&#160;</td><td class="fielddoc"><p>master driver </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a3a160c9609a226c2f769fe27f59ca642a4ade59a5e7e45e7a094443b79e96ea50"></a>JackSlave&#160;</td><td class="fielddoc"><p>slave driver </p>
-</td></tr>
-</table>
-
-<p class="definition">Definition at line <a class="el" href="control_8h_source.html#l00050">50</a> of file <a class="el" href="control_8h_source.html">control.h</a>.</p>
 
 </div>
 </div>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Jack2: thread.h File Reference</title>
+<title>JACK-AUDIO-CONNECTION-KIT: thread.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,8 +18,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Jack2
-   &#160;<span id="projectnumber">1.9.13</span>
+   <div id="projectname">JACK-AUDIO-CONNECTION-KIT
+   &#160;<span id="projectnumber">0.125.0rc1</span>
    </div>
   </td>
  </tr>
@@ -38,7 +38,7 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_bdd9a5d540de89e9fe90efdfc6973a4f.html">common</a></li><li class="navelem"><a class="el" href="dir_53ce5aad08e69f28222d538bfd477ab2.html">jack</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_3e6ff996e0a05d442d13220a8cf7408f.html">jack</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -50,47 +50,55 @@ $(function() {
 <div class="title">thread.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;jack/systemdeps.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;pthread.h&gt;</code><br />
 <code>#include &lt;jack/weakmacros.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="types_8h_source.html">jack/types.h</a>&gt;</code><br />
 </div>
 <p><a href="thread_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:af9a5d6addf893be0502ae41f52e794b2"><td class="memItemLeft" align="right" valign="top"><a id="af9a5d6addf893be0502ae41f52e794b2"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>THREAD_STACK</b>&#160;&#160;&#160;524288</td></tr>
+<tr class="memitem:af9a5d6addf893be0502ae41f52e794b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="thread_8h.html#af9a5d6addf893be0502ae41f52e794b2">THREAD_STACK</a>&#160;&#160;&#160;524288</td></tr>
 <tr class="separator:af9a5d6addf893be0502ae41f52e794b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga6fa2c64bbd066adfba844f1d01284cdd"><td class="memItemLeft" align="right" valign="top">
-typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><b>jack_thread_creator_t</b>) (pthread_t *, const pthread_attr_t *, void *(*function) (void *), void *arg)</td></tr>
-<tr class="separator:ga6fa2c64bbd066adfba844f1d01284cdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1d8128f256f279a2815eae4693752f56"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ClientThreads.html#ga1d8128f256f279a2815eae4693752f56">jack_thread_creator_t</a>) (<a class="el" href="types_8h.html#aa1b0573fe4fefa52a5eb4d8c266783b4">jack_native_thread_t</a> *, const pthread_attr_t *, void *(*function) (void *), void *arg) JACK_OPTIONAL_WEAK_EXPORT</td></tr>
+<tr class="separator:ga1d8128f256f279a2815eae4693752f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga4ee2fcbb266618d66a2cf354d8c54359"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ClientThreads.html#ga4ee2fcbb266618d66a2cf354d8c54359">jack_client_real_time_priority</a> (jack_client_t *) JACK_OPTIONAL_WEAK_EXPORT</td></tr>
+<tr class="memitem:ga4ee2fcbb266618d66a2cf354d8c54359"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ClientThreads.html#ga4ee2fcbb266618d66a2cf354d8c54359">jack_client_real_time_priority</a> (<a class="el" href="types_8h.html#a96cf103940d2ee71b141d4b9d0c116bf">jack_client_t</a> *) JACK_OPTIONAL_WEAK_EXPORT</td></tr>
 <tr class="separator:ga4ee2fcbb266618d66a2cf354d8c54359"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa266166c958e1b745ce48ef7ca89890f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ClientThreads.html#gaa266166c958e1b745ce48ef7ca89890f">jack_client_max_real_time_priority</a> (jack_client_t *) JACK_OPTIONAL_WEAK_EXPORT</td></tr>
+<tr class="memitem:gaa266166c958e1b745ce48ef7ca89890f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ClientThreads.html#gaa266166c958e1b745ce48ef7ca89890f">jack_client_max_real_time_priority</a> (<a class="el" href="types_8h.html#a96cf103940d2ee71b141d4b9d0c116bf">jack_client_t</a> *) JACK_OPTIONAL_WEAK_EXPORT</td></tr>
 <tr class="separator:gaa266166c958e1b745ce48ef7ca89890f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaec301b7cb1dcd39d7fc88fa9f769dab8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ClientThreads.html#gaec301b7cb1dcd39d7fc88fa9f769dab8">jack_acquire_real_time_scheduling</a> (jack_native_thread_t thread, int priority) JACK_OPTIONAL_WEAK_EXPORT</td></tr>
+<tr class="memitem:gaec301b7cb1dcd39d7fc88fa9f769dab8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ClientThreads.html#gaec301b7cb1dcd39d7fc88fa9f769dab8">jack_acquire_real_time_scheduling</a> (<a class="el" href="types_8h.html#aa1b0573fe4fefa52a5eb4d8c266783b4">jack_native_thread_t</a> thread, int priority) JACK_OPTIONAL_WEAK_EXPORT</td></tr>
 <tr class="separator:gaec301b7cb1dcd39d7fc88fa9f769dab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga522094adfc39ec4770d8e82bd601e365"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ClientThreads.html#ga522094adfc39ec4770d8e82bd601e365">jack_client_create_thread</a> (jack_client_t *client, jack_native_thread_t *thread, int priority, int realtime, void *(*start_routine)(void *), void *arg) JACK_OPTIONAL_WEAK_EXPORT</td></tr>
+<tr class="memitem:ga522094adfc39ec4770d8e82bd601e365"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ClientThreads.html#ga522094adfc39ec4770d8e82bd601e365">jack_client_create_thread</a> (<a class="el" href="types_8h.html#a96cf103940d2ee71b141d4b9d0c116bf">jack_client_t</a> *<a class="el" href="simple__client_8c.html#afed7053cd7bdd1cce33dec7213f340ea">client</a>, <a class="el" href="types_8h.html#aa1b0573fe4fefa52a5eb4d8c266783b4">jack_native_thread_t</a> *thread, int priority, int realtime, void *(*start_routine)(void *), void *arg) JACK_OPTIONAL_WEAK_EXPORT</td></tr>
 <tr class="separator:ga522094adfc39ec4770d8e82bd601e365"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0d75ca78f4088f515f1befc108f3f2e7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ClientThreads.html#ga0d75ca78f4088f515f1befc108f3f2e7">jack_drop_real_time_scheduling</a> (jack_native_thread_t thread) JACK_OPTIONAL_WEAK_EXPORT</td></tr>
+<tr class="memitem:ga0d75ca78f4088f515f1befc108f3f2e7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ClientThreads.html#ga0d75ca78f4088f515f1befc108f3f2e7">jack_drop_real_time_scheduling</a> (<a class="el" href="types_8h.html#aa1b0573fe4fefa52a5eb4d8c266783b4">jack_native_thread_t</a> thread) JACK_OPTIONAL_WEAK_EXPORT</td></tr>
 <tr class="separator:ga0d75ca78f4088f515f1befc108f3f2e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2a9f33ed2464d4b110a27c9c35792b24"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ClientThreads.html#ga2a9f33ed2464d4b110a27c9c35792b24">jack_client_stop_thread</a> (jack_client_t *client, jack_native_thread_t thread) JACK_OPTIONAL_WEAK_EXPORT</td></tr>
-<tr class="separator:ga2a9f33ed2464d4b110a27c9c35792b24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad170c52942d07538dc0b3d4886405526"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ClientThreads.html#gad170c52942d07538dc0b3d4886405526">jack_client_kill_thread</a> (jack_client_t *client, jack_native_thread_t thread) JACK_OPTIONAL_WEAK_EXPORT</td></tr>
-<tr class="separator:gad170c52942d07538dc0b3d4886405526"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga157ab0ade60e266ffd26ddffdb5545af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ClientThreads.html#ga157ab0ade60e266ffd26ddffdb5545af">jack_set_thread_creator</a> (jack_thread_creator_t creator) JACK_OPTIONAL_WEAK_EXPORT</td></tr>
+<tr class="memitem:ga157ab0ade60e266ffd26ddffdb5545af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ClientThreads.html#ga157ab0ade60e266ffd26ddffdb5545af">jack_set_thread_creator</a> (<a class="el" href="group__ClientThreads.html#ga1d8128f256f279a2815eae4693752f56">jack_thread_creator_t</a> creator) JACK_OPTIONAL_WEAK_EXPORT</td></tr>
 <tr class="separator:ga157ab0ade60e266ffd26ddffdb5545af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Library functions to standardize thread creation for JACK and its clients. These interfaces hide some system variations in the handling of realtime scheduling and associated privileges. </p>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="af9a5d6addf893be0502ae41f52e794b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9a5d6addf893be0502ae41f52e794b2">&#9670;&nbsp;</a></span>THREAD_STACK</h2>
 
-<p class="definition">Definition in file <a class="el" href="thread_8h_source.html">thread.h</a>.</p>
-</div></div><!-- contents -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define THREAD_STACK&#160;&#160;&#160;524288</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

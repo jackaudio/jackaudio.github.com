@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Jack2: ringbuffer.h File Reference</title>
+<title>JACK-AUDIO-CONNECTION-KIT: ringbuffer.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,8 +18,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Jack2
-   &#160;<span id="projectnumber">1.9.13</span>
+   <div id="projectname">JACK-AUDIO-CONNECTION-KIT
+   &#160;<span id="projectnumber">0.125.0rc1</span>
    </div>
   </td>
  </tr>
@@ -38,12 +38,12 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_bdd9a5d540de89e9fe90efdfc6973a4f.html">common</a></li><li class="navelem"><a class="el" href="dir_53ce5aad08e69f28222d538bfd477ab2.html">jack</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_3e6ff996e0a05d442d13220a8cf7408f.html">jack</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">ringbuffer.h File Reference</div>  </div>
@@ -54,7 +54,7 @@ $(function() {
 <p><a href="ringbuffer_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
+Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjack__ringbuffer__data__t.html">jack_ringbuffer_data_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjack__ringbuffer__t.html">jack_ringbuffer_t</a></td></tr>
@@ -82,8 +82,6 @@ Functions</h2></td></tr>
 <tr class="separator:aeb059ff23c65389d48ebbe948f05c2b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40244c7eee331822cd99132a14e76896"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8h.html#a40244c7eee331822cd99132a14e76896">jack_ringbuffer_reset</a> (<a class="el" href="structjack__ringbuffer__t.html">jack_ringbuffer_t</a> *rb)</td></tr>
 <tr class="separator:a40244c7eee331822cd99132a14e76896"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd4df94d0a2b2ae8bdb98ca1d904402b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8h.html#abd4df94d0a2b2ae8bdb98ca1d904402b">jack_ringbuffer_reset_size</a> (<a class="el" href="structjack__ringbuffer__t.html">jack_ringbuffer_t</a> *rb, size_t sz)</td></tr>
-<tr class="separator:abd4df94d0a2b2ae8bdb98ca1d904402b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d2fc75510e4df62f5b3dd249047b132"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8h.html#a6d2fc75510e4df62f5b3dd249047b132">jack_ringbuffer_write</a> (<a class="el" href="structjack__ringbuffer__t.html">jack_ringbuffer_t</a> *rb, const char *src, size_t cnt)</td></tr>
 <tr class="separator:a6d2fc75510e4df62f5b3dd249047b132"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7255e067e485770d8127d821b6d7e9ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ringbuffer_8h.html#a7255e067e485770d8127d821b6d7e9ec">jack_ringbuffer_write_advance</a> (<a class="el" href="structjack__ringbuffer__t.html">jack_ringbuffer_t</a> *rb, size_t cnt)</td></tr>
@@ -94,8 +92,6 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A set of library functions to make lock-free ringbuffers available to JACK clients. The `capture_client.c' (in the example_clients directory) is a fully functioning user of this API.</p>
 <p>The key attribute of a ringbuffer is that it can be safely accessed by two threads simultaneously &ndash; one reading from the buffer and the other writing to it &ndash; without using any synchronization or mutual exclusion primitives. For this to work correctly, there can only be a single reader and a single writer thread. Their identities cannot be interchanged. </p>
-
-<p class="definition">Definition in file <a class="el" href="ringbuffer_8h_source.html">ringbuffer.h</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a11f9045eb4b0561b26ec434c44e3c922"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a11f9045eb4b0561b26ec434c44e3c922">&#9670;&nbsp;</a></span>jack_ringbuffer_create()</h2>
@@ -224,47 +220,29 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4b001e5844a116a1d51006e2716c73bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b001e5844a116a1d51006e2716c73bb">&#9670;&nbsp;</a></span>jack_ringbuffer_read()</h2>
+<a id="aeb059ff23c65389d48ebbe948f05c2b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb059ff23c65389d48ebbe948f05c2b2">&#9670;&nbsp;</a></span>jack_ringbuffer_mlock()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t jack_ringbuffer_read </td>
+          <td class="memname">int jack_ringbuffer_mlock </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structjack__ringbuffer__t.html">jack_ringbuffer_t</a> *&#160;</td>
-          <td class="paramname"><em>rb</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>rb</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>dest</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>cnt</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Read data from the ringbuffer.</p>
+<p>Lock a ringbuffer data block into memory.</p>
+<p>Uses the mlock() system call. This is not a realtime operation.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">rb</td><td>a pointer to the ringbuffer structure. </td></tr>
-    <tr><td class="paramname">dest</td><td>a pointer to a buffer where data read from the ringbuffer will go. </td></tr>
-    <tr><td class="paramname">cnt</td><td>the number of bytes to read.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the number of bytes read, which may range from 0 to cnt. </dd></dl>
 
 </div>
 </div>
@@ -299,7 +277,51 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Read data from the ringbuffer. Opposed to <a class="el" href="ringbuffer_8h.html#a4b001e5844a116a1d51006e2716c73bb">jack_ringbuffer_read()</a> this function does not move the read pointer. Thus it's a convenient way to inspect data in the ringbuffer in a continuous fashion. The price is that the data is copied into a user provided buffer. For "raw" non-copy inspection of the data in the ringbuffer use <a class="el" href="ringbuffer_8h.html#aa21aaf8ff173ba0e89b35554f20d4ccb">jack_ringbuffer_get_read_vector()</a>.</p>
+<p>Read data from the ringbuffer. Opposed to <a class="el" href="ringbuffer_8h.html#a4b001e5844a116a1d51006e2716c73bb">jack_ringbuffer_read()</a> this function does not move the read pointer. Thus it's a convenient way to inspect data in the ringbuffer in a continous fashion. The price is that the data is copied into a user provided buffer. For "raw" non-copy inspection of the data in the ringbuffer use <a class="el" href="ringbuffer_8h.html#aa21aaf8ff173ba0e89b35554f20d4ccb">jack_ringbuffer_get_read_vector()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rb</td><td>a pointer to the ringbuffer structure. </td></tr>
+    <tr><td class="paramname">dest</td><td>a pointer to a buffer where data read from the ringbuffer will go. </td></tr>
+    <tr><td class="paramname">cnt</td><td>the number of bytes to read.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of bytes read, which may range from 0 to cnt. </dd></dl>
+
+</div>
+</div>
+<a id="a4b001e5844a116a1d51006e2716c73bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b001e5844a116a1d51006e2716c73bb">&#9670;&nbsp;</a></span>jack_ringbuffer_read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t jack_ringbuffer_read </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structjack__ringbuffer__t.html">jack_ringbuffer_t</a> *&#160;</td>
+          <td class="paramname"><em>rb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>cnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Read data from the ringbuffer.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">rb</td><td>a pointer to the ringbuffer structure. </td></tr>
@@ -375,32 +397,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aeb059ff23c65389d48ebbe948f05c2b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb059ff23c65389d48ebbe948f05c2b2">&#9670;&nbsp;</a></span>jack_ringbuffer_mlock()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int jack_ringbuffer_mlock </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structjack__ringbuffer__t.html">jack_ringbuffer_t</a> *&#160;</td>
-          <td class="paramname"><em>rb</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Lock a ringbuffer data block into memory.</p>
-<p>Uses the mlock() system call. This is not a realtime operation.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rb</td><td>a pointer to the ringbuffer structure. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a40244c7eee331822cd99132a14e76896"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a40244c7eee331822cd99132a14e76896">&#9670;&nbsp;</a></span>jack_ringbuffer_reset()</h2>
 
@@ -421,43 +417,6 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">rb</td><td>a pointer to the ringbuffer structure. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="abd4df94d0a2b2ae8bdb98ca1d904402b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd4df94d0a2b2ae8bdb98ca1d904402b">&#9670;&nbsp;</a></span>jack_ringbuffer_reset_size()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void jack_ringbuffer_reset_size </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structjack__ringbuffer__t.html">jack_ringbuffer_t</a> *&#160;</td>
-          <td class="paramname"><em>rb</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>sz</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Reset the internal "available" size, and read and write pointers, making an empty buffer.</p>
-<p>This is not thread safe.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rb</td><td>a pointer to the ringbuffer structure. </td></tr>
-    <tr><td class="paramname">sz</td><td>the new size, that must be less than allocated size. </td></tr>
   </table>
   </dd>
 </dl>
