@@ -23,7 +23,7 @@ if [ ! -f Makefile ]; then
     --disable-firewire
 fi
 rm -rf doc/reference doc/reference.doxygen
-git pull && make -j 4
+git pull && git submodule update && make -j 4
 popd
 
 # pushd _jack2
