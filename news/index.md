@@ -48,6 +48,12 @@ menu_item: true
     </a>
     for more information.
 </p>
+<p>
+    PS: I will be in Cologne for
+    <a href="https://www.sonoj.org/" target="_blank">Sonoj</a>
+    , giving a talk about "Past, Present and Future of JACK".<br/>
+    There is no registration fee, so please feel free to come by and say hello! :)
+</p>
 
 ## JACK2 v1.9.12 release and future plans
 
