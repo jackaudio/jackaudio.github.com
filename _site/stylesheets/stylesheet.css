@@ -16,6 +16,10 @@ Theme Styles
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   color:#373737;
   background: #212121;
@@ -23,6 +27,8 @@ body {
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -293,6 +299,7 @@ Full-Width Styles
   background: #f2f2f2;
   border-top: 1px solid #111;
   border-bottom: 1px solid #111;
+  flex: 1;
 }
 
 #main_content {
