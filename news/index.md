@@ -50,8 +50,8 @@ menu_item: true
 </p>
 <p>
     PS: I will be in Cologne for
-    <a href="https://www.sonoj.org/" target="_blank">Sonoj</a>
-    , giving a talk about "Past, Present and Future of JACK".<br/>
+    <a href="https://www.sonoj.org/" target="_blank">Sonoj</a>,
+    giving a talk about "Past, Present and Future of JACK".<br/>
     There is no registration fee, so please feel free to come by and say hello! :)
 </p>
 
