@@ -139,7 +139,7 @@ menu_item: true
 
 ## Live Loopers
 
-  * [**Freewheeling**](http://freewheeling.sourceforge.net/)
+  * [**Freewheeling**](https://github.com/free-wheeling/freewheeling)
     a live looping instrument. 
   * [**Giada**](http://www.monocasual.com/giada/)
     is a free, minimal, hardcore audio tool for djs and live performers. 
@@ -385,7 +385,7 @@ menu_item: true
 
 ### Java
   
-  * [**JNAJack**](http://code.google.com/p/java-audio-utils)
+  * [**JNAJack**](https://github.com/jaudiolibs/jnajack)
     an alternative Java bridge API for JACK.
     Provides a more direct mapping of JACK functions,
     and supports all platforms that JACK runs on.
