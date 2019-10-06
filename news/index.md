@@ -43,13 +43,13 @@ menu_item: true
 <p>
     The situation regarding development of JACK and JACK1 considered legacy has not changed since last release 2 years ago.<br/>
     See
-    <a href="https://kx.studio/News/?action=view&amp;url=jack2-1912-release-and-future-plans" target="_blank">
-        https://kx.studio/News/?action=view&amp;url=jack2-1912-release-and-future-plans
+    <a href="https://jackaudio.org/news/#jack2-v1912-release-and-future-plans">
+        https://jackaudio.org/news/#jack2-v1912-release-and-future-plans
     </a>
     for more information.
 </p>
 
-## JACK2 1.9.12 release and future plans
+## JACK2 v1.9.12 release and future plans
 
 <h6>On <i>2017-12-21</i> by<i> falkTX</i></h6>
 
