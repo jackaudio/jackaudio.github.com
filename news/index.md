@@ -10,7 +10,7 @@ menu_item: true
 
 <p>
     Just a small heads up to mention that meta-data related pages
-      like <a href="https://jackaudio.org/metadata/"> #https://jackaudio.org/metadata </a>
+      like <a href="https://jackaudio.org/metadata/"> https://jackaudio.org/metadata </a>
       and <a href="https://jackaudio.org/metadata/pretty-name/"> https://jackaudio.org/metadata/pretty-name </a>
     have now been restored.
 </p>
