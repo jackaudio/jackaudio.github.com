@@ -4,9 +4,20 @@ title:  "News"
 menu_item: true
 ---
 
+## Meta-data pages restored
+
+<h6>On <i>2019-10-12</i> by <i>falkTX</i></h6>
+
+<p>
+    Just a small heads up to mention that meta-data related pages
+      like <a href="https://jackaudio.org/metadata/"> #https://jackaudio.org/metadata </a>
+      and <a href="https://jackaudio.org/metadata/pretty-name/"> https://jackaudio.org/metadata/pretty-name </a>
+    have now been restored.
+</p>
+
 ## JACK2 v1.9.13 release
 
-<h6>On <i>2019-10-06</i> by<i> falkTX</i></h6>
+<h6>On <i>2019-10-06</i> by <i>falkTX</i></h6>
 
 <p>
     A new version of JACK2 has just been released.<br/>
@@ -57,7 +68,7 @@ menu_item: true
 
 ## JACK2 v1.9.12 release and future plans
 
-<h6>On <i>2017-12-21</i> by<i> falkTX</i></h6>
+<h6>On <i>2017-12-21</i> by <i>falkTX</i></h6>
 
 <p>
     A few days ago a new version of JACK2 was released.<br/>
