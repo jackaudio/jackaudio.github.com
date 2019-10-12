@@ -1,8 +1,10 @@
 ---
 layout: page
-title:  "metadata"
+title:  "Metadata"
 menu_item: false
 ---
+
+# JACK Metadata API
 
 A running instance of JACK involves three types of conceptual objects:
 
