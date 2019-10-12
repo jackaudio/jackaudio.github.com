@@ -45,7 +45,7 @@ We therefore provide an optional third component to each piece of metadata - a s
 If it is empty, then the value is assumed to be just a normal (null-terminated) C string, useful for naming things in various ways. 
 The type can also be any MIME type or any URI. If find a piece of metadata with a type that you cannot understand, you should ignore that metadata.
 
-The [API documentation](http://jackaudio.org/files/docs/html/group__Metadata.html) should be consulted for more details.
+The [API documentation](https://jackaudio.org/api/group__Metadata.html) should be consulted for more details.
 
 # What to do with metadata?
 
