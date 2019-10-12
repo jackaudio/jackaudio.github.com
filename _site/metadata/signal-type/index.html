@@ -42,10 +42,15 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
 
-        <h2 id="jack-metadata-api-connected">JACK Metadata API: connected</h2>
+        <h2 id="jack-metadata-api-signal-type">JACK Metadata API: signal-type</h2>
 
-<p>A value that identifies what the hardware port is connected to (an external device of some kind).
-Possible values might be “E-Piano” or “Master 2 Track”.</p>
+<p>The type of an audio signal.</p>
+
+<p>This property allows audio ports to be tagged with a “meaning”.
+The value is a simple string.
+Currently, the only type is “CV”, for “control voltage” ports.
+Hosts SHOULD be take care to not treat CV ports as audibile and send their output directly to speakers.
+In particular, CV ports are not necessarily periodic at all and may have very high DC.</p>
 
 
       </section>

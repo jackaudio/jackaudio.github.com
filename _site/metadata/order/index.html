@@ -42,10 +42,16 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
 
-        <h2 id="jack-metadata-api-connected">JACK Metadata API: connected</h2>
+        <h2 id="jack-metadata-api-order">JACK Metadata API: order</h2>
 
-<p>A value that identifies what the hardware port is connected to (an external device of some kind).
-Possible values might be “E-Piano” or “Master 2 Track”.</p>
+<p>Order for a port.</p>
+
+<p>This is used to specify the best order to show ports in user interfaces.
+The value MUST be an integer.
+There are no other requirements, so there may be gaps in the orders for several ports.
+Applications should compare the orders of ports to determine their relative order, but must not assign any other relevance to order values.</p>
+
+<p>It is encouraged to use http://www.w3.org/2001/XMLSchema#int as the type.</p>
 
 
       </section>
