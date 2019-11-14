@@ -4,7 +4,7 @@ title:  "News"
 menu_item: true
 ---
 
-## Past, Present and Future of the JACK Audio Connection Kit (in video form)
+## Past, Present and Future of the JACK Audio Connection Kit<br/>(in video form)
 
 <h6>On <i>2019-11-14</i> by <i>falkTX</i></h6>
 
