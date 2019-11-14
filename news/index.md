@@ -4,6 +4,17 @@ title:  "News"
 menu_item: true
 ---
 
+## Past, Present and Future of the JACK Audio Connection Kit (in video form)
+
+<h6>On <i>2019-11-14</i> by <i>falkTX</i></h6>
+
+<p>
+    A few weeks ago I did a talk/presentation at <a href="https://www.sonoj.org/" target="_blank">Sonoj</a>,
+      regarding the past, present and future of the JACK.<br/>
+    This talk was live-streamed and recorded, and now Sonoj videos are online, so you can watch this at
+      <a href="https://media.ccc.de/v/sonoj2019-1902-jack-past-present-future" target="_blank">https://media.ccc.de/v/sonoj2019-1902-jack-past-present-future</a>.
+</p>
+
 ## Meta-data pages restored
 
 <h6>On <i>2019-10-12</i> by <i>falkTX</i></h6>
