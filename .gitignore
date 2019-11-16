@@ -1,2 +1,11 @@
 _jack1
 _jack2
+
+# Jekyll and gem bundle stuff
+.sass-cache
+.jekyll-metadata
+.bundle
+node_modules
+
+# VSCode project
+.website.*
