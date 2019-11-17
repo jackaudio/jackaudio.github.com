@@ -20,7 +20,7 @@ If you want to help out on the style part, you are more than welcome to clone th
 repo and start hacking but please communicate about your vision,
 so there won't be any drama.
 
-If you have any ideas or suggestions, please feel free to contact the authors via 
+If you have any ideas or suggestions, please feel free to contact the authors via
 jack-devel mailinglist or on github.
 
 ## install
@@ -34,6 +34,18 @@ just clone the repository and point your webserver to the '_site' dir
 3. Add your content in markdown format
 4. link to your new FAQ page in the `/faq/index.md` page, please note, that all FAQ
    pages currently need `.html` appended, since they share the same directory.
+
+## Creating posts
+
+This can be done either manually by creating a new .md file
+in the [_posts] directory, paying attention for a correct filename, date and
+[front-matter], or by running the following command:
+
+```bash
+$ ./newpost.pl "New post title" author_name
+```
+
+Requires [perl] and [perl-datetime] module.
 
 ## development notes
 * requires jekyll >= 2.2.0 (because of changes in the configuration file)
@@ -69,3 +81,8 @@ Desired line length maximum is 82 columns.
   without running jekyll on the webserver side, on the other hand it holds a full
   copy of the images and all binary files. AFAIK you cannot safely place those
   files only in the '_site' dir, since this dir gets cleaned by jekyll.
+
+[perl]: https://www.perl.org
+[perl-datetime]: https://metacpan.org/pod/DateTime
+[_posts]: https://github.com/jackaudio/jackaudio.github.com/tree/master/_posts/
+[front-matter]: https://jekyllrb.com/docs/front-matter/

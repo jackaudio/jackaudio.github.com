@@ -14,6 +14,7 @@ defaults:
 exclude:
 - README.md
 - node_modules
+- new_post.pl
 
 name: JACK Audio Connection Kit
 markdown: Kramdown
