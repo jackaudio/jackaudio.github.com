@@ -1,6 +1,21 @@
+defaults:
+- scope:
+    path: ""
+    type: "pages"
+  values:
+    layout: "default"
+
+- scope:
+    path: ""
+    type: "posts"
+  values:
+    layout: "post"
+
+exclude:
+- README.md
+- node_modules
+
 name: JACK Audio Connection Kit
 markdown: Kramdown
 highlighter: rouge
 baseurl: ''
-
-exclude: [README.md]
