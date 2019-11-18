@@ -5,6 +5,7 @@ _jack2
 .sass-cache
 .jekyll-metadata
 .bundle
+Gemfile.lock
 node_modules
 
 # VSCode project

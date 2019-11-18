@@ -117,7 +117,7 @@ Your DAW has no idea what your audio interface is connected to, or what the best
 <span class="c"># set up nice names for all the ports</span>
 <span class="c">#</span>
 
-<span class="k">for </span>n <span class="k">in</span> <span class="sb">`</span>seq 1 24<span class="sb">`</span> <span class="p">;</span> <span class="k">do
+<span class="k">for </span>n <span class="k">in</span> <span class="sb">`</span><span class="nb">seq </span>1 24<span class="sb">`</span> <span class="p">;</span> <span class="k">do
     </span>jack_property <span class="nt">-p</span> <span class="nt">-s</span> system:playback_<span class="nv">$n</span> http://jackaudio.org/metadata/pretty-name <span class="s2">"ADAT </span><span class="nv">$n</span><span class="s2">"</span>
     jack_property <span class="nt">-p</span> <span class="nt">-s</span> system:capture_<span class="nv">$n</span> http://jackaudio.org/metadata/pretty-name <span class="s2">"ADAT </span><span class="nv">$n</span><span class="s2">"</span>
 <span class="k">done
