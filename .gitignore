@@ -2,10 +2,12 @@ _jack1
 _jack2
 
 # Jekyll and gem bundle stuff
-.sass-cache
-.jekyll-metadata
+_site
 .bundle
-node_modules
+.jekyll-cache
+.jekyll-metadata
+.sass-cache
+Gemfile.lock
 
 # VSCode project
 .website.*
