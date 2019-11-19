@@ -27,3 +27,5 @@ date:       ${date}
 categories: news
 ---
 EOF
+
+echo "File created at ${file}"
