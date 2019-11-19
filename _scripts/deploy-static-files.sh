@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# NOTE: this is no longer used
+# It is here as backup in case github fucks up and we need to host files ourselves
+
 set -e
 
 cd $(dirname $0)/..

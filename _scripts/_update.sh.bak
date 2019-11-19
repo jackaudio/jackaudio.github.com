@@ -1,4 +1,0 @@
-#!/bin/bash
-
-ssh jackit@jackaudio.org "cd ~jackweb/jackaudio.org && git pull"
-
