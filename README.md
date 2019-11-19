@@ -22,7 +22,7 @@ jack-devel mailinglist or on Github.
 ## Test with Jekyll locally
 
 In order to test the website without having a webserver running and also see
-the changes in real time use the `_setup.sh` script to run [Jekyll] locally from
+the changes in real time use the `setup.sh` script to run [Jekyll] locally from
 the repository directory.
 
 It requires [ruby] to be installed, the rest will be installed locally in a
@@ -43,8 +43,8 @@ If using another webserver you'll need to point it to the built `_site` director
 3. Add your content in markdown format
 4. Link to your new FAQ page in the `/faq/index.md` page
 
-Please note, that all FAQ pages currently need `.html` appended,
-since they share the same directory.
+Please note that, when not using Jekyll as webserver, all FAQ pages currently
+need `.html` appended, since they share the same directory.
 
 ## Creating posts
 
