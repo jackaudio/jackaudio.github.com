@@ -2,7 +2,6 @@ _jack1
 _jack2
 
 # Jekyll and gem bundle stuff
-_site
 .bundle
 .jekyll-cache
 .jekyll-metadata

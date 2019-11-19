@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <meta name="description" content="JACK Audio Connection Kit|JACK2 v1.9.13 release" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/stylesheet.css">
+    <title>JACK Audio Connection Kit|JACK2 v1.9.13 release</title>
+  </head>
+  <body>
+        <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/jackaudio">View on GitHub</a>
+          <a href=""> <img src="/images/logo.png" alt="home" border =
+          "0"> </a>
+
+          <nav>
+  <a href="/"> Home </a> |
+  <a href="/news/"> News </a> |
+  <a href="/applications/"> Applications </a> |
+  <a href="/faq/"> FAQ </a> |
+  <a href="https://github.com/jackaudio/jackaudio.github.com/wiki"> WIKI </a> |
+  <a href="/api/"> API </a> |
+  <a href="/downloads/"> Downloads </a> |
+  <a href="/community.html"> Community Network </a>
+
+</nav>
+
+          <!--
+          <h1 id="project_title">JACK Audio Connection Kit</h1>
+          <h2 id="project_tagline">TODO</h2>
+          -->
+
+        </header>
+    </div>
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h2>JACK2 v1.9.13 release</h2>
+<p class="meta">06 Oct 2019</p>
+
+<div class="post">
+<p>A new version of JACK2 has just been released.<br />
+You can grab the latest release source code at
+<a href="https://github.com/jackaudio/jack2/releases">https://github.com/jackaudio/jack2/releases</a>.</p>
+
+<p>The official changelog is:</p>
+
+<ul>
+  <li>Meta-data API implementation. (and a few tools updated with support for it)</li>
+  <li>Correct GPL licence to LGPL for files needed to build libjack.</li>
+  <li>Remove FreeBoB backend (superseded by FFADO).</li>
+  <li>define JACK_LIB_EXPORT, useful for internal clients.</li>
+  <li>Mark jack_midi_reset_buffer as deprecated.</li>
+  <li>Add example systemd unit file</li>
+  <li>Signal to systemd when jackd is ready.</li>
+  <li>Set “seq” alsa midi driver to maximum resolution possible.</li>
+  <li>Fix loading internal clients from another internal client.</li>
+  <li>Code cleanup and various fixes. (too many to mention here, see git log for details)</li>
+</ul>
+
+<p>This release is focused on meta-data support, and this is why it took so long.<br />
+There might be odd cases here and there and a few bugs, as it is often the case
+for all software…<br />
+So please make sure to report back any issues!</p>
+
+<p>Special thanks goes to Rui Nuno Capela for the initial pull-request regarding
+meta-data.<br />
+There was some work needed afterwards, but that was the biggest hurdle and
+motivation needed for a new release. :)</p>
+
+<p>There are still no updated macOS or Windows builds, those will be handled at
+a later date.<br />
+Current plan is to have JACK1 feature-parity first
+(only a2jmidid and zita internal clients missing now),<br />
+and afterwards merging examples/tools and header files to be shared between
+JACK1 and JACK2.</p>
+
+<p>The situation regarding development of JACK and JACK1 considered legacy has not
+changed since last release 2 years ago.<br />
+See <a href="/news/2017/12/21/jack2-v1-9-12-release-and-future-plans">JACK2 v1.9.12 release and future plans</a> post for more information.</p>
+
+<p>PS: I will be in Cologne for <a href="https://www.sonoj.org/">Sonoj</a>, giving a talk about
+“Past, Present and Future of JACK”.<br />
+There is no registration fee, so please feel free to come by and say hello! :)</p>
+
+
+</div>
+
+      </section>
+    </div>
+        <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Slate theme maintained by <a href="https://github.com/jasoncostello">Jason Costello</a></p>
+      </footer>
+    </div>
+
+
+  </body>
+</html>
