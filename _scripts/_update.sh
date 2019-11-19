@@ -17,7 +17,7 @@ fi
 #     git clone --recursive git@github.com:jackaudio/jack2 _jack2
 # fi
 if [ ! -d _site ]; then
-    git clone --recursive git@github.com:jackaudio/jackaudio.github.com _site
+    git clone --recursive -b static-files git@github.com:jackaudio/jackaudio.github.com _site
 # else
 #     pushd _site
 #     git reset --hard
