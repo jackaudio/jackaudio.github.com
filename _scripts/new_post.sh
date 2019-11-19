@@ -2,9 +2,11 @@
 
 set -e
 
+cd $(dirname $0)/..
+
 if [ ! $2 ]; then
-	echo "Usage: ${0} \"New Post Title\" \"Author\"."
-	exit 1
+    echo "Usage: ${0} \"New Post Title\" \"Author\"."
+    exit 1
 fi
 
 dir="_posts"

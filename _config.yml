@@ -15,9 +15,6 @@ exclude:
 - README.md
 - Gemfile
 - Gemfile.lock
-- _setup.sh
-- new_post.sh
-- new_post.pl
 
 name: JACK Audio Connection Kit
 markdown: Kramdown

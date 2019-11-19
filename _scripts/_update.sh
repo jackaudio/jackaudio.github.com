@@ -2,8 +2,10 @@
 
 set -e
 
+cd $(dirname $0)/..
+
 if [ ! -d .bundle ]; then
-		bundle install --path .bundle
+    bundle install --path .bundle
 fi
 
 bundle exec jekyll build
