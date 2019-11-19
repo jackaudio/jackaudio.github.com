@@ -1,71 +1,85 @@
 # jackaudio.org
 
-[jackaudio.org](http://jackaudio.org)
+This repository contains the sources for the [jackaudio.org] homepage.
 
-[this repository(preview on github pages)](https://jackaudio.github.io)
+To report bugs and issues with JACK, please use the corresponding
+[JACK 1] and [JACK 2] bug trackers.
 
-## about
-This repository contains the sources for the homepage of [jackaudio.org](http://jackaudio.org).
+## Contribute
 
-To report bugs and issues with JACK, please use the corresponding bugtrackers of
-[jack1](https://github.com/jackaudio/jack1) and [jack2](https://github.com/jackaudio/jack2)
+You can currently contribute to the homepage by checking the page for dead/wrong
+links and formatting mistakes and file bugreports about them.
 
-## contribute
-You can currently contribute to the homepage by checking the page for dead/wrong links and
-formatting mistakes and file bugreports about them.
-
-If you feel comfortable fixing issues yourself, please file a pull request.
+If you feel comfortable fixing issues yourself, please file a [pull request].
 
 If you want to help out on the style part, you are more than welcome to clone the
 repo and start hacking but please communicate about your vision,
 so there won't be any drama.
 
-If you have any ideas or suggestions, please feel free to contact the authors via 
-jack-devel mailinglist or on github.
+If you have any ideas or suggestions, please feel free to contact the authors via
+jack-devel mailinglist or on Github.
 
-## install
-just clone the repository and point your webserver to the '_site' dir
+## Test with Jekyll locally
 
+In order to test the website without having a webserver running and also see
+the changes in real time use the `_setup.sh` script to run [Jekyll] locally from
+the repository directory.
 
-## adding FAQ Pages
-1.  create a new *.md file in the faq directory
-2.  insert a header as in the other files in the faq dir, they are required for
-    jekyll to process the file
+It requires [ruby] to be installed, the rest will be installed locally in a
+`.bundle` directory.
+
+The current Gemfile configuration is set to use the same
+Jekyll version as [GitHub pages].
+
+The website will be available at <http://localhost:4000/>.
+
+If using another webserver you'll need to point it to the built `_site` directory.
+
+## Adding FAQ pages
+
+1. Create a new *.md file in the FAQ directory
+2. Insert a [front-matter] header as in the other files in the FAQ directory,
+   they are required for Jekyll to process the file
 3. Add your content in markdown format
-4. link to your new FAQ page in the `/faq/index.md` page, please note, that all FAQ
-   pages currently need `.html` appended, since they share the same directory.
+4. Link to your new FAQ page in the `/faq/index.md` page
 
-## development notes
-* requires jekyll >= 2.2.0 (because of changes in the configuration file)
+Please note, that all FAQ pages currently need `.html` appended,
+since they share the same directory.
 
-A convenient way of working is, to check out the working copy and start jekyll
-with:
+## Creating posts
 
-    cd /path/to/working/copy
-    jekyll serve --watch --baseurl ''
+This can be done either manually by creating a new .md file
+in the [_posts] directory, paying attention for a correct filename, date and
+[front-matter], or by running the following command:
 
-that way, jekyll watches all source files for changes and regenerates the _site
-dir on changes. It also starts a local webserver on port 4000 where the result can
-be observed.
+```bash
+$ ./newpost.sh "New post title" author_name
+```
 
-Note: please provide the `--baseurl ''` argument when generating the site.
-Desired line length maximum is 82 columns.
+## Development notes
 
-## site internal links
-### relative to site root
-    [name to display](/path/to/file)
-### relative to page
-    [name to display](to/file)
-### faq page
-    [name to display](/faq/file.html)
+- Please use an [EditorConfig] compatible editor to avoid indentation,
+  whitespaces and missing lines at EOF issues.
+- Desired line length maximum is 82 columns.
+- See above to how to test page's changes with Jekyll.
+- For further information please refer to the [Jekyll manual].
+- Use external hosting links for the download section like [GitHub releases],
+  no download files in the repository for a better maintenance.
 
+## TODO
 
-## open considerations
-*  The downloadable files will have to be placed in the `downloads` dir after
-   cloning the repo. That's a hassle, but including them in this repo would just
-   bloat the repo more and more with each release.
-*  a news/releases section
-* how to handle the '_site' dir? it needs to be included for easy deployment
-  without running jekyll on the webserver side, on the other hand it holds a full
-  copy of the images and all binary files. AFAIK you cannot safely place those
-  files only in the '_site' dir, since this dir gets cleaned by jekyll.
+- A dedicated news/releases section? E.g. a secondary [blog],
+  custom [_posts] like directory.
+
+[jackaudio.org]:   https://jackaudio.org
+[JACK 1]:          https://github.com/jackaudio/jack1/issues
+[JACK 2]:          https://github.com/jackaudio/jack2/issues
+[pull request]:    https://github.com/jackaudio/jackaudio.github.com/pulls
+[Jekyll]:          https://jekyllrb.com/
+[_posts]:          https://github.com/jackaudio/jackaudio.github.com/tree/master/_posts/
+[front-matter]:    https://jekyllrb.com/docs/front-matter/
+[GitHub pages]:    https://pages.github.com/versions/
+[EditorConfig]:    https://editorconfig.org/
+[Jekyll manual]:   https://jekyllrb.com/docs/
+[GitHub releases]: https://help.github.com/en/github/administering-a-repository/about-releases
+[blog]:            https://github.com/wxWidgets/website/tree/master/blog
