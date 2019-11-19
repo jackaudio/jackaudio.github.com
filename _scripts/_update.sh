@@ -16,6 +16,14 @@ fi
 # if [ ! -d _jack2 ]; then
 #     git clone --recursive git@github.com:jackaudio/jack2 _jack2
 # fi
+if [ ! -d _site ]; then
+    git clone --recursive git@github.com:jackaudio/jackaudio.github.com _site
+# else
+#     pushd _site
+#     git reset --hard
+#     git pull
+#     popd
+fi
 
 pushd _jack1
 if [ ! -f configure ]; then
