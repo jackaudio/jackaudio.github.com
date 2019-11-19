@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <meta name="description" content="JACK Audio Connection Kit|How do I configure my linux system to allow JACK to use realtime scheduling?" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/stylesheet.css">
+    <title>JACK Audio Connection Kit|How do I configure my linux system to allow JACK to use realtime scheduling?</title>
+  </head>
+  <body>
+        <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/jackaudio">View on GitHub</a>
+          <a href=""> <img src="/images/logo.png" alt="home" border =
+          "0"> </a>
+
+          <nav>
+  <a href="/"> Home </a> |
+  <a href="/news/"> News </a> |
+  <a href="/applications/"> Applications </a> |
+  <a href="/faq/"> FAQ </a> |
+  <a href="https://github.com/jackaudio/jackaudio.github.com/wiki"> WIKI </a> |
+  <a href="/api/"> API </a> |
+  <a href="/downloads/"> Downloads </a> |
+  <a href="/community.html"> Community Network </a>
+
+</nav>
+
+          <!--
+          <h1 id="project_title">JACK Audio Connection Kit</h1>
+          <h2 id="project_tagline">TODO</h2>
+          -->
+
+        </header>
+    </div>
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1 id="how-do-i-configure-my-linux-system-to-allow-jack-to-use-realtime-scheduling">How do I configure my linux system to allow JACK to use realtime scheduling?</h1>
+
+<p>Realtime (RT) scheduling is a feature of all Linux operating systems that
+enables an application to meet timing deadlines more reliably. Almost all
+Linux distributions consider RT scheduling to be a potential source of system
+abuse, and so access to it is limited to varying degrees. As mentioned in the 
+<a href="realtime_vs_realtime_kernel.html">FAQ</a>, it is very important to understand that
+<strong>you do NOT need an “RT kernel” to use RT scheduling</strong>
+(this is a very common misconception.)</p>
+
+<p>JACK requires real time (RT) scheduling privileges for reliable, dropout-free
+operation. Modern versions of JACK request RT scheduling by default, though it
+can be disabled with the -r option. Older versions require the -R option to
+request RT scheduling. If your system is not setup correctly, then JACK will
+print a message like when it tries to run with RT scheduling (it will appear
+in the messages window of QJackctl if you use that to start JACK):</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cannot use real-time scheduling (FIFO at priority 10) ... (1: Operation not permitted)
+</code></pre></div></div>
+
+<p>Some distributions configure everything so that any user can use RT scheduling
+with absolutely no work at all. This is great, when it happens. However, many
+if not most Linux distributions do not allow applications run by ordinary
+users to request RT scheduling by default. Some distributions’ JACK packages
+will configure things more or less correctly for you, but in almost every
+case, some work is required.</p>
+
+<p>Distributions that are known to get this completely right include:</p>
+
+<ul>
+  <li>AVLinux</li>
+  <li>64Studio  These distributions have JACK packages that will
+create and configure a group with the required priviledges for
+RT scheduling, but will not add you to that group.</li>
+  <li>Debian Squeeze</li>
+  <li>Fedora 13 and later</li>
+  <li>Ubuntu Studio</li>
+  <li>Ubuntu - However, the user needs to be added to “audio” group.</li>
+</ul>
+
+<p>Ultimately, the only way to find out if your system is configured properly is
+to run JACK with RT scheduling and see if it works.</p>
+
+<h2 id="this-may-not-work">This may not work!</h2>
+
+<p>If you follow all these steps carefully and they do not work, you should
+review the information over <a href="linux_group_sched.html">here</a>
+and consider whether this may apply to your system.</p>
+
+<h2 id="systems-using-pam">Systems using PAM</h2>
+
+<p>PAM (Pluggable Authentication Modules) are used by almost all modern Linux
+distributions nowadays to handle various tasks related to granting a user
+permission to do something (e.g. to login). If your system has PAM, it will
+also have a file called <code class="highlighter-rouge">/etc/security/limits.conf</code> and/or a directory called
+`/etc/security/limits.d.</p>
+
+<p>You need to carry out 3 steps to be able to run JACK with RT scheduling. In
+what follows, several references are made to the “audio” group. If this
+group name already exists, pick a different name and use it instead of
+“audio” when following the rest of these instructions. The actual name of
+the group is completely irrelevant.</p>
+
+<h3 id="1-editing-the-configuration-file">1. Editing the configuration file</h3>
+
+<p>If your system has no directory called <code class="highlighter-rouge">/etc/security/limits.d</code> then you will
+need to edit <code class="highlighter-rouge">/etc/security/limits.conf</code>. If <code class="highlighter-rouge">/etc/security/limits.d</code> does
+exist on your machine, then you will need to create and edit a file called
+<code class="highlighter-rouge">/etc/security/limits.d/audio.conf</code>. The file must contain (at least)
+the following two lines:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@audio   -  rtprio     95
+@audio   -  memlock    unlimited
+</code></pre></div></div>
+
+<p>Contrary to a lot of misinformation on the web, there is no reason to include
+a line here that provides enhanced “niceness” control, which is completely
+irrelevant for realtime scheduling and low latency audio applications.</p>
+
+<h3 id="2-creating-an-audio-group">2. Creating an “audio” group</h3>
+
+<p><strong>As the super-user (“root”)</strong> run the following commands from a terminal window:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>groupadd audio
+usermod -a -G audio yourUserID
+</code></pre></div></div>
+
+<p>You should substitute your actual user id or “login” for “yourUserID”.</p>
+
+<p>If you prefer, you can carry out these two steps using the graphical tools
+that are available under the “System Adminstration” section of your desktop’s
+main menu, but this text-based method is faster and much easier to explain.</p>
+
+<p>If you are using a distribution that has already created the group and
+configured the “limits” file, you will need to determine the name of the group
+(it is likely called “audio” or “jackuser”) and then you can just add yourself
+to the group with this command (run as the superuser inside a terminal
+window):</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>usermod -a -G theGroupName yourUserId
+</code></pre></div></div>
+
+<p>substituting the real names for <code class="highlighter-rouge">theGroupName</code> and <code class="highlighter-rouge">yourUserId</code></p>
+
+<h3 id="3-logout-and-back-in">3. Logout and back in</h3>
+
+<p>None of the changes you have made above will have any effect until you logout
+and back in. You do not need to reboot your system or reinstall any software.</p>
+
+
+      </section>
+    </div>
+        <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Slate theme maintained by <a href="https://github.com/jasoncostello">Jason Costello</a></p>
+      </footer>
+    </div>
+
+
+  </body>
+</html>
