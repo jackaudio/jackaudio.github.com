@@ -2,8 +2,6 @@
 
 set -e
 
-cd $(dirname $0)/..
-
 if [ ! -d .bundle ]; then
     gem update --user-install
     gem install bundler --user-install
