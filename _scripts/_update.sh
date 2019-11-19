@@ -55,8 +55,11 @@ popd
 # git pull && ./waf build -j4 && ./waf install --destdir=$(pwd)/tmp-install
 # popd
 
-rm -rf _site/api
-mv _jack1/doc/reference/html _site/api
+rm -rf _site/api api
+mv _jack1/doc/reference/html api
+
+# TODO
+exit 0
 
 git add _site
 git commit -a -m "Update static pages" && git push || echo "nothing to commit"
