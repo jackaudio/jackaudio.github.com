@@ -2,7 +2,11 @@
 
 set -e
 
-jekyll build
+if [ ! -d .bundle ]; then
+		bundle install --path .bundle
+fi
+
+bundle exec jekyll build
 
 if [ ! -d _jack1 ]; then
     git clone --recursive git@github.com:jackaudio/jack1 _jack1
