@@ -8,8 +8,6 @@ if [ ! -d .bundle ]; then
     bundle install --path .bundle
 fi
 
-bundle exec jekyll build
-
 if [ ! -d _jack1 ]; then
     git clone --recursive git@github.com:jackaudio/jack1 _jack1
 fi
@@ -17,12 +15,12 @@ fi
 #     git clone --recursive git@github.com:jackaudio/jack2 _jack2
 # fi
 if [ ! -d _site ]; then
-    git clone --recursive -b static-files git@github.com:jackaudio/jackaudio.github.com _site
-# else
-#     pushd _site
-#     git reset --hard
-#     git pull
-#     popd
+    git clone --depth=1 -b static-files git@github.com:jackaudio/jackaudio.github.com _site
+else
+    pushd _site
+    git reset --hard
+    git pull
+    popd
 fi
 
 pushd _jack1
@@ -66,6 +64,8 @@ popd
 rm -rf api _site/api
 mv _jack1/doc/reference/html api
 cp -r api _site/api
+
+bundle exec jekyll build
 
 pushd _site
 git add .
