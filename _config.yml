@@ -13,8 +13,9 @@ defaults:
 
 exclude:
 - README.md
-- node_modules
 - new_post.pl
+- Gemfile
+- Gemfile.lock
 
 name: JACK Audio Connection Kit
 markdown: Kramdown
