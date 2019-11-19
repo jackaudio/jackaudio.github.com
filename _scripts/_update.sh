@@ -63,14 +63,14 @@ popd
 # git pull && ./waf build -j4 && ./waf install --destdir=$(pwd)/tmp-install
 # popd
 
-rm -rf _site/api api
+rm -rf api _site/api
 mv _jack1/doc/reference/html api
+cp -r api _site/api
 
-# TODO
-exit 0
-
-git add _site
+pushd _site
+git add .
 git commit -a -m "Update static pages" && git push || echo "nothing to commit"
+popd
 
 ssh -A jackaudio.org bash <<EOF
 set -e
