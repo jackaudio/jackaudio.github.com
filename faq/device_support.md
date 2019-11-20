@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "What audio devices are supported by JACK?"
 ---
 

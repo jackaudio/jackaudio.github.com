@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "How do I route audio to/from generic ALSA-using applications?"
 ---
 
@@ -34,8 +33,8 @@ Once you have it installed, you can use it by editing the file `~/.asoundrc`
 (this file may not exist when you start this, or it may already have some
 content). You need to add the following text to it:
 
-    
-    
+
+
     pcm.rawjack {
         type jack
         playback_ports {
@@ -47,7 +46,7 @@ content). You need to add the following text to it:
             1 system:capture_2
         }
     }
-    
+
     pcm.jack {
         type plug
         slave { pcm "rawjack" }
@@ -55,7 +54,7 @@ content). You need to add the following text to it:
      	description "JACK Audio Connection Kit"
         }
     }
-    
+
 
 This first PCM definition above example defines a virtual audio device called
 "pcm.rawjack" that has 2 input channels and two output channels. Each channel
@@ -78,13 +77,13 @@ If you wanted to make all ALSA applications use this device by default (i.e.
 even when no explicit name is given) then your `~/.asoundrc` should also
 contain this text:
 
-    
-    
+
+
     pcm.!default {
         type plug
         slave { pcm "rawjack" }
     }
-    
+
 
 You should check the rest of the file for other definitions of "pcm.!default"
 - only the last one will have any effect and there should be preferably only

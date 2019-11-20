@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "How do I make an application use JACK?"
 ---
 
@@ -21,10 +20,10 @@ callback API.
 JACK uses pkg-config. Find a package for your favorite distribution and OS, or
 build it from source. To build your JACK program, try
 
-    
-    
+
+
     $ gcc -o myprog `pkg-config --cflags --libs jack` myprog.c
-    
+
 
 Most build systems worth using have builtin ways to integrate pkg-config with
 your build scripts.

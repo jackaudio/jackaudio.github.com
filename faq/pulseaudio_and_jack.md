@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "How use PulseAudio and JACK?"
 ---
 
@@ -13,20 +12,20 @@ together:
 1. While PulseAudio is running, JACK cannot access the same soundcard
   that Pulse is using. Even though in theory ALSA provides mechanisms
   for this to be possible (e.g. "dmix" device access),
-  they do not work well enough to support both of these systems reliably. 
+  they do not work well enough to support both of these systems reliably.
 2. PulseAudio and JACK can appear to have similar goals to many people,
   and they wonder why its not possible to replace one with the other.
   However, beyond a very superficial similarity,
-  they really do not have much in common: 
+  they really do not have much in common:
   * PulseAudio is focused on desktop and mobile audio needs.
     It doesn't try to address low latency usage, but does provide
     seamless device switching, network routing,
-    global per-application volume control and lots more great stuff. 
+    global per-application volume control and lots more great stuff.
   * JACK is focused on the needs of pro-audio and music creation users.
     It offers the lowest possible latency, complete routing flexibility
     between applications and audio hardware, and all audio is always
     sample synchronized - apps don't run ahead or behind of others.
-    It doesn't provide the smooth desktop experience that PulseAudio is aiming at. 
+    It doesn't provide the smooth desktop experience that PulseAudio is aiming at.
 
 Combining PulseAudio and JACK on the same machine can be problematic. There
 are several options, some of which leave PulseAudio and JACK as entirely
@@ -57,15 +56,15 @@ All that is necessary in this case is to define the device that PulseAudio and
 JACK will use. Run the following command in a terminal window: `cat
 /proc/asound/cards` You will some output like this:
 
-    
-    
+
+
      0 [SB             ]: HDA-Intel - HDA ATI SB
                           HDA ATI SB at 0xfcef8000 irq 16
      1 [DSP            ]: H-DSP - Hammerfall DSP
                           RME Hammerfall DSP + Digiface at 0xfcff0000, irq 20
      2 [NVidia         ]: HDA-Intel - HDA NVidia
                           HDA NVidia at 0xfe57c000 irq 32
-    
+
 
 (This is from a machine with 3 soundcards: a builtin device, an additional 26
 channel RME Hammerfall DSP device, and (unintentionally) an NVidia video
@@ -100,7 +99,7 @@ edit the field labelled "Server path". Insert `pasuspender --` in front of
 whatever is there (probably just something like `jackd`). So for example, if
 you had "jackd" in the "Server path" field already, it should now say:
 
-    
+
     pasuspender -- jackd
 
 This will cause PulseAudio to suspend itself while JACK runs, and restart when

@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "MacBook running Linux: audio via JACK is distorted, audio via ALSA is not"
 ---
 

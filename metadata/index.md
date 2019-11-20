@@ -1,5 +1,4 @@
 ---
-layout: page
 title:  "Metadata"
 menu_item: false
 ---
@@ -17,7 +16,7 @@ The rest of this tutorial refers **ONLY** to the first two - connections are not
 Each of these objects is typically referred to by its name, which typically provides some indication of what it is and/or what it could be used for.
 But a single name is often not enough.
 Consider a given pair of JACK ports. You may want to know that they correspond to the first two channels of your audio interface.
-You might also like a reminder that they are connected to to your speakers. 
+You might also like a reminder that they are connected to to your speakers.
 You might also want to somehow mark these two as the default ports that should be used when making connections.
 A single name cannot perform this sort of multi-faceted role, but if we could add some additional data to each port, which other things could look up, then the goal becomes a lot easier.
 
@@ -41,8 +40,8 @@ The URI may or may not correspond to a URL - if it does, then an `HTTP GET` requ
 For example, [http://jackaudio.org/metadata/pretty-name](http://jackaudio.org/metadata/pretty-name) is a URI that also corresponds to a URL that describes what "pretty-name" data is and how to use it.
 
 Both key and value are strings, but the value part could represent arbitrary different kinds of data - a name, an image, audio, anything basically.
-We therefore provide an optional third component to each piece of metadata - a specification of the "type" of data represented by the value part. 
-If it is empty, then the value is assumed to be just a normal (null-terminated) C string, useful for naming things in various ways. 
+We therefore provide an optional third component to each piece of metadata - a specification of the "type" of data represented by the value part.
+If it is empty, then the value is assumed to be just a normal (null-terminated) C string, useful for naming things in various ways.
 The type can also be any MIME type or any URI. If find a piece of metadata with a type that you cannot understand, you should ignore that metadata.
 
 The [API documentation](https://jackaudio.org/api/group__Metadata.html) should be consulted for more details.
@@ -57,8 +56,8 @@ If we know the UUID of an object, we can do 3 things with metadata:
 
 The man page for `jack_property` shows how to use that tool to do any of these 3 tasks. Note that by default `jack_property` requires a UUID, but you can pass it an additional argument to allow you to use a port or client name instead of the UUID.
 
-In addition to these three operations, we might be interested in knowing about changes to metadata. 
-If so, a JACK client can register a "property change callback", which will be told about the UUID and key whenever a piece of metadata is created, altered or deleted. 
+In addition to these three operations, we might be interested in knowing about changes to metadata.
+If so, a JACK client can register a "property change callback", which will be told about the UUID and key whenever a piece of metadata is created, altered or deleted.
 The API docs cover the details.
 
 # Who does what?
