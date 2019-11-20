@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "How do I configure my linux system to allow JACK to use realtime scheduling?"
 ---
 
@@ -8,7 +7,7 @@ title: "How do I configure my linux system to allow JACK to use realtime schedul
 Realtime (RT) scheduling is a feature of all Linux operating systems that
 enables an application to meet timing deadlines more reliably. Almost all
 Linux distributions consider RT scheduling to be a potential source of system
-abuse, and so access to it is limited to varying degrees. As mentioned in the 
+abuse, and so access to it is limited to varying degrees. As mentioned in the
 [FAQ](realtime_vs_realtime_kernel.html), it is very important to understand that
 **you do NOT need an "RT kernel" to use RT scheduling**
 (this is a very common misconception.)
@@ -20,10 +19,10 @@ request RT scheduling. If your system is not setup correctly, then JACK will
 print a message like when it tries to run with RT scheduling (it will appear
 in the messages window of QJackctl if you use that to start JACK):
 
-    
-    
+
+
     cannot use real-time scheduling (FIFO at priority 10) ... (1: Operation not permitted)
-    
+
 
 Some distributions configure everything so that any user can use RT scheduling
 with absolutely no work at all. This is great, when it happens. However, many
@@ -34,12 +33,12 @@ case, some work is required.
 
 Distributions that are known to get this completely right include:
 
-* AVLinux 
+* AVLinux
 * 64Studio  These distributions have JACK packages that will
   create and configure a group with the required priviledges for
-  RT scheduling, but will not add you to that group. 
-* Debian Squeeze 
-* Fedora 13 and later 
+  RT scheduling, but will not add you to that group.
+* Debian Squeeze
+* Fedora 13 and later
 * Ubuntu Studio
 * Ubuntu - However, the user needs to be added to "audio" group.
 
@@ -74,11 +73,11 @@ exist on your machine, then you will need to create and edit a file called
 `/etc/security/limits.d/audio.conf`. The file must contain (at least)
 the following two lines:
 
-    
-    
+
+
     @audio   -  rtprio     95
     @audio   -  memlock    unlimited
-    
+
 
 Contrary to a lot of misinformation on the web, there is no reason to include
 a line here that provides enhanced "niceness" control, which is completely
@@ -86,12 +85,12 @@ irrelevant for realtime scheduling and low latency audio applications.
 
 ### 2. Creating an "audio" group
 
-**As the super-user ("root")** run the following commands from a terminal window: 
-    
-    
+**As the super-user ("root")** run the following commands from a terminal window:
+
+
     groupadd audio
     usermod -a -G audio yourUserID
-    
+
 
 You should substitute your actual user id or "login" for "yourUserID".
 
@@ -105,10 +104,10 @@ configured the "limits" file, you will need to determine the name of the group
 to the group with this command (run as the superuser inside a terminal
 window):
 
-    
-    
+
+
     usermod -a -G theGroupName yourUserId
-    
+
 
 substituting the real names for `theGroupName` and `yourUserId`
 

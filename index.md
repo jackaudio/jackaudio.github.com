@@ -1,7 +1,5 @@
 ---
-layout: home
 title: "Home"
-menu_item: true
 ---
 Have you ever wanted to take the audio output of one piece of software
 and send it to another? How about taking the output of that same program

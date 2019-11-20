@@ -1,7 +1,5 @@
 ---
-layout: page
 title: "FAQ"
-menu_item: true
 ---
 
 # JACK FAQ

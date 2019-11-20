@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "How can I route audio from xmms/audacious/beep to JACK?"
 ---
 
@@ -16,15 +15,15 @@ are the same for any version of xmms/beep/audacious.
   that contains this will vary depending on which Linux distribution
   you are using. On Fedora, its called `audacious-plugins-jack`.
   On Ubuntu, its called `audacious-plugins`.
-  It might already be installed on your system. 
+  It might already be installed on your system.
 2. Start audacious. Click on the upper-right button to
-  bring up the "main menu" and then click on "Preferences" 
-3. Make sure you are looking at the "Audio" tab 
-4. Select "JACK Output Plugin " from the "Current Output Selector" at the top. 
+  bring up the "main menu" and then click on "Preferences"
+3. Make sure you are looking at the "Audio" tab
+4. Select "JACK Output Plugin " from the "Current Output Selector" at the top.
 5. The default operation of the plugin is to connect its two outputs
   to the first two physical JACK outputs it can find.
   If you would prefer that it remain disconnected by default,
   or connect to all available ports (!), click on the
-  "Output Plugin Preferences" button just below to make your choice. 
-6. That's it! 
+  "Output Plugin Preferences" button just below to make your choice.
+6. That's it!
 

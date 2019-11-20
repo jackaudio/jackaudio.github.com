@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "Does using JACK add latency?"
 ---
 

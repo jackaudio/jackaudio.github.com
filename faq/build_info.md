@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "How do I build JACK from the source code?"
 ---
 
@@ -13,8 +12,8 @@ EVER** have two versions of JACK installed on a machine at the same time. If
 you have an existing installation of JACK (for example, from a Linux
 distribution) then you must either
 
-  * remove it (this may not be possible) 
-  * install the source version "on top" of the existing one 
+  * remove it (this may not be possible)
+  * install the source version "on top" of the existing one
 Failure to do this will more or less guarantee that JACK will no longer work
 on your machine.
 
@@ -25,10 +24,10 @@ memory) file system for certain purposes. Specifically, it will try to use a
 tmpfs filesystem mounted on /dev/shm by default. You can test if you have this
 already by running the following command in a terminal:
 
-    
-    
+
+
     mount | grep shm
-    
+
 
 If it generates any output, you are all set. Most modern Linux systems will be
 this way. If yours is not then we are going to assume that you know what you
@@ -43,12 +42,12 @@ the install step will overwrite the existing version. By default these
 commands will install JACK to /usr/local/bin whereas any system-installed
 version will likely exist in /usr/bin.
 
-    
-    
+
+
     ./configure
     make
     make install
-    
+
 
 If you are using JACK from svn, you will need to run `sh ./autogen.sh` before
 the configure step.
@@ -61,10 +60,10 @@ that the install step will overwrite the existing version. By default these
 commands will install JACK to /usr/local/bin whereas any system-installed
 version will likely exist in /usr/bin.
 
-    
-    
+
+
     ./waf configure
     ./waf
     ./waf install
-    
+
 

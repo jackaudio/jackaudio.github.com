@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "How does JACK compare to ..."
 ---
 

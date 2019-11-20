@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "How can I set up persistent connections?"
 ---
 

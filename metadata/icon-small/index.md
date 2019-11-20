@@ -1,5 +1,4 @@
 ---
-layout: page
 title:  "Metadata"
 menu_item: false
 ---

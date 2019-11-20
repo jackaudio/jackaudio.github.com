@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "How do I refer to a soundcard so that the name always works?"
 ---
 
@@ -12,19 +11,19 @@ reboot, or vice versa. Fortunately, you don't need to use names like
 this, and can instead use a form that isn't dependent on the order that
 the Linux discovers your soundcards.
 
-First, in a terminal window, run this command:    
-`cat /proc/asound/cards`.    
+First, in a terminal window, run this command:
+`cat /proc/asound/cards`.
 You'll see output a bit like this:
 
- 
- 
+
+
      0 [SB             ]: HDA-Intel - HDA ATI SB
                           HDA ATI SB at 0xfcef8000 irq 16
      1 [DSP            ]: H-DSP - Hammerfall DSP
                           RME Hammerfall DSP + Digiface at 0xfcff0000, irq 20
      2 [NVidia         ]: HDA-Intel - HDA NVidia
                           HDA NVidia at 0xfe57c000 irq 32
- 
+
 
 The "name" of each soundcard is in square brackets.
 

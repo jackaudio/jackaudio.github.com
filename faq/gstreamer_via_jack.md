@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "Routing GStreamer audio via JACK"
 ---
 
@@ -16,7 +15,7 @@ Its relatively easy to get audio from GStreamer to flow via JACK:
   on Ubuntu its called "gst-plugins-bad", etc. etc.
 
 2. Next, you need to configure GStreamer to tell it to use this plugin
-  for audio output. There are 3 methods available: 
+  for audio output. There are 3 methods available:
   * Through the command line using gconf2 (you may need to install this
     first)
   * Install/run gconf-editor, which is a general purpose utility
@@ -24,7 +23,7 @@ Its relatively easy to get audio from GStreamer to flow via JACK:
   * Some systems may have the gstreamer-properties command available,
     which offers a graphical tool for configuring gstreamer.
 
-3. Your goal is set the value of: 
+3. Your goal is set the value of:
   * `/system/gstreamer/0.10/audio/default/musicaudiosink`
   * `/system/gstreamer/0.10/audio/default/audiosink`
 

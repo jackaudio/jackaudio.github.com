@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "How do I route audio from Phonon applications to JACK?"
 ---
 

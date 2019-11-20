@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "How do I use JACK over a network?"
 ---
 
