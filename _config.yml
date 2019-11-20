@@ -20,3 +20,7 @@ name: JACK Audio Connection Kit
 markdown: Kramdown
 highlighter: rouge
 baseurl: ''
+
+repository:
+  branch: "master"
+  url: "https://github.com/jackaudio/jackaudio.github.com"
