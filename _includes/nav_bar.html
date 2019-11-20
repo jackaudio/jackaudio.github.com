@@ -1,10 +1,10 @@
                 <nav>
-                    <a href="{{site.baseurl}}/"> Home </a> |
-                    <a href="{{site.baseurl}}/news/"> News </a> |
-                    <a href="{{site.baseurl}}/applications/"> Applications </a> |
-                    <a href="{{site.baseurl}}/faq/"> FAQ </a> |
-                    <a href="https://github.com/jackaudio/jackaudio.github.com/wiki"> WIKI </a> |
-                    <a href="{{site.baseurl}}/api/"> API </a> |
-                    <a href="{{site.baseurl}}/downloads/"> Downloads </a> |
-                    <a href="{{site.baseurl}}/community.html"> Community Network </a>
+                    <a href="{{ '/' | relative_url }}"> Home </a> |
+                    <a href="{{ '/news/' | relative_url }}"> News </a> |
+                    <a href="{{ '/applications/' | relative_url }}"> Applications </a> |
+                    <a href="{{ '/faq/' | relative_url }}"> FAQ </a> |
+                    <a href="{{ site.repository.url | append: '/wiki' | relative_url }}"> WIKI </a> |
+                    <a href="{{ '/api/' }}"> API </a> |
+                    <a href="{{ '/downloads/' | relative_url }}"> Downloads </a> |
+                    <a href="{{ '/community.html' | relative_url }}"> Community Network </a>
                 </nav>
