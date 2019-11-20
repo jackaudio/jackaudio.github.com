@@ -19,7 +19,11 @@ exclude:
 name: JACK Audio Connection Kit
 markdown: Kramdown
 highlighter: rouge
-baseurl: ''
+
+url: "https://jackaudio.github.com"
+
+organization:
+  url: "https://github.com/jackaudio"
 
 repository:
   branch: "master"
