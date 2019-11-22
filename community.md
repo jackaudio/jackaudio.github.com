@@ -1,6 +1,5 @@
 ---
 title: "Community Network"
-url: "/community"
 ---
 
 # Mailing Lists
@@ -17,24 +16,16 @@ email prior to 27 Nov 2001.
 Not dedictated to JACK alone, but very often you will get help on questions about
 usage and troubleshooting with JACK here.
 
-# Related Projects
-
-## Jack OSX
-The official JACK implementation for Mac OSX
-
-## Jack for Windows
-
-## Jack for iOS/Android?
-
 # Communities
 
-## linuxaudio.org
-[ [WIKI](http://wiki.linuxaudio.org) |
-[site](http://www.linuxaudio.org) ]
-
-A general ressource for linux Audio related questions. The wiki also contains
+## [linuxaudio.org]
+A general ressource for linux Audio related questions. The [WIKI] also contains
 information about JACK and related topics.
 
-## linuxmusicians
+## [linuxmusicians]
 Provides a discussion forum for linux audio related topics. Of cause JACK
 included.
+
+[linuxaudio.org]: https://linuxaudio.org/
+[WIKI]:           https://wiki.linuxaudio.org/wiki/start
+[linuxmusicians]: https://linuxmusicians.com/
