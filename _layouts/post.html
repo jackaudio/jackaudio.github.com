@@ -2,7 +2,10 @@
 layout: default
 ---
 <h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<h6>Posted on <time datetime='{{ page.date | datetime | date_to_xmlschema }}'{%-if updated-%}
+    data-updated='true'{%-endif-%}>{{ page.date | date: page.date_fmt }}</time>
+    {% if page.author %}by <i>{{ page.author }}</i>{% endif %}
+</h6>
 
 <div class="post">
 {{ content }}

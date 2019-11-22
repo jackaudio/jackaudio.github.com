@@ -1,8 +1,6 @@
 ---
 title: "JACK2 v1.9.12 release and future plans"
-date: 2017-12-21
-author: falkTX
-categories: news
+author: "falkTX"
 ---
 A few days ago a new version of JACK2 was released.<br/>
 You can grab the latest release source code at
