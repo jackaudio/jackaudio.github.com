@@ -4,12 +4,15 @@ defaults:
     type: "pages"
   values:
     layout: "default"
+    date_fmt: "%F"
 
 - scope:
     path: ""
     type: "posts"
   values:
     layout: "post"
+    categories: "news"
+    date_fmt: "%F"
 
 exclude:
 - README.md

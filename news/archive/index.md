@@ -1,6 +1,5 @@
 ---
 title: "News Archive"
-date_fmt: "%F"
 ---
 <h2>{{ page.title }}</h2>
 <table>

@@ -20,11 +20,8 @@ file="${dir}/${date}-${name}.md"
 
 cat <<EOF >${file}
 ---
-title:     "${title}"
-author:    "${author}"
-date_fmt:  "%F"
-date:       ${date}
-categories: news
+title: "${title}"
+author: "${author}"
 ---
 EOF
 

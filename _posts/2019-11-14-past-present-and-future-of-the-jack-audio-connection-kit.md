@@ -1,8 +1,6 @@
 ---
 title: "Past, Present and Future of the JACK Audio Connection Kit (in video form)"
-date: 2019-11-14
-author: falkTX
-categories: news
+author: "falkTX"
 ---
 A few weeks ago I did a talk/presentation at [Sonoj],
 regarding the past, present and future of the JACK.
