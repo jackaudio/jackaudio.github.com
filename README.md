@@ -1,11 +1,9 @@
-# jackaudio.org
+# Source code for the [jackaudio.org] homepage
 
-This repository contains the sources for the [jackaudio.org] homepage.
+## Contribute
 
 To report bugs and issues with JACK, please use the corresponding
 [JACK 1] and [JACK 2] bug trackers.
-
-## Contribute
 
 You can currently contribute to the homepage by checking the page for dead/wrong
 links and formatting mistakes and file bugreports about them.
@@ -51,7 +49,7 @@ need `.html` appended, since they share the same directory.
 The easy way is by running the following command from the repository root:
 
 ```bash
-$ ./newpost.sh "New post title" author_name
+$ ./new_post.sh "New post title" author_name
 ```
 
 Otherwise manually by creating a new .md file in the [_posts] directory,
@@ -79,9 +77,10 @@ mask and [YAML front-matter] (see other post files as reference).
 [JACK 2]:            https://github.com/jackaudio/jack2/issues
 [pull request]:      https://github.com/jackaudio/jackaudio.github.com/pulls
 [Jekyll]:            https://jekyllrb.com/
-[_posts]:            https://github.com/jackaudio/jackaudio.github.com/tree/master/_posts/
-[YAML front-matter]: https://jekyllrb.com/docs/front-matter/
+[ruby]:              https://www.ruby-lang.org/en/
 [GitHub pages]:      https://pages.github.com/versions/
+[YAML front-matter]: https://jekyllrb.com/docs/front-matter/
+[_posts]:            https://github.com/jackaudio/jackaudio.github.com/tree/master/_posts/
 [EditorConfig]:      https://editorconfig.org/
 [Jekyll manual]:     https://jekyllrb.com/docs/
 [GitHub releases]:   https://help.github.com/en/github/administering-a-repository/about-releases
