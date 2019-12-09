@@ -41,9 +41,6 @@ If using another webserver you'll need to point it to the built `_site` director
 3. Add your content in markdown format
 4. Link to your new FAQ page in the `/faq/index.md` page
 
-Please note that, when not using Jekyll as webserver, all FAQ pages currently
-need `.html` appended, since they share the same directory.
-
 ## Creating posts
 
 The easy way is by running the following command from the repository root:
@@ -59,6 +56,8 @@ mask and [YAML front-matter] (see other post files as reference).
 
 ## Development notes
 
+- All page links currently require the `.html` suffix in order to work with any
+  webserver, not to depend solely on Jekyll.
 - Please use an [EditorConfig] compatible editor to avoid indentation,
   whitespaces and missing lines at EOF issues.
 - Desired line length maximum is 82 columns.
