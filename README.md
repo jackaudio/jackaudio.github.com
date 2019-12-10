@@ -1,5 +1,7 @@
 # Source code for the [jackaudio.org] homepage
 
+[![Travis build badge]](https://travis-ci.com/jackaudio/jackaudio.github.com)
+
 ## Contribute
 
 To report bugs and issues with JACK, please use the corresponding
@@ -84,3 +86,4 @@ mask and [YAML front-matter] (see other post files as reference).
 [Jekyll manual]:     https://jekyllrb.com/docs/
 [GitHub releases]:   https://help.github.com/en/github/administering-a-repository/about-releases
 [blog]:              https://github.com/wxWidgets/website/tree/master/blog
+[Travis build badge]:https://img.shields.io/travis/com/jackaudio/jackaudio.github.com.svg?label=Build&style=popout&logo=jekyll

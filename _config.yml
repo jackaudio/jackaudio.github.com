@@ -18,6 +18,13 @@ exclude:
 - README.md
 - Gemfile
 - Gemfile.lock
+- new_post.sh
+- setup.sh
+- node_modules
+- vendor/bundle/
+- vendor/cache/
+- vendor/gems/
+- vendor/ruby/
 
 name: JACK Audio Connection Kit
 markdown: Kramdown
