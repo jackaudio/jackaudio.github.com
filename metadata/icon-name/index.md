@@ -1,6 +1,5 @@
 ---
-title:  "Metadata"
-menu_item: false
+title: "Metadata: icon-name"
 ---
 
 ## JACK Metadata API: icon-name
@@ -11,4 +10,4 @@ This is used for looking up icons on the system, possibly with many sizes or the
 Icons should be searched for according to the freedesktop Icon
 
 Theme Specification:
-http://standards.freedesktop.org/icon-theme-spec/icon-theme-spec-latest.html
+<https://specifications.freedesktop.org/icon-theme-spec/icon-theme-spec-latest.html>

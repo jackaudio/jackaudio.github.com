@@ -1,6 +1,5 @@
 ---
-title:  "Metadata"
-menu_item: false
+title: "Metadata: port-group"
 ---
 
 ## JACK Metadata API: port-group
