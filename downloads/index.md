@@ -1,17 +1,5 @@
 ---
 title:  "Downloads"
-jack1_source : "http://jackaudio.org/downloads/jack-audio-connection-kit-0.125.0.tar.gz"
-jack1_source_v: "0.125.0"
-
-jack2_source : "https://github.com/jackaudio/jack2/releases/download/v1.9.13/jack2-1.9.13.tar.gz"
-jack2_source_v: "1.9.13"
-
-jack2_win_bin_32 : "https://github.com/jackaudio/jackaudio.github.com/releases/download/1.9.11/Jack_v1.9.11_32_setup.exe"
-jack2_win_bin_64 : "https://github.com/jackaudio/jackaudio.github.com/releases/download/1.9.11/Jack_v1.9.11_64_setup.exe"
-jack2_win_bin_version : "1.9.11"
-jack2_osx_bin: "https://github.com/jackaudio/jackaudio.github.com/releases/download/1.9.11/JackOSX.0.92_b3.zip"
-jack2_osx_version: "0.92_b3"
-
 ---
 # Downloading JACK
 
@@ -19,37 +7,35 @@ jack2_osx_version: "0.92_b3"
 
 ### JACK1:
 
-  * **Binaries**: please use your distribution's package manager
-   (`apt-get, yum, synaptic` etc.)
+* **Binaries**: please use your distribution's package manager
+(`apt-get, yum, synaptic` etc.)
 
-  * **Source tarball**: [JACK {{page.jack1_source_v}}]({{page.jack1_source}}).
+* **Source tarball**: [JACK 0.125.0].
 
 ### JACK2:
 
-  * **Binaries**: please use your distribution's package manager
-  (`apt-get, yum, synaptic` etc.)
-  * **Source tarball**: [JACK {{page.jack2_source_v}}]({{page.jack2_source}}).
+* **Binaries**: please use your distribution's package manager
+(`apt-get, yum, synaptic` etc.)
+* **Source tarball**: [JACK 1.9.14].
 
 ## OS X
 
 ### JACK1:
 
-  * **Source tarball**: [JACK {{page.jack1_source_v}}]({{page.jack1_source}}).
+* **Source tarball**: [JACK 0.125.0].
 
 ### JACK2:
 
-  * **Binaries**: [jackOSX Version {{page.jack2_osx_version}}]({{page.jack2_osx_bin}})
-  * **Source tarball**: [JACK {{page.jack2_source_v}}]({{page.jack2_source}}).
+* **Binaries**:       [JackOSX 0.92_b3]
+* **Source tarball**: [JACK 1.9.14].
 
 ## Windows
 
 ### JACK2:
 
-  * **32 bit installer**:
-  [JACK {{page.jack2_win_bin_version}}]({{page.jack2_win_bin_32}}).
-  * **64 bit installer**:
-  [JACK {{page.jack2_win_bin_version}}]({{page.jack2_win_bin_64}}).
-  * **Source tarball**: [JACK {{page.jack2_source_v}}]({{page.jack2_source}}).
+* **32 bit installer**: [JACK 1.9.11 Win32].
+* **64 bit installer**: [JACK 1.9.11 Win64].
+* **Source tarball**:   [JACK 1.9.14].
 
 ## JACK Source Code Repository
 
@@ -63,18 +49,18 @@ you want.
 
 Those without write access can access the repository with these commands:
 
-
-    git clone git://github.com/jackaudio/jack1.git
-    cd jack1
-    git submodule init
-    git submodule update
-
+```
+git clone git://github.com/jackaudio/jack1.git
+cd jack1
+git submodule init
+git submodule update
+```
 
 You can also point a web browser at
 
-
-    https://github.com/jackaudio/jack1
-
+```
+https://github.com/jackaudio/jack1
+```
 
 to be able to browse current source code and full history with all the usual
 Github goodies.
@@ -84,38 +70,38 @@ Github goodies.
 Those who have been granted write access and have supplied a public key can
 clone the repository with the following commands:
 
-
-    git clone git@github.com:jackaudio/jack1.git
-    cd jack1
-    git submodule init
-    git submodule update
-
+```
+git clone git@github.com:jackaudio/jack1.git
+cd jack1
+git submodule init
+git submodule update
+```
 
 You must then edit the `.git/config` file within jack1 so that the submodule
 entries correctly reference the write-access URL. They should look like this:
 
-
-    [submodule "example-clients"]
-    	url = git://github.com/jackaudio/example-clients.git
-    [submodule "jack"]
-    	url = git://github.com/jackaudio/headers.git
-    [submodule "tools"]
-    	url = git://github.com/jackaudio/tools.git
-
+```
+[submodule "example-clients"]
+    url = git://github.com/jackaudio/example-clients.git
+[submodule "jack"]
+    url = git://github.com/jackaudio/headers.git
+[submodule "tools"]
+    url = git://github.com/jackaudio/tools.git
+```
 
 ### Jack2 Git Repository
 
 Those without write access can access the repository with this command:
 
-
-    git clone git://github.com/jackaudio/jack2.git
-
+```
+git clone git://github.com/jackaudio/jack2.git
+```
 
 You can also point a web browser at
 
-
-    https://github.com/jackaudio/jack2
-
+```
+https://github.com/jackaudio/jack2
+```
 
 to be able to browse current source code and full history with all the usual
 Github goodies.
@@ -125,9 +111,16 @@ Github goodies.
 Those who have been granted write access and have supplied a public key can
 get to the repository with the following command:
 
-
-    git clone git@github.com:jackaudio/jack2.git
-
+```
+git clone git@github.com:jackaudio/jack2.git
+```
 
 Eventually the same setup for the submodules will be required as for Jack1,
 but this is not true at this time.
+
+
+[JACK 0.125.0]:      https://github.com/jackaudio/jack1/archive/0.125.0.tar.gz
+[JACK 1.9.14]:       https://github.com/jackaudio/jack2/releases/download/v1.9.14/v1.9.14.tar.gz
+[JACK 1.9.11 Win32]: https://github.com/jackaudio/jackaudio.github.com/releases/download/1.9.11/Jack_v1.9.11_32_setup.exe
+[JACK 1.9.11 Win64]: https://github.com/jackaudio/jackaudio.github.com/releases/download/1.9.11/Jack_v1.9.11_64_setup.exe
+[JackOSX 0.92_b3]:   https://github.com/jackaudio/jackaudio.github.com/releases/download/1.9.11/JackOSX.0.92_b3.zip
