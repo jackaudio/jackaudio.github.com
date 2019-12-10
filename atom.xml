@@ -5,16 +5,18 @@ layout: null
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>{{ site.name }} News</title>
     <link href="{{ site.url }}/atom.xml" rel="self"/>
+    <icon>{{ site.url }}/icons/favicon-32x32.png</icon>
     <link href="{{ site.url }}"/>
     <updated>{{ site.time | date_to_xmlschema }}</updated>
-    <id>{{ site.url }}</id>
-    {% for post in site.posts limit:20 %}
+    <id>{{ site.url }}/</id>
+{% for post in site.posts limit:20 %}
     <entry>
         <title>{{ post.title }}</title>
+        <author><name>{{ post.author }}</name></author>
         <link href="{{ site.url }}{{ post.url }}"/>
         <updated>{{ post.date | date_to_xmlschema }}</updated>
-        <id>{{ post.id }}</id>
+        <id>{{ site.url }}{{ post.id }}</id>
         <content type="html">{{ post.content | xml_escape }}</content>
     </entry>
-    {% endfor %}
+{% endfor %}
 </feed>

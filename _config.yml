@@ -23,7 +23,7 @@ name: JACK Audio Connection Kit
 markdown: Kramdown
 highlighter: rouge
 
-url: "https://jackaudio.github.com"
+url: "https://jackaudio.org"
 
 organization:
   url: "https://github.com/jackaudio"
