@@ -4,9 +4,9 @@ title: "Community Network"
 
 # Mailing Lists
 
-## jack-devel@jackaudio.org
-[ [sign up](http://lists.jackaudio.org/listinfo.cgi/jack-devel-jackaudio.org) |
-[Nabblearchives](http://jack-audio.10948.n7.nabble.com/Jackit-f3.html) ]
+## jackaudio@lists.linuxaudio.org
+[ [sign up](https://lists.linuxaudio.org/listinfo/jackaudio) |
+[archives](https://lists.linuxaudio.org/archives/jackaudio/) ]
 
 For discussion of the jack server as well as jack applications. If you're
 doing anything with jack, you need to be on this list. See linux-audio-dev for
