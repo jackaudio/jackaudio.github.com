@@ -691,7 +691,8 @@ title:  "Applications"
 ## Other
   * [**Mozilla Firefox**](https://www.mozilla.org/en-US/firefox/new/)
     provides JACK support when compiled with custom [build flags](https://bugzilla.mozilla.org/show_bug.cgi?id=783733#c81)
-
+  * [**Musiclassic**](https://musiclassics.fr/)
+    A free review platform about all musical instruments. Providing the best output. 
 
 ## Wikipedia References
 
