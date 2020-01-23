@@ -25,4 +25,4 @@ cache: bundler # caching bundler gem packages will speed up build
 
 notifications:
   email: false
-  irc: "ircs://chat.freenode.net:7070/#jack-website"
+  irc: "ircs://chat.freenode.net:7070/#jack"
