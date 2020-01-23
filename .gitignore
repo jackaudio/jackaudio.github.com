@@ -10,4 +10,4 @@ _site
 Gemfile.lock
 
 # VSCode project
-.website.*
+*.code-workspace
