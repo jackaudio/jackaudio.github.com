@@ -13,18 +13,17 @@ doing anything with jack, you need to be on this list. See linux-audio-dev for
 email prior to 27 Nov 2001.
 
 ## linux-audio-user@lists.linuxaudio.org
-Not dedictated to JACK alone, but very often you will get help on questions about
+Not dedicated to JACK alone, but very often you will get help on questions about
 usage and troubleshooting with JACK here.
 
 # Communities
 
 ## [linuxaudio.org]
-A general ressource for linux Audio related questions. The [WIKI] also contains
+A general resource for Linux Audio related questions. The [WIKI] also contains
 information about JACK and related topics.
 
 ## [linuxmusicians]
-Provides a discussion forum for linux audio related topics. Of cause JACK
-included.
+Provides a discussion forum for Linux audio related topics. Of course JACK included.
 
 [linuxaudio.org]: https://linuxaudio.org/
 [WIKI]:           https://wiki.linuxaudio.org/wiki/start
