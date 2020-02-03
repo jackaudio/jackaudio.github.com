@@ -340,6 +340,8 @@ title:  "Applications"
   * [**GTKIOStream**](http://sourceforge.net/projects/gtkiostream/)
     provides allows easy use of JACK within GTK apps and has many other tools
     for DSP, Audio Masking, FFTs and plotting data.
+  * [**JACK-connector**](https://github.com/unclechu/node-jack-connector)
+    a Node.JS module which provides an interface to Jack.
   * [**jackcpp**](http://x37v.info/projects/jackcpp)
     is a C++ class wrapping most of the jack client functionality,
     a "blocking" interface for jack and a template class wrapping
@@ -349,11 +351,12 @@ title:  "Applications"
     in asynchronous mode.
   * [**libjackmm**](http://sourceforge.net/projects/libjackmm)
     is a C++ interface to the jack audio connection kit.
+  * [**Praxis Live**](http://www.praxislive.org/)
+    is an hybrid visual live programming for creatives,
+    for programmers, for students, for tinkerers.
   * [**Pure Data**](http://puredata.info/)
     is a real-time graphical programming environment for
     audio, video, and graphical processing.
-  * [**JACK-connector**](https://github.com/unclechu/node-jack-connector)
-    a Node.JS module which provides an interface to Jack.
   * [**Qjack**](https://bitbucket.org/asiniscalchi/qjack)
     allows you to connect Jack to QT very easily.
   * [**RtAudio**](http://www.music.mcgill.ca/~gary/rtaudio)
