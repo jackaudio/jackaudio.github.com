@@ -11,3 +11,6 @@ Gemfile.lock
 
 # VSCode project
 *.code-workspace
+
+# Jetbrains projets
+.idea
