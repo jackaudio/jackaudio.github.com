@@ -99,9 +99,10 @@ title:  "Applications"
     you may ever use.
   * [**Guitarix**](http://guitarix.sourceforge.net/)
     is a simple Linux amplifier with one input and two outputs.
+  * [**IEM Plug-in Suite**](https://plugins.iem.at/)
+    is a set of VST-plugins (with a DAW independent standalone-mode) for Ambisonics sound field encoding, analysis, processing and decoding.
   * [**jackEQ**](http://jackeq.sourceforge.net/)
-    a tool for routing and manipulating audio from/to multiple input/output
-    sources.
+    a tool for routing and manipulating audio from/to multiple input/output sources.
   * [**JAMin**](http://jamin.sourceforge.net/)
     the state-of-the-art realtime mastering processor.
   * [**linuxDSP**](http://www.linuxdsp.co.uk/)
@@ -113,6 +114,8 @@ title:  "Applications"
     but it contains features that make it unique in this field of applications.
   * [**RedFX**](http://sourceforge.net/projects/astylredfx)
     is an effects processor mainly for guitars.
+  * [**ReTiSAR**](https://github.com/AppliedAcousticsChalmers/ReTiSAR)
+    is a binaural renderer for live-streamed, recorded or measurement-based spherical microphone array signals.
   * [**tapiir**](http://www.resorama.com/maarten/files)
     is an audio effects processor inspired by
     the classical magnetic tape delay systems.
