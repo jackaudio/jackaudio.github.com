@@ -116,6 +116,8 @@ title:  "Applications"
     is an effects processor mainly for guitars.
   * [**ReTiSAR**](https://github.com/AppliedAcousticsChalmers/ReTiSAR)
     is a binaural renderer for live-streamed, recorded or measurement-based spherical microphone array signals.
+  * [**SoundScape Renderer**](http://spatialaudio.net/ssr/)
+    is a tool for real-time spatial audio rendering providing a variety of rendering algorithms such as WFS and binaural.
   * [**tapiir**](http://www.resorama.com/maarten/files)
     is an audio effects processor inspired by
     the classical magnetic tape delay systems.
