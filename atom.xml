@@ -14,7 +14,7 @@ layout: null
         <title>{{ post.title }}</title>
         <author><name>{{ post.author }}</name></author>
         <link href="{{ site.url }}{{ post.url }}"/>
-        <updated>{{ post.date | date_to_xmlschema }}</updated>
+        <published>{{ post.date | date_to_xmlschema }}</published>
         <id>{{ site.url }}{{ post.id }}</id>
         <content type="html">{{ post.content | xml_escape }}</content>
     </entry>
