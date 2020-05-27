@@ -667,10 +667,8 @@ title:  "Applications"
   * [**LiVES**](http://lives.sourceforge.net/)
     is a Video Editing System. It is designed to be simple to use, yet powerful.
     It is small in size, yet it has many advanced features.
-  * [**Open Movie Editor**](http://openmovieeditor.sourceforge.net/)
-    is designed to be a simple tool, that provides
-    basic movie making capabilities.
-    It aims to be powerful enough for the amateur movie artist, yet easy to use.
+  * [**Shotcut**](https://shotcut.org/) is a free and open-source cross-platform
+    video editing application for FreeBSD, Linux, macOS and Windows.
   * [**VideoJack**](http://www.piksel.no/pwiki/VideoJack)
     a tool that reads video and audio signals from its jack inputs.
   * [**xjadeo**](http://xjadeo.sourceforge.net/)
