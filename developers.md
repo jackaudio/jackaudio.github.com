@@ -9,7 +9,7 @@ Want to use JACK in your software? Great, grab the [source] and see the [docs].
 ## Want to get involved?
 
 How about getting on the [mailing list].
-Paul Davis is the maintainer of this project.
+Filipe Coelho (aka falkTX) is the current maintainer of this project.
 
 ## Found a bug?
 
@@ -24,7 +24,7 @@ are friendly and will respond if they can.
 
 ## Contributors
 
-Jack was inspired by and partially designed during discussions on the
+JACK was inspired by and partially designed during discussions on the
 Linux Audio Developers mailing list. Particularly significant
 contributions to those discussions came from (in alphabetical order):
 
@@ -34,10 +34,9 @@ contributions to those discussions came from (in alphabetical order):
 * Benno Sennoner
 * Kai Vehmanen
 
-Paul Davis was the principal author of the Jack API and of its sample
+Paul Davis was the principal author of the JACK API and of its sample
 implementation. Very significant contributions have been made by:
 
-* Kai Vehmanen
 * Jack O'Quin
 * Bob Ham
 * Steve Harris
@@ -51,8 +50,6 @@ periods, and has contributed many new interfaces and bug fixes.
 Stephane Letz ported JACK to OS X and wrote the new C++ SMP-aware
 implementation [jackdmp].
 He and Johnny Petrantoni created [JackOSX], including JACK and utilities for OS X.
-
-Taybin Rutkin manages our releases.
 
 Rui Nuno Capela wrote the fantastic JACK control application "qjackctl".
 
@@ -68,7 +65,9 @@ Others who have contributed to JACK in ways large and small:
 * Tilman Linneweh,
 * Karsten Weise,
 * Lee Revell,
-* Jesse Chappel
+* Jesse Chappel,
+* Filipe Coelho,
+* Robin Gareus
 
 
 [docs]:         /api/
