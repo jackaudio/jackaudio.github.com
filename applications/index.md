@@ -673,8 +673,8 @@ title:  "Applications"
     a tool that reads video and audio signals from its jack inputs.
   * [**xjadeo**](http://xjadeo.sourceforge.net/)
     is a very simple video player that is synchronized to jack transport.
-    ##### Legacy Video Applications
-      * [**Open Movie Editor**](http://openmovieeditor.sourceforge.net/)
+##### Legacy Video Applications
+  * [**Open Movie Editor**](http://openmovieeditor.sourceforge.net/)
     is designed to be a simple tool, that provides
     basic movie making capabilities.
 
