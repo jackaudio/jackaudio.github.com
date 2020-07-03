@@ -39,7 +39,7 @@ title: "FAQ"
 
 
 [What is JACK?]:                                                    about.html
-[What is the difference between JACK1 and JACK2?]:                  https://github.com/jackaudio/jackaudio.github.com/wiki/Q_difference_jack1_jack2
+[What is the difference between JACK1 and JACK2?]:                  https://github.com/jackaudio/jackaudio.github.com/wiki/Differences-between-jack1-and-jack2
 [What audio devices are supported by JACK?]:                        device_support.html
 [How do I refer to a soundcard so that the name always works?]:     device_naming.html
 [How can I use multiple soundcards with JACK?]:                     multiple_devices.html
