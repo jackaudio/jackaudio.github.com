@@ -18,24 +18,9 @@ title:  "Downloads"
 (`apt-get, yum, synaptic` etc.)
 * **Source tarball**: [JACK 1.9.14].
 
-## OS X
+## macOS and Windows
 
-### JACK1:
-
-* **Source tarball**: [JACK 0.125.0].
-
-### JACK2:
-
-* **Binaries**:       [JackOSX 0.92_b3]
-* **Source tarball**: [JACK 1.9.14].
-
-## Windows
-
-### JACK2:
-
-* **32 bit installer**: [JACK 1.9.11 Win32].
-* **64 bit installer**: [JACK 1.9.11 Win64].
-* **Source tarball**:   [JACK 1.9.14].
+Updated binaries coming soon.
 
 ## JACK Source Code Repository
 
