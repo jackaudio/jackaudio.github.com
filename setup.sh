@@ -15,6 +15,7 @@ fi
 if [ ! -d .bundle ]; then
     gem update --user-install
     gem install bundler --user-install
+    # bundle config set path '.bundle'
     bundle install --path .bundle
 fi
 if [ "${1}" == "-d" ] || [ "${1}" == "--doxygen" ]; then

@@ -2,4 +2,4 @@
 set -e
 
 bundle exec jekyll build
-bundle exec htmlproofer --disable_external --allow-hash-href ./_site
+bundle exec htmlproofer --disable_external --allow-hash-href ./_site --alt-ignore "*"
