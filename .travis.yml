@@ -1,12 +1,15 @@
 os: linux
+dist: bionic
 language: ruby
 rvm:
 - 2.6.3
 
 before_script:
 - chmod +x ./.travis/build.sh
+#- wget http://mirrors.kernel.org/ubuntu/pool/universe/l/llvm-toolchain-9/libclang1-9_9-2_amd64.deb
+#- wget https://launchpad.net/ubuntu/+source/doxygen/1.8.13-10ubuntu3/+build/17833169/+files/doxygen_1.8.13-10ubuntu3_amd64.deb
 
-script: ./.travis/build.sh
+script: ./.travis/build.sh -d
 
 branches:
   only:
