@@ -14,7 +14,7 @@ if [ "${1}" == "-h" ] || [ "${1}" == "--help" ]; then
 fi
 if [ "${1}" == "-d" ] || [ "${1}" == "--doxygen" ]; then
     if [ ! -d _jack1 ]; then
-        git clone --recursive git@github.com:jackaudio/jack1 _jack1
+        git clone --recursive https://github.com/jackaudio/jack1 _jack1
     fi
     pushd _jack1
     if [ ! -f configure ]; then
