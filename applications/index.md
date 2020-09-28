@@ -296,7 +296,8 @@ title:  "Applications"
     a music production and creation software.
   * [**Bitwig Studio**](http://www.bitwig.com/)
     Bitwig Studio is dynamic software for creation and performance of your musical ideas on stage or in the studio.
-
+  * [**Zrythm**](http://www.zrythm.org/)
+    a digital audio workstation designed to be featureful and easy to use.
 
 ## Music Notation Editors
 
