@@ -390,6 +390,7 @@ Functions</h2></td></tr>
 <p>This means that if your client has more than 1 input and output port, and considers them always "correlated" (e.g. as a stereo pair), then there is only 1 (e.g. stereo) signal pathway through the client. This would be true, for example, of a stereo FX rack client that has a left/right input pair and a left/right output pair.</p>
 <p>However, this is somewhat a matter of perspective. The same FX rack client could be connected so that its two input ports were connected to entirely separate sources. Under these conditions, the fact that the client does not register a latency callback MAY result in port latency values being incorrect.</p>
 <p>Clients that do not meet any of those conditions SHOULD register a latency callback.</p>
+<p>Another case is when a client wants to use <a class="el" href="group__LatencyFunctions.html#gaf379bc0e88a6df6c4b7836db4b9382d7">jack_port_get_latency_range()</a>, which only returns meaninful values when ports get connected and latency values change.</p>
 <p>See the documentation for <a class="el" href="group__LatencyFunctions.html#ga7a8f181fcec32945db7b8e06ee1ca94b">jack_port_set_latency_range()</a> on how the callback should operate. Remember that the <em>mode</em> argument given to the latency callback will need to be passed into <a class="el" href="group__LatencyFunctions.html#ga7a8f181fcec32945db7b8e06ee1ca94b">jack_port_set_latency_range()</a></p>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, otherwise a non-zero error code </dd></dl>
 

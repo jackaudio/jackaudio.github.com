@@ -23,6 +23,7 @@ if [ "${1}" == "-d" ] || [ "${1}" == "--doxygen" ]; then
         git clone --recursive git@github.com:jackaudio/jack1 _jack1
     fi
     pushd _jack1
+    git pull && git submodule update
     if [ ! -f configure ]; then
         ./autogen.sh
     fi
@@ -34,7 +35,7 @@ if [ "${1}" == "-d" ] || [ "${1}" == "--doxygen" ]; then
             --disable-firewire
     fi
     rm -rf doc/reference doc/reference.doxygen
-    git pull && git submodule update && make -j $(nproc)
+    make -j $(nproc)
     popd
     rm -rf api
     mv _jack1/doc/reference/html api

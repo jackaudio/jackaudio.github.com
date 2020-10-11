@@ -149,7 +149,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>return the latency range defined by <em>mode</em> for <em>port</em>, in frames.</p>
 <p>See <a class="el" href="group__LatencyFunctions.html">Managing and determining latency</a> for the definition of each latency value.</p>
-<p>This is normally used in the LatencyCallback. and therefor safe to execute from callbacks. </p>
+<p>This function is best used from callbacks, specifically the latency callback. Before a port is connected, this returns the default latency: zero. Therefore it only makes sense to call <a class="el" href="group__LatencyFunctions.html#gaf379bc0e88a6df6c4b7836db4b9382d7">jack_port_get_latency_range()</a> when the port is connected, and that gets signalled by the latency callback. See <a class="el" href="group__ClientCallbacks.html#ga70a38fb1e74c5e9df9f1305c695c58bf">jack_set_latency_callback()</a> for details. </p>
 
 </div>
 </div>
