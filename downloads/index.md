@@ -5,32 +5,30 @@ title:  "Downloads"
 
 ## Linux
 
-### JACK1:
-
 * **Binaries**: please use your distribution's package manager
 (`apt-get, yum, synaptic` etc.)
+* **Source tarball**: [JACK 1.9.15].
 
-* **Source tarball**: [JACK 0.125.0].
+## OS X
 
-### JACK2:
+* **Installer**:      [JACK 1.9.15 macOS].
+* **Source tarball**: [JACK 1.9.15].
 
-* **Binaries**: please use your distribution's package manager
-(`apt-get, yum, synaptic` etc.)
-* **Source tarball**: [JACK 1.9.14].
+## Windows
 
-## macOS and Windows
-
-Updated binaries coming soon.
+* **32-bit installer**: [JACK 1.9.15 win32].
+* **64-bit installer**: [JACK 1.9.15 win64].
+* **Source tarball**:   [JACK 1.9.15].
 
 ## JACK Source Code Repository
 
 JACK uses Git as its source control system. Our central git repository is
 hosted by Github. We are currently working toward linking the repositories for
-Jack1 and Jack2 but this work is not complete, so for now the commands to get
+JACK1 and JACK2 but this work is not complete, so for now the commands to get
 a copy of the source are a little different depending on which tree/version
 you want.
 
-### Jack1 Git Repository
+### JACK1 Git Repository
 
 Those without write access can access the repository with these commands:
 
@@ -74,7 +72,7 @@ entries correctly reference the write-access URL. They should look like this:
     url = git://github.com/jackaudio/tools.git
 ```
 
-### Jack2 Git Repository
+### JACK2 Git Repository
 
 Those without write access can access the repository with this command:
 
@@ -100,12 +98,11 @@ get to the repository with the following command:
 git clone git@github.com:jackaudio/jack2.git
 ```
 
-Eventually the same setup for the submodules will be required as for Jack1,
+Eventually the same setup for the submodules will be required as for JACK1,
 but this is not true at this time.
 
 
-[JACK 0.125.0]:      https://github.com/jackaudio/jack1/archive/0.125.0.tar.gz
-[JACK 1.9.14]:       https://github.com/jackaudio/jack2/releases/download/v1.9.14/v1.9.14.tar.gz
-[JACK 1.9.11 Win32]: https://github.com/jackaudio/jackaudio.github.com/releases/download/1.9.11/Jack_v1.9.11_32_setup.exe
-[JACK 1.9.11 Win64]: https://github.com/jackaudio/jackaudio.github.com/releases/download/1.9.11/Jack_v1.9.11_64_setup.exe
-[JackOSX 0.92_b3]:   https://github.com/jackaudio/jackaudio.github.com/releases/download/1.9.11/JackOSX.0.92_b3.zip
+[JACK 1.9.15]:       https://github.com/jackaudio/jack2/archive/v1.9.15.tar.gz
+[JACK 1.9.15 macOS]: https://github.com/jackaudio/jack2-releases/releases/download/v1.9.15/jack2-macOS-v1.9.15.tar.gz
+[JACK 1.9.15 win32]: https://github.com/jackaudio/jack2-releases/releases/download/v1.9.15/jack2-win32-v1.9.15.exe
+[JACK 1.9.15 win64]: https://github.com/jackaudio/jack2-releases/releases/download/v1.9.15/jack2-win64-v1.9.15.exe
