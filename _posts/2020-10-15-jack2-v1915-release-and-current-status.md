@@ -47,7 +47,7 @@ JACK1 remains in bug-fix mode, while JACK2 is slowly incorporating changes from 
 The examples and tools directory was split in the same way that JACK1 is,
 so that in the future we can use those as submodules instead of having duplicated code between JACK versions.<br/>
 Once we have matching headers, examples and tools we can begin the switch.<br/>
-If you are reading this and want to help, Pull Requests for syncing those repositories code to what JACK2 has will be greatly appreciated!
+If you are reading this and want to help, pull requests for syncing those repositories code to what JACK2 has will be greatly appreciated!
 
 For those that missed it, JACK-Session has been marked as deprecated. Please use "New Session Manager" instead.<br/>
 You can find more about the project [here].
