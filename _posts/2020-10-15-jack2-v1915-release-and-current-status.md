@@ -53,7 +53,7 @@ For those that missed it, JACK-Session has been marked as deprecated. Please use
 You can find more about the project [here].
 This includes links to the source code, bug/issue tracker and documentation.
 
-For the future, short-term plan is to continue the code parity between JACK1 and JACK2.<br/>
+For the future, short-term plan is to continue the feature parity between JACK1 and JACK2.<br/>
 We are pretty much there now besides JACK2 missing the a2jmidi and zita internal clients (and the special options to use them).<br/>
 Support for macOS arm64 is in progress, and there is a whole range of pull requests and issues to investigate and fix.<br/>
 Focus will be on those before any features are even thought of, unless they serve to improve something.
