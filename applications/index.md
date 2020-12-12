@@ -346,8 +346,6 @@ title:  "Applications"
   * [**GTKIOStream**](http://sourceforge.net/projects/gtkiostream/)
     provides allows easy use of JACK within GTK apps and has many other tools
     for DSP, Audio Masking, FFTs and plotting data.
-  * [**JACK-connector**](https://github.com/unclechu/node-jack-connector)
-    a Node.JS module which provides an interface to Jack.
   * [**jackcpp**](http://x37v.info/projects/jackcpp)
     is a C++ class wrapping most of the jack client functionality,
     a "blocking" interface for jack and a template class wrapping
@@ -577,9 +575,13 @@ title:  "Applications"
     Live audio streamer.
   * [**edcast-reborn**](http://code.google.com/p/edcast-reborn/)
     is an Icecast/Shoutcast streamer.
-  * [**Llcon**](http://llcon.sourceforge.net/)
+  * [**Jamulus**](https://jamulus.io/)
     is an audio streaming application for musicians to
     play together in real-time over the internet.
+  * [**SonoBus**](https://sonobus.net/)
+    is an easy to use application for streaming high-quality,
+    low-latency peer-to-peer audio between devices over
+    the internet or a local network.
 
 ## Tuners
 
