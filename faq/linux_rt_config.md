@@ -114,5 +114,5 @@ substituting the real names for `theGroupName` and `yourUserId`
 ### 3. Logout and back in
 
 None of the changes you have made above will have any effect until you logout
-and back in. If that does not work, try rebooting. In either case, You do not need to reinstall any software.
+and back in. If that does not work, try rebooting. In either case, you do not need to reinstall any software.
 
