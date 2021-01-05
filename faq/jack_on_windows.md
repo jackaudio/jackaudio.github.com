@@ -7,14 +7,14 @@ title: "Using JACK on Windows"
 ## Introduction
 
 As on other platforms, JACK on Windows is a multi-purpose audio server that
-connects audio and MIDI streams using the Windows system drivers...
+connects audio and MIDI streams using the Windows system drivers.
 It connects (OUTPUT) to those audio drivers using the PortAudio project
-(so Jack can connect using dsound, wmme, WDMKS, ASIO, WASAPI, and WaveRT)
-depending on what the soundcard's drivers support.
+(so JACK can connect using dsound, wmme, ASIO, etc) depending on what
+the soundcard's drivers support.
 
-JACK is an Audio, MIDI and transport API (Application Programming Interface)
+JACK provides an Audio, MIDI and transport API (Application Programming Interface)
 that can be used natively by audio application developers.
-There are already some existing *native* JACK for Windows applications
+There are already some existing *native* JACK Windows applications
 (that is, audio applications that use the JACK API directly).
 Through the API, JACK on Windows offers native JACK connections (INPUT),
 and the JACK-Router ASIO driver (INPUT) that offers an ASIO linker to the JACK Server.
@@ -59,7 +59,7 @@ By default, JACK-Router is set to provide 4 Input and 4 Output connections.
 This setting can be customized to suite your needs by editing the
 JackRouter.ini file within your
 `C:\Program Files\JACK\jack-router\win32` (or `C:\Program Files\JACK\jack-router\win64`
-folder depending of the JACK-Router 32 or 64-bit version).
+folder depending of the JACK 32 or 64-bit version).
 In Windows Explorer, right click on the file and choose the 'Edit' option.
 Change the settings in the [IO] portion of the file.
 
@@ -73,7 +73,7 @@ Change the settings in the [IO] portion of the file.
 
 4. From the Windows Start menu, locate the QjackCtl application and run it.
 
-5. On the QjackCtl application, click "Setup" adn adjust "Interface", "Sample Rate" and "Frames/Period" as needed for your device/sound-card.
+5. On the QjackCtl application, click "Setup" and adjust "Interface", "Sample Rate" and "Frames/Period" as needed for your device/sound-card.
   Do not change settings you do not understand.
 
 6. Click on OK to close the Setup dialog.
