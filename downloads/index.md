@@ -32,6 +32,32 @@ JACK1 and JACK2 but this work is not complete, so for now the commands to get
 a copy of the source are a little different depending on which tree/version
 you want.
 
+### JACK2 Git Repository
+
+Those without write access can access the repository with this command:
+
+```
+git clone git://github.com/jackaudio/jack2.git
+```
+
+You can also point a web browser at
+
+```
+https://github.com/jackaudio/jack2
+```
+
+to be able to browse current source code and full history with all the usual
+Github goodies.
+
+#### Write Access
+
+Those who have been granted write access and have supplied a public key can
+get to the repository with the following command:
+
+```
+git clone git@github.com:jackaudio/jack2.git
+```
+
 ### JACK1 Git Repository
 
 Those without write access can access the repository with these commands:
@@ -76,34 +102,8 @@ entries correctly reference the write-access URL. They should look like this:
     url = git://github.com/jackaudio/tools.git
 ```
 
-### JACK2 Git Repository
-
-Those without write access can access the repository with this command:
-
-```
-git clone git://github.com/jackaudio/jack2.git
-```
-
-You can also point a web browser at
-
-```
-https://github.com/jackaudio/jack2
-```
-
-to be able to browse current source code and full history with all the usual
-Github goodies.
-
-#### Write Access
-
-Those who have been granted write access and have supplied a public key can
-get to the repository with the following command:
-
-```
-git clone git@github.com:jackaudio/jack2.git
-```
-
-Eventually the same setup for the submodules will be required as for JACK1,
-but this is not true at this time.
+Eventually the same setup for the submodules will be required for both JACK2 and JACK1,
+but this is only the case for JACK1 at this time.
 
 
 [JACK 1.9.16]:       https://github.com/jackaudio/jack2/archive/v1.9.16.tar.gz
