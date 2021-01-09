@@ -9,16 +9,20 @@ title:  "Downloads"
 (`apt-get, yum, synaptic` etc.)
 * **Source tarball**: [JACK 1.9.16].
 
-## OS X
+## macOS
 
 * **Installer**:      [JACK 1.9.16 macOS].
 * **Source tarball**: [JACK 1.9.16].
+
+For macOS 10.12 or superior.
 
 ## Windows
 
 * **32-bit installer**: [JACK 1.9.16 win32].
 * **64-bit installer**: [JACK 1.9.16 win64].
 * **Source tarball**:   [JACK 1.9.16].
+
+For Windows 7 or superior.
 
 ## JACK Source Code Repository
 
