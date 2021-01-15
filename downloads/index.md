@@ -7,20 +7,20 @@ title:  "Downloads"
 
 * **Binaries**: please use your distribution's package manager
 (`apt-get, yum, synaptic` etc.)
-* **Source tarball**: [JACK 1.9.16].
+* **Source tarball**: [JACK 1.9.17].
 
 ## macOS
 
-* **Installer**:      [JACK 1.9.16 macOS].
-* **Source tarball**: [JACK 1.9.16].
+* **Installer**:      [JACK 1.9.17 macOS].
+* **Source tarball**: [JACK 1.9.17].
 
 For macOS 10.12 or superior.
 
 ## Windows
 
-* **32-bit installer**: [JACK 1.9.16 win32].
-* **64-bit installer**: [JACK 1.9.16 win64].
-* **Source tarball**:   [JACK 1.9.16].
+* **32-bit installer**: [JACK 1.9.17 win32].
+* **64-bit installer**: [JACK 1.9.17 win64].
+* **Source tarball**:   [JACK 1.9.17].
 
 For Windows 7 or superior.
 
@@ -106,7 +106,8 @@ Eventually the same setup for the submodules will be required for both JACK2 and
 but this is only the case for JACK1 at this time.
 
 
-[JACK 1.9.16]:       https://github.com/jackaudio/jack2/archive/v1.9.16.tar.gz
-[JACK 1.9.16 macOS]: https://github.com/jackaudio/jack2-releases/releases/download/v1.9.16/jack2-macOS-v1.9.16.tar.gz
-[JACK 1.9.16 win32]: https://github.com/jackaudio/jack2-releases/releases/download/v1.9.16/jack2-win32-v1.9.16.exe
-[JACK 1.9.16 win64]: https://github.com/jackaudio/jack2-releases/releases/download/v1.9.16/jack2-win64-v1.9.16.exe
+[JACK 1.9.17]:       https://github.com/jackaudio/jack2/archive/v1.9.17.tar.gz
+[JACK 1.9.17 macOS]: https://github.com/jackaudio/jack2-releases/releases/download/v1.9.17/jack2-macOS-v1.9.17.tar.gz
+[JACK 1.9.17 macOSu]: https://github.com/jackaudio/jack2-releases/releases/download/v1.9.17/jack2-macOS-universal-v1.9.17.tar.gz
+[JACK 1.9.17 win32]: https://github.com/jackaudio/jack2-releases/releases/download/v1.9.17/jack2-win32-v1.9.17.exe
+[JACK 1.9.17 win64]: https://github.com/jackaudio/jack2-releases/releases/download/v1.9.17/jack2-win64-v1.9.17.exe
