@@ -12,7 +12,7 @@ title:  "Downloads"
 ## macOS
 
 * **Intel 64bit Installer**: [JACK 1.9.17 macOS].
-* **Universal Installer**:   [JACK 1.9.17 macOSu].
+* **Universal Installer**:   [JACK 1.9.17 macOS-universal].
 * **Source tarball**:        [JACK 1.9.17].
 
 For macOS 10.12 or superior.
@@ -111,6 +111,6 @@ but this is only the case for JACK1 at this time.
 
 [JACK 1.9.17]:       https://github.com/jackaudio/jack2/archive/v1.9.17.tar.gz
 [JACK 1.9.17 macOS]: https://github.com/jackaudio/jack2-releases/releases/download/v1.9.17/jack2-macOS-v1.9.17.tar.gz
-[JACK 1.9.17 macOSu]: https://github.com/jackaudio/jack2-releases/releases/download/v1.9.17/jack2-macOS-universal-v1.9.17.tar.gz
+[JACK 1.9.17 macOS-universal]: https://github.com/jackaudio/jack2-releases/releases/download/v1.9.17/jack2-macOS-universal-v1.9.17.tar.gz
 [JACK 1.9.17 win32]: https://github.com/jackaudio/jack2-releases/releases/download/v1.9.17/jack2-win32-v1.9.17.exe
 [JACK 1.9.17 win64]: https://github.com/jackaudio/jack2-releases/releases/download/v1.9.17/jack2-win64-v1.9.17.exe
