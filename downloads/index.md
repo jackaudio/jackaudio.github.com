@@ -11,10 +11,13 @@ title:  "Downloads"
 
 ## macOS
 
-* **Installer**:      [JACK 1.9.17 macOS].
-* **Source tarball**: [JACK 1.9.17].
+* **Intel 64bit Installer**: [JACK 1.9.17 macOS].
+* **Universal Installer**:   [JACK 1.9.17 macOSu].
+* **Source tarball**:        [JACK 1.9.17].
 
 For macOS 10.12 or superior.
+
+Note: Universal installer does not currently support meta-data, to be fixed soon.
 
 ## Windows
 
