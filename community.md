@@ -29,7 +29,7 @@ Join channel #jack on irc.freenode.net. ([web chat](https://webchat.freenode.net
 
 ## linux-audio-users @ freenode
 
-For more casual talk, use #lau or #opensourcemusicians channels. ([web chat](https://webchat.freenode.net/?channel=#lau,#opensourcemusicians)).
+For more casual talk, use #lau or #opensourcemusicians channels. ([web chat](https://webchat.freenode.net/?channel=#lau,#opensourcemusicians))
 
 # Communities
 
