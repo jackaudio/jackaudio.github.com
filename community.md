@@ -25,13 +25,11 @@ usage and troubleshooting with JACK here.
 
 For those that prefer real-time chat. Requires registration with freenode services.
 
-Join channel #jack on irc.freenode.net ([web chat](https://webchat.freenode.net/?channel=#jack)).
+Join channel #jack on irc.freenode.net. ([web chat](https://webchat.freenode.net/?channel=#jack))
 
 ## linux-audio-users @ freenode
-[ [sign up](https://lists.linuxaudio.org/listinfo/jackaudio/) |
-[archives](https://lists.linuxaudio.org/archives/jackaudio/) ]
 
-For more casual talk, use #lau or #opensourcemusicians channels.
+For more casual talk, use #lau or #opensourcemusicians channels. ([web chat](https://webchat.freenode.net/?channel=#lau,#opensourcemusicians)).
 
 # Communities
 
