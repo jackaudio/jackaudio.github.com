@@ -17,8 +17,6 @@ title:  "Downloads"
 
 For macOS 10.12 or higher.
 
-Note: Universal installer does not currently support meta-data, to be fixed soon.
-
 ## Windows
 
 * **32-bit installer**: [JACK 1.9.18 win32].
