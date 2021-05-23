@@ -21,14 +21,14 @@ usage and troubleshooting with JACK here.
 
 # IRC
 
-## jack @ freenode
+## jack @ libera.chat
 
 For those that prefer real-time chat.
 
 Join channel #jack on irc.libera.chat.
 <!-- ([web chat](https://webchat.freenode.net/?channel=#jack)) -->
 
-## linux-audio-users @ freenode
+## linux-audio-users @ libera.chat
 
 For more casual talk, use #lau or #opensourcemusicians channels.
 <!-- ([web chat](https://webchat.freenode.net/?channel=#lau,#opensourcemusicians)) -->
