@@ -90,6 +90,8 @@ Macros</h2></td></tr>
 <tr class="separator:a4ec2f03448e8b633e08cbf17fe6de6f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab54aee2c5b5197c588cdda2349434a21"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="transport_8h.html#ab54aee2c5b5197c588cdda2349434a21">EXTENDED_TIME_INFO</a></td></tr>
 <tr class="separator:ab54aee2c5b5197c588cdda2349434a21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6912ac57f6835f05659556d6dc643a89"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="transport_8h.html#a6912ac57f6835f05659556d6dc643a89">JACK_TICK_DOUBLE</a></td></tr>
+<tr class="separator:a6912ac57f6835f05659556d6dc643a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -114,7 +116,8 @@ Enumerations</h2></td></tr>
 <a class="el" href="transport_8h.html#a64608154318de05af9e763bfb5fb8529a3bcc4689386f97d0eebd07c7bfc1ddb3">JackBBTFrameOffset</a> = 0x40, 
 <a class="el" href="transport_8h.html#a64608154318de05af9e763bfb5fb8529a34939b3185f52faedb1e9bfd914fa49b">JackAudioVideoRatio</a> = 0x80, 
 <br />
-&#160;&#160;<a class="el" href="transport_8h.html#a64608154318de05af9e763bfb5fb8529aa583c63f0723dd2226eb47cabfefde82">JackVideoFrameOffset</a> = 0x100
+&#160;&#160;<a class="el" href="transport_8h.html#a64608154318de05af9e763bfb5fb8529aa583c63f0723dd2226eb47cabfefde82">JackVideoFrameOffset</a> = 0x100, 
+<a class="el" href="transport_8h.html#a64608154318de05af9e763bfb5fb8529aaac063529181992de5bdb1358fdbd00d">JackTickDouble</a> = 0x200
 <br />
  }</td></tr>
 <tr class="separator:a64608154318de05af9e763bfb5fb8529"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,6 +189,21 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a6912ac57f6835f05659556d6dc643a89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6912ac57f6835f05659556d6dc643a89">&#9670;&nbsp;</a></span>JACK_TICK_DOUBLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JACK_TICK_DOUBLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>transport tick_double member is available for use </p>
+
+</div>
+</div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="af01026c6ef9eb9ef003ed23b6d8ada5f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af01026c6ef9eb9ef003ed23b6d8ada5f">&#9670;&nbsp;</a></span>jack_unique_t</h2>
@@ -225,6 +243,8 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a64608154318de05af9e763bfb5fb8529a34939b3185f52faedb1e9bfd914fa49b"></a>JackAudioVideoRatio&#160;</td><td class="fielddoc"><p>audio frames per video frame </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a64608154318de05af9e763bfb5fb8529aa583c63f0723dd2226eb47cabfefde82"></a>JackVideoFrameOffset&#160;</td><td class="fielddoc"><p>frame offset of first video frame </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a64608154318de05af9e763bfb5fb8529aaac063529181992de5bdb1358fdbd00d"></a>JackTickDouble&#160;</td><td class="fielddoc"><p>double-resolution tick </p>
 </td></tr>
 </table>
 

@@ -7,6 +7,7 @@ var searchData=
   ['jack_5fparam_5fmax',['JACK_PARAM_MAX',['../control_8h.html#a38aa16c0a62708eb58c893657f4fb5ff',1,'control.h']]],
   ['jack_5fparam_5fstring_5fmax',['JACK_PARAM_STRING_MAX',['../control_8h.html#a582463bb97200e584edaa215180e16d4',1,'control.h']]],
   ['jack_5fposition_5fmask',['JACK_POSITION_MASK',['../transport_8h.html#a4ec2f03448e8b633e08cbf17fe6de6f9',1,'transport.h']]],
+  ['jack_5ftick_5fdouble',['JACK_TICK_DOUBLE',['../transport_8h.html#a6912ac57f6835f05659556d6dc643a89',1,'transport.h']]],
   ['jackloadoptions',['JackLoadOptions',['../types_8h.html#ac4e472a37c86a53ccbf35e903196501d',1,'types.h']]],
   ['jackopenoptions',['JackOpenOptions',['../types_8h.html#ab39e7f78dba631f3c0d34ac4cddcf80f',1,'types.h']]]
 ];

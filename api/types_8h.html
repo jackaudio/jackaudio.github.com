@@ -138,12 +138,12 @@ Typedefs</h2></td></tr>
 <tr class="separator:aae24422729bb05aa0731a2d9545d278c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0735e21ddb96029d46bf35f14fc7e895"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a0735e21ddb96029d46bf35f14fc7e895">JackSampleRateCallback</a>) (<a class="el" href="types_8h.html#aa954df532e901ae5172e68a23f3da9b6">jack_nframes_t</a> nframes, void *arg)</td></tr>
 <tr class="separator:a0735e21ddb96029d46bf35f14fc7e895"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7123cf6f63a0882ed8ecf6bf6e69fe8f"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a7123cf6f63a0882ed8ecf6bf6e69fe8f">JackPortRegistrationCallback</a>) (<a class="el" href="types_8h.html#a669d727ed55e90862bd1322c5c042e86">jack_port_id_t</a> port, int register, void *arg)</td></tr>
-<tr class="separator:a7123cf6f63a0882ed8ecf6bf6e69fe8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab67ac0b5c60ab9f94eba0c06ab16725c"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#ab67ac0b5c60ab9f94eba0c06ab16725c">JackPortRegistrationCallback</a>) (<a class="el" href="types_8h.html#a669d727ed55e90862bd1322c5c042e86">jack_port_id_t</a> port, int, void *arg)</td></tr>
+<tr class="separator:ab67ac0b5c60ab9f94eba0c06ab16725c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5e21db10d45f938ec0fa688230c2c24"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#ab5e21db10d45f938ec0fa688230c2c24">JackPortRenameCallback</a>) (<a class="el" href="types_8h.html#a669d727ed55e90862bd1322c5c042e86">jack_port_id_t</a> port, const char *old_name, const char *new_name, void *arg)</td></tr>
 <tr class="separator:ab5e21db10d45f938ec0fa688230c2c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fec7c8cb92f4a9878473ae85d4f76ef"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a3fec7c8cb92f4a9878473ae85d4f76ef">JackClientRegistrationCallback</a>) (const char *name, int register, void *arg)</td></tr>
-<tr class="separator:a3fec7c8cb92f4a9878473ae85d4f76ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9221225159a10a6eedaf0d98eff6de84"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a9221225159a10a6eedaf0d98eff6de84">JackClientRegistrationCallback</a>) (const char *name, int, void *arg)</td></tr>
+<tr class="separator:a9221225159a10a6eedaf0d98eff6de84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a351e09441e88b3013db37d3eb8e0a2b3"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a351e09441e88b3013db37d3eb8e0a2b3">JackPortConnectCallback</a>) (<a class="el" href="types_8h.html#a669d727ed55e90862bd1322c5c042e86">jack_port_id_t</a> a, <a class="el" href="types_8h.html#a669d727ed55e90862bd1322c5c042e86">jack_port_id_t</a> b, int connect, void *arg)</td></tr>
 <tr class="separator:a351e09441e88b3013db37d3eb8e0a2b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a9a8af9ac8206a0c67cef6a27e88be7"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a2a9a8af9ac8206a0c67cef6a27e88be7">JackFreewheelCallback</a>) (int starting, void *arg)</td></tr>
@@ -529,14 +529,14 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
-<a id="a3fec7c8cb92f4a9878473ae85d4f76ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3fec7c8cb92f4a9878473ae85d4f76ef">&#9670;&nbsp;</a></span>JackClientRegistrationCallback</h2>
+<a id="a9221225159a10a6eedaf0d98eff6de84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9221225159a10a6eedaf0d98eff6de84">&#9670;&nbsp;</a></span>JackClientRegistrationCallback</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* JackClientRegistrationCallback) (const char *name, int register, void *arg)</td>
+          <td class="memname">typedef void(* JackClientRegistrationCallback) (const char *name, int, void *arg)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -665,14 +665,14 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
-<a id="a7123cf6f63a0882ed8ecf6bf6e69fe8f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7123cf6f63a0882ed8ecf6bf6e69fe8f">&#9670;&nbsp;</a></span>JackPortRegistrationCallback</h2>
+<a id="ab67ac0b5c60ab9f94eba0c06ab16725c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab67ac0b5c60ab9f94eba0c06ab16725c">&#9670;&nbsp;</a></span>JackPortRegistrationCallback</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* JackPortRegistrationCallback) (<a class="el" href="types_8h.html#a669d727ed55e90862bd1322c5c042e86">jack_port_id_t</a> port, int register, void *arg)</td>
+          <td class="memname">typedef void(* JackPortRegistrationCallback) (<a class="el" href="types_8h.html#a669d727ed55e90862bd1322c5c042e86">jack_port_id_t</a> port, int, void *arg)</td>
         </tr>
       </table>
 </div><div class="memdoc">

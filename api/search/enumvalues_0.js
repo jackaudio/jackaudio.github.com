@@ -39,6 +39,7 @@ var searchData=
   ['jacksessionsaveerror',['JackSessionSaveError',['../group__SessionClientFunctions.html#gga596a05b8e9be60e04ee3f8d434c5d8f8aa7888ab24ad3a832b7314a366f543bbd',1,'session.h']]],
   ['jacksessionsavetemplate',['JackSessionSaveTemplate',['../group__SessionClientFunctions.html#gga5616b829095cc341cee4610aba992a4da8137dfcdaf5969bf1032117157d4015f',1,'session.h']]],
   ['jackshmfailure',['JackShmFailure',['../types_8h.html#aaf80297bce18297403b99e3d320ac8a8ae34e2a567d36e85b4de788ccb81fb3dc',1,'types.h']]],
+  ['jacktickdouble',['JackTickDouble',['../transport_8h.html#a64608154318de05af9e763bfb5fb8529aaac063529181992de5bdb1358fdbd00d',1,'transport.h']]],
   ['jacktransportbbt',['JackTransportBBT',['../transport_8h.html#a230191365921fd425c389ed5eab18eefac018587585c9420479978cd49154d02e',1,'transport.h']]],
   ['jacktransportloop',['JackTransportLoop',['../transport_8h.html#a230191365921fd425c389ed5eab18eefa1757aa4327bc7be2cea3f7d07a570896',1,'transport.h']]],
   ['jacktransportlooping',['JackTransportLooping',['../transport_8h.html#a66e50952a88eb087867922bfe3d0bd72a0aa16c4e52ecbe843d4b48d2f95f5a74',1,'transport.h']]],
