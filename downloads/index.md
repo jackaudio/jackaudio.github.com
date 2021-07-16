@@ -7,21 +7,21 @@ title:  "Downloads"
 
 * **Binaries**: please use your distribution's package manager
 (`apt-get, yum, synaptic` etc.)
-* **Source tarball**: [JACK 1.9.18].
+* **Source tarball**: [JACK 1.9.19].
 
 ## macOS
 
-* **Intel 64bit Installer**: [JACK 1.9.18 macOS-intel].
-* **Universal Installer**:   [JACK 1.9.18 macOS-universal].
-* **Source tarball**:        [JACK 1.9.18].
+* **Intel 64bit Installer**: [JACK 1.9.19 macOS-intel].
+* **Universal Installer**:   [JACK 1.9.19 macOS-universal].
+* **Source tarball**:        [JACK 1.9.19].
 
 For macOS 10.12 or higher.
 
 ## Windows
 
-* **32-bit installer**: [JACK 1.9.18 win32].
-* **64-bit installer**: [JACK 1.9.18 win64].
-* **Source tarball**:   [JACK 1.9.18].
+* **32-bit installer**: [JACK 1.9.19 win32].
+* **64-bit installer**: [JACK 1.9.19 win64].
+* **Source tarball**:   [JACK 1.9.19].
 
 For Windows 7 or higher.
 
@@ -107,8 +107,8 @@ Eventually the same setup for the submodules will be required for both JACK2 and
 but this is only the case for JACK1 at this time.
 
 
-[JACK 1.9.18]:                 https://github.com/jackaudio/jack2/archive/v1.9.18.tar.gz
-[JACK 1.9.18 macOS-intel]:     https://github.com/jackaudio/jack2-releases/releases/download/v1.9.18/jack2-macOS-intel-v1.9.18.tar.gz
-[JACK 1.9.18 macOS-universal]: https://github.com/jackaudio/jack2-releases/releases/download/v1.9.18/jack2-macOS-universal-v1.9.18.tar.gz
-[JACK 1.9.18 win32]:           https://github.com/jackaudio/jack2-releases/releases/download/v1.9.18/jack2-win32-v1.9.18.exe
-[JACK 1.9.18 win64]:           https://github.com/jackaudio/jack2-releases/releases/download/v1.9.18/jack2-win64-v1.9.18.exe
+[JACK 1.9.19]:                 https://github.com/jackaudio/jack2/archive/v1.9.19.tar.gz
+[JACK 1.9.19 macOS-intel]:     https://github.com/jackaudio/jack2-releases/releases/download/v1.9.19/jack2-macOS-intel-v1.9.19.tar.gz
+[JACK 1.9.19 macOS-universal]: https://github.com/jackaudio/jack2-releases/releases/download/v1.9.19/jack2-macOS-universal-v1.9.19.tar.gz
+[JACK 1.9.19 win32]:           https://github.com/jackaudio/jack2-releases/releases/download/v1.9.19/jack2-win32-v1.9.19.exe
+[JACK 1.9.19 win64]:           https://github.com/jackaudio/jack2-releases/releases/download/v1.9.19/jack2-win64-v1.9.19.exe
