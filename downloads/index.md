@@ -17,21 +17,23 @@ title:  "Downloads"
 
 For macOS 10.12 or higher.
 
+Nightly builds are available through [JACK2 GitHub actions].
+
 ## Windows
 
-* **32-bit installer**: [JACK 1.9.19 win32].
-* **64-bit installer**: [JACK 1.9.19 win64].
-* **Source tarball**:   [JACK 1.9.19].
+* **32bit installer**: [JACK 1.9.19 win32].
+* **64bit installer**: [JACK 1.9.19 win64].
+* **Source tarball**:  [JACK 1.9.19].
 
-For Windows 7 or higher.
+For Windows 7 or higher. 64bit builds provide mixed 32/64bit support.
+
+Nightly builds are available through [JACK2 GitHub actions].
 
 ## JACK Source Code Repository
 
-JACK uses Git as its source control system. Our central git repository is
-hosted by Github. We are currently working toward linking the repositories for
-JACK1 and JACK2 but this work is not complete, so for now the commands to get
-a copy of the source are a little different depending on which tree/version
-you want.
+JACK uses Git as its source control system. Our central git repository is hosted by GitHub.
+We are currently working toward linking the repositories for JACK1 and JACK2 but this work is not complete,
+so for now the commands to get a copy of the source are a little different depending on which tree/version you want.
 
 ### JACK2 Git Repository
 
@@ -48,7 +50,7 @@ https://github.com/jackaudio/jack2
 ```
 
 to be able to browse current source code and full history with all the usual
-Github goodies.
+GitHub goodies.
 
 #### Write Access
 
@@ -77,7 +79,7 @@ https://github.com/jackaudio/jack1
 ```
 
 to be able to browse current source code and full history with all the usual
-Github goodies.
+GitHub goodies.
 
 #### Write Access
 
@@ -112,3 +114,4 @@ but this is only the case for JACK1 at this time.
 [JACK 1.9.19 macOS-universal]: https://github.com/jackaudio/jack2-releases/releases/download/v1.9.19/jack2-macOS-universal-v1.9.19.tar.gz
 [JACK 1.9.19 win32]:           https://github.com/jackaudio/jack2-releases/releases/download/v1.9.19/jack2-win32-v1.9.19.exe
 [JACK 1.9.19 win64]:           https://github.com/jackaudio/jack2-releases/releases/download/v1.9.19/jack2-win64-v1.9.19.exe
+[JACK2 GitHub actions]:        https://github.com/jackaudio/jack2/actions
