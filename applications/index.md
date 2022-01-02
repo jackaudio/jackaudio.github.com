@@ -87,8 +87,6 @@ title:  "Applications"
     a software convolution engine.
   * [**CP-GFX**](http://cp-gfx.sourceforge.net/)
     Guitar effects processor.
-  * [**creox**](http://zyzstar.kosoru.com/?creox)
-    a realtime sound processor.
   * [**DSSI**](http://dssi.sourceforge.net/)
     is an API for audio processing plugins, particularly useful for
     software synthesis plugins with user interfaces.
