@@ -83,7 +83,7 @@ title:  "Applications"
     is a Jack effect and LADSPA plugin for arctan distortion.
   * [**Bristol Synthesizer Emulator**](http://bristol.sourceforge.net/)
     application. The latest version uses Jack.
-  * [**BruteFIR**](http://www.ludd.luth.se/~torger/brutefir.html)
+  * [**BruteFIR**](https://torger.se/anders/brutefir.html)
     a software convolution engine.
   * [**CP-GFX**](http://cp-gfx.sourceforge.net/)
     Guitar effects processor.
