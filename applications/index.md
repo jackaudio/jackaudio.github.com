@@ -99,8 +99,9 @@ title:  "Applications"
     is a simple Linux amplifier with one input and two outputs.
   * [**IEM Plug-in Suite**](https://plugins.iem.at/)
     is a set of VST-plugins (with a DAW independent standalone-mode) for Ambisonics sound field encoding, analysis, processing and decoding.
-  * [**jackEQ**](http://jackeq.sourceforge.net/)
+  * [**jackEQ**](https://sourceforge.net/projects/jackeq/)
     a tool for routing and manipulating audio from/to multiple input/output sources.
+    ([An archived copy of the original (now dead) project site](https://web.archive.org/web/20190830084309/http://djcj.org/jackeq/) is available.)
   * [**JAMin**](http://jamin.sourceforge.net/)
     the state-of-the-art realtime mastering processor.
   * [**linuxDSP**](http://www.linuxdsp.co.uk/)
