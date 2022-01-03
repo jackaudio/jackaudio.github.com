@@ -92,8 +92,6 @@ title:  "Applications"
   * [**DSSI**](http://dssi.sourceforge.net/)
     is an API for audio processing plugins, particularly useful for
     software synthesis plugins with user interfaces.
-  * [**Ecamegapedal**](http://www.eca.cx/ecamegapedal/)
-    a real-time effect processor. Version 0.4.0 or above.
   * [**freqtweak**](http://freqtweak.sourceforge.net/)
     a frequency domain FX box. This is one of the coolest FX boxes
     you may ever use.
@@ -123,6 +121,10 @@ title:  "Applications"
     is an audio effects processor inspired by
     the classical magnetic tape delay systems.
     Version 0.7.0 or above.
+
+##### Legacy (effects processors)
+  * [**Ecamegapedal**](https://web.archive.org/web/20130606111504/http://www.eca.cx:80/ecamegapedal/)
+    was a real-time effect processor.
 
 ## Graphics Applications
 
