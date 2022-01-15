@@ -114,4 +114,4 @@ but this is only the case for JACK1 at this time.
 [JACK 1.9.20 macOS-universal]: https://github.com/jackaudio/jack2-releases/releases/download/v1.9.20/jack2-macOS-universal-v1.9.20.tar.gz
 [JACK 1.9.20 win32]:           https://github.com/jackaudio/jack2-releases/releases/download/v1.9.20/jack2-win32-v1.9.20.exe
 [JACK 1.9.20 win64]:           https://github.com/jackaudio/jack2-releases/releases/download/v1.9.20/jack2-win64-v1.9.20.exe
-[JACK2 GitHub actions]:        https://github.com/jackaudio/jack2/actions
+[JACK2 GitHub actions]:        https://github.com/jackaudio/jack2/actions/workflows/build.yml
