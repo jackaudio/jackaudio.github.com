@@ -448,6 +448,8 @@ title:  "Applications"
 
 ## Sound Generators
 
+  * [**Aeolus**](http://kokkinizita.linuxaudio.org/linuxaudio/aeolus/index.html)
+    a synthesised (i.e. not sampled) pipe organ emulator.
   * [**AlsaModularSynth**](http://alsamodular.sourceforge.net/)
     a realtime modular synthesizer and effect processor.
     You will need version 1.5.3c or above.
