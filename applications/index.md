@@ -407,7 +407,6 @@ title:  "Applications"
 
 ### Rust
 
-  * [**nicklan/rust-jack**](https://github.com/nicklan/rust-jack)
   * [**RustAudio/rust-jack**](https://github.com/RustAudio/rust-jack)
 
 ## Radio
