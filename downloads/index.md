@@ -40,7 +40,7 @@ so for now the commands to get a copy of the source are a little different depen
 Those without write access can access the repository with this command:
 
 ```
-git clone git://github.com/jackaudio/jack2.git
+git clone https://github.com/jackaudio/jack2.git
 ```
 
 You can also point a web browser at
@@ -66,7 +66,7 @@ git clone git@github.com:jackaudio/jack2.git
 Those without write access can access the repository with these commands:
 
 ```
-git clone git://github.com/jackaudio/jack1.git
+git clone https://github.com/jackaudio/jack1.git
 cd jack1
 git submodule init
 git submodule update
@@ -98,11 +98,11 @@ entries correctly reference the write-access URL. They should look like this:
 
 ```
 [submodule "example-clients"]
-    url = git://github.com/jackaudio/example-clients.git
+    url = git@github.com:jackaudio/example-clients.git
 [submodule "jack"]
-    url = git://github.com/jackaudio/headers.git
+    url = git@github.com:jackaudio/headers.git
 [submodule "tools"]
-    url = git://github.com/jackaudio/tools.git
+    url = git@github.com:jackaudio/tools.git
 ```
 
 Eventually the same setup for the submodules will be required for both JACK2 and JACK1,
