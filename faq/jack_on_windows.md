@@ -30,6 +30,7 @@ Several applications have native JACK support:
   * [Carla Plugin Host](https://kx.studio/Applications:Carla)
   * [Foo YC20](https://github.com/sampov2/foo-yc20)
   * [Harisson MixBus](https://harrisonconsoles.com/product/mixbus/)
+  * [Jamulus](https://jamulus.io) (starting from Version 3.8.1 as separate build)
   * [LMMS](https://lmms.io/) (starting from v1.3)
   * [MuseScore](http://musescore.org/)
   * [Radium](http://users.notam02.no/~kjetism/radium/)
