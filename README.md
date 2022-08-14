@@ -68,11 +68,6 @@ mask and [YAML front-matter] (see other post files as reference).
 - Use external hosting links for the download section like [GitHub releases],
   no download files in the repository for a better maintenance.
 
-## TODO
-
-- A dedicated news/releases section? E.g. a secondary [blog],
-  custom [_posts] like directory.
-
 [jackaudio.org]:     https://jackaudio.org
 [JACK 1]:            https://github.com/jackaudio/jack1/issues
 [JACK 2]:            https://github.com/jackaudio/jack2/issues
