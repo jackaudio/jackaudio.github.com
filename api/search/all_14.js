@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['valid',['valid',['../structjack__position__t.html#a838c733e8006d1a0cc6921b4a132a8e4',1,'jack_position_t::valid()'],['../structjack__transport__info__t.html#a69fc58b6d2004fd243186255acc7292e',1,'jack_transport_info_t::valid()']]],
-  ['video_5foffset',['video_offset',['../structjack__position__t.html#ac03889456c88714ddf680784ee970d3b',1,'jack_position_t']]]
+  ['weak_5fattribute_445',['WEAK_ATTRIBUTE',['../group__WeakLinkage.html#ga7b4e8308dcb91579fb0a11c039b8b70d',1,'WEAK_ATTRIBUTE():&#160;weakjack.h'],['../weakmacros_8h.html#a7b4e8308dcb91579fb0a11c039b8b70d',1,'WEAK_ATTRIBUTE():&#160;weakmacros.h']]],
+  ['weakjack_2eh_446',['weakjack.h',['../weakjack_8h.html',1,'']]],
+  ['weakmacros_2eh_447',['weakmacros.h',['../weakmacros_8h.html',1,'']]],
+  ['write_5fptr_448',['write_ptr',['../structjack__ringbuffer__t.html#a7ba69e5aa3fdde2f4e4421e50c10b737',1,'jack_ringbuffer_t']]]
 ];

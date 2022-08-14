@@ -1,10 +1,9 @@
 var searchData=
 [
-  ['session_5fdir',['session_dir',['../struct__jack__session__event.html#a9424115009f29d9d7d2ff6033494a386',1,'_jack_session_event']]],
-  ['size',['size',['../structjack__ringbuffer__t.html#ae0db038d5d6566e916f64166cfe60317',1,'jack_ringbuffer_t::size()'],['../struct__jack__midi__event.html#abc254ee669d342c75ccfa49658b54a56',1,'_jack_midi_event::size()']]],
-  ['size_5fmask',['size_mask',['../structjack__ringbuffer__t.html#aa782cb7bf8312c7a04180685820b5ddd',1,'jack_ringbuffer_t']]],
-  ['smpte_5fframe_5frate',['smpte_frame_rate',['../structjack__transport__info__t.html#a62b6bea05fdb499ca5945a5a32a64350',1,'jack_transport_info_t']]],
-  ['smpte_5foffset',['smpte_offset',['../structjack__transport__info__t.html#ad04a7477cc221e0dec25b0e207352a2e',1,'jack_transport_info_t']]],
-  ['str',['str',['../unionjackctl__parameter__value.html#a3d696c7c7ceea1cdca2a215b4e01dcbb',1,'jackctl_parameter_value']]],
-  ['subject',['subject',['../structjack__description__t.html#a2869464462d8186d3b888111e46897bc',1,'jack_description_t']]]
+  ['tick_733',['tick',['../group__TransportControl.html#ga9ba36f6c4eaede3bb1c9b7a85b5f76d1',1,'jack_position_t::tick()'],['../group__TransportControl.html#ga45efc4128e2405f4f54c8b2340c064cd',1,'jack_transport_info_t::tick()']]],
+  ['tick_5fdouble_734',['tick_double',['../group__TransportControl.html#gabf43d666f71ba6a9dd7f81c68affce99',1,'jack_position_t']]],
+  ['ticks_5fper_5fbeat_735',['ticks_per_beat',['../group__TransportControl.html#ga08ca4c388c6460dcef82f03346ccbf52',1,'jack_position_t::ticks_per_beat()'],['../group__TransportControl.html#ga4d98a25dc59cf9c7beb203f32b911a51',1,'jack_transport_info_t::ticks_per_beat()']]],
+  ['time_736',['time',['../group__MIDIAPI.html#ga7acc6a81ac12e2a042d5af9fb7b56532',1,'_jack_midi_event']]],
+  ['transport_5fstate_737',['transport_state',['../group__TransportControl.html#ga748678d245f92f396833cefaca67630c',1,'jack_transport_info_t']]],
+  ['type_738',['type',['../structjack__property__t.html#a298b7c97464c5ac3a6070c467732bd9c',1,'jack_property_t::type()'],['../struct__jack__session__event.html#a1eebbe3f51ef97967c58afb627535dda',1,'_jack_session_event::type()']]]
 ];

@@ -1,15 +1,17 @@
 var searchData=
 [
-  ['setting_20client_20callbacks',['Setting Client Callbacks',['../group__ClientCallbacks.html',1,'']]],
-  ['session_2eh',['session.h',['../session_8h.html',1,'']]],
-  ['session_5fdir',['session_dir',['../struct__jack__session__event.html#a9424115009f29d9d7d2ff6033494a386',1,'_jack_session_event']]],
-  ['session_20api_20for_20clients_2e',['Session API for clients.',['../group__SessionClientFunctions.html',1,'']]],
-  ['simple_5fclient_2ec',['simple_client.c',['../simple__client_8c.html',1,'']]],
-  ['size',['size',['../structjack__ringbuffer__t.html#ae0db038d5d6566e916f64166cfe60317',1,'jack_ringbuffer_t::size()'],['../struct__jack__midi__event.html#abc254ee669d342c75ccfa49658b54a56',1,'_jack_midi_event::size()']]],
-  ['size_5fmask',['size_mask',['../structjack__ringbuffer__t.html#aa782cb7bf8312c7a04180685820b5ddd',1,'jack_ringbuffer_t']]],
-  ['smpte_5fframe_5frate',['smpte_frame_rate',['../structjack__transport__info__t.html#a62b6bea05fdb499ca5945a5a32a64350',1,'jack_transport_info_t']]],
-  ['smpte_5foffset',['smpte_offset',['../structjack__transport__info__t.html#ad04a7477cc221e0dec25b0e207352a2e',1,'jack_transport_info_t']]],
-  ['statistics_2eh',['statistics.h',['../statistics_8h.html',1,'']]],
-  ['str',['str',['../unionjackctl__parameter__value.html#a3d696c7c7ceea1cdca2a215b4e01dcbb',1,'jackctl_parameter_value']]],
-  ['subject',['subject',['../structjack__description__t.html#a2869464462d8186d3b888111e46897bc',1,'jack_description_t']]]
+  ['the_20api_20for_20starting_20and_20controlling_20a_20jack_20server_423',['the API for starting and controlling a JACK server',['../group__ControlAPI.html',1,'']]],
+  ['the_20non_2dcallback_20api_424',['The non-callback API',['../group__NonCallbackAPI.html',1,'']]],
+  ['thread_2eh_425',['thread.h',['../thread_8h.html',1,'']]],
+  ['thread_5fstack_426',['THREAD_STACK',['../thread_8h.html#af9a5d6addf893be0502ae41f52e794b2',1,'thread.h']]],
+  ['tick_427',['tick',['../group__TransportControl.html#ga9ba36f6c4eaede3bb1c9b7a85b5f76d1',1,'jack_position_t::tick()'],['../group__TransportControl.html#ga45efc4128e2405f4f54c8b2340c064cd',1,'jack_transport_info_t::tick()']]],
+  ['tick_5fdouble_428',['tick_double',['../group__TransportControl.html#gabf43d666f71ba6a9dd7f81c68affce99',1,'jack_position_t']]],
+  ['ticks_5fper_5fbeat_429',['ticks_per_beat',['../group__TransportControl.html#ga08ca4c388c6460dcef82f03346ccbf52',1,'jack_position_t::ticks_per_beat()'],['../group__TransportControl.html#ga4d98a25dc59cf9c7beb203f32b911a51',1,'jack_transport_info_t::ticks_per_beat()']]],
+  ['time_430',['time',['../group__MIDIAPI.html#ga7acc6a81ac12e2a042d5af9fb7b56532',1,'_jack_midi_event']]],
+  ['transport_20and_20timebase_20control_431',['Transport and Timebase control',['../group__TransportControl.html',1,'']]],
+  ['transport_2edox_432',['transport.dox',['../transport_8dox.html',1,'']]],
+  ['transport_2eh_433',['transport.h',['../transport_8h.html',1,'']]],
+  ['transport_5fstate_434',['transport_state',['../group__TransportControl.html#ga748678d245f92f396833cefaca67630c',1,'jack_transport_info_t']]],
+  ['type_435',['type',['../structjack__property__t.html#a298b7c97464c5ac3a6070c467732bd9c',1,'jack_property_t::type()'],['../struct__jack__session__event.html#a1eebbe3f51ef97967c58afb627535dda',1,'_jack_session_event::type()']]],
+  ['types_2eh_436',['types.h',['../types_8h.html',1,'']]]
 ];
