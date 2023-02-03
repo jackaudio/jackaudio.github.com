@@ -7,13 +7,13 @@ title:  "Downloads"
 
 * **Binaries**: please use your distribution's package manager
 (`apt-get, yum, synaptic` etc.)
-* **Source tarball**: [JACK 1.9.21].
+* **Source tarball**: [JACK 1.9.22].
 
 ## macOS
 
-* **Intel 64bit Installer**: [JACK 1.9.21 macOS-intel].
-* **Universal Installer**:   [JACK 1.9.21 macOS-universal].
-* **Source tarball**:        [JACK 1.9.21].
+* **Intel 64bit Installer**: [JACK 1.9.22 macOS-intel].
+* **Universal Installer**:   [JACK 1.9.22 macOS-universal].
+* **Source tarball**:        [JACK 1.9.22].
 
 For macOS 10.12 or higher.
 
@@ -21,9 +21,9 @@ Nightly builds are available through [JACK2 GitHub actions].
 
 ## Windows
 
-* **32bit installer**: [JACK 1.9.21 win32].
-* **64bit installer**: [JACK 1.9.21 win64].
-* **Source tarball**:  [JACK 1.9.21].
+* **32bit installer**: [JACK 1.9.22 win32].
+* **64bit installer**: [JACK 1.9.22 win64].
+* **Source tarball**:  [JACK 1.9.22].
 
 For Windows 7 or higher. 64bit builds provide mixed 32/64bit support.
 
@@ -109,9 +109,9 @@ Eventually the same setup for the submodules will be required for both JACK2 and
 but this is only the case for JACK1 at this time.
 
 
-[JACK 1.9.21]:                 https://github.com/jackaudio/jack2/archive/v1.9.21.tar.gz
-[JACK 1.9.21 macOS-intel]:     https://github.com/jackaudio/jack2-releases/releases/download/v1.9.21/jack2-macOS-intel-v1.9.21.tar.gz
-[JACK 1.9.21 macOS-universal]: https://github.com/jackaudio/jack2-releases/releases/download/v1.9.21/jack2-macOS-universal-v1.9.21.tar.gz
-[JACK 1.9.21 win32]:           https://github.com/jackaudio/jack2-releases/releases/download/v1.9.21/jack2-win32-v1.9.21.exe
-[JACK 1.9.21 win64]:           https://github.com/jackaudio/jack2-releases/releases/download/v1.9.21/jack2-win64-v1.9.21.exe
+[JACK 1.9.22]:                 https://github.com/jackaudio/jack2/archive/v1.9.22.tar.gz
+[JACK 1.9.22 macOS-intel]:     https://github.com/jackaudio/jack2-releases/releases/download/v1.9.22/jack2-macOS-intel-v1.9.22.tar.gz
+[JACK 1.9.22 macOS-universal]: https://github.com/jackaudio/jack2-releases/releases/download/v1.9.22/jack2-macOS-universal-v1.9.22.tar.gz
+[JACK 1.9.22 win32]:           https://github.com/jackaudio/jack2-releases/releases/download/v1.9.22/jack2-win32-v1.9.22.exe
+[JACK 1.9.22 win64]:           https://github.com/jackaudio/jack2-releases/releases/download/v1.9.22/jack2-win64-v1.9.22.exe
 [JACK2 GitHub actions]:        https://github.com/jackaudio/jack2/actions/workflows/build.yml
