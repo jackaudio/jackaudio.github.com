@@ -11,19 +11,136 @@ off the time between audio samples). This means that trying to use
 multiple independent soundcards is problematic, because each soundcard
 has its own sample clock, running independently from the others. Over
 time, these different clocks drift out of sync with each other, and
-cause glitches in the audio. You can't stop this drift, although in some
-cases the effects may be insignificant enough that some people might not
-care about them.
+cause glitches in the audio. You can stop this drift with the correct
+tools, although it is not very easy.
 
-Thus in an ideal world you should not use multiple independent
-soundcards but instead use a single device with a single clock and all
-the inputs, outputs and other features that you need.
+But there are some tools that can help you with that problem.
 
-Of course, a lot of people don't live in an ideal world, and believe
-that software should make up for this. Accordingly, JACK offers several
-ways for you to use more than 1 device at a time.
+### 1. Use DAMC to output / input to multiple Devices
 
-### 1. Use the alsa_in and alsa_out clients (Linux & ALSA only)
+The Open Source Program DAMC let's you add audio devices to JACK.
+Clock shifting is supported.
+
+DAMC uses Portaudio to send / recieve the Audio, so on Linux you
+will be limited to ALSA.
+
+DAMC Download here: https://github.com/amurzeau/damc/releases/latest
+
+Each JACK client managed by DAMC do:
+    Receive audio from other Jack clients or from various external sources
+    Do processing on the audio stream (like volume, eq, compression, ...)
+    Output audio to other Jack clients or to external sinks.
+
+Note: DAMC was not tested on Mac
+
+To use DAMC you need to have JACK already set up.
+
+#### Windows:
+
+1. Start JACK
+2. Run damc_server.exe
+3. Run damc_gui.exe
+4. In the DAMC GUI, click Add button to add a JACK client that
+   can receive/send audio
+
+5. Configure:
+    Display Name: name shown in QJackCtl and in DAMC GUI
+    Type:
+        Loopback: received audio is send on its outputs through enabled filters
+        RemoteOutput: received audio is sent on the network using UDP to
+                      specified target IP / port address. VBAN format is
+                      required to be compatible with Voicemeeter.
+        RemoteInput: receive audio from the network by listening on specified
+                     IP / port for incoming UDP packets and send it to jack
+                     client's outputs.
+        DeviceOutput: received audio is sent to specified device. The device
+                      is managed using Portaudio.
+        DeviceInput: audio is capture from specified device using Portaudio.
+        WasapiDeviceOutput: received audio is sent to specified device.
+                            The device is managed using WASAPI.
+        WasapiDeviceInput: audio is capture from specified device
+                           using WASAPI.
+    Channels: the number of channel this jack client must handle
+              (for example: 2 for stereo audio)
+    Sample rate:
+        Sample rate: the sample rate of the external portaudio /
+                     WASAPIdevice or the remote UDP endpoint
+       Clock drift: adjust the sample rate clock drift in Part Per Million
+                    The Clock drift will be shown in the log of damc_server
+    Remote output:
+     IP / Port :
+         With RemoteOutput: the target IP / Port which will receive
+                            audio over UDP
+         With RemoteInput: the IP / Port to bind to listen for incoming
+                           audio UDP packets
+     VBAN format: use Voicemeeter packet format
+    Device output:
+      Device: The external device to send / receive audio
+      Use Exclusive mode: use exclusive WASAPI mode (can be used with
+                          Portaudio too when using a WASAPI device)
+
+6. Close DAMC GUI if you are done setting up DAMC
+
+7. In QJackCtl, click the Graph button and connect jack clients together
+
+#### Linux
+
+1. Start JACK
+2. Install the following Libraries:
+   lib32-zlib, zlib, libuv, spdlog, portaudio, lib32-portaudio,
+   fftw, libmysofa
+   For Arch Users:
+   sudo pacman -S lib32-zlib zlib libuv spdlog portaudio lib32-portaudio fftw libmysofa
+   NOTE: The Names of the Packages might not be the same if you are using
+         another Distro like Ubuntu
+3. Open a Terminal in the Directory of the DAMC Folder
+4. Run the following Command:
+   sudo cp lib/libportaudio.so.19.8 /lib/libportaudio.so.19.8
+5. Run damc_server in a terminal
+6. Run damc_gui
+7. In the DAMC GUI, click Add button to add a JACK client that
+   can receive/send audio
+8. Configure:
+    Display Name: name shown in QJackCtl and in DAMC GUI
+    Type:
+        Loopback: received audio is send on its outputs through enabled filters
+        RemoteOutput: received audio is sent on the network using UDP to
+                      specified target IP / port address. VBAN format is
+                      required to be compatible with Voicemeeter.
+        RemoteInput: receive audio from the network by listening on specified
+                     IP / port for incoming UDP packets and send it to jack
+                     client's outputs.
+        DeviceOutput: received audio is sent to specified device. The device
+                      is managed using Portaudio.
+        DeviceInput: audio is capture from specified device using Portaudio.
+        WasapiDeviceOutput: received audio is sent to specified device.
+                            The device is managed using WASAPI.
+        WasapiDeviceInput: audio is capture from specified device
+                           using WASAPI.
+    Channels: the number of channel this jack client must handle
+              (for example: 2 for stereo audio)
+    Sample rate:
+        Sample rate: the sample rate of the external portaudio /
+                     WASAPIdevice or the remote UDP endpoint
+       Clock drift: adjust the sample rate clock drift in Part Per Million
+                    The Clock drift will be shown in the log of damc_server
+    Remote output:
+     IP / Port :
+         With RemoteOutput: the target IP / Port which will receive
+                            audio over UDP
+         With RemoteInput: the IP / Port to bind to listen for incoming
+                           audio UDP packets
+     VBAN format: use Voicemeeter packet format
+    Device output:
+      Device: The external device to send / receive audio
+      Use Exclusive mode: use exclusive WASAPI mode (can be used with
+                          Portaudio too when using a WASAPI device)
+
+9. Close DAMC GUI if you are done setting up DAMC
+
+10. In QJackCtl, click the Graph button and connect jack clients together
+
+### 2. Use the alsa_in and alsa_out clients (Linux & ALSA only)
 
 If you are using JACK on Linux and want to use additional devices that
 have ALSA driver support (i.e. most PCI, USB and Bluetooth devices),
@@ -52,11 +169,11 @@ FFADO- supported device. The requirement for ALSA support only applies
 to the extra devices you want to use, not the one that JACK itself is
 using.
 
-### 2. Use the JACK2 audio adapter(s) (Jack2 only)
+### 3. Use the JACK2 audio adapter(s) (Jack2 only)
 
 _More information is needed on this option_
 
-### 3. Using OS facilities to merge devices into a single pseudo-device
+### 4. Using OS facilities to merge devices into a single pseudo-device
 
 Both OS X and Linux provide ways to configure your machine so that it
 appears to have a new audio device that is actually a combination of one
@@ -212,7 +329,7 @@ always be the same one, and so forth, so its not likely to be an issue.
 If you use several identical USB devices, it may be a more significant
 problem.
 
-### 4. Using the -P and -C arguments to a JACK backend
+### 5. Using the -P and -C arguments to a JACK backend
 
 Several JACK backends, including the ALSA, FFADO and CoreAudio versions,
 support the -P and -C arguments that can be used to specify two
