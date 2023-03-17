@@ -57,7 +57,8 @@ PAM (Pluggable Authentication Modules) are used by almost all modern Linux
 distributions nowadays to handle various tasks related to granting a user
 permission to do something (e.g. to login). If your system has PAM, it will
 also have a file called `/etc/security/limits.conf` and/or a directory called
-`/etc/security/limits.d.
+`/etc/security/limits.d. Note the process will be slightly different if you
+use systemd to manage JACK.
 
 You need to carry out 3 steps to be able to run JACK with RT scheduling. In
 what follows, several references are made to the "audio" group. If this
@@ -115,4 +116,29 @@ substituting the real names for `theGroupName` and `yourUserId`
 
 None of the changes you have made above will have any effect until you logout
 and back in. If that does not work, try rebooting. In either case, you do not need to reinstall any software.
+
+### 4. Using systemd
+
+If you have a service definition for JACK in systemd, then you need to change
+these limits directly on your definition by adding these two lines in the
+[Service] section:
+
+    LimitRTPRIO=95
+    LimitMEMLOCK=unlimited
+
+For example:
+
+    [Unit]
+    Description=JACK server
+    After=network.target
+    
+    [Service]
+    ExecStart=...
+    User=yourUserId
+    LimitRTPRIO=95
+    LimitMEMLOCK=unlimited
+    
+    [Install]
+    WantedBy=multi-user.target
+
 
