@@ -54,7 +54,63 @@ using.
 
 ### 2. Use the JACK2 audio adapter(s) (Jack2 only)
 
-_More information is needed on this option_
+If your system has an integrated sound card and you want add two other usb sound card  one alternative you can chose is to start jackd as usual with the integrated soundcard and then load the audioadapter client plugin for the two additional sound cards.
+Using the audio adapter client plugin (insted of alsa_in/alsa_out) avoids creating a new process for each additional device (and "direction"), since the audioadapter client will be loaded in the jackd process-space.
+
+For example, if the two usb sound cards are of the same model, when they are plugged-in the system assigns them the names Audio (to the first inserted) and Audio_1 (to the second inserted). You can verify the names by issuing the command:
+```shell
+$ ls -l /proc/asound/
+total 0
+lrwxrwxrwx  1 root root 5 apr  2 09:18 Audio -> card1        # link to my first usb sound card
+lrwxrwxrwx  1 root root 5 apr  2 09:18 Audio_1 -> card2      # link to my first usb sound card
+dr-xr-xr-x 21 root root 0 apr  1 15:36 card0                 # my integrated sound card
+dr-xr-xr-x  9 root root 0 apr  2 09:17 card1                 # my first usb sound card
+dr-xr-xr-x  9 root root 0 apr  2 09:18 card2                 # my second usb sound card
+-r--r--r--  1 root root 0 apr  1 15:36 cards                 # all soundcards in the system
+-r--r--r--  1 root root 0 apr  1 15:48 devices
+-r--r--r--  1 root root 0 apr  1 15:48 hwdep
+-r--r--r--  1 root root 0 apr  1 15:48 modules
+dr-xr-xr-x  4 root root 0 apr  1 15:48 oss
+lrwxrwxrwx  1 root root 5 apr  1 15:48 PCH -> card0          # link to my integrated sound card
+-r--r--r--  1 root root 0 apr  1 15:48 pcm
+dr-xr-xr-x  6 root root 0 apr  1 15:48 seq
+-r--r--r--  1 root root 0 apr  1 15:48 timers
+-r--r--r--  1 root root 0 apr  1 15:48 version
+```
+or better:
+```shell
+$ cat /proc/asound/cards
+ 0 [PCH            ]: HDA-Intel - HDA Intel PCH
+                      HDA Intel PCH at 0xb2428000 irq 140
+ 1 [Audio          ]: USB-Audio - USB Audio
+                      Bluetrum USB Audio at usb-0000:00:14.0-1, full speed
+ 2 [Audio_1        ]: USB-Audio - USB Audio
+                      Bluetrum USB Audio at usb-0000:00:14.0-2.4, full speed
+```
+In the above scenario, the commands to use to load the audioadapter clients for new usb sound cards (after jackd has already been started) are:
+
+```
+  $ jack_load myUsbSoundcard_0 audioadapter -i "-i 1 -o 2 -D -p 256 -n 2 -dalsa -dhw:Audio   -r 48000"
+  $ jack_load myUsbSoundcard_1 audioadapter -i "-i 1 -o 2 -D -p 256 -n 2 -dalsa -dhw:Audio_1 -r 48000"
+```
+where
+  - ``myUsbSoundcard_0`` and ``myUsbSoundcard_1`` are the names you will see in the qjackctl graph (they must be unique names in the jackd process space);
+  - ``audioadapter`` (audioadapter.so) is the "so-name" of the "client module" to load in the jackd process space
+  - the quoted options after the first ``-i`` are similar to jackd options
+
+**If you use ``qjackctl``** to start jackd (possibly enabling JACK D-Bus interface), you can launch jack_load automatically:
+
+go to Setup->Option tab, check "Execute script after startup" and write the commands to launch directly in the text-box. Using this method, in the textbox you can automatically get some options parameters from the main instance of jackd; for example:
+
+ - ``%p`` will expand to the Frames/Period
+ - ``%n`` will expand to the Periods/Buffer
+ - ``%d`` will expand to the driver (for example alsa)
+ - ``%r`` will expand to the sampling rate
+
+The commands to write in the textbox could be (the two command are in the same line separated by ';' ):
+```shell
+jack_load myUsbSoundcard_0 audioadapter -i "-i 1 -o 2 -D -p %p -n %n -d%d -dhw:Audio -r %r" ; jack_load myUsbSoundcard_1 audioadapter -i "-i 1 -o 2 -D -p %p -n %n -d%d -dhw:Audio_1 -r %r"
+```
 
 ### 3. Using OS facilities to merge devices into a single pseudo-device
 
