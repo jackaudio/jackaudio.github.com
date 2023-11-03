@@ -438,6 +438,8 @@ title:  "Applications"
   * [**meterec**](http://sourceforge.net/projects/meterec)
     is a console based multi-track monitoring and recording tool.
     Focus on your instrument, not on the software!
+  * [**sbts-aru**](https://github.com/hcfman/sbts-aru)
+    is a sound localizaling recorder with microsecond accurate system time for the Pi
   * [**QARecord**](http://alsamodular.sourceforge.net/)
     a simple but multithreaded stereo recording tool.
   * [**QJackRcd**](http://sourceforge.net/projects/qjackrcd)
