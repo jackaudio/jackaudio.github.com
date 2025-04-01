@@ -6,7 +6,7 @@ title:  "Applications"
 
   * [**Audacity**](http://audacity.sourceforge.net/)
     is a cross-platform multitrack audio editor. Please read
-    [this post](http://music.columbia.edu/pipermail/linux-audio-user/2005-July/024519.html)
+    [this post](https://web.archive.org/web/20150511071618/https://music.columbia.edu/pipermail/linux-audio-user/2005-July/024519.html)
     for instructions on how to get Jackaudio and Audacity working together.
   * [**gi_editor**](https://github.com/kmtaylor/gi_editor)
     is a software editor for the
