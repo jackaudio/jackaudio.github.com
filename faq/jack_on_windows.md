@@ -66,20 +66,14 @@ Change the settings in the [IO] portion of the file.
 
 ## Installation and Configuration
 
-1. Download the JACK2 installer for Windows from the [download page.](/downloads/)
+1. `winget install Jackaudio.JACK2`
 
-2. Use the installer. Either the 32-bit or the 64-bit one (which still allows 32-bit clients).
-
-3. Pick "Full installation (with JACK-Router)" during installation.
-
-4. From the Windows Start menu, locate the QjackCtl application and run it.
-
-5. On the QjackCtl application, click "Setup" and adjust "Interface", "Sample Rate" and "Frames/Period" as needed for your device/sound-card.
+2. On the QjackCtl application, click "Setup" and adjust "Interface", "Sample Rate" and "Frames/Period" as needed for your device/sound-card.
   Do not change settings you do not understand.
 
-6. Click on OK to close the Setup dialog.
+3. Click on OK to close the Setup dialog.
 
-8. Click on "Start" to start the JACK Server with the parameters you just set up.
+4. Click on "Start" to start the JACK Server with the parameters you just set up.
 
 When the JACK Server is running the JACK-Router ASIO interface will be
 available to all ASIO capable applications.
