@@ -360,6 +360,8 @@ title:  "Applications"
     in asynchronous mode.
   * [**libjackmm**](http://sourceforge.net/projects/libjackmm)
     is a C++ interface to the jack audio connection kit.
+  * [**jill**](https://github.com/capocasa/jill)
+    is a quick 'n easy jack interface in the Nim programming language
   * [**Praxis Live**](http://www.praxislive.org/)
     is an hybrid visual live programming for creatives,
     for programmers, for students, for tinkerers.
@@ -509,6 +511,8 @@ title:  "Applications"
     a drum machine.
   * [**LinuxSampler**](http://www.linuxsampler.org/)
     a software audio sampler.
+  * [**Mash**](https://github.com/capocasa/mash)
+    is a headless, very precise virtual MIDI keyboard for Jack.
   * [**Midi Player Pro**](http://www.selasky.org/hans_petter/midistudio)
     is the software you need to be able to play any kind of music
     in seconds with your fingertips. It uses
