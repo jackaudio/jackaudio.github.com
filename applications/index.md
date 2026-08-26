@@ -67,6 +67,9 @@ title:  "Applications"
     is a scriptable environment for controlling jackdbus clients.
   * [**PatchMatrix**](https://github.com/OpenMusicKontrollers/patchmatrix)
     is a standalone JACK patch bay with metadata support in matrix layout.
+  * [**YJ**](https://tildegit.org/fengints/YJ)
+    Change jack parameters directly from jackserver api.
+    
 
 ## DJ Software
 
